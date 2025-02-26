@@ -1,0 +1,56 @@
+@startuml
+
+left to right direction
+
+actor "User"
+actor "Admin"
+
+rectangle "System" {
+    usecase "Authentication" as uc0
+    usecase "Create account" as uc1
+    usecase "Manage workspace" as uc2
+    usecase "Manage projects" as uc3
+    usecase "Work on project" as uc4
+    usecase "Explore community" as uc5
+    usecase "Report issue" as uc6
+    usecase "Edit profile" as uc7
+    usecase "Edit community projects" as uc8
+
+    usecase "Manage users" as uc9
+    usecase "Manage AI agents" as uc10
+    usecase "Manage community" as uc11
+    usecase "Manage Prompts" as uc12
+}
+
+
+User -- uc1
+User -- uc2
+User -- uc3
+User -- uc4
+User -- uc5
+User -- uc6
+User -- uc7
+User -- uc8
+
+Admin -- uc9
+Admin -- uc10
+Admin -- uc11
+Admin -- uc12
+
+uc1 ..> uc0 : <<include>>
+uc2 ..> uc0 : <<include>>
+uc3 ..> uc0 : <<include>>
+uc4 ..> uc0 : <<include>>
+uc5 ..> uc0 : <<include>>
+uc6 ..> uc0 : <<include>>
+uc7 ..> uc0 : <<include>>
+uc8 ..> uc0 : <<include>>
+uc9 ..> uc0 : <<include>>
+uc10 ..> uc0 : <<include>>
+uc11 ..> uc0 : <<include>>
+uc12 ..> uc0 : <<include>>
+
+
+
+
+@enduml
