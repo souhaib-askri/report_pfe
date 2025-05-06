@@ -1,0 +1,113 @@
+@startuml
+class Admin {
+  + id: String
+  + username: String
+  + email: String
+  + passwordHash: String
+  + createdAt: DateTime
+  + updatedAt: DateTime
+}
+
+class AIModel {
+  + id: String
+  + name: String
+  + description: String?
+  + createdAt: DateTime
+  + updatedAt: DateTime
+  + conversations: List<Conversation>
+}
+
+class Conversation {
+  + id: String
+  + userId: String
+  + aiModelId: String
+  + title: String?
+  + createdAt: DateTime
+  + updatedAt: DateTime
+  + user: User
+  + aiModel: AIModel
+  + messages: List<Message>
+}
+
+class Message {
+  + id: String
+  + conversationId: String
+  + sender: String
+  + content: String
+  + createdAt: DateTime
+  + conversation: Conversation
+}
+
+class Account {
+  + id: String
+  + userId: String
+  + type: String
+  + provider: String
+  + providerAccountId: String
+  + refresh_token: String?
+  + access_token: String?
+  + expires_at: Int?
+  + token_type: String?
+  + scope: String?
+  + id_token: String?
+  + session_state: String?
+  + user: User
+}
+
+class Session {
+  + id: String
+  + sessionToken: String
+  + userId: String
+  + expires: DateTime
+  + user: User
+}
+
+class User {
+  + id: String
+  + name: String?
+  + email: String?
+  + emailVerified: DateTime?
+  + image: String?
+  + createdAt: DateTime
+  + updatedAt: DateTime
+  + accounts: List<Account>
+  + sessions: List<Session>
+  + projects: List<Project>
+}
+
+class Project {
+  + id: String
+  + name: String
+  + description: String?
+  + imageUrl: String
+  + isPublic: Boolean
+  + userId: String
+  + createdAt: DateTime
+  + updatedAt: DateTime
+  + user: User
+  + diagrams: List<Diagram>
+}
+
+class Diagram {
+  + id: String
+  + name: String
+  + code: String
+  + projectId: String
+  + createdAt: DateTime
+  + updatedAt: DateTime
+  + project: Project
+}
+
+User "1" --> "0..*" Account : owns
+User "1" --> "0..*" Session : owns
+User "1" --> "0..*" Project : owns
+Project "1" --> "0..*" Diagram : owns
+AIModel "1" --> "0..*" Conversation : owns
+Conversation "1" --> "0..*" Message : owns
+User "1" --> "0..*" Conversation : participates in
+Conversation "1" --> "1" AIModel : uses
+Message "1" --> "1" Conversation : belongs to
+Account "1" --> "1" User : belongs to
+Session "1" --> "1" User : belongs to
+Diagram "1" --> "1" Project : belongs to
+@enduml

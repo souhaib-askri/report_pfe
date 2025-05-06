@@ -1,0 +1,29 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{Chapter I}{2}{section*.2}%
+\contentsline {subsection}{Introduction}{2}{section*.3}%
+\contentsline {subsection}{Company Overview}{2}{section*.4}%
+\contentsline {subsection}{Project Overview}{2}{section*.5}%
+\contentsline {subsubsection}{Existing Solution}{2}{section*.6}%
+\contentsline {subsubsection}{Benchmarking}{2}{section*.7}%
+\contentsline {subsubsection}{Problem Statement}{2}{section*.8}%
+\contentsline {subsubsection}{Proposed Solution}{2}{section*.9}%
+\contentsline {subsection}{Methodology Choice}{2}{section*.10}%
+\contentsline {subsection}{Modeling Language}{2}{section*.11}%
+\contentsline {subsection}{Conclusion}{2}{section*.12}%
+\contentsline {section}{Chapter II}{3}{section*.13}%
+\contentsline {subsection}{Introduction}{3}{section*.14}%
+\contentsline {subsection}{Requirements Specification}{3}{section*.15}%
+\contentsline {subsubsection}{Identification}{3}{section*.16}%
+\contentsline {subsubsection}{Functional Requirements}{3}{section*.17}%
+\contentsline {subsubsection}{Non-Functional Requirements}{3}{section*.18}%
+\contentsline {subsubsection}{General Use Case Diagram}{3}{section*.19}%
+\contentsline {subsection}{Project Management}{3}{section*.20}%
+\contentsline {subsubsection}{Team and Roles}{3}{section*.21}%
+\contentsline {subsubsection}{Product Backlog}{3}{section*.22}%
+\contentsline {subsubsection}{Project Planning}{3}{section*.23}%
+\contentsline {subsection}{Application Design}{3}{section*.24}%
+\contentsline {subsubsection}{Application Layout}{3}{section*.25}%
+\contentsline {subsubsection}{Wireframes}{3}{section*.26}%
+\contentsline {subsubsection}{Design Guidelines}{3}{section*.27}%
+\contentsline {subsection}{Conclusion}{3}{section*.28}%
+\contentsline {section}{Bibliography}{4}{section*.29}%

@@ -1,0 +1,81 @@
+@startuml
+
+' User model
+class User {
+  +id: UUID
+  +username: String
+  +email: String
+  +passwordHash: String
+  +createdAt: Timestamp
+  +updatedAt: Timestamp
+}
+
+' Admin model
+class Admin {
+  +id: UUID
+  +username: String
+  +email: String
+  +passwordHash: String
+  +createdAt: Timestamp
+  +updatedAt: Timestamp
+}
+
+' Project model
+class Project {
+  +id: UUID
+  +userId: UUID
+  +name: String
+  +description: String
+  +isPublic: Boolean
+  +createdAt: Timestamp
+  +updatedAt: Timestamp
+}
+
+' Diagram model
+class Diagram {
+  +id: UUID
+  +projectId: UUID
+  +name: String
+  +type: String
+  +content: Text
+  +createdAt: Timestamp
+  +updatedAt: Timestamp
+}
+
+' AIModel model
+class AIModel {
+  +id: UUID
+  +name: String
+  +description: String
+  +createdAt: Timestamp
+  +updatedAt: Timestamp
+}
+
+' Conversation model
+class Conversation {
+  +id: UUID
+  +userId: UUID
+  +aiModelId: UUID
+  +title: String
+  +createdAt: Timestamp
+  +updatedAt: Timestamp
+}
+
+' Message model
+class Message {
+  +id: UUID
+  +conversationId: UUID
+  +sender: String <<"user" | "ai">>
+  +content: Text
+  +createdAt: Timestamp
+}
+
+' Relationships
+User "1" -- "0..*" Project : owns
+User "1" -- "0..*" Conversation : starts
+Admin "1" -- "0..*" AIModel : manages
+Project "1" -- "0..*" Diagram : contains
+AIModel "1" -- "0..*" Conversation : handles
+Conversation "1" -- "0..*" Message : contains
+
+@enduml

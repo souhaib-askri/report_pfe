@@ -1,0 +1,109 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage{lipsum} % For dummy text (can be removed if unnecessary)
+\usepackage{hyperref}
+
+% Header and footer setup
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textbf{Document Title}}
+\fancyhead[R]{\textbf{Page \thepage}}
+
+\begin{document}
+
+% Title page
+\begin{titlepage}
+    \centering
+    \vspace*{1cm}
+    {\Huge \textbf{Document Title}} \\
+    \vspace{0.5cm}
+    {\Large Report} \\
+    \vfill
+    {\large Author: Your Name} \\
+    \vspace{0.2cm}
+    {\large Date: \today}
+\end{titlepage}
+
+% Table of contents
+\tableofcontents
+\newpage
+
+\section*{Chapter I}
+\addcontentsline{toc}{section}{Chapter I}
+
+\subsection*{Introduction}
+\addcontentsline{toc}{subsection}{Introduction}
+
+\subsection*{Company Overview}
+\addcontentsline{toc}{subsection}{Company Overview}
+
+\subsection*{Project Overview}
+\addcontentsline{toc}{subsection}{Project Overview}
+\subsubsection*{Existing Solution}
+\addcontentsline{toc}{subsubsection}{Existing Solution}
+\subsubsection*{Benchmarking}
+\addcontentsline{toc}{subsubsection}{Benchmarking}
+\subsubsection*{Problem Statement}
+\addcontentsline{toc}{subsubsection}{Problem Statement}
+\subsubsection*{Proposed Solution}
+\addcontentsline{toc}{subsubsection}{Proposed Solution}
+
+\subsection*{Methodology Choice}
+\addcontentsline{toc}{subsection}{Methodology Choice}
+
+\subsection*{Modeling Language}
+\addcontentsline{toc}{subsection}{Modeling Language}
+
+\subsection*{Conclusion}
+\addcontentsline{toc}{subsection}{Conclusion}
+
+\newpage
+
+\section*{Chapter II}
+\addcontentsline{toc}{section}{Chapter II}
+
+\subsection*{Introduction}
+\addcontentsline{toc}{subsection}{Introduction}
+
+\subsection*{Requirements Specification}
+\addcontentsline{toc}{subsection}{Requirements Specification}
+\subsubsection*{Identification}
+\addcontentsline{toc}{subsubsection}{Identification}
+\subsubsection*{Functional Requirements}
+\addcontentsline{toc}{subsubsection}{Functional Requirements}
+\subsubsection*{Non-Functional Requirements}
+\addcontentsline{toc}{subsubsection}{Non-Functional Requirements}
+\subsubsection*{General Use Case Diagram}
+\addcontentsline{toc}{subsubsection}{General Use Case Diagram}
+
+\subsection*{Project Management}
+\addcontentsline{toc}{subsection}{Project Management}
+\subsubsection*{Team and Roles}
+\addcontentsline{toc}{subsubsection}{Team and Roles}
+\subsubsection*{Product Backlog}
+\addcontentsline{toc}{subsubsection}{Product Backlog}
+\subsubsection*{Project Planning}
+\addcontentsline{toc}{subsubsection}{Project Planning}
+
+\subsection*{Application Design}
+\addcontentsline{toc}{subsection}{Application Design}
+\subsubsection*{Application Layout}
+\addcontentsline{toc}{subsubsection}{Application Layout}
+\subsubsection*{Wireframes}
+\addcontentsline{toc}{subsubsection}{Wireframes}
+\subsubsection*{Design Guidelines}
+\addcontentsline{toc}{subsubsection}{Design Guidelines}
+
+\subsection*{Conclusion}
+\addcontentsline{toc}{subsection}{Conclusion}
+
+\newpage
+
+\section*{Bibliography}
+\addcontentsline{toc}{section}{Bibliography}
+
+% End of document
+\end{document}

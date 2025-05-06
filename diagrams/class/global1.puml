@@ -1,0 +1,110 @@
+@startuml
+entity "Admin" as Admin {
+  * id : String
+  --
+  username : String
+  email : String
+  passwordHash : String
+  createdAt : DateTime
+  updatedAt : DateTime
+}
+
+entity "AIModel" as AIModel {
+  * id : String
+  --
+  name : String
+  description : String?
+  createdAt : DateTime
+  updatedAt : DateTime
+}
+
+entity "Conversation" as Conversation {
+  * id : String
+  --
+  userId : String
+  aiModelId : String
+  title : String?
+  createdAt : DateTime
+  updatedAt : DateTime
+}
+
+entity "Message" as Message {
+  * id : String
+  --
+  conversationId : String
+  sender : String
+  content : String
+  createdAt : DateTime
+}
+
+entity "Account" as Account {
+  * id : String
+  --
+  userId : String
+  type : String
+  provider : String
+  providerAccountId : String
+  refresh_token : String?
+  access_token : String?
+  expires_at : Int?
+  token_type : String?
+  scope : String?
+  id_token : String?
+  session_state : String?
+}
+
+entity "Session" as Session {
+  * id : String
+  --
+  sessionToken : String
+  userId : String
+  expires : DateTime
+}
+
+entity "User" as User {
+  * id : String
+  --
+  name : String?
+  email : String?
+  emailVerified : DateTime?
+  image : String?
+  createdAt : DateTime
+  updatedAt : DateTime
+}
+
+entity "Project" as Project {
+  * id : String
+  --
+  name : String
+  description : String?
+  imageUrl : String
+  isPublic : Boolean
+  userId : String
+  createdAt : DateTime
+  updatedAt : DateTime
+}
+
+entity "Diagram" as Diagram {
+  * id : String
+  --
+  name : String
+  code : String
+  projectId : String
+  createdAt : DateTime
+  updatedAt : DateTime
+}
+
+User ||--o{ Account : has
+User ||--o{ Session : has
+User ||--o{ Project : has
+Project ||--o{ Diagram : has
+AIModel ||--o{ Conversation : has
+Conversation ||--o{ Message : has
+User ||--o{ Conversation : has
+Conversation }o--|| AIModel : belongs to
+Message }o--|| Conversation : belongs to
+Account }o--|| User : belongs to
+Session }o--|| User : belongs to
+Project }o--|| User : belongs to
+Diagram }o--|| Project : belongs to
+@enduml

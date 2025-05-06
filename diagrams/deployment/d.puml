@@ -1,0 +1,24 @@
+@startuml
+node "User Browser" as UserBrowser
+
+node "Web Application" as WebApp {
+    [TOMCAT Container]
+}
+
+cloud "External Services" as ExternalServices {
+    [MinIO API]
+    [PlantUML Server API]
+    [AI Model API]
+}
+
+node "Database Server" as Database {
+    [PostgreSQL]
+}
+
+UserBrowser --> WebApp : HTTP/HTTPS Requests
+WebApp ---> [PostgreSQL] : Prisma Queries
+WebApp ---> [MinIO API] : Upload/Download Files
+WebApp ---> [PlantUML Server API] : Generate UML Diagrams
+WebApp ---> [AI Model API] : Send Requests for AI Processing
+
+@enduml

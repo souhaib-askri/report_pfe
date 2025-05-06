@@ -1,0 +1,133 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam classBackgroundColor LightBlue
+skinparam classBorderColor Navy
+skinparam classFontColor Black
+skinparam classFontSize 14
+
+class Admin {
+  + id: String
+  + username: String
+  + email: String
+  + passwordHash: String
+  + createdAt: DateTime
+  + updatedAt: DateTime
+}
+
+class AIModel {
+  + id: String
+  + name: String
+  + description: String?
+  + createdAt: DateTime
+  + updatedAt: DateTime
+}
+
+class Conversation {
+  + id: String
+  + userId: String
+  + aiModelId: String
+  + title: String?
+  + createdAt: DateTime
+  + updatedAt: DateTime
+}
+
+class Message {
+  + id: String
+  + conversationId: String
+  + sender: String
+  + content: String
+  + createdAt: DateTime
+}
+
+class Account {
+  + id: String
+  + userId: String
+  + type: String
+  + provider: String
+  + providerAccountId: String
+  + refresh_token: String?
+  + access_token: String?
+  + expires_at: Int?
+  + token_type: String?
+  + scope: String?
+  + id_token: String?
+  + session_state: String?
+}
+
+class Session {
+  + id: String
+  + sessionToken: String
+  + userId: String
+  + expires: DateTime
+}
+
+class User {
+  + id: String
+  + name: String?
+  + email: String?
+  + emailVerified: DateTime?
+  + image: String?
+  + createdAt: DateTime
+  + updatedAt: DateTime
+}
+
+class Project {
+  + id: String
+  + name: String
+  + description: String?
+  + imageUrl: String
+  + isPublic: Boolean
+  + userId: String
+  + createdAt: DateTime
+  + updatedAt: DateTime
+}
+
+class Diagram {
+  + id: String
+  + name: String
+  + code: String
+  + projectId: String
+  + createdAt: DateTime
+  + updatedAt: DateTime
+  + imageUrl: String
+}
+
+class ProjectComment {
+  + id: String
+  + content: String
+  + projectId: String
+  + userId: String
+  + createdAt: DateTime
+  + updatedAt: DateTime
+}
+
+class ProjectLike {
+  + id: String
+  + projectId: String
+  + userId: String
+  + createdAt: DateTime
+}
+
+class CommentLike {
+  + id: String
+  + commentId: String
+  + userId: String
+  + createdAt: DateTime
+}
+
+' Relationships
+Admin "1" -- "0..*" AIModel
+AIModel "1" o-- "0..*" Conversation
+Conversation "1" o-- "0..*" Message
+User "1" -- "0..*" Account
+User "1" -- "0..*" Session
+User "1" o-- "0..*" Conversation
+User "1" o-- "0..*" Project
+User "1" o-- "0..*" ProjectComment
+User "1" o-- "0..*" ProjectLike
+User "1" o-- "0..*" CommentLike
+Project "1" o-- "0..*" Diagram
+Project "1" o-- "0..*" ProjectComment
+Project "1" o-- "0..*" ProjectLike
+ProjectComment "1" -- "0..*" CommentLike
+@enduml

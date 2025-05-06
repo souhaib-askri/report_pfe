@@ -1,0 +1,38 @@
+@startuml
+skinparam monochrome false
+skinparam backgroundColor #F5F5F5
+skinparam sequenceArrowColor #007ACC
+skinparam actorBackgroundColor #FFD700
+skinparam participantBackgroundColor #87CEFA
+skinparam participantBorderColor #4682B4
+skinparam sequenceParticipantFontColor #000000
+skinparam sequenceParticipantFontSize 14
+skinparam sequenceLifeLineBackgroundColor #ADD8E6
+skinparam sequenceLifeLineBorderColor #4682B4
+
+actor User #FFD700
+participant "Web App" as WA #87CEFA
+participant "NextAuth" as NA #87CEFA
+participant "Identity Provider" as IDP #87CEFA
+
+User -> WA : Visit Login Page
+WA -> NA : Initialize NextAuth
+User -> WA : Enter credentials OR\nClick "Sign in with Provider"
+WA -> NA : Send credentials OR Provider Request
+
+alt Using Email/Password
+    NA -> IDP : Validate Email/Password
+else Using Provider
+    NA -> IDP : Request Provider Authentication
+end
+
+IDP --> NA : Authentication Response\n(Success/Failure)
+
+alt Authentication Success
+    NA --> WA : Return Session Token
+    WA -> User : Redirect to Dashboard
+else Authentication Failure
+    NA --> WA : Return Error Message
+    WA -> User : Show Error
+end
+@enduml
