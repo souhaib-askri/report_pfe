@@ -1,4 +1,5 @@
 @startuml
+
 skinparam classAttributeIconSize 0
 skinparam classBackgroundColor LightBlue
 skinparam classBorderColor Navy
@@ -20,23 +21,6 @@ class AIModel {
   + description: String?
   + createdAt: DateTime
   + updatedAt: DateTime
-}
-
-class Conversation {
-  + id: String
-  + userId: String
-  + aiModelId: String
-  + title: String?
-  + createdAt: DateTime
-  + updatedAt: DateTime
-}
-
-class Message {
-  + id: String
-  + conversationId: String
-  + sender: String
-  + content: String
-  + createdAt: DateTime
 }
 
 class Account {
@@ -116,18 +100,22 @@ class CommentLike {
 }
 
 ' Relationships
-Admin "1" -- "0..*" AIModel
-AIModel "1" o-- "0..*" Conversation
-Conversation "1" o-- "0..*" Message
-User "1" -- "0..*" Account
-User "1" -- "0..*" Session
-User "1" o-- "0..*" Conversation
-User "1" o-- "0..*" Project
-User "1" o-- "0..*" ProjectComment
-User "1" o-- "0..*" ProjectLike
-User "1" o-- "0..*" CommentLike
-Project "1" o-- "0..*" Diagram
-Project "1" o-- "0..*" ProjectComment
-Project "1" o-- "0..*" ProjectLike
-ProjectComment "1" -- "0..*" CommentLike
+'Admin "1" -- "0..*" AIModel
+
+User "1" *-- "0..*" Account
+User "1" *-- "0..*" Session
+'User "1" *-- "0..*" Message
+User "1" *-- "0..*" Project
+User "1" *-- "0..*" ProjectComment
+User "1" *-- "0..*" ProjectLike
+User "1" *-- "0..*" CommentLike
+ProjectComment "1" *-- "0..*" CommentLike
+
+'AIModel "1" o-- "0..*" Message
+'Conversation "1" *-- "0..*" Message
+Project "1" *-- "0..*" Diagram
+Project "1" *-- "0..*" ProjectComment
+Project "1" *-- "0..*" ProjectLike
+'Diagram "1" *-- "1" Conversation
+
 @enduml

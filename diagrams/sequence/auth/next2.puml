@@ -1,0 +1,48 @@
+@startuml
+actor User
+participant "Browser" as Browser
+participant "Application Server (NextAuth)" as AppServer
+participant "OAuth Provider (Google/GitHub)" as AuthServer
+
+== Initiate Authentication ==
+User -> Browser : Clicks "Sign In"
+Browser -> AppServer : GET /api/auth/signin
+AppServer -> AppServer : Display available providers (Google/GitHub)
+AppServer -> Browser : Render sign-in page
+
+== Select Provider ==
+User -> Browser : Chooses "Sign in with Google/GitHub"
+Browser -> AppServer : POST /api/auth/signin/google or /api/auth/signin/github
+AppServer -> AppServer : Prepare OAuth request
+AppServer -> Browser : Redirect to Google/GitHub
+
+== Authenticate with Provider ==
+Browser -> AuthServer : GET /oauth2/authorize
+activate AuthServer
+AuthServer -> User : Display provider's login page
+User -> AuthServer : Enter credentials
+AuthServer -> AuthServer : Validate credentials
+AuthServer --> Browser : Redirect to /api/auth/callback/provider?code=AUTH_CODE
+deactivate AuthServer
+
+== Handle Authorization Code ==
+Browser -> AppServer : GET /api/auth/callback/provider?code=AUTH_CODE
+AppServer -> AppServer : Exchange code for access_token
+AppServer -> AuthServer : POST /oauth2/token
+activate AuthServer
+AuthServer -> AppServer : Send access_token and user info
+deactivate AuthServer
+
+== Create and Store Session ==
+AppServer -> AppServer : Create session with user info
+AppServer -> Browser : Set session cookie
+Browser -> User : Redirect to app dashboard
+
+== Handle Errors ==
+alt Invalid Credentials
+    AuthServer -> Browser : Display error page
+    Browser -> User : Notify "Invalid Login"
+else User Cancels Login
+    Browser -> User : Redirect back to sign-in page
+end
+@enduml

@@ -1,38 +1,48 @@
 @startuml
-skinparam monochrome false
-skinparam backgroundColor #F5F5F5
-skinparam sequenceArrowColor #007ACC
-skinparam actorBackgroundColor #FFD700
-skinparam participantBackgroundColor #87CEFA
-skinparam participantBorderColor #4682B4
-skinparam sequenceParticipantFontColor #000000
-skinparam sequenceParticipantFontSize 14
-skinparam sequenceLifeLineBackgroundColor #ADD8E6
-skinparam sequenceLifeLineBorderColor #4682B4
+actor User
+participant "Browser" as Browser
+participant "Application Server" as AppServer
+participant "Authentication Server (GitHub)" as AuthServer
 
-actor User #FFD700
-participant "Web App" as WA #87CEFA
-participant "NextAuth" as NA #87CEFA
-participant "Identity Provider" as IDP #87CEFA
+== Initiate Sign-In ==
+User -> Browser : Clicks "Sign In"
+Browser -> AppServer : GET /api/auth/signin
+AppServer -> AppServer : Determine available providers
+AppServer -> Browser : Render sign-in page
 
-User -> WA : Visit Login Page
-WA -> NA : Initialize NextAuth
-User -> WA : Enter credentials OR\nClick "Sign in with Provider"
-WA -> NA : Send credentials OR Provider Request
+== Select OAuth Provider ==
+User -> Browser : Clicks "Sign in with GitHub"
+Browser -> AppServer : POST /api/auth/signin/github
+AppServer -> AppServer : Prepare OAuth parameters
+AppServer -> Browser : Redirect to GitHub
 
-alt Using Email/Password
-    NA -> IDP : Validate Email/Password
-else Using Provider
-    NA -> IDP : Request Provider Authentication
-end
+== User Authenticates on GitHub ==
+Browser -> AuthServer : GET /login/oauth/authorize
+activate AuthServer
+AuthServer -> User : Display GitHub login page
+User -> AuthServer : Enter credentials
+AuthServer -> AuthServer : Validate credentials
+AuthServer --> Browser : Redirect to /api/auth/callback/github?code=ABC123
+deactivate AuthServer
 
-IDP --> NA : Authentication Response\n(Success/Failure)
+== Handle Authorization Code ==
+Browser -> AppServer : GET /api/auth/callback/github?code=ABC123
+AppServer -> AppServer : Extract authorization code
+AppServer -> AuthServer : POST /login/oauth/access_token
+activate AuthServer
+AuthServer -> AppServer : Return access_token and user info
+deactivate AuthServer
 
-alt Authentication Success
-    NA --> WA : Return Session Token
-    WA -> User : Redirect to Dashboard
-else Authentication Failure
-    NA --> WA : Return Error Message
-    WA -> User : Show Error
+== Create Session and Set Cookie ==
+AppServer -> AppServer : Create session and store data
+AppServer -> Browser : Set session cookie
+Browser -> User : Redirect to homepage
+
+== Handle Special Cases ==
+alt Authentication Failed
+    AuthServer -> Browser : Display error message
+    Browser -> User : Inform login failure
+else User Cancels Login
+    Browser -> User : Redirect to sign-in page
 end
 @enduml

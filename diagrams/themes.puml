@@ -1,0 +1,4 @@
+@startuml
+!theme aminga
+issam --> is
+@enduml

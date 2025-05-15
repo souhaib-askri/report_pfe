@@ -1,0 +1,45 @@
+@startuml
+
+actor Admin as AdminUser
+participant "Express Server" as Server
+participant "AdminJS Middleware" as AdminJS
+participant "Database" as DB
+
+== Admin Login ==
+AdminUser -> Server: POST /admin/login (email, password)
+activate Server
+
+Server -> AdminJS: Validate request
+AdminJS -> DB: Query admin by email
+activate DB
+DB --> AdminJS: Admin record (email, passwordHash)
+deactivate DB
+
+AdminJS -> AdminJS: Verify password
+alt Password valid
+    AdminJS -> Server: Generate session or token
+    Server --> AdminUser: Authentication success (Session/Token)
+else Password invalid
+    AdminJS --> AdminUser: Authentication failed
+end
+deactivate Server
+
+== Admin Access ==
+AdminUser -> Server: Access secured route (e.g., /admin/dashboard)
+activate Server
+
+Server -> AdminJS: Validate session/token
+AdminJS -> DB: Query admin data for session validation
+activate DB
+DB --> AdminJS: Admin details
+deactivate DB
+
+alt Valid session/token
+    AdminJS --> Server: Access granted
+    Server --> AdminUser: Data/Response
+else Invalid session/token
+    AdminJS --> Server: Access denied
+    Server --> AdminUser: Error response
+end
+deactivate Server
+@enduml
