@@ -1,0 +1,78 @@
+@startuml
+
+left to right direction
+
+actor "User" as User
+actor "Admin" as Admin
+actor "AI model" as AIModel
+
+rectangle "System" {
+    usecase "Explore Community" as ExploreCommunity
+    usecase "User Authentication" as UserAuth
+    usecase "Admin Authentication" as AdminAuth
+
+    usecase "Interact with Project" as InteractWithProject
+    usecase "Like/Unlike Project" as LikeProject
+    usecase "Read Comment" as ReadComment
+    usecase "Comment on Project" as CommentProject
+    usecase "Update Comment" as UpdateComment
+    usecase "Delete Comment" as DeleteComment
+    usecase "Share Project" as ShareProject
+    usecase "Like/Unlike Comment" as LikeComment
+
+    usecase "Manage Projects" as ManageProjects
+    usecase "Create Project" as CreateProject
+    usecase "Update Project" as UpdateProject
+    usecase "Delete Project" as DeleteProject
+    usecase "Read Project" as ReadProject
+    usecase "Download Project" as DownloadProject
+
+    usecase "Manage Diagrams" as ManageDiagrams
+    usecase "Create Diagram" as CreateDiagram
+    usecase "Edit Diagram" as EditDiagram
+    usecase "Edit Manual" as EditManual
+    usecase "Edit Automatic" as EditAutomatic
+    usecase "Delete Diagram" as DeleteDiagram
+    usecase "Read Diagram" as ReadDiagram
+    usecase "Download Diagram" as DownloadDiagram
+
+    usecase "Edit Profile" as EditProfile
+    usecase "Manage Data" as ManageData
+}
+
+User --> ExploreCommunity
+User --> InteractWithProject
+User --> ManageProjects
+User --> EditProfile
+
+Admin --> ManageData
+
+InteractWithProject ..> UserAuth : <<include>>
+ManageProjects ..> UserAuth : <<include>>
+EditProfile ..> UserAuth : <<include>>
+ManageData ..> AdminAuth : <<include>>
+
+InteractWithProject --> LikeProject
+InteractWithProject --> ReadComment
+InteractWithProject --> CommentProject
+CommentProject --> LikeComment
+CommentProject --> UpdateComment
+CommentProject --> DeleteComment
+InteractWithProject --> ShareProject
+ManageProjects --> CreateProject
+ManageProjects --> UpdateProject
+ManageProjects --> DeleteProject
+ManageProjects --> ReadProject
+InteractWithProject --> DownloadProject
+
+ManageProjects --> ManageDiagrams
+ManageDiagrams --> CreateDiagram
+ManageDiagrams --> DeleteDiagram
+ManageDiagrams --> ReadDiagram
+ManageDiagrams --> DownloadDiagram
+ManageDiagrams --> EditDiagram
+EditDiagram --> EditAutomatic
+EditAutomatic --> AIModel
+EditDiagram --> EditManual
+
+@enduml

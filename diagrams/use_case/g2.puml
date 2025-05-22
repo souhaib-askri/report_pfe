@@ -1,0 +1,100 @@
+@startuml
+
+left to right direction
+
+actor "User" as User
+actor "Admin" as Admin
+
+actor "AI model" as model
+
+rectangle "System" {
+    usecase "Explore community" as ExploreCommunity
+
+    usecase "User authentication" as user_auth
+    usecase "Admin authentication" as admin_auth
+
+    usecase "Interact with project" as InteractWithProject
+    usecase "like/unlike project" as LikeProject
+    usecase "read comment" as ReadComment
+    usecase "comment project" as CommentProject
+    usecase " update comment" as UpdateComment
+    usecase "delete comment" as DeleteComment
+    usecase "share project" as ShareProject
+    usecase "like/unlike comment" as LikeComment
+
+
+    usecase "Manage projects" as ManageProjects
+    usecase "create project" as CreateProject
+    usecase "update project" as UpdateProject
+    usecase "delete project" as DeleteProject
+    usecase "read project" as ReadProject
+    usecase "download project" as DownloadProject
+
+    usecase "Manage diagrams" as ManageDiagrams
+    usecase "create diagram" as CreateDiagram
+    usecase "Edit diagram" as EditDiagram
+    usecase "Edit manual" as EditManual
+    usecase "Edit automatic" as EditAutomatic
+    
+    usecase "delete diagram" as DeleteDiagram
+    usecase "read diagram" as ReadDiagram
+    usecase "download diagram" as DownloadDiagram
+    usecase "Edit profile" as EditProfile
+
+    
+
+    usecase "Manage data" as ManageData
+
+}
+
+User -- ExploreCommunity
+User -- InteractWithProject
+User -- ManageProjects
+User -- EditProfile
+
+
+Admin -- ManageData
+
+
+InteractWithProject ..> user_auth : <<include>>
+ManageProjects ..> user_auth : <<include>>
+
+EditProfile ..> user_auth : <<include>>
+ManageData ..> admin_auth : <<include>>
+
+InteractWithProject -- LikeProject
+InteractWithProject -- ReadComment
+InteractWithProject -- CommentProject
+
+CommentProject -- LikeComment
+CommentProject -- UpdateComment
+CommentProject -- DeleteComment
+
+InteractWithProject -- ShareProject
+ManageProjects -- CreateProject
+ManageProjects -- UpdateProject
+ManageProjects -- DeleteProject
+ManageProjects -- ReadProject
+InteractWithProject -- DownloadProject
+
+ManageProjects -- ManageDiagrams
+ManageDiagrams -- CreateDiagram
+ManageDiagrams -- DeleteDiagram
+ManageDiagrams -- ReadDiagram
+ManageDiagrams -- DownloadDiagram
+ManageDiagrams -- EditDiagram
+EditDiagram -- EditAutomatic
+EditAutomatic -- model
+EditDiagram -- EditManual
+
+
+
+
+
+
+
+
+
+
+
+@enduml

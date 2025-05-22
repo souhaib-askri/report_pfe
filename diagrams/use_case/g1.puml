@@ -1,0 +1,42 @@
+@startuml
+
+left to right direction
+
+actor "User" as User
+actor "Admin" as Admin
+
+rectangle "System" {
+    usecase "Explore community" as ExploreCommunity
+    usecase "User authentication" as user_auth
+    usecase "Admin authentication" as admin_auth
+
+    usecase "Interact with project" as InteractWithProject
+    usecase "Manage projects" as ManageProjects
+    usecase "Manage diagrams" as ManageDiagrams
+    usecase "Edit profile" as EditProfile
+
+    
+
+    usecase "Manage data" as ManageData
+
+
+User -- ExploreCommunity
+User -- InteractWithProject
+User -- ManageProjects
+User -- ManageDiagrams
+User -- EditProfile
+
+
+Admin -- ManageData
+InteractWithProject ..> user_auth : <<include>>
+ManageProjects ..> user_auth : <<include>>
+ManageDiagrams ..> user_auth : <<include>>
+EditProfile ..> user_auth : <<include>>
+ManageData ..> admin_auth : <<include>>
+
+
+
+
+
+
+@enduml
