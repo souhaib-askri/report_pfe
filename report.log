@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.3.25)  27 MAY 2025 22:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2025.3.25)  27 MAY 2025 22:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -344,46 +344,148 @@ Package: setspace 2022/12/04 v6.7b set line spacing
 (/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
 )
+(/usr/share/texlive/texmf-dist/tex/latex/minitoc/minitoc.sty
+Package: minitoc 2018/07/12 v62 Package minitoc
+
+(/usr/share/texlive/texmf-dist/tex/latex/minitoc/mtcmess.sty
+Package: mtcmess 2006/03/14
+)
+Package minitoc Info: I0001
+(minitoc)             *** minitoc package, version 62 ***.
+\tf@mtc=\write3
+\mtcindent=\skip99
+\mtcskipamount=\skip100
+Package minitoc Info: I0005
+(minitoc)             compatible with hyperref.
+Package minitoc Info: I0023
+(minitoc)             part level macros available.
+Package minitoc Info: I0003
+(minitoc)             chapter level macros available.
+\mtc@toks=\toks26
+\mtc@strutbox=\box54
+\mtc@hstrutbox=\box55
+Package minitoc Info: I0002
+(minitoc)             Autoconfiguration of extensions.
+\openout3 = `report.mtc0'.
+
+\openout3 = `report.mtc'.
+
+ (./report.mtc0)
+Package minitoc Info: I0012
+(minitoc)             Long extensions (Unix-like) will be used.
+Package minitoc Info: I0031
+(minitoc)             ==> this version is configured for UNIX-like 
+(minitoc)                 (long extensions) file names.
+\openout3 = `report.mtc'.
+
+\openout3 = `report.mtc0'.
+
+\c@mtc=\count288
+\c@minitocdepth=\count289
+\c@ptc=\count290
+\c@parttocdepth=\count291
+\ptcindent=\skip101
+Package minitoc Info: I0010
+(minitoc)             The english language is selected.
+(minitoc)              on input line 4910.
+
+(/usr/share/texlive/texmf-dist/tex/latex/minitoc/english.mld
+File: english.mld 2006/01/13
+)
+(/usr/share/texlive/texmf-dist/tex/latex/minitoc/english.mld
+File: english.mld 2006/01/13
+))
+Package minitoc Info: I0024
+(minitoc)             PREPARING MINITOCS FROM report.toc on input line 44.
+Package minitoc Info: I0033
+(minitoc)             Writing report.mtc1.
+\openout3 = `report.mtc1'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing report.mtc2.
+\openout3 = `report.mtc2'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing report.mtc3.
+\openout3 = `report.mtc3'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing report.mtc4.
+\openout3 = `report.mtc4'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing report.mtc5.
+\openout3 = `report.mtc5'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing report.mtc6.
+\openout3 = `report.mtc6'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing report.mtc7.
+\openout3 = `report.mtc7'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing report.mtc8.
+\openout3 = `report.mtc8'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing report.mtc9.
+\openout3 = `report.mtc9'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing report.mtc10.
+\openout3 = `report.mtc10'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing report.mtc11.
+\openout3 = `report.mtc11'.
+
+Package minitoc Info: I0033
+(minitoc)             Writing report.mtc12.
+\openout3 = `report.mtc12'.
+
+
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count288
-\l__pdf_internal_box=\box54
+\l__color_backend_stack_int=\count292
+\l__pdf_internal_box=\box56
 )
 (./report.aux)
 \openout1 = `report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
-LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count289
+\scratchcounter=\count293
 \scratchdimen=\dimen161
-\scratchbox=\box55
-\nofMPsegments=\count290
-\nofMParguments=\count291
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count292
+\scratchbox=\box57
+\nofMPsegments=\count294
+\nofMParguments=\count295
+\everyMPshowfont=\toks27
+\MPscratchCnt=\count296
 \MPscratchDim=\dimen162
-\MPnumerator=\count293
-\makeMPintoPDFobject=\count294
-\everyMPtoPDFconversion=\toks27
+\MPnumerator=\count297
+\makeMPintoPDFobject=\count298
+\everyMPtoPDFconversion=\toks28
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -393,13 +495,33 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 37.
+Package hyperref Info: Link coloring OFF on input line 45.
 
 (./report.out) (./report.out)
-\@outlinefile=\write3
-\openout3 = `report.out'.
+\@outlinefile=\write4
+\openout4 = `report.out'.
 
- [1
+\c@minilofdepth=\count299
+\c@minilotdepth=\count300
+\c@partlofdepth=\count301
+\c@partlotdepth=\count302
+\c@sectlofdepth=\count303
+\c@sectlotdepth=\count304
+Package minitoc(hints) Info: I0049
+(minitoc(hints))             ==> You requested the hints option. 
+(minitoc(hints))             Some hints are eventually given below.
+Package minitoc(hints) Info: I0047
+(minitoc(hints))             --- The tocloft package is loaded. 
+(minitoc(hints))             See the minitoc package documentation 
+(minitoc(hints))             for specific precautions.
+
+
+Package minitoc(hints) Warning: W0099
+(minitoc(hints))                --- The titlesec package is loaded. 
+(minitoc(hints))                It is incompatible 
+(minitoc(hints))                with the minitoc package.
+
+[1
 
 ] [2
 
@@ -416,20 +538,22 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [4] [5] [6])
-\tf@toc=\write4
-\openout4 = `report.toc'.
+\tf@toc=\write5
+\openout5 = `report.toc'.
 
 
 [7] (./report.lof)
-\tf@lof=\write5
-\openout5 = `report.lof'.
+\tf@lof=\write6
+\openout6 = `report.lof'.
 
  [8] (./report.lot)
-\tf@lot=\write6
-\openout6 = `report.lot'.
+\tf@lot=\write7
+\openout7 = `report.lot'.
 
  [9]
 Chapter 1.
+Package minitoc Info: I0006
+(minitoc)             report.mtc1 is empty on input line 79.
 [10
 
 ]
@@ -438,74 +562,164 @@ Overfull \vbox (55.20822pt too high) has occurred while \output is active []
 
 [11]
 Chapter 2.
+Package minitoc Info: I0006
+(minitoc)             report.mtc2 is empty on input line 103.
 [12
 
 ]
 Chapter 3.
 
-Overfull \hbox (13.83136pt too wide) in paragraph at lines 110--110
+Overfull \hbox (13.83136pt too wide) in paragraph at lines 120--120
 |\T1/cmr/bx/n/24.88 Study and Im-ple-men-ta-tion of Sprint
  []
 
-[13
+\openout3 = `report.mtc'.
+
+\openout3 = `report.mtc'.
+
+(./report.mtc3) [13
 
 ]
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.13135pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.13135pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.13135pt}.
+
+[14]
 Chapter 4.
 
-Overfull \hbox (13.83136pt too wide) in paragraph at lines 127--127
+Overfull \hbox (13.83136pt too wide) in paragraph at lines 138--138
 |\T1/cmr/bx/n/24.88 Study and Im-ple-men-ta-tion of Sprint
  []
 
-[14
+\openout3 = `report.mtc'.
+
+\openout3 = `report.mtc'.
+
+(./report.mtc4) [15
 
 ]
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.13135pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.13135pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.13135pt}.
+
+[16]
 Chapter 5.
 
-Overfull \hbox (13.83136pt too wide) in paragraph at lines 144--144
+Overfull \hbox (13.83136pt too wide) in paragraph at lines 156--156
 |\T1/cmr/bx/n/24.88 Study and Im-ple-men-ta-tion of Sprint
  []
 
-[15
+\openout3 = `report.mtc'.
+
+\openout3 = `report.mtc'.
+
+(./report.mtc5) [17
 
 ]
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.13135pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.13135pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.13135pt}.
+
+[18]
 Chapter 6.
 
-Overfull \hbox (13.83136pt too wide) in paragraph at lines 161--161
+Overfull \hbox (13.83136pt too wide) in paragraph at lines 174--174
 |\T1/cmr/bx/n/24.88 Study and Im-ple-men-ta-tion of Sprint
  []
 
 
-Overfull \hbox (58.60425pt too wide) in paragraph at lines 161--161
+Overfull \hbox (58.60425pt too wide) in paragraph at lines 174--174
 \T1/cmr/bx/n/24.88 IV: Di-a-gram Man-age-ment & Workspace| 
  []
 
-[16
+\openout3 = `report.mtc'.
+
+\openout3 = `report.mtc'.
+
+(./report.mtc6) [19
 
 ]
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.13135pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.13135pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.13135pt}.
+
+[20]
 Chapter 7.
 
-Overfull \hbox (13.83136pt too wide) in paragraph at lines 178--178
+Overfull \hbox (13.83136pt too wide) in paragraph at lines 192--192
 |\T1/cmr/bx/n/24.88 Study and Im-ple-men-ta-tion of Sprint
  []
 
-[17
+\openout3 = `report.mtc'.
+
+\openout3 = `report.mtc'.
+
+(./report.mtc7) [21
 
 ]
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.13135pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.13135pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.13135pt}.
+
+[22]
 Chapter 8.
 
-Overfull \hbox (13.83136pt too wide) in paragraph at lines 195--195
+Overfull \hbox (13.83136pt too wide) in paragraph at lines 210--210
 |\T1/cmr/bx/n/24.88 Study and Im-ple-men-ta-tion of Sprint
  []
 
-[18
+\openout3 = `report.mtc'.
+
+\openout3 = `report.mtc'.
+
+(./report.mtc8) [23
 
 ]
+
+Package fancyhdr Warning: \headheight is too small (15.0pt): 
+(fancyhdr)                Make it at least 27.13135pt, for example:
+(fancyhdr)                \setlength{\headheight}{27.13135pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+
+(fancyhdr)                \addtolength{\topmargin}{-12.13135pt}.
+
+[24]
 Chapter 9.
-[19
+[25
 
 ]
 Chapter 10.
-[20
+Package minitoc Info: I0009
+(minitoc)             Listing minitoc auxiliary files. 
+(minitoc)             Creating the report.maf file.
+\openout3 = `report.maf'.
+
+
+Package minitoc(hints) Warning: W0024
+(minitoc(hints))                Some hints have been written 
+(minitoc(hints))                in the report.log file.
+
+[26
 
 ] (./report.aux)
  ***********
@@ -516,23 +730,25 @@ Package rerunfilecheck Info: File `report.out' has not changed.
 (rerunfilecheck)             Checksum: DFEC8AD85162064A4CF5FB1FD6D0F251;19303.
  ) 
 Here is how much of TeX's memory you used:
- 10883 strings out of 476103
- 162446 string characters out of 5793011
+ 13052 strings out of 476103
+ 198204 string characters out of 5793011
  1938975 words of memory out of 5000000
- 32622 multiletter control sequences out of 15000+600000
- 568888 words of font info for 62 fonts, out of 8000000 for 9000
+ 34734 multiletter control sequences out of 15000+600000
+ 571988 words of font info for 70 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  75i,12n,79p,465b,488s stack positions out of 10000i,1000n,20000p,200000b,200000s
- </home/issam/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.600
-pk> </home/issam/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.60
-0pk> </home/issam/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200.6
-00pk> </home/issam/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.
-600pk> </home/issam/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx2488
-.600pk>
-Output written on report.pdf (20 pages, 122965 bytes).
+ </home/issam/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1095.600
+pk> </home/issam/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1095.60
+0pk> </home/issam/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1440.6
+00pk> </home/issam/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1728.
+600pk> </home/issam/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx1200
+.600pk> </home/issam/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm120
+0.600pk> </home/issam/.texlive2023/texmf-var/fonts/pk/ljfour/jknappen/ec/ecbx24
+88.600pk>
+Output written on report.pdf (26 pages, 161660 bytes).
 PDF statistics:
- 1036 PDF objects out of 1200 (max. 8388607)
- 733 compressed objects within 8 object streams
- 143 named destinations out of 1000 (max. 500000)
+ 1260 PDF objects out of 1440 (max. 8388607)
+ 849 compressed objects within 9 object streams
+ 156 named destinations out of 1000 (max. 500000)
  977 words of extra memory for PDF output out of 10000 (max. 10000000)
 

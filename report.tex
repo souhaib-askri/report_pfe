@@ -9,6 +9,7 @@
 \usepackage{tocloft}
 \usepackage{setspace}
 \usepackage{indentfirst}
+\usepackage{minitoc}
 
 % Page layout
 \setlength{\headheight}{15pt}
@@ -33,6 +34,13 @@
 
 % Indentation
 \setlength{\parindent}{20pt}
+
+% Adjust numbering depth
+\setcounter{secnumdepth}{3}
+
+% summary of each chapter
+
+\dominitoc
 
 \begin{document}
 
@@ -67,6 +75,7 @@
 % Chapter 1
 \chapter{General Framework of the Project}
 
+\minitoc
 \section{Introduction}
 \section{Overview of the Host Organization}
 \section{Presentation of the Project Context}
@@ -90,6 +99,7 @@
 % Chapter 2
 \chapter{Project Initiation}
 
+\minitoc
 \section{Introduction}
 \section{Software as a Service (SaaS)}
 \section{Analysis and Specification of Requirements}
@@ -107,8 +117,9 @@
 \section{Conclusion}
 
 % Chapter 3
-\chapter{Study and Implementation of Sprint I: Infrastructure Setup}
+\chapter[Sprint I]{Study and Implementation of Sprint I: Infrastructure Setup}
 
+\minitoc
 \section{Introduction}
 \section{Sprint Planning}
 \subsection{Objectives of Sprint I}
@@ -124,8 +135,9 @@
 \section{Conclusion}
 
 % Chapter 4
-\chapter{Study and Implementation of Sprint II: Authentication \& Landing Page}
+\chapter[Sprint II]{Study and Implementation of Sprint II: Authentication \& Landing Page}
 
+\minitoc
 \section{Introduction}
 \section{Sprint Planning}
 \subsection{Objectives of Sprint II}
@@ -141,8 +153,9 @@
 \section{Conclusion}
 
 % Chapter 5
-\chapter{Study and Implementation of Sprint III: Project Management}
+\chapter[Sprint III]{Study and Implementation of Sprint III: Project Management}
 
+\minitoc
 \section{Introduction}
 \section{Sprint Planning}
 \subsection{Objectives of Sprint III}
@@ -158,8 +171,9 @@
 \section{Conclusion}
 
 % Chapter 6
-\chapter{Study and Implementation of Sprint IV: Diagram Management \& Workspace}
+\chapter[Sprint IV]{Study and Implementation of Sprint IV: Diagram Management \& Workspace}
 
+\minitoc
 \section{Introduction}
 \section{Sprint Planning}
 \subsection{Objectives of Sprint IV}
@@ -175,8 +189,9 @@
 \section{Conclusion}
 
 % Chapter 7
-\chapter{Study and Implementation of Sprint V: Community Interaction \& Profiles}
+\chapter[Sprint V]{Study and Implementation of Sprint V: Community Interaction \& Profiles}
 
+\minitoc
 \section{Introduction}
 \section{Sprint Planning}
 \subsection{Objectives of Sprint V}
@@ -192,8 +207,9 @@
 \section{Conclusion}
 
 % Chapter 8
-\chapter{Study and Implementation of Sprint VI: Administration}
+\chapter[Sprint VI]{Study and Implementation of Sprint VI: Administration}
 
+\minitoc
 \section{Introduction}
 \section{Sprint Planning}
 \subsection{Objectives of Sprint VI}
