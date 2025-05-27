@@ -1,109 +1,225 @@
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,12pt]{report}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
-\usepackage[english]{babel}
-\usepackage{fancyhdr}
-\usepackage{lipsum} % For dummy text (can be removed if unnecessary)
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
 \usepackage{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{tocloft}
+\usepackage{setspace}
+\usepackage{indentfirst}
 
-% Header and footer setup
+% Page layout
+\setlength{\headheight}{15pt}
 \pagestyle{fancy}
-\fancyhf{}
-\fancyhead[L]{\textbf{Document Title}}
-\fancyhead[R]{\textbf{Page \thepage}}
+
+% Header and Footer
+\fancyhead[L]{\textbf{\leftmark}}
+\fancyhead[C]{}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{}
+\fancyfoot[R]{\thepage}
+
+% Table of contents formatting
+\renewcommand{\cftchapfont}{\bfseries}
+\renewcommand{\cftsecfont}{\bfseries}
+\renewcommand{\cftchappagefont}{\bfseries}
+
+% Chapter styling
+\titleformat{\chapter}[display]
+  {\bfseries\huge}{\chaptername~\thechapter}{20pt}{\Huge}
+\titlespacing*{\chapter}{0pt}{0pt}{20pt}
+
+% Indentation
+\setlength{\parindent}{20pt}
 
 \begin{document}
 
-% Title page
-\begin{titlepage}
-    \centering
-    \vspace*{1cm}
-    {\Huge \textbf{Document Title}} \\
-    \vspace{0.5cm}
-    {\Large Report} \\
-    \vfill
-    {\large Author: Your Name} \\
-    \vspace{0.2cm}
-    {\large Date: \today}
-\end{titlepage}
+% Empty Page
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
 
-% Table of contents
+% Dedication
+\chapter*{Dedication}
+\addcontentsline{toc}{chapter}{Dedication}
+\newpage
+
+% Acknowledgments
+\chapter*{Acknowledgments}
+\addcontentsline{toc}{chapter}{Acknowledgments}
+\newpage
+
+% Table of Contents
 \tableofcontents
 \newpage
 
-\section*{Chapter I}
-\addcontentsline{toc}{section}{Chapter I}
-
-\subsection*{Introduction}
-\addcontentsline{toc}{subsection}{Introduction}
-
-\subsection*{Company Overview}
-\addcontentsline{toc}{subsection}{Company Overview}
-
-\subsection*{Project Overview}
-\addcontentsline{toc}{subsection}{Project Overview}
-\subsubsection*{Existing Solution}
-\addcontentsline{toc}{subsubsection}{Existing Solution}
-\subsubsection*{Benchmarking}
-\addcontentsline{toc}{subsubsection}{Benchmarking}
-\subsubsection*{Problem Statement}
-\addcontentsline{toc}{subsubsection}{Problem Statement}
-\subsubsection*{Proposed Solution}
-\addcontentsline{toc}{subsubsection}{Proposed Solution}
-
-\subsection*{Methodology Choice}
-\addcontentsline{toc}{subsection}{Methodology Choice}
-
-\subsection*{Modeling Language}
-\addcontentsline{toc}{subsection}{Modeling Language}
-
-\subsection*{Conclusion}
-\addcontentsline{toc}{subsection}{Conclusion}
-
+% List of Figures
+\listoffigures
 \newpage
 
-\section*{Chapter II}
-\addcontentsline{toc}{section}{Chapter II}
-
-\subsection*{Introduction}
-\addcontentsline{toc}{subsection}{Introduction}
-
-\subsection*{Requirements Specification}
-\addcontentsline{toc}{subsection}{Requirements Specification}
-\subsubsection*{Identification}
-\addcontentsline{toc}{subsubsection}{Identification}
-\subsubsection*{Functional Requirements}
-\addcontentsline{toc}{subsubsection}{Functional Requirements}
-\subsubsection*{Non-Functional Requirements}
-\addcontentsline{toc}{subsubsection}{Non-Functional Requirements}
-\subsubsection*{General Use Case Diagram}
-\addcontentsline{toc}{subsubsection}{General Use Case Diagram}
-
-\subsection*{Project Management}
-\addcontentsline{toc}{subsection}{Project Management}
-\subsubsection*{Team and Roles}
-\addcontentsline{toc}{subsubsection}{Team and Roles}
-\subsubsection*{Product Backlog}
-\addcontentsline{toc}{subsubsection}{Product Backlog}
-\subsubsection*{Project Planning}
-\addcontentsline{toc}{subsubsection}{Project Planning}
-
-\subsection*{Application Design}
-\addcontentsline{toc}{subsection}{Application Design}
-\subsubsection*{Application Layout}
-\addcontentsline{toc}{subsubsection}{Application Layout}
-\subsubsection*{Wireframes}
-\addcontentsline{toc}{subsubsection}{Wireframes}
-\subsubsection*{Design Guidelines}
-\addcontentsline{toc}{subsubsection}{Design Guidelines}
-
-\subsection*{Conclusion}
-\addcontentsline{toc}{subsection}{Conclusion}
-
+% List of Tables
+\listoftables
 \newpage
 
-\section*{Bibliography}
-\addcontentsline{toc}{section}{Bibliography}
+% Chapter 1
+\chapter{General Framework of the Project}
 
-% End of document
+\section{Introduction}
+\section{Overview of the Host Organization}
+\section{Presentation of the Project Context}
+\subsection{Problem Statement}
+\subsection{Existing Solutions}
+\subsection{Proposed Solution}
+\subsubsection{Use of PlantUML (if applicable)}
+\section{Methodology}
+\subsection{Agile Approach}
+\subsection{Comparison of Agile Methods}
+\subsection{Scrum Framework}
+\subsubsection{Key Principles of Scrum}
+\subsubsection{Roles}
+\subsubsection{Events}
+\subsubsection{Artifacts}
+\section{Modeling Language}
+\subsection{Definition}
+\subsection{UML Overview}
+\section{Conclusion}
+
+% Chapter 2
+\chapter{Project Initiation}
+
+\section{Introduction}
+\section{Software as a Service (SaaS)}
+\section{Analysis and Specification of Requirements}
+\subsection{Identification of Actors}
+\subsection{Identification of Requirements}
+\subsubsection{Functional Requirements}
+\subsubsection{Non-Functional Requirements}
+\section{Project Management with Scrum}
+\subsection{Scrum Roles}
+\subsection{Product Backlog}
+\subsection{Global Use Case Diagram}
+\subsection{Sprint Planning}
+\section{Technological Architecture of the Project}
+\section{Tools and Environment}
+\section{Conclusion}
+
+% Chapter 3
+\chapter{Study and Implementation of Sprint I: Infrastructure Setup}
+
+\section{Introduction}
+\section{Sprint Planning}
+\subsection{Objectives of Sprint I}
+\subsection{Backlog of Sprint I}
+\section{Technologies and Tools Used}
+\subsection{Tool 1}
+\subsection{Tool 2}
+\section{Deliverables of Sprint I}
+\subsection{Milestone 1}
+\subsection{Milestone 2}
+\subsection{Milestone 3}
+\section{Retrospective of Sprint I}
+\section{Conclusion}
+
+% Chapter 4
+\chapter{Study and Implementation of Sprint II: Authentication \& Landing Page}
+
+\section{Introduction}
+\section{Sprint Planning}
+\subsection{Objectives of Sprint II}
+\subsection{Backlog of Sprint II}
+\section{Technologies and Tools Used}
+\subsection{Tool 1}
+\subsection{Tool 2}
+\section{Deliverables of Sprint II}
+\subsection{Milestone 1}
+\subsection{Milestone 2}
+\subsection{Milestone 3}
+\section{Retrospective of Sprint II}
+\section{Conclusion}
+
+% Chapter 5
+\chapter{Study and Implementation of Sprint III: Project Management}
+
+\section{Introduction}
+\section{Sprint Planning}
+\subsection{Objectives of Sprint III}
+\subsection{Backlog of Sprint III}
+\section{Technologies and Tools Used}
+\subsection{Tool 1}
+\subsection{Tool 2}
+\section{Deliverables of Sprint III}
+\subsection{Milestone 1}
+\subsection{Milestone 2}
+\subsection{Milestone 3}
+\section{Retrospective of Sprint III}
+\section{Conclusion}
+
+% Chapter 6
+\chapter{Study and Implementation of Sprint IV: Diagram Management \& Workspace}
+
+\section{Introduction}
+\section{Sprint Planning}
+\subsection{Objectives of Sprint IV}
+\subsection{Backlog of Sprint IV}
+\section{Technologies and Tools Used}
+\subsection{Tool 1}
+\subsection{Tool 2}
+\section{Deliverables of Sprint IV}
+\subsection{Milestone 1}
+\subsection{Milestone 2}
+\subsection{Milestone 3}
+\section{Retrospective of Sprint IV}
+\section{Conclusion}
+
+% Chapter 7
+\chapter{Study and Implementation of Sprint V: Community Interaction \& Profiles}
+
+\section{Introduction}
+\section{Sprint Planning}
+\subsection{Objectives of Sprint V}
+\subsection{Backlog of Sprint V}
+\section{Technologies and Tools Used}
+\subsection{Tool 1}
+\subsection{Tool 2}
+\section{Deliverables of Sprint V}
+\subsection{Milestone 1}
+\subsection{Milestone 2}
+\subsection{Milestone 3}
+\section{Retrospective of Sprint V}
+\section{Conclusion}
+
+% Chapter 8
+\chapter{Study and Implementation of Sprint VI: Administration}
+
+\section{Introduction}
+\section{Sprint Planning}
+\subsection{Objectives of Sprint VI}
+\subsection{Backlog of Sprint VI}
+\section{Technologies and Tools Used}
+\subsection{Tool 1}
+\subsection{Tool 2}
+\section{Deliverables of Sprint VI}
+\subsection{Milestone 1}
+\subsection{Milestone 2}
+\subsection{Milestone 3}
+\section{Retrospective of Sprint VI}
+\section{Conclusion}
+
+
+% Chapter 9
+\chapter{General Conclusion}
+
+\section{Summary of Achievements}
+\section{Challenges Faced}
+\section{Future Perspectives}
+
+% Chapter 10
+\chapter{Webography}
+
+\section{References}
+\section{Useful Links}
+
 \end{document}
