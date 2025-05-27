@@ -1,0 +1,59 @@
+@startuml
+|Browser|
+start
+:Login to Application;
+:Navigate to Dashboard;
+
+|Server|
+:Fetch User Projects;
+:Send Projects List to Browser;
+
+|Browser|
+:View Projects List;
+if (Create New Project?) then (Yes)
+  :Enter Project Details;
+  |Server|
+  :Save Project to Database;
+  :Send Confirmation to Browser;
+  |Browser|
+  :Project Created;
+else (No)
+endif
+
+:Select Project;
+
+if (Edit Project?) then (Yes)
+  :Modify Project Details;
+  |Server|
+  :Update Project in Database;
+  :Send Confirmation to Browser;
+  |Browser|
+  :Project Updated;
+else (No)
+endif
+
+if (Generate Diagram?) then (Yes)
+  :Enter Diagram Details;
+  |Server|
+  :Save Diagram to Database;
+  |PlantUML Server|
+  :Generate UML Diagram;
+  |Server|
+  :Save Generated Image URL;
+  :Send Diagram Details to Browser;
+  |Browser|
+  :Diagram Created and Displayed;
+else (No)
+endif
+
+if (Download Diagram?) then (Yes)
+  |Server|
+  :Fetch Diagram URL;
+  :Send Download Link to Browser;
+  |Browser|
+  :Download Diagram;
+else (No)
+endif
+
+stop
+@enduml

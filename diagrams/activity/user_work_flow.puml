@@ -1,0 +1,39 @@
+@startuml
+start
+
+:User logs in;
+
+if (User authenticated?) then (yes)
+    :Navigate to Dashboard;
+    :Choose "Create Project";
+    :Enter Project Details;
+    :Submit Project;
+
+    if (Project created?) then (yes)
+        :Choose "Create Diagram" under Project;
+        :Enter Diagram Details and Code;
+        :Submit Diagram;
+
+        if (Diagram created?) then (yes)
+            :View Diagram;
+            :Choose "Edit Diagram";
+            :Modify Diagram Details or Code;
+            :Submit Changes;
+
+            if (Changes saved?) then (yes)
+                :Download Diagram as Image or File;
+            else
+                :Retry Editing;
+            endif
+        else
+            :Retry Diagram Creation;
+        endif
+    else
+        :Retry Project Creation;
+    endif
+else
+    :Redirect to Login Page;
+endif
+
+stop
+@enduml

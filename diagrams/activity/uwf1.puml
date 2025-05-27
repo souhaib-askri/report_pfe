@@ -1,0 +1,32 @@
+@startuml
+|User|
+start
+:Login;
+if (Is Authenticated?) then (yes)
+  :Go to Dashboard;
+  |WebApp|
+  :Create New Project;
+  :Enter Project Details;
+  :Save Project;
+  if (Add Diagrams?) then (yes)
+    :Create Diagram;
+    :Enter Diagram Details;
+    :Save Diagram;
+  else (no)
+    note left: Skip adding diagrams
+  endif
+  |User|
+  :Review Project and Diagrams;
+  if (Edit Required?) then (yes)
+    |WebApp|
+    :Select Project or Diagram;
+    :Edit Details;
+    :Save Changes;
+  endif
+  |User|
+  :Download Project or Diagrams;
+else (no)
+  :Redirect to Login;
+endif
+stop
+@enduml
