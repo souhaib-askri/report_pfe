@@ -1,8 +1,14 @@
 \documentclass[a4paper,12pt]{report}
+
+% Encoding and fonts
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{lmodern} % Better font, scalable
+\usepackage{microtype} % Improves typography subtly
+
+% Essential packages
 \usepackage{graphicx}
-\usepackage{amsmath, amssymb}
+\usepackage{amsmath,amssymb}
 \usepackage{hyperref}
 \usepackage{fancyhdr}
 \usepackage{titlesec}
@@ -10,36 +16,70 @@
 \usepackage{setspace}
 \usepackage{indentfirst}
 \usepackage{minitoc}
+\usepackage{csvsimple}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{float}
+\usepackage{multirow}
 
-% Page layout
+% Page margins — 25mm all around (more academic and readable)
+\usepackage[a4paper,margin=25mm]{geometry}
+
+% Line spacing — 1.5 for academic readability
+\onehalfspacing
+
+% Paragraph indentation
+\setlength{\parindent}{20pt}
+
+% Paragraph spacing — no extra space between paragraphs
+\setlength{\parskip}{0pt}
+
+% Header and Footer setup
 \setlength{\headheight}{15pt}
 \pagestyle{fancy}
 
-% Header and Footer
-\fancyhead[L]{\textbf{\leftmark}}
+\fancyhead[L]{\textbf{\leftmark}} % Chapter name on the left header
 \fancyhead[C]{}
-\fancyhead[R]{\thepage}
-\fancyfoot[C]{}
-\fancyfoot[R]{\thepage}
+\fancyhead[R]{}
+\fancyfoot[C]{\thepage} % Page number centered in footer
+\fancyfoot[L]{}
+\fancyfoot[R]{}
 
-% Table of contents formatting
+% Chapter title formatting
+\titleformat{\chapter}[display]
+  {\bfseries\huge}
+  {\chaptername~\thechapter}
+  {20pt}
+  {\Huge}
+
+% Add vertical space before chapters
+\titlespacing*{\chapter}{0pt}{-10pt}{40pt} 
+
+% Table of contents formatting: bold chapter and section entries
 \renewcommand{\cftchapfont}{\bfseries}
 \renewcommand{\cftsecfont}{\bfseries}
 \renewcommand{\cftchappagefont}{\bfseries}
+\renewcommand{\cftsecpagefont}{\bfseries}
 
-% Chapter styling
-\titleformat{\chapter}[display]
-  {\bfseries\huge}{\chaptername~\thechapter}{20pt}{\Huge}
-\titlespacing*{\chapter}{0pt}{0pt}{20pt}
+% Set TOC depth (3 is fine)
+\setcounter{tocdepth}{3}
 
-% Indentation
-\setlength{\parindent}{20pt}
-
-% Adjust numbering depth
+% Section numbering depth (3 means subsubsection numbered)
 \setcounter{secnumdepth}{3}
 
-% summary of each chapter
+% Indent first paragraph of sections as well (with indentfirst package)
 
+% Hyperref options for better PDF bookmarks and look
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue,
+    citecolor=blue,
+    pdfauthor={Your Name},
+    pdftitle={Report Title},
+    pdfkeywords={keyword1, keyword2},
+    pdfstartview=FitH
+}
 
 
 \begin{document}
@@ -75,141 +115,28 @@
 % Chapter 1
 \include{chapters/chapter1v_1}
 % Chapter 2
-\chapter{Project Initiation}
-
-\minitoc
-
-\section{Introduction}
-\section{Software as a Service (SaaS)}
-\section{Analysis and Specification of Requirements}
-\subsection{Identification of Actors}
-\subsection{Identification of Requirements}
-\subsubsection{Functional Requirements}
-\subsubsection{Non-Functional Requirements}
-\section{Project Management with Scrum}
-\subsection{Scrum Roles}
-\subsection{Product Backlog}
-\subsection{Global Use Case Diagram}
-\subsection{Sprint Planning}
-\section{Technological Architecture of the Project}
-\section{Tools and Environment}
-\section{Conclusion}
-
+\include{chapters/chapter2v_1}
 % Chapter 3
-\chapter[Sprint I]{Study and Implementation of Sprint I: Infrastructure Setup}
-
-\minitoc
-\section{Introduction}
-\section{Sprint Planning}
-\subsection{Objectives of Sprint I}
-\subsection{Backlog of Sprint I}
-\section{Technologies and Tools Used}
-\subsection{Tool 1}
-\subsection{Tool 2}
-\section{Deliverables of Sprint I}
-\subsection{Milestone 1}
-\subsection{Milestone 2}
-\subsection{Milestone 3}
-\section{Retrospective of Sprint I}
-\section{Conclusion}
+\include{chapters/chapter3v_1}
 
 % Chapter 4
-\chapter[Sprint II]{Study and Implementation of Sprint II: Authentication \& Landing Page}
-
-\minitoc
-\section{Introduction}
-\section{Sprint Planning}
-\subsection{Objectives of Sprint II}
-\subsection{Backlog of Sprint II}
-\section{Technologies and Tools Used}
-\subsection{Tool 1}
-\subsection{Tool 2}
-\section{Deliverables of Sprint II}
-\subsection{Milestone 1}
-\subsection{Milestone 2}
-\subsection{Milestone 3}
-\section{Retrospective of Sprint II}
-\section{Conclusion}
+\include{chapters/chapter4v_1}
 
 % Chapter 5
-\chapter[Sprint III]{Study and Implementation of Sprint III: Project Management}
-
-\minitoc
-\section{Introduction}
-\section{Sprint Planning}
-\subsection{Objectives of Sprint III}
-\subsection{Backlog of Sprint III}
-\section{Technologies and Tools Used}
-\subsection{Tool 1}
-\subsection{Tool 2}
-\section{Deliverables of Sprint III}
-\subsection{Milestone 1}
-\subsection{Milestone 2}
-\subsection{Milestone 3}
-\section{Retrospective of Sprint III}
-\section{Conclusion}
+\include{chapters/chapter5v_1}
 
 % Chapter 6
-\chapter[Sprint IV]{Study and Implementation of Sprint IV: Diagram Management \& Workspace}
+\include{chapters/chapter6v_1}
 
-\minitoc
-\section{Introduction}
-\section{Sprint Planning}
-\subsection{Objectives of Sprint IV}
-\subsection{Backlog of Sprint IV}
-\section{Technologies and Tools Used}
-\subsection{Tool 1}
-\subsection{Tool 2}
-\section{Deliverables of Sprint IV}
-\subsection{Milestone 1}
-\subsection{Milestone 2}
-\subsection{Milestone 3}
-\section{Retrospective of Sprint IV}
-\section{Conclusion}
 
 % Chapter 7
-\chapter[Sprint V]{Study and Implementation of Sprint V: Community Interaction \& Profiles}
-
-\minitoc
-\section{Introduction}
-\section{Sprint Planning}
-\subsection{Objectives of Sprint V}
-\subsection{Backlog of Sprint V}
-\section{Technologies and Tools Used}
-\subsection{Tool 1}
-\subsection{Tool 2}
-\section{Deliverables of Sprint V}
-\subsection{Milestone 1}
-\subsection{Milestone 2}
-\subsection{Milestone 3}
-\section{Retrospective of Sprint V}
-\section{Conclusion}
+\include{chapters/chapter7v_1}
 
 % Chapter 8
-\chapter[Sprint VI]{Study and Implementation of Sprint VI: Administration}
-
-\minitoc
-\section{Introduction}
-\section{Sprint Planning}
-\subsection{Objectives of Sprint VI}
-\subsection{Backlog of Sprint VI}
-\section{Technologies and Tools Used}
-\subsection{Tool 1}
-\subsection{Tool 2}
-\section{Deliverables of Sprint VI}
-\subsection{Milestone 1}
-\subsection{Milestone 2}
-\subsection{Milestone 3}
-\section{Retrospective of Sprint VI}
-\section{Conclusion}
-
+\include{chapters/chapter8v_1}
 
 % Chapter 9
-\chapter{General Conclusion}
-
-\section{Summary of Achievements}
-\section{Challenges Faced}
-\section{Future Perspectives}
+\include{chapters/chapter9v_1}
 
 % Chapter 10
 \include{chapters/webography_v_1}
