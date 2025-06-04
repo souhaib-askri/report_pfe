@@ -1,0 +1,74 @@
+@startuml
+
+title NextAuth.js Sign Out Sequence Diagram
+
+actor User
+participant Browser
+participant "App Server" as AppServer
+participant "OAuth Provider" as Provider
+database "PostgreSQL Database" as PostgresDB
+
+User -> Browser: Click Sign Out
+activate Browser
+
+Browser -> AppServer: POST /api/auth/signout
+activate AppServer
+
+AppServer -> AppServer: Validate CSRF token
+AppServer -> PostgresDB: Query current session
+activate PostgresDB
+PostgresDB --> AppServer: Return session data
+deactivate PostgresDB
+
+alt Session exists
+    AppServer -> PostgresDB: DELETE FROM sessions WHERE id = ?
+    activate PostgresDB
+    PostgresDB --> AppServer: Session deleted
+    deactivate PostgresDB
+    
+    AppServer -> AppServer: Clear session cookie
+    AppServer -> AppServer: Generate new CSRF token
+    
+    alt OAuth Provider configured for logout
+        AppServer -> Provider: POST /oauth/revoke (access_token)
+        activate Provider
+        Provider --> AppServer: Token revoked successfully
+        deactivate Provider
+        
+        AppServer -> Provider: GET /oauth/logout?redirect_uri=...
+        activate Provider
+        Provider --> AppServer: Logout confirmation
+        deactivate Provider
+    end
+    
+    AppServer --> Browser: 200 OK + Set-Cookie (clear)
+    Browser -> Browser: Clear authentication cookies
+    Browser -> Browser: Update application state
+    Browser -> Browser: Redirect to sign-in page
+    Browser --> User: Show signed out state
+    
+else No active session
+    AppServer --> Browser: 200 OK (already signed out)
+    Browser --> User: Already signed out message
+end
+
+deactivate AppServer
+deactivate Browser
+
+note right of AppServer
+  NextAuth on App Server:
+  - CSRF validation
+  - Session cleanup
+  - Cookie management
+  - Database operations
+  - OAuth provider logout
+end note
+
+note right of Provider
+  OAuth Provider handles:
+  - Token revocation
+  - Provider-side logout
+  - Redirect confirmation
+end note
+
+@enduml

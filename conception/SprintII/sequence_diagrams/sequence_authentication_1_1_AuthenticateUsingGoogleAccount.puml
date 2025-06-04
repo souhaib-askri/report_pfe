@@ -1,0 +1,100 @@
+@startuml
+title NextAuth.js Sign In with Google/GitHub OAuth
+
+actor User
+participant Browser
+participant "App Server" as AppServer
+participant "OAuth Provider\n(Google/GitHub)" as Provider
+database "PostgreSQL Database" as PostgresDB
+
+User -> Browser: Click "Sign in with Google/GitHub"
+activate Browser
+
+Browser -> AppServer: GET /api/auth/signin/google
+activate AppServer
+
+AppServer -> AppServer: Generate state parameter
+AppServer -> AppServer: Generate code_verifier (PKCE)
+AppServer -> AppServer: Create authorization URL
+
+AppServer --> Browser: 302 Redirect to Provider
+Browser -> Provider: GET /oauth/authorize?client_id=...&redirect_uri=...&state=...
+activate Provider
+
+Provider -> Provider: Show login form
+Provider --> User: Display OAuth consent screen
+User -> Provider: Enter credentials & grant permissions
+Provider -> Provider: Validate credentials
+Provider -> Provider: Generate authorization code
+
+Provider --> Browser: 302 Redirect to callback URL
+deactivate Provider
+Browser -> AppServer: GET /api/auth/callback/google?code=...&state=...
+
+AppServer -> AppServer: Validate state parameter
+AppServer -> AppServer: Validate CSRF token
+
+AppServer -> Provider: POST /oauth/token
+activate Provider
+note right: Exchange code for tokens
+Provider -> Provider: Validate authorization code
+Provider --> AppServer: Return access_token, id_token, refresh_token
+deactivate Provider
+
+AppServer -> Provider: GET /user (with access_token)
+activate Provider
+Provider --> AppServer: Return user profile data
+deactivate Provider
+
+AppServer -> AppServer: Extract user info from tokens
+AppServer -> PostgresDB: SELECT * FROM users WHERE email = ?
+activate PostgresDB
+
+alt User exists
+    PostgresDB --> AppServer: Return existing user
+    AppServer -> PostgresDB: UPDATE users SET last_login = NOW()
+    PostgresDB --> AppServer: User updated
+else New user
+    PostgresDB --> AppServer: User not found
+    AppServer -> PostgresDB: INSERT INTO users (email, name, image, provider)
+    PostgresDB --> AppServer: New user created
+end
+
+AppServer -> PostgresDB: INSERT INTO sessions (user_id, expires, token)
+PostgresDB --> AppServer: Session created
+deactivate PostgresDB
+
+AppServer -> AppServer: Generate session cookie
+AppServer --> Browser: 302 Redirect + Set-Cookie (session)
+Browser -> Browser: Store session cookie
+Browser -> Browser: Redirect to dashboard/home
+
+Browser --> User: Show authenticated state
+deactivate AppServer
+deactivate Browser
+
+note right of AppServer
+  NextAuth handles:
+  - OAuth flow orchestration
+  - PKCE security
+  - Token management
+  - User creation/update
+  - Session management
+end note
+
+note right of Provider
+  OAuth Provider:
+  - User authentication
+  - Consent management
+  - Token issuance
+  - User profile API
+end note
+
+note right of PostgresDB
+  Database operations:
+  - User lookup/creation
+  - Session storage
+  - Profile updates
+end note
+
+@enduml

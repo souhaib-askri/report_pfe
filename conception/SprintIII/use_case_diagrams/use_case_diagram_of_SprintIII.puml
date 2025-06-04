@@ -1,0 +1,17 @@
+@startuml
+
+left to right direction
+
+actor "User" as User
+
+rectangle "Web Application" {
+    usecase "Authentication" as user_auth
+    usecase "Manage projects" as ManageProjects#Yellow
+}
+
+
+
+User -- ManageProjects
+ManageProjects ..> user_auth : <<include>>
+
+@enduml

@@ -1,0 +1,35 @@
+@startuml
+
+left to right direction
+
+actor "User" as User
+node "PlantUML Server" as PlantUMLServer
+
+rectangle "Web Application" {
+    usecase "Manage projects" as ManageProjects #Yellow
+    usecase "Create new project" as CreateNewProject
+    usecase "View project" as ViewProject
+    usecase "Update project details" as UpdateProjectDetails
+    usecase "Delete project" as DeleteProject
+    usecase "Download project diagrams compressed" as DownloadProjectDiagrams
+    usecase "Share project" as ShareProject
+    usecase "download svg format" as DownloadSVGFormat
+    usecase "download png format" as DownloadPNGFormat
+}
+
+User -- ManageProjects
+
+ManageProjects <|-- CreateNewProject
+ManageProjects <|-- ViewProject
+ManageProjects <|-- UpdateProjectDetails
+ManageProjects <|-- DeleteProject
+ManageProjects <|-- DownloadProjectDiagrams
+ManageProjects <|-- ShareProject
+
+DownloadProjectDiagrams ..> DownloadSVGFormat : <<extend>>
+DownloadProjectDiagrams ..> DownloadPNGFormat : <<extend>>
+
+DownloadSVGFormat -- PlantUMLServer : "Generate SVG"
+DownloadPNGFormat -- PlantUMLServer : "Generate PNG"
+
+@enduml

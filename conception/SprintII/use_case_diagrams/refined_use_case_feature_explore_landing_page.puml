@@ -1,0 +1,6 @@
+@startuml
+
+usecase "Explore landing page" as ExploreLandingPage
+
+
+@enduml

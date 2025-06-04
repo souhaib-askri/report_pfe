@@ -13,6 +13,7 @@ rectangle "Web Application" {
     usecase "interact in the community" as InteractWithCommunity
     usecase "Manage projects" as ManageProjects
     usecase "Manage diagrams" as ManageDiagrams
+    usecase "Manage workspace" as ManageWorkspace
     usecase "Edit profile" as EditProfile
 
     
@@ -30,12 +31,16 @@ User -- InteractWithCommunity
 User -- ManageProjects
 User -- ManageDiagrams
 User -- EditProfile
+User -- ManageWorkspace
 
 
 Admin -- ManageData
+
+
 InteractWithCommunity ..> user_auth : <<include>>
 ManageProjects ..> user_auth : <<include>>
 ManageDiagrams ..> user_auth : <<include>>
+ManageWorkspace ..> user_auth : <<include>>
 EditProfile ..> user_auth : <<include>>
 ManageData ..> admin_auth : <<include>>
 

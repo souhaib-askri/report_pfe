@@ -1,0 +1,130 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+skinparam classBackgroundColor LightBlue
+skinparam classBorderColor Navy
+skinparam classFontColor Black
+skinparam classFontSize 14
+
+
+
+class AIModel {
+  + idAIModel: String
+  + name: String
+  + description: String?
+  + createdAt: DateTime
+  + updatedAt: DateTime
+}
+
+class Conversation {
+  + idConversation: String
+  + idDiagram: String
+  + title: String?
+  + createdAt: DateTime
+  + updatedAt: DateTime
+}
+
+class Message {
+  + idMessage: String
+  + idConversation: String
+  + sender: String
+  + content: String
+  + createdAt: DateTime
+}
+
+class Account {
+  + idAccount: String
+  + idUser: String
+  + type: String
+  + provider: String
+  + providerAccountId: String
+  + refresh_token: String?
+  + access_token: String?
+  + expires_at: Int?
+  + token_type: String?
+  + scope: String?
+  + id_token: String?
+  + session_state: String?
+}
+
+class Session {
+  + idSession: String
+  + sessionToken: String
+  + idUser: String
+  + expires: DateTime
+}
+
+class User {
+  + idUser: String
+  + name: String?
+  + email: String?
+  + emailVerified: DateTime?
+  + image: String?
+  + createdAt: DateTime
+  + updatedAt: DateTime
+}
+
+class Project {
+  + idProject: String
+  + name: String
+  + description: String?
+  + imageUrl: String
+  + isPublic: Boolean
+  + idUser: String
+  + createdAt: DateTime
+  + updatedAt: DateTime
+}
+
+class Diagram {
+  + idDiagram: String
+  + name: String
+  + code: String
+  + idProject: String
+  + createdAt: DateTime
+  + updatedAt: DateTime
+  + imageUrl: String
+}
+
+class ProjectComment {
+  + idProjectComment: String
+  + content: String
+  + idProject: String
+  + idUser: String
+  + createdAt: DateTime
+  + updatedAt: DateTime
+}
+
+class ProjectLike {
+  + idProjectLike: String
+  + idProject: String
+  + idUser: String
+  + createdAt: DateTime
+}
+
+class CommentLike {
+  + idCommentLike: String
+  + idProjectComment: String
+  + idUser: String
+  + createdAt: DateTime
+}
+
+' العلاقات
+'Admin "1" -- "0..*" AIModel
+
+User "1" *-- "0..*" Account
+User "1" *-- "0..*" Session
+User "1" *-- "0..*" Message
+User "1" *-- "0..*" Project
+User "1" *-- "0..*" ProjectComment
+User "1" *-- "0..*" ProjectLike
+User "1" *-- "0..*" CommentLike
+ProjectComment "1" *-- "0..*" CommentLike
+
+AIModel "1" o-- "0..*" Message
+Conversation "1" *-- "0..*" Message
+Project "1" *-- "0..*" Diagram
+Project "1" *-- "0..*" ProjectComment
+Project "1" *-- "0..*" ProjectLike
+Diagram "1" *-- "1" Conversation
+
+@enduml

@@ -1,0 +1,42 @@
+@startuml
+title NextAuth.js - Stay Authenticated Across Devices
+
+actor User
+participant "Device 1" as Device1
+participant "Device 2" as Device2
+participant "App Server" as AppServer
+database "PostgreSQL Database" as PostgresDB
+
+== Sign In on Device 1 ==
+User -> Device1: Sign in with OAuth
+Device1 -> AppServer: OAuth flow
+AppServer -> PostgresDB: Create user + session 1
+AppServer --> Device1: Set session cookie
+Device1 --> User: Authenticated
+
+== Sign In on Device 2 (Same User) ==
+User -> Device2: Sign in with same OAuth account
+Device2 -> AppServer: OAuth flow
+AppServer -> PostgresDB: Find existing user + create session 2
+AppServer --> Device2: Set session cookie
+Device2 --> User: Authenticated
+
+== Access from Both Devices ==
+User -> Device1: Access app
+Device1 -> AppServer: Request with session 1
+AppServer -> PostgresDB: Validate session 1
+AppServer --> Device1: Authorized content
+
+User -> Device2: Access app
+Device2 -> AppServer: Request with session 2
+AppServer -> PostgresDB: Validate session 2
+AppServer --> Device2: Authorized content
+
+note over PostgresDB
+Sessions Table:
+- session_1 (Device 1)
+- session_2 (Device 2)
+- Same user_id
+end note
+
+@enduml
