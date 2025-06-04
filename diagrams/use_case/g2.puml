@@ -1,100 +1,164 @@
 @startuml
-
 left to right direction
+title PlantUML Platform - Use Case Diagram
 
+' Define actors
 actor "User" as User
+actor "Visitor" as Visitor
 actor "Admin" as Admin
+actor "AI System" as AI
+actor "PlantUML Server" as Server
 
-actor "AI model" as model
-
-rectangle "System" {
-    usecase "Explore community" as ExploreCommunity
-
-    usecase "User authentication" as user_auth
-    usecase "Admin authentication" as admin_auth
-
-    usecase "Interact with project" as InteractWithProject
-    usecase "like/unlike project" as LikeProject
-    usecase "read comment" as ReadComment
-    usecase "comment project" as CommentProject
-    usecase " update comment" as UpdateComment
-    usecase "delete comment" as DeleteComment
-    usecase "share project" as ShareProject
-    usecase "like/unlike comment" as LikeComment
-
-
-    usecase "Manage projects" as ManageProjects
-    usecase "create project" as CreateProject
-    usecase "update project" as UpdateProject
-    usecase "delete project" as DeleteProject
-    usecase "read project" as ReadProject
-    usecase "download project" as DownloadProject
-
-    usecase "Manage diagrams" as ManageDiagrams
-    usecase "create diagram" as CreateDiagram
-    usecase "Edit diagram" as EditDiagram
-    usecase "Edit manual" as EditManual
-    usecase "Edit automatic" as EditAutomatic
-    
-    usecase "delete diagram" as DeleteDiagram
-    usecase "read diagram" as ReadDiagram
-    usecase "download diagram" as DownloadDiagram
-    usecase "Edit profile" as EditProfile
-
-    
-
-    usecase "Manage data" as ManageData
-
+' Define system boundary
+rectangle "PlantUML Platform System" {
+  
+  ' Authentication Package
+  package "Authentication" {
+    usecase "Authenticate with Google" as UC1_1
+    usecase "Authenticate with GitHub" as UC1_2
+    usecase "Stay Authenticated Across Devices" as UC1_3
+    usecase "Logout" as UC1_4
+    usecase "Admin Authentication" as UC8_1
+  }
+  
+  ' Landing Page Package
+  package "Landing Page" {
+    usecase "Explore Landing Page" as UC2_1
+  }
+  
+  ' Project Management Package
+  package "Project Management" {
+    usecase "Create Project" as UC3_1
+    usecase "View Project Details" as UC3_2
+    usecase "Update Project Details" as UC3_3
+    usecase "Delete Project" as UC3_4
+    usecase "Download Project as ZIP" as UC3_5
+    usecase "Share Project" as UC3_6
+  }
+  
+  ' Diagram Management Package
+  package "Diagram Management" {
+    usecase "Create Diagram" as UC4_1
+    usecase "View Diagram" as UC4_2
+    usecase "Update Diagram Details" as UC4_3
+    usecase "Delete Diagram" as UC4_4
+    usecase "Download Diagram Image" as UC4_5
+  }
+  
+  ' Workspace Management Package
+  package "Workspace Management" {
+    usecase "Control Split Views" as UC5_1
+    usecase "Edit Diagram Code" as UC5_2
+    usecase "Chat with AI for Diagram Code" as UC5_3
+    usecase "Respond to User Requests" as UC5_4
+    usecase "Render Diagram Code" as UC5_5
+  }
+  
+  ' Community Interaction Package
+  package "Community Interaction" {
+    usecase "Explore Community" as UC6_1
+    usecase "Comment on Project" as UC6_3
+    usecase "Like/Unlike Project" as UC6_4
+    usecase "Share Community Project" as UC6_5
+    usecase "Update Comment" as UC6_6
+    usecase "Delete Comment" as UC6_7
+    usecase "Like/Unlike Comment" as UC6_8
+    usecase "Copy Community Project" as UC6_9
+  }
+  
+  ' Profile Management Package
+  package "Profile Management" {
+    usecase "Edit Profile" as UC7_1
+    usecase "View Public Projects" as UC7_2
+  }
+  
+  ' Administration Package
+  package "Administration" {
+    usecase "Manage Platform Data" as UC8_2
+  }
 }
 
-User -- ExploreCommunity
-User -- InteractWithProject
-User -- ManageProjects
-User -- EditProfile
+' User relationships
+User --> UC1_1
+User --> UC1_2
+User --> UC1_3
+User --> UC1_4
+User --> UC2_1
 
+User --> UC3_1
+User --> UC3_2
+User --> UC3_3
+User --> UC3_4
+User --> UC3_5
+User --> UC3_6
 
-Admin -- ManageData
+User --> UC4_1
+User --> UC4_2
+User --> UC4_3
+User --> UC4_4
+User --> UC4_5
 
+User --> UC5_1
+User --> UC5_2
+User --> UC5_3
 
-InteractWithProject ..> user_auth : <<include>>
-ManageProjects ..> user_auth : <<include>>
+User --> UC6_1
+User --> UC6_3
+User --> UC6_4
+User --> UC6_5
+User --> UC6_6
+User --> UC6_7
+User --> UC6_8
+User --> UC6_9
 
-EditProfile ..> user_auth : <<include>>
-ManageData ..> admin_auth : <<include>>
+User --> UC7_1
+User --> UC7_2
 
-InteractWithProject -- LikeProject
-InteractWithProject -- ReadComment
-InteractWithProject -- CommentProject
+' Visitor relationships
+Visitor --> UC2_1
+Visitor --> UC6_1
 
-CommentProject -- LikeComment
-CommentProject -- UpdateComment
-CommentProject -- DeleteComment
+' Admin relationships
+Admin --> UC8_1
+Admin --> UC8_2
 
-InteractWithProject -- ShareProject
-ManageProjects -- CreateProject
-ManageProjects -- UpdateProject
-ManageProjects -- DeleteProject
-ManageProjects -- ReadProject
-InteractWithProject -- DownloadProject
+' AI System relationships
+AI --> UC5_4
 
-ManageProjects -- ManageDiagrams
-ManageDiagrams -- CreateDiagram
-ManageDiagrams -- DeleteDiagram
-ManageDiagrams -- ReadDiagram
-ManageDiagrams -- DownloadDiagram
-ManageDiagrams -- EditDiagram
-EditDiagram -- EditAutomatic
-EditAutomatic -- model
-EditDiagram -- EditManual
+' PlantUML Server relationships
+Server --> UC5_5
 
+' Include relationships
+UC3_1 ..> UC4_1 : <<include>>
+UC3_2 ..> UC4_2 : <<include>>
+UC4_1 ..> UC5_2 : <<include>>
+UC4_3 ..> UC5_2 : <<include>>
+UC5_2 ..> UC5_5 : <<include>>
 
+' Extend relationships
+UC5_3 ..> UC5_2 : <<extend>>
+UC1_3 ..> UC1_1 : <<extend>>
+UC1_3 ..> UC1_2 : <<extend>>
+UC3_5 ..> UC3_2 : <<extend>>
+UC4_5 ..> UC4_2 : <<extend>>
 
+' Generalization relationships
+UC1_1 --|> UC1_4
+UC1_2 --|> UC1_4
+UC8_1 --|> UC1_4
 
+' Dependencies
+UC6_3 ..> UC6_1 : <<precedes>>
+UC6_4 ..> UC6_1 : <<precedes>>
+UC6_9 ..> UC6_1 : <<precedes>>
+UC6_6 ..> UC6_3 : <<precedes>>
+UC6_7 ..> UC6_3 : <<precedes>>
+UC6_8 ..> UC6_3 : <<precedes>>
 
-
-
-
-
-
+' Notes
+note right of UC5_3 : AI-powered feature\nfor enhanced user experience
+note right of UC5_5 : External service\nintegration required
+note bottom of UC6_1 : Available to both\nusers and visitors
+note right of UC8_2 : Includes user management,\ncontent moderation,\nand system monitoring
 
 @enduml

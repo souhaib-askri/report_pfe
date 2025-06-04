@@ -40,12 +40,12 @@ rectangle "System" {
     usecase "Manage Data" as ManageData
 }
 
-User --> ExploreCommunity
-User --> InteractWithProject
-User --> ManageProjects
-User --> EditProfile
+User -- ExploreCommunity
+User -- InteractWithProject
+User -- ManageProjects
+User -- EditProfile
 
-Admin --> ManageData
+Admin -- ManageData
 
 InteractWithProject ..> UserAuth : <<include>>
 ManageProjects ..> UserAuth : <<include>>

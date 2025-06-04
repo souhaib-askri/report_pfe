@@ -1,0 +1,47 @@
+@startuml
+
+left to right direction
+
+actor "User" as User
+actor "Admin" as Admin
+actor "Visitor" as Visitor
+
+rectangle "Web Application" {
+    usecase "Explore Landing Page" as ExploreLandingPage
+    usecase "Authentication" as user_auth
+
+    usecase "interact in the community" as InteractWithCommunity
+    usecase "Manage projects" as ManageProjects
+    usecase "Manage diagrams" as ManageDiagrams
+    usecase "Edit profile" as EditProfile
+
+    
+
+}
+
+rectangle "Administarion" {
+    usecase "Authentication" as admin_auth
+
+    usecase "Manage data" as ManageData
+}
+
+Visitor -- ExploreLandingPage
+User -- InteractWithCommunity
+User -- ManageProjects
+User -- ManageDiagrams
+User -- EditProfile
+
+
+Admin -- ManageData
+InteractWithCommunity ..> user_auth : <<include>>
+ManageProjects ..> user_auth : <<include>>
+ManageDiagrams ..> user_auth : <<include>>
+EditProfile ..> user_auth : <<include>>
+ManageData ..> admin_auth : <<include>>
+
+
+
+
+
+
+@enduml

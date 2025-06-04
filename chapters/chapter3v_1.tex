@@ -1,0 +1,231 @@
+\chapter[Sprint I]{Study and Implementation of Sprint I: Infrastructure Setup}
+
+\minitoc
+
+\section{Introduction}
+
+The first sprint of our project focuses on establishing a robust and scalable infrastructure foundation. This sprint is crucial as it sets up the development environment and core services that will support the entire application ecosystem. The infrastructure includes containerized services for database management, file storage, diagram generation, and the main web application framework.
+
+Our approach emphasizes modern DevOps practices using Docker containerization to ensure consistency across different development environments and facilitate easy deployment. This chapter documents the planning, implementation, and outcomes of Sprint I, providing insights into the technical decisions made and lessons learned during the infrastructure setup phase.
+
+\section{Sprint Planning}
+
+\subsection{Objectives of Sprint I}
+
+The primary objectives of Sprint I are centered around creating a solid foundation for the development process:
+
+\begin{itemize}
+    \item Establish a containerized development environment using Docker Compose
+    \item Set up PostgreSQL database with proper configuration and data persistence
+    \item Configure MinIO object storage for file management capabilities
+    \item Deploy PlantUML server for automated diagram generation
+    \item Create a Next.js application structure with Prisma ORM integration
+    \item Implement authentication system using NextAuth.js with Google OAuth
+    \item Configure environment variables and security settings
+    \item Ensure all services communicate effectively within the Docker network
+\end{itemize}
+
+\subsection{Backlog of Sprint I}
+
+The sprint backlog was organized into distinct components, each representing a critical piece of the infrastructure:
+
+\begin{enumerate}
+    \item \textbf{Database Setup}: Configure PostgreSQL container with persistent storage and proper networking
+    \item \textbf{Object Storage}: Set up MinIO service for file storage and management
+    \item \textbf{Diagram Service}: Deploy PlantUML server for automated diagram generation
+    \item \textbf{Web Application}: Initialize Next.js project with TypeScript and Tailwind CSS
+    \item \textbf{ORM Configuration}: Set up Prisma with PostgreSQL integration
+    \item \textbf{Authentication}: Implement NextAuth.js with Google OAuth provider
+    \item \textbf{Environment Configuration}: Secure configuration of all environment variables
+    \item \textbf{Integration Testing}: Verify all services work together seamlessly
+\end{enumerate}
+
+\section{Technologies and Tools Used}
+
+\subsection{PostgreSQL}
+
+PostgreSQL was chosen as our primary database management system due to its robust feature set, ACID compliance, and excellent support for complex queries. As an open-source relational database, it provides enterprise-level performance while maintaining flexibility for development. The containerized deployment ensures consistent database behavior across different environments and simplifies backup and migration processes.
+
+\subsection{MinIO}
+
+MinIO serves as our object storage solution, providing S3-compatible API for file management. This choice enables seamless integration with existing S3-based workflows while maintaining full control over our storage infrastructure. MinIO's lightweight nature and excellent performance make it ideal for development environments and can scale effectively for production use.
+
+\subsection{PlantUML Server}
+
+The PlantUML server provides automated diagram generation capabilities, essential for maintaining up-to-date system documentation. By containerizing this service, we ensure consistent diagram rendering and enable programmatic generation of architectural diagrams, sequence diagrams, and other technical documentation.
+
+\subsection{Next.js with Prisma}
+
+Next.js framework was selected for its full-stack capabilities, excellent developer experience, and built-in optimization features. Combined with Prisma ORM, it provides type-safe database access and seamless integration with PostgreSQL. This combination enables rapid development while maintaining code quality and performance.
+
+\subsection{Docker and Docker Compose}
+
+Docker containerization ensures environment consistency and simplifies deployment processes. Docker Compose orchestrates multiple services, making it easy to manage complex multi-container applications. This approach facilitates both development and production deployments while maintaining service isolation and scalability.
+
+\section{Deliverables of Sprint I}
+
+\subsection{Database Infrastructure}
+
+The PostgreSQL database service has been successfully containerized with the following configuration:
+
+\begin{verbatim}
+postgres:
+  image: postgres:16
+  container_name: my_postgres
+  environment:
+    POSTGRES_USER: user
+    POSTGRES_PASSWORD: password
+    POSTGRES_DB: database
+  ports:
+    - "5432:5432"
+  volumes:
+    - postgres_data:/var/lib/postgresql/data
+\end{verbatim}
+
+This configuration provides persistent data storage through Docker volumes and exposes the database on the standard PostgreSQL port. The database supports the main application's data requirements and includes proper backup capabilities.
+
+\subsubsection{Database Schema Design}
+
+The database schema has been designed to support the application's core functionality. The following class diagram illustrates the main entities and their relationships:
+
+\begin{figure}[H]
+    \centering
+    \fbox{\parbox{0.8\textwidth}{
+        \centering
+        \textbf{Database Entity Relationship Diagram}\\
+        \vspace{1cm}
+        \textit{Class diagram located at: diagrams/class/g1.svg}\\
+        \vspace{0.5cm}
+        \small{Note: Convert SVG to PDF format for LaTeX compatibility}
+    }}
+    \caption{Database Entity Relationship Diagram}
+    \label{fig:database_schema}
+\end{figure}
+
+The schema implements proper normalization principles and includes indexes for optimal query performance. Foreign key constraints ensure data integrity, while the design allows for future scalability and feature additions.
+
+\subsection{Object Storage Service}
+
+MinIO object storage has been configured to provide S3-compatible file management:
+
+\begin{verbatim}
+minio:
+  image: minio/minio
+  container_name: minio
+  ports:
+    - "9000:9000"   # API
+    - "9001:9001"   # Web UI
+  volumes:
+    - ./minio-data:/data
+  environment:
+    MINIO_ROOT_USER: minioadmin
+    MINIO_ROOT_PASSWORD: minioadmin
+  command: server /data --console-address ":9001"
+\end{verbatim}
+
+The service provides both API access on port 9000 and a web management interface on port 9001. Local data persistence is ensured through volume mounting, making it suitable for development and testing scenarios.
+
+\subsection{Diagram Generation Service}
+
+PlantUML server deployment enables automated diagram generation:
+
+\begin{verbatim}
+plantuml:
+  image: plantuml/plantuml-server
+  container_name: plantuml_server
+  ports:
+    - "3030:8080"
+  restart: unless-stopped
+\end{verbatim}
+
+This service processes PlantUML markup and generates various diagram formats, supporting the documentation and visualization needs of the project.
+
+\subsection{Web Application Container}
+
+The Next.js application has been containerized with proper development workflow support:
+
+\begin{verbatim}
+FROM node:20-alpine
+
+WORKDIR /app
+
+COPY package*.json ./
+COPY prisma ./prisma/
+
+RUN npm install
+RUN npx prisma generate
+
+COPY . .
+
+EXPOSE 3000
+
+CMD ["npm", "run", "dev"]
+\end{verbatim}
+
+This configuration ensures consistent Node.js environment, proper dependency management, and Prisma client generation during the build process.
+
+\section{Environment Configuration}
+
+The application requires several environment variables for proper operation:
+
+\begin{lstlisting}[caption=Environment Variables Configuration]
+    GOOGLE_CLIENT_SECRET=**********************
+    GOOGLE_CLIENT_ID=**********************
+    NEXTAUTH_URL=http://localhost:3000
+    NEXTAUTH_SECRET="**********************"
+    DATABASE_URL=postgresql://user:password@localhost:5434/database?schema=public
+    PLANTUML_SERVER=http://localhost:3030
+    GEMINI_API_KEY=**********************
+\end{lstlisting}
+
+These variables configure authentication services, database connections, external APIs, and service endpoints. Proper security measures have been implemented to protect sensitive configuration data.
+
+\section{Retrospective of Sprint I}
+
+\subsection{Achievements}
+
+Sprint I successfully accomplished all primary objectives:
+
+\begin{itemize}
+    \item Complete infrastructure setup with all services running in containers
+    \item Successful integration between PostgreSQL, MinIO, PlantUML, and Next.js application
+    \item Working authentication system with Google OAuth integration
+    \item Proper environment configuration and security implementation
+    \item Database schema design and Prisma ORM integration
+    \item Comprehensive documentation of all configurations
+\end{itemize}
+
+The infrastructure provides a solid foundation for subsequent development sprints and supports all planned application features.
+
+\subsection{Challenges and Lessons Learned}
+
+Several challenges were encountered and resolved during the sprint:
+
+\textbf{Port Conflicts}: Initial configuration had port conflicts between services, resolved by careful port mapping and documentation.
+
+\textbf{Database Connectivity}: Networking between containers required adjustment of connection strings and proper service naming.
+
+\textbf{Environment Variable Management}: Ensuring secure handling of sensitive data while maintaining development workflow efficiency.
+
+\textbf{Prisma Schema Synchronization}: Managing database migrations and schema generation in containerized environment required careful coordination.
+
+\subsection{Areas for Enhancement}
+
+Future improvements identified for the infrastructure:
+
+\begin{itemize}
+    \item Implementation of health checks for all services
+    \item Addition of logging and monitoring solutions
+    \item Database backup automation
+    \item SSL/TLS configuration for production readiness
+    \item Performance optimization for development workflow
+    \item Integration of CI/CD pipeline preparation
+\end{itemize}
+
+\section{Conclusion}
+
+Sprint I has successfully established a comprehensive development infrastructure that provides all necessary services for the project. The containerized approach ensures consistency, scalability, and ease of deployment across different environments. The integration of PostgreSQL, MinIO, PlantUML, and Next.js creates a powerful foundation for building modern web applications.
+
+The infrastructure setup demonstrates best practices in DevOps, security, and software architecture. All services are properly configured, documented, and tested, providing a reliable foundation for subsequent development phases. The lessons learned during this sprint will inform future infrastructure decisions and improvements.
+
+The successful completion of Sprint I enables the development team to focus on business logic and user features in upcoming sprints, knowing that the underlying infrastructure is robust, scalable, and well-documented. This foundation supports both current development needs and future scaling requirements.
