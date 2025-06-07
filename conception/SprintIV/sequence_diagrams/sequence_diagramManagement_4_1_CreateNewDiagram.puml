@@ -1,0 +1,33 @@
+@startuml
+title Create New Diagram - Sequence Diagram
+
+actor User
+participant Frontend
+participant Backend
+database Database
+
+ref over User, Database: Authenticate
+
+activate Frontend
+
+User -> Frontend: Click "Create New Diagram"
+Frontend -> Frontend: Show diagram creation form
+
+User -> Frontend: Enter diagram details (name, description)
+Frontend -> Backend: Send diagram metadata
+activate Backend
+
+Backend -> Database: Create new diagram record
+activate Database
+Database --> Backend: Return diagram ID
+deactivate Database
+
+Backend --> Frontend: Send diagram ID & confirmation
+deactivate Backend
+
+Frontend -> Frontend: Initialize empty editor
+Frontend -> Frontend: Set diagram as active
+Frontend --> User: Show empty diagram workspace
+deactivate Frontend
+
+@enduml

@@ -1,0 +1,35 @@
+@startuml
+title Save Changes - Sequence Diagram
+
+actor User
+participant Frontend
+participant Backend
+participant MinIO
+database Database
+
+ref over User, Database: Authenticate
+
+ref over User, Database: Load Workspace
+
+activate Frontend
+
+User -> Frontend: Click "Save"
+Frontend -> Backend: Send diagram image & PlantUML code
+activate Backend
+
+Backend -> MinIO: Store diagram image
+activate MinIO
+MinIO --> Backend: Return image link
+deactivate MinIO
+
+Backend -> Database: Save PlantUML code & image link
+activate Database
+Database --> Backend: Confirm save
+deactivate Database
+
+Backend --> Frontend: Confirm save complete
+deactivate Backend
+
+deactivate Frontend
+
+@enduml

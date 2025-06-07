@@ -15,7 +15,7 @@ repeat
     :Send message;
     
     |Backend|
-    :Forward to AI model;
+    :send prompt with RAGs\n to AI model;
     
     |AI Model|
     :Generate response;
@@ -26,7 +26,7 @@ repeat
     :Send the code to frontend;
     
     |Frontend|
-    :Populate editor;
+    :Populate editor \n and chatt;
   endif
   
   :Send code to backend;

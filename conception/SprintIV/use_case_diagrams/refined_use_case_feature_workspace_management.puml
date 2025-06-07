@@ -2,36 +2,40 @@
 left to right direction
 
 actor "User" as User
+node "MinIo" as MinIo
 node "AI Model" as AIModel
 node "PlantUML Server" as PlantUMLServer
-node "MinIo" as MinIo
+
 
 rectangle "Web Application" {
     usecase "Manage Workspace" as ManageWorkspace#Yellow
+    usecase "load workspace" as LoadWorkspace
     usecase "chat with AI" as ChatWithAI
+    usecase "clear chat" as ClearChat
     usecase "edit diagram" as EditDiagram
     usecase "save changes" as SaveChanges
 
     usecase "Download Diagram Image" as DownloadDiagramImage
-    usecase "download as svg format" as DownloadSVGFormat
-    usecase "download as png format" as DownloadPNGFormat
+
 }
 
 User -- ManageWorkspace
+ChatWithAI --- AIModel
 
+ManageWorkspace <|-- LoadWorkspace
 ManageWorkspace <|-- ChatWithAI
-ManageWorkspace <|-- SaveChanges
+EditDiagram <.. SaveChanges : <<extend>>
 ManageWorkspace <|-- EditDiagram
 ManageWorkspace <|-- DownloadDiagramImage
-ChatWithAI <.. EditDiagram : <<extend>>
-DownloadDiagramImage <.. DownloadSVGFormat : <<extend>>
-DownloadDiagramImage <.. DownloadPNGFormat : <<extend>>
-DownloadSVGFormat -- PlantUMLServer
-DownloadPNGFormat -- PlantUMLServer
-EditDiagram -- PlantUMLServer
+ChatWithAI <.. ClearChat : <<extend>>
+
+
 SaveChanges -- MinIo 
 
-ChatWithAI -- AIModel
+
+DownloadDiagramImage --- PlantUMLServer
+LoadWorkspace --- PlantUMLServer
+EditDiagram --- PlantUMLServer
 
 
 @enduml

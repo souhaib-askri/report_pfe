@@ -1,0 +1,35 @@
+@startuml
+title Download Diagram Image - Sequence Diagram
+
+actor User
+participant Frontend
+participant Backend
+participant "PlantUML Server" as PlantUML
+
+ref over User, PlantUML: Authenticate
+
+ref over User, PlantUML: Load Workspace
+
+activate Frontend
+
+User -> Frontend: Request download
+Frontend -> Frontend: Show format options (SVG/PNG)
+
+User -> Frontend: Select format (SVG or PNG)
+Frontend -> Backend: Send PlantUML code & format choice
+activate Backend
+
+Backend -> PlantUML: Request diagram in selected format
+activate PlantUML
+PlantUML -> PlantUML: Render diagram in requested format
+PlantUML --> Backend: Return diagram file
+deactivate PlantUML
+
+Backend --> Frontend: Send diagram file
+deactivate Backend
+
+Frontend -> Frontend: Trigger file download
+Frontend --> User: Download diagram file
+deactivate Frontend
+
+@enduml

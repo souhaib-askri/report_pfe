@@ -1,0 +1,61 @@
+@startuml
+title AI Chat and Diagram Editing - Sequence Diagram
+
+actor User
+participant Frontend
+participant Backend
+participant "AI Model" as AI
+participant "PlantUML Server" as PlantUML
+database Database
+
+ref over User, Database: Authenticate
+
+ref over User, Database: Load Workspace
+
+activate Frontend
+
+loop AI Chat & Editing Loop
+    User -> Frontend: Describe problem in chat
+    
+    Frontend -> Backend: Send user message
+    activate Backend
+    
+    Backend -> Backend: Prepare prompt with RAGs
+    Backend -> AI: Send enhanced prompt
+    activate AI
+    
+    AI -> AI: Process request & generate response
+    AI --> Backend: Return response with PlantUML code
+    deactivate AI
+    
+    Backend -> Database: Save conversation
+    activate Database
+    Database --> Backend: Confirm save
+    deactivate Database
+    
+    Backend -> Backend: Extract PlantUML code (regex)
+    
+    Backend --> Frontend: Send AI response & PlantUML code
+    Frontend -> Frontend: Populate chat with conversation
+    Frontend -> Frontend: Populate editor with code
+    
+    Frontend -> Backend: Send PlantUML code for rendering
+    Backend -> PlantUML: Forward PlantUML code
+    activate PlantUML
+    
+    PlantUML -> PlantUML: Process & render diagram
+    PlantUML --> Backend: Return diagram image
+    deactivate PlantUML
+    
+    Backend --> Frontend: Send diagram image
+    deactivate Backend
+    
+    Frontend -> Frontend: Update diagram display
+    Frontend --> User: Show AI response & updated diagram
+    
+    User -> User: Review diagram & response
+end
+
+deactivate Frontend
+
+@enduml
