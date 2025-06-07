@@ -1,0 +1,20 @@
+@startuml
+left to right direction
+
+actor "User" as User
+
+rectangle "Web Application" {
+    usecase "Manage diagrams" as ManageDiagrams#Yellow
+    usecase "Manage workspace" as ManageWorkspace#Yellow
+    usecase "Authenticate" as Authenticate
+}
+
+User -- ManageDiagrams
+User -- ManageWorkspace
+
+ManageDiagrams ..> Authenticate : <<include>>
+ManageWorkspace ..> Authenticate : <<include>>
+
+
+
+@enduml

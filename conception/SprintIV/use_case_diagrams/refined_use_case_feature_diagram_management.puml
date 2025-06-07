@@ -1,0 +1,32 @@
+@startuml
+left to right direction
+
+actor "User" as User
+node "PlantUML Server" as PlantUMLServer
+
+rectangle "Web Application" {
+    usecase "Manage diagrams" as ManageDiagrams#Yellow
+    usecase "Create Diagram" as CreateDiagram
+    usecase "View Diagram" as ViewDiagram
+    usecase "Edit Diagram" as EditDiagram
+    usecase "Delete Diagram" as DeleteDiagram
+    usecase "Download Diagram Image" as DownloadDiagramImage
+    usecase "download as svg format" as DownloadSVGFormat
+    usecase "download as png format" as DownloadPNGFormat
+}
+
+User -- ManageDiagrams
+
+ManageDiagrams <|-- CreateDiagram
+ManageDiagrams <|-- ViewDiagram
+ManageDiagrams <|-- EditDiagram
+ManageDiagrams <|-- DeleteDiagram
+ManageDiagrams <|-- DownloadDiagramImage
+DownloadDiagramImage <.. DownloadSVGFormat : <<extend>>
+DownloadDiagramImage <.. DownloadPNGFormat : <<extend>>
+DownloadSVGFormat -- PlantUMLServer : "Generate SVG diagram"
+DownloadPNGFormat -- PlantUMLServer : "Generate PNG diagram"
+EditDiagram -- PlantUMLServer : "Generate svg diagram"
+
+
+@enduml

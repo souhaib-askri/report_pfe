@@ -26,8 +26,8 @@ ManageProjects <|-- DeleteProject
 ManageProjects <|-- DownloadProjectDiagrams
 ManageProjects <|-- ShareProject
 
-DownloadProjectDiagrams ..> DownloadSVGFormat : <<extend>>
-DownloadProjectDiagrams ..> DownloadPNGFormat : <<extend>>
+DownloadProjectDiagrams <.. DownloadSVGFormat : <<extend>>
+DownloadProjectDiagrams <.. DownloadPNGFormat : <<extend>>
 
 DownloadSVGFormat -- PlantUMLServer : "Generate SVG"
 DownloadPNGFormat -- PlantUMLServer : "Generate PNG"

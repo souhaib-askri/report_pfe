@@ -1,0 +1,23 @@
+@startuml
+left to right direction
+
+actor "User" as User
+node "AI Model" as AIModel
+
+rectangle "Web Application" {
+    usecase "Control and split views" as ControlAndSplitViews
+    usecase "Manage Workspace" as ManageWorkspace#Yellow
+    usecase "chat with AI" as ChatWithAI
+    usecase "edit diagram" as EditDiagram
+}
+
+User -- ManageWorkspace
+
+ManageWorkspace <|-- ChatWithAI
+ManageWorkspace <|-- ControlAndSplitViews
+ChatWithAI <.. EditDiagram : <<extend>>
+
+ChatWithAI --- AIModel
+
+
+@enduml

@@ -1,0 +1,70 @@
+@startuml
+title Diagram Generation Flow
+
+|Frontend|
+start
+:Create/open diagram;
+
+repeat
+  :Editing diagram;
+  
+  if (Input method?) then (Manual)
+    :Type PlantUML code;
+    :Detect pause (3s);
+  else (AI)
+    :Send message;
+    
+    |Backend|
+    :Forward to AI model;
+    
+    |AI Model|
+    :Generate PlantUML response;
+    
+    |Backend|
+    :Save conversation;
+    
+    |Database|
+    :Store messages;
+    :Extract code (regex);
+    :Send code to frontend;
+    
+    |Frontend|
+    :Populate editor;
+  endif
+  
+  :Send code to backend;
+  
+  |Backend|
+  :Forward to PlantUML Server;
+  
+  |PlantUML Server|
+  :Render diagram;
+  
+  |Backend|
+  :Return diagram;
+  
+  |Frontend|
+  :Update display;
+  
+repeat while (Save changes?) is (Continue editing)
+-> Save;
+
+|Frontend|
+:Send diagram & code to backend;
+
+|Backend|
+:Forward diagram to MinIO;
+
+|MinIO|
+:Store diagram image;
+:Return image link;
+
+|Backend|
+:Save code & image link;
+
+|Database|
+:Store diagram data;
+
+stop
+
+@enduml
