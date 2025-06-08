@@ -20,10 +20,10 @@ User -> Frontend: Confirm deletion
 Frontend -> Backend: Send delete request with diagram ID
 activate Backend
 
-Backend -> Database: Get diagram image link
-activate Database
-Database --> Backend: Return image link
-deactivate Database
+' Backend -> Database: Get diagram image link
+' activate Database
+' Database --> Backend: Return image link
+' deactivate Database
 
 Backend -> MinIO: Delete diagram image
 activate MinIO

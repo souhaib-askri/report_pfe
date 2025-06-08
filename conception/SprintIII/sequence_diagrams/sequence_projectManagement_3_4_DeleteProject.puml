@@ -18,13 +18,13 @@ User -> Frontend: Confirm deletion
 Frontend -> Backend: Send delete request with project ID
 activate Backend
 
-Backend -> Database: Get all diagram IDs & image links for project
+Backend -> Database: Get all diagram IDs 
 activate Database
-Database --> Backend: Return diagram IDs & image links
+Database --> Backend: Return diagram IDs 
 deactivate Database
 
 loop For each diagram image
-    Backend -> MinIO: Delete diagram image by link
+    Backend -> MinIO: Delete diagram image 
     activate MinIO
     MinIO --> Backend: Confirm image deletion
     deactivate MinIO
