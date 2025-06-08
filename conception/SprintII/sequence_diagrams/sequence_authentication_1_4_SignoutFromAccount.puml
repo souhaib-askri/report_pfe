@@ -8,6 +8,9 @@ participant "App Server" as AppServer
 participant "OAuth Provider" as Provider
 database "PostgreSQL Database" as PostgresDB
 
+ref over User, PostgresDB: Authenticate
+
+
 User -> Browser: Click Sign Out
 activate Browser
 
