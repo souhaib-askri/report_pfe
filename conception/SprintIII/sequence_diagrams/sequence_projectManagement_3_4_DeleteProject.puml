@@ -1,0 +1,45 @@
+@startuml
+title Delete Project - Sequence Diagram
+
+actor User
+participant Frontend
+participant Backend
+participant MinIO
+database Database
+
+ref over User, Database: Authenticate
+
+activate Frontend
+
+User -> Frontend: Select project to delete
+Frontend -> Frontend: Show delete confirmation dialog
+
+User -> Frontend: Confirm deletion
+Frontend -> Backend: Send delete request with project ID
+activate Backend
+
+Backend -> Database: Get all diagram IDs & image links for project
+activate Database
+Database --> Backend: Return diagram IDs & image links
+deactivate Database
+
+loop For each diagram image
+    Backend -> MinIO: Delete diagram image by link
+    activate MinIO
+    MinIO --> Backend: Confirm image deletion
+    deactivate MinIO
+end
+
+Backend -> Database: Delete project (cascade deletes diagrams)
+activate Database
+Database --> Backend: Confirm project & diagrams deletion
+deactivate Database
+
+Backend --> Frontend: Confirm complete deletion
+deactivate Backend
+
+Frontend -> Frontend: Remove project from projects list
+Frontend --> User: Show deletion confirmation
+deactivate Frontend
+
+@enduml

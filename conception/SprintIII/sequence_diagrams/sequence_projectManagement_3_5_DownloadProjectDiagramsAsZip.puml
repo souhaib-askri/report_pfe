@@ -1,0 +1,42 @@
+@startuml
+title Download Project - Sequence Diagram
+
+actor User
+participant Frontend
+participant Backend
+participant "PlantUML Server" as PlantUML
+database Database
+
+ref over User, Database: Authenticate
+
+activate Frontend
+
+User -> Frontend: click on "Download"
+Frontend -> Frontend: Show format options (SVG/PNG)
+
+User -> Frontend: Select format (SVG or PNG)
+Frontend -> Backend: Send project ID & format choice
+activate Backend
+
+Backend -> Database: Get all diagram codes for project
+activate Database
+Database --> Backend: Return project diagrams & PlantUML codes
+deactivate Database
+
+loop For each diagram
+    Backend -> PlantUML: Request diagram in selected format
+    activate PlantUML
+    PlantUML -> PlantUML: Render diagram in requested format
+    PlantUML --> Backend: Return diagram file
+    deactivate PlantUML
+end
+
+Backend -> Backend: Compress all diagrams into ZIP file
+Backend --> Frontend: Send ZIP file
+deactivate Backend
+
+Frontend -> Frontend: Trigger file download
+Frontend --> User: Download project ZIP file
+deactivate Frontend
+
+@enduml

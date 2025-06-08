@@ -13,8 +13,7 @@ rectangle "Web Application" {
     usecase "Delete project" as DeleteProject
     usecase "Download project diagrams compressed" as DownloadProjectDiagrams
     usecase "Share project" as ShareProject
-    usecase "download svg format" as DownloadSVGFormat
-    usecase "download png format" as DownloadPNGFormat
+
 }
 
 User -- ManageProjects
@@ -26,10 +25,5 @@ ManageProjects <|-- DeleteProject
 ManageProjects <|-- DownloadProjectDiagrams
 ManageProjects <|-- ShareProject
 
-DownloadProjectDiagrams <.. DownloadSVGFormat : <<extend>>
-DownloadProjectDiagrams <.. DownloadPNGFormat : <<extend>>
-
-DownloadSVGFormat -- PlantUMLServer : "Generate SVG"
-DownloadPNGFormat -- PlantUMLServer : "Generate PNG"
-
+DownloadProjectDiagrams -- PlantUMLServer
 @enduml

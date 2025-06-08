@@ -1,0 +1,33 @@
+@startuml
+title Share Project - Sequence Diagram
+
+actor User
+participant Frontend
+participant Backend
+database Database
+
+ref over User, Database: Authenticate
+
+activate Frontend
+
+User -> Frontend: Click "Share Project"
+Frontend -> Backend: Request share link for project
+activate Backend
+
+Backend -> Database: Generate/Get public share token
+activate Database
+Database -> Database: Create unique share token
+Database -> Database: Store token with project ID
+Database --> Backend: Return share token
+deactivate Database
+
+Backend -> Backend: Generate public project URL
+Backend --> Frontend: Send public share link
+deactivate Backend
+
+Frontend -> Frontend: Display share link dialog
+Frontend -> Frontend: Provide copy to clipboard option
+Frontend --> User: Show shareable public link
+deactivate Frontend
+
+@enduml

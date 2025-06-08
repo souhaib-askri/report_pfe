@@ -1,0 +1,36 @@
+@startuml
+title View Project - Sequence Diagram
+
+actor User
+participant Frontend
+participant Backend
+participant MinIO
+database Database
+
+ref over User, Database: Authenticate
+
+activate Frontend
+
+User -> Frontend: Click on project
+Frontend -> Backend: Request project details
+activate Backend
+
+Backend -> Database: Get project info & diagram list
+activate Database
+Database --> Backend: Return project data & diagram metadata
+deactivate Database
+
+Backend -> MinIO: Request diagram images using links
+activate MinIO
+MinIO --> Backend: Return diagram images
+deactivate MinIO
+
+Backend --> Frontend: Send project data & diagram images
+deactivate Backend
+
+Frontend -> Frontend: Display project information
+Frontend -> Frontend: Render diagram thumbnails
+Frontend --> User: Show project workspace with diagrams
+deactivate Frontend
+
+@enduml

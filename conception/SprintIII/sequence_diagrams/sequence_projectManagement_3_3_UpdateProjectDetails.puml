@@ -1,0 +1,34 @@
+@startuml
+title Update Project Details - Sequence Diagram
+
+actor User
+participant Frontend
+participant Backend
+database Database
+
+ref over User, Database: Authenticate
+
+ref over User, Database: View Project
+
+activate Frontend
+
+User -> Frontend: Click "Update Project"
+Frontend -> Frontend: Show project update form
+
+User -> Frontend: Fill project form (name, description, isPublic, etc.)
+User -> Frontend: Click "Submit"
+Frontend -> Backend: Send updated project data
+activate Backend
+
+Backend -> Database: Update project record
+activate Database
+Database --> Backend: Confirm update
+deactivate Database
+
+Backend --> Frontend: Send update confirmation
+deactivate Backend
+
+Frontend --> User: Show success message
+deactivate Frontend
+
+@enduml

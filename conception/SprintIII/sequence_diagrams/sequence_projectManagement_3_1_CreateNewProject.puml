@@ -1,0 +1,33 @@
+@startuml
+title Create New Project - Sequence Diagram
+
+actor User
+participant Frontend
+participant Backend
+database Database
+
+ref over User, Database: Authenticate
+
+activate Frontend
+
+User -> Frontend: Click "Create New Project"
+Frontend -> Frontend: Show project creation form
+
+User -> Frontend: Enter project details (name, description)
+Frontend -> Backend: Send project metadata
+activate Backend
+
+Backend -> Database: Create new project record
+activate Database
+Database --> Backend: Return project ID
+deactivate Database
+
+Backend --> Frontend: Send project ID & confirmation
+deactivate Backend
+
+Frontend -> Frontend: Add project to projects list
+Frontend -> Frontend: Navigate to project workspace
+Frontend --> User: Show empty project workspace
+deactivate Frontend
+
+@enduml
