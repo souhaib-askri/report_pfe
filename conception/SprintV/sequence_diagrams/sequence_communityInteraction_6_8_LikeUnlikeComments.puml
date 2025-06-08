@@ -1,0 +1,33 @@
+@startuml
+title Like/Unlike Comments - Sequence Diagram
+
+actor User
+participant Frontend
+participant Backend
+database Database
+
+ref over User, Database: Authenticate
+
+ref over User, Database: View Project
+
+activate Frontend
+
+User -> Frontend: Click like/unlike on comment
+
+Frontend -> Backend: Send comment like/unlike request
+activate Backend
+
+Backend -> Database: Update comment likes
+activate Database
+Database --> Backend: Return updated like count
+deactivate Database
+
+Backend --> Frontend: Send new like status & count
+deactivate Backend
+
+Frontend -> Frontend: Update comment like button
+Frontend -> Frontend: Update like counter
+Frontend --> User: Show updated like status
+deactivate Frontend
+
+@enduml

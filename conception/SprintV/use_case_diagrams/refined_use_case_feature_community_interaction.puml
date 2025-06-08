@@ -1,0 +1,34 @@
+@startuml
+title Community Interaction Use Case Diagram
+
+left to right direction
+
+actor User
+actor Visitor
+
+rectangle "Web Application" {
+  usecase "Interact with Community" as Community#Yellow
+  usecase "Explore Community" as Explore
+  usecase "Comment on Projects" as Comment
+  usecase "Like/Unlike Projects" as LikeProject
+  usecase "Share Projects" as Share
+  usecase "Update Comments" as UpdateComment
+  usecase "Delete Comments" as DeleteComment
+  usecase "Like/Unlike Comments" as LikeComment
+  usecase "Copy Projects to Workspace" as CopyProject
+}
+
+
+User -- Community
+Community <|-- Explore
+Visitor --- Explore
+Community <|-- Comment
+Community <|-- LikeProject
+Community <|-- Share
+Community <|-- CopyProject
+
+Comment <.. LikeComment : <<extend>>
+Comment <.. UpdateComment : <<extend>>
+Comment <.. DeleteComment : <<extend>>
+
+@enduml

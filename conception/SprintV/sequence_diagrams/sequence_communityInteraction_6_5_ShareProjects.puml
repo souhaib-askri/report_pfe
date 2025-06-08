@@ -1,0 +1,34 @@
+@startuml
+title Share Projects - Sequence Diagram
+
+actor User
+participant Frontend
+participant Backend
+database Database
+
+ref over User, Database: Authenticate
+
+ref over User, Database: View Project
+
+activate Frontend
+
+User -> Frontend: Click share button
+Frontend -> Frontend: Show share options
+
+User -> Frontend: Select share method
+Frontend -> Backend: Request shareable link
+activate Backend
+
+Backend -> Database: Generate/retrieve project share data
+activate Database
+Database --> Backend: Return project share info
+deactivate Database
+
+Backend --> Frontend: Send shareable link
+deactivate Backend
+
+Frontend -> Frontend: Copy link to clipboard
+Frontend --> User: Show share confirmation
+deactivate Frontend
+
+@enduml

@@ -1,0 +1,39 @@
+@startuml
+title Copy Projects to Workspace - Sequence Diagram
+
+actor User
+participant Frontend
+participant Backend
+database Database
+
+ref over User, Database: Authenticate
+
+ref over User, Database: View Project
+
+activate Frontend
+
+User -> Frontend: Click "Copy to Workspace"
+Frontend -> Frontend: Show copy confirmation
+
+User -> Frontend: Confirm copy action
+
+Frontend -> Backend: Send copy project request
+activate Backend
+
+Backend -> Database: Get project data
+activate Database
+Database --> Backend: Return project content
+deactivate Database
+
+Backend -> Database: Create new project in user workspace
+activate Database
+Database --> Backend: Return new project ID
+deactivate Database
+
+Backend --> Frontend: Confirm project copied
+deactivate Backend
+
+Frontend --> User: Show copy success message
+deactivate Frontend
+
+@enduml

@@ -1,0 +1,35 @@
+@startuml
+title Delete Comments - Sequence Diagram
+
+actor User
+participant Frontend
+participant Backend
+database Database
+
+ref over User, Database: Authenticate
+
+ref over User, Database: View Project
+
+activate Frontend
+
+User -> Frontend: Click delete comment
+Frontend -> Frontend: Show delete confirmation
+
+User -> Frontend: Confirm deletion
+
+Frontend -> Backend: Send delete request
+activate Backend
+
+Backend -> Database: Delete comment from database
+activate Database
+Database --> Backend: Confirm comment deleted
+deactivate Database
+
+Backend --> Frontend: Confirm deletion
+deactivate Backend
+
+Frontend -> Frontend: Remove comment from display
+Frontend --> User: Show deletion confirmation
+deactivate Frontend
+
+@enduml

@@ -12,7 +12,6 @@ rectangle "Web Application" {
     usecase "Update project details" as UpdateProjectDetails
     usecase "Delete project" as DeleteProject
     usecase "Download project diagrams compressed" as DownloadProjectDiagrams
-    usecase "Share project" as ShareProject
 
 }
 
@@ -23,7 +22,6 @@ ManageProjects <|-- ViewProject
 ManageProjects <|-- UpdateProjectDetails
 ManageProjects <|-- DeleteProject
 ManageProjects <|-- DownloadProjectDiagrams
-ManageProjects <|-- ShareProject
 
 DownloadProjectDiagrams -- PlantUMLServer
 @enduml

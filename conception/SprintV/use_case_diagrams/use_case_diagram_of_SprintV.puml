@@ -1,0 +1,20 @@
+@startuml
+title Use Case Diagram of Sprint V
+
+left to right direction
+
+actor User
+
+rectangle "Web Application" {
+  usecase "Authenticate" as Auth
+  usecase "Interact with Community" as Community#Yellow
+  usecase "Profile Management" as Profile#Yellow
+}
+
+User -- Community
+User -- Profile
+
+Community ..> Auth : <<include>>
+Profile ..> Auth : <<include>>
+
+@enduml

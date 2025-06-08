@@ -1,0 +1,18 @@
+@startuml
+title Profile Management Use Case Diagram
+
+left to right direction
+
+actor User
+
+rectangle "Web Application" {
+    usecase "Manage profiles" as ManageProfile#Yellow
+    usecase "Edit Profile" as EditProfile
+    usecase "View Public Projects on Profile" as ViewProjects
+}
+
+User -- ManageProfile
+ManageProfile -- EditProfile
+ManageProfile -- ViewProjects
+
+@enduml

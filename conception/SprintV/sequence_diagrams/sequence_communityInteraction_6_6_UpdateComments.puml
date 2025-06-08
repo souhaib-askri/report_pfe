@@ -1,0 +1,36 @@
+@startuml
+title Update Comments - Sequence Diagram
+
+actor User
+participant Frontend
+participant Backend
+database Database
+
+ref over User, Database: Authenticate
+
+ref over User, Database: View Project
+
+activate Frontend
+
+User -> Frontend: Click edit comment
+Frontend -> Frontend: Show edit form with current comment
+
+User -> Frontend: Modify comment text
+User -> Frontend: Submit updated comment
+
+Frontend -> Backend: Send updated comment
+activate Backend
+
+Backend -> Database: Update comment in database
+activate Database
+Database --> Backend: Confirm comment updated
+deactivate Database
+
+Backend --> Frontend: Return updated comment
+deactivate Backend
+
+Frontend -> Frontend: Update comment display
+Frontend --> User: Show updated comment
+deactivate Frontend
+
+@enduml

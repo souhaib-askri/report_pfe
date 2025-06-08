@@ -1,0 +1,46 @@
+@startuml
+title Edit Profile - Sequence Diagram
+
+actor User
+participant Frontend
+participant Backend
+database Database
+
+ref over User, Database: Authenticate
+
+activate Frontend
+
+User -> Frontend: Access profile settings
+Frontend -> Backend: Request current profile data
+activate Backend
+
+Backend -> Database: Get user profile
+activate Database
+Database --> Backend: Return profile data
+deactivate Database
+
+Backend --> Frontend: Send profile data
+deactivate Backend
+
+Frontend -> Frontend: Display profile form with current data
+Frontend --> User: Show editable profile form
+
+User -> Frontend: Update profile information
+Frontend -> Frontend: Validate input data
+
+Frontend -> Backend: Send updated profile data
+activate Backend
+
+Backend -> Backend: Validate profile data
+Backend -> Database: Update user profile
+activate Database
+Database --> Backend: Confirm profile update
+deactivate Database
+
+Backend --> Frontend: Confirm profile updated
+deactivate Backend
+
+Frontend --> User: Show update confirmation
+deactivate Frontend
+
+@enduml

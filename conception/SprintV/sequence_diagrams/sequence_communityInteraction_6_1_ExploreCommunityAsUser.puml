@@ -1,0 +1,27 @@
+@startuml
+title Explore Community - Sequence Diagram
+
+actor User
+participant Frontend
+participant Backend
+database Database
+
+User -> Frontend: Access community page
+activate Frontend
+
+Frontend -> Backend: Request public projects
+activate Backend
+
+Backend -> Database: Query public projects
+activate Database
+Database --> Backend: Return projects list
+deactivate Database
+
+Backend --> Frontend: Send projects data
+deactivate Backend
+
+Frontend -> Frontend: Display projects grid
+Frontend --> User: Show community projects
+deactivate Frontend
+
+@enduml

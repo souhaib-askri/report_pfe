@@ -1,0 +1,33 @@
+@startuml
+title Comment on Projects - Sequence Diagram
+
+actor User
+participant Frontend
+participant Backend
+database Database
+
+ref over User, Database: Authenticate
+
+ref over User, Database: View Project
+
+activate Frontend
+
+User -> Frontend: Write comment
+User -> Frontend: Submit comment
+
+Frontend -> Backend: Send comment data
+activate Backend
+
+Backend -> Database: Save comment
+activate Database
+Database --> Backend: Confirm comment saved
+deactivate Database
+
+Backend --> Frontend: Return comment confirmation
+deactivate Backend
+
+Frontend -> Frontend: Update comments section
+Frontend --> User: Show new comment
+deactivate Frontend
+
+@enduml

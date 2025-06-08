@@ -24,6 +24,8 @@ rectangle "Administarion" {
     usecase "Authentication" as admin_auth
 
     usecase "Manage data" as ManageData
+    usecase "Search data" as SearchData
+    usecase "Filter data" as FilterData
 }
 
 Visitor -- ExploreLandingPage
@@ -35,6 +37,8 @@ User -- ManageWorkspace
 
 
 Admin -- ManageData
+Admin -- SearchData
+Admin -- FilterData
 
 
 InteractWithCommunity ..> user_auth : <<include>>
@@ -43,6 +47,9 @@ ManageDiagrams ..> user_auth : <<include>>
 ManageWorkspace ..> user_auth : <<include>>
 EditProfile ..> user_auth : <<include>>
 ManageData ..> admin_auth : <<include>>
+SearchData ..> admin_auth : <<include>>
+FilterData ..> admin_auth : <<include>>
+
 
 
 

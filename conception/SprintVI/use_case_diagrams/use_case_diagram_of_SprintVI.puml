@@ -1,0 +1,26 @@
+@startuml
+title Administration App - Simple Use Cases
+
+left to right direction
+
+actor Administrator as Admin
+
+rectangle "Administration System" {
+  usecase "Create Data" as UC1
+  usecase "Read Data" as UC2
+  usecase "Update Data" as UC3
+  usecase "Delete Data" as UC4
+  usecase "Filter Data" as UC5
+  usecase "Search Data" as UC6
+  usecase "System Administration" as UC7
+}
+
+Admin --> UC1
+Admin --> UC2
+Admin --> UC3
+Admin --> UC4
+Admin --> UC5
+Admin --> UC6
+Admin --> UC7
+
+@enduml

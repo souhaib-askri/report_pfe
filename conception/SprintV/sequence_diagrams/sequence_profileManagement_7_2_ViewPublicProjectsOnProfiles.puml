@@ -1,0 +1,40 @@
+@startuml
+title View Public Projects on Profile - Sequence Diagram
+
+actor User
+participant Frontend
+participant Backend
+database Database
+
+ref over User, Database: Authenticate
+
+activate Frontend
+
+User -> Frontend: Visit user profile page
+Frontend -> Backend: Request profile and public projects
+activate Backend
+
+Backend -> Database: Get user profile data
+activate Database
+Database --> Backend: Return profile data
+deactivate Database
+
+Backend -> Database: Get user's public projects
+activate Database
+Database --> Backend: Return public projects list
+deactivate Database
+
+Backend --> Frontend: Send profile data & public projects
+deactivate Backend
+
+Frontend -> Frontend: Display profile information
+Frontend -> Frontend: Display public projects list
+Frontend --> User: Show profile with public projects
+
+User -> Frontend: Select project to view details
+
+ref over User, Database: View Project
+
+deactivate Frontend
+
+@enduml
