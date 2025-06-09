@@ -3,7 +3,7 @@
 left to right direction
 
 actor "User" as User
-actor "Admin" as Admin
+
 actor "Visitor" as Visitor
 
 rectangle "Web Application" {
@@ -14,19 +14,13 @@ rectangle "Web Application" {
     usecase "Manage projects" as ManageProjects
     usecase "Manage diagrams" as ManageDiagrams
     usecase "Manage workspace" as ManageWorkspace
-    usecase "Edit profile" as EditProfile
+    usecase "Manage profile" as EditProfile
 
     
 
 }
 
-rectangle "Administarion" {
-    usecase "Authentication" as admin_auth
 
-    usecase "Manage data" as ManageData
-    usecase "Search data" as SearchData
-    usecase "Filter data" as FilterData
-}
 
 Visitor -- ExploreLandingPage
 User -- InteractWithCommunity
@@ -36,19 +30,12 @@ User -- EditProfile
 User -- ManageWorkspace
 
 
-Admin -- ManageData
-Admin -- SearchData
-Admin -- FilterData
-
 
 InteractWithCommunity ..> user_auth : <<include>>
 ManageProjects ..> user_auth : <<include>>
 ManageDiagrams ..> user_auth : <<include>>
 ManageWorkspace ..> user_auth : <<include>>
 EditProfile ..> user_auth : <<include>>
-ManageData ..> admin_auth : <<include>>
-SearchData ..> admin_auth : <<include>>
-FilterData ..> admin_auth : <<include>>
 
 
 

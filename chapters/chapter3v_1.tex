@@ -89,18 +89,12 @@ This configuration provides persistent data storage through Docker volumes and e
 The database schema has been designed to support the application's core functionality. The following class diagram illustrates the main entities and their relationships:
 
 \begin{figure}[H]
-    \centering
-    \fbox{\parbox{0.8\textwidth}{
-        \centering
-        \textbf{Database Entity Relationship Diagram}\\
-        \vspace{1cm}
-        \textit{Class diagram located at: diagrams/class/g1.svg}\\
-        \vspace{0.5cm}
-        \small{Note: Convert SVG to PDF format for LaTeX compatibility}
-    }}
-    \caption{Database Entity Relationship Diagram}
-    \label{fig:database_schema}
+  \centering
+  \includegraphics[width=0.8\textwidth]{conception/SprintI/global_class_diagram.png}
+  \caption{Database Entity Relationship Diagram}
+  \label{fig:database_schema}
 \end{figure}
+
 
 The schema implements proper normalization principles and includes indexes for optimal query performance. Foreign key constraints ensure data integrity, while the design allows for future scalability and feature additions.
 

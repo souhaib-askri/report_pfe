@@ -5,10 +5,7 @@ node "Web Application Server" as WebApp {
     [Nextjs]
 }
 
-node "Administration Server" as AdminJS {
-    [AdminJS Panel]
-    
-}
+
 
 cloud "External Services" as ExternalServices {
     [MinIO]
@@ -21,9 +18,7 @@ node "Database Server" as Database {
 }
 
 UserBrowser --> WebApp :  Perform Actions / Use Features
-UserBrowser --> AdminJS : Manage Data
 WebApp ---> [PostgreSQL] : Prisma Queries
-AdminJS ---> [PostgreSQL] : Prisma Queries
 WebApp ---> [MinIO] : Upload/Download Files
 WebApp ---> [PlantUML Server] : Generate UML Diagrams
 WebApp ---> [AI Model] : Send Requests for AI Processing

@@ -3,8 +3,8 @@
 \contentsline {chapter}{\numberline {1}Overview}{14}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Introduction}{14}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Overview of the Host Organization}{14}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Presentation of the Project Context}{14}{section.1.3}%
 \contentsline {paragraph}{Goodwill focuses on the software development aspect by creating tailored solutions to support its clients in the finance and insurance sectors. The company designs and implements intelligent systems based on Business Intelligence and Big Data technologies. It also offers services in system integration, ERP solution development, payroll management tools, and analytical accounting, all aimed at enhancing performance and decision-making. As an official partner of SAGE, Goodwill further strengthens its technical capabilities in delivering and marketing software solutions.}{14}{section*.3}%
+\contentsline {section}{\numberline {1.3}Presentation of the Project Context}{15}{section.1.3}%
 \contentsline {subsection}{\numberline {1.3.1}Problem Statement}{15}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.3.2}Existing Solutions}{15}{subsection.1.3.2}%
 \contentsline {subsection}{\numberline {1.3.3}Proposed Solution}{15}{subsection.1.3.3}%
@@ -20,7 +20,7 @@
 \contentsline {section}{\numberline {1.5}Modeling Language}{19}{section.1.5}%
 \contentsline {subsection}{\numberline {1.5.1}Definition}{19}{subsection.1.5.1}%
 \contentsline {subsection}{\numberline {1.5.2}UML Overview}{19}{subsection.1.5.2}%
-\contentsline {section}{\numberline {1.6}Conclusion}{20}{section.1.6}%
+\contentsline {section}{\numberline {1.6}Conclusion}{21}{section.1.6}%
 \contentsline {chapter}{\numberline {2}Project Initiation}{22}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Introduction}{22}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Analysis and Specification of Requirements}{23}{section.2.2}%
@@ -33,22 +33,22 @@
 \contentsline {paragraph}{Project and Diagram Management:}{24}{section*.7}%
 \contentsline {paragraph}{Workspace and Editing:}{24}{section*.8}%
 \contentsline {paragraph}{Community Features:}{24}{section*.9}%
-\contentsline {paragraph}{Profile and Administration:}{24}{section*.10}%
-\contentsline {subsubsection}{\numberline {2.2.2.2}Non-Functional Requirements}{25}{subsubsection.2.2.2.2}%
-\contentsline {paragraph}{Performance Requirements:}{25}{section*.11}%
+\contentsline {paragraph}{Profile:}{24}{section*.10}%
+\contentsline {subsubsection}{\numberline {2.2.2.2}Non-Functional Requirements}{24}{subsubsection.2.2.2.2}%
+\contentsline {paragraph}{Performance Requirements:}{24}{section*.11}%
 \contentsline {paragraph}{Security Requirements:}{25}{section*.12}%
 \contentsline {paragraph}{Usability Requirements:}{25}{section*.13}%
 \contentsline {paragraph}{Reliability and Availability:}{25}{section*.14}%
 \contentsline {paragraph}{Scalability Requirements:}{25}{section*.15}%
-\contentsline {section}{\numberline {2.3}Project Management with Scrum}{26}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Scrum Roles}{26}{subsection.2.3.1}%
-\contentsline {paragraph}{Roles in the Scrum Team:}{26}{table.2.1}%
+\contentsline {section}{\numberline {2.3}Project Management with Scrum}{25}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Scrum Roles}{25}{subsection.2.3.1}%
+\contentsline {paragraph}{Roles in the Scrum Team:}{25}{table.2.1}%
 \contentsline {subsection}{\numberline {2.3.2}Product Backlog}{26}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Global Use Case Diagram}{28}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}Sprint Planning}{30}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.4}Sprint Planning}{29}{subsection.2.3.4}%
 \contentsline {section}{\numberline {2.4}Deployment diagram}{30}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Technological Architecture of the Project}{31}{section.2.5}%
-\contentsline {section}{\numberline {2.6}Tools and Environment}{31}{section.2.6}%
+\contentsline {section}{\numberline {2.5}Technological Architecture of the Project}{30}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Tools and Environment}{30}{section.2.6}%
 \contentsline {section}{\numberline {2.7}Conclusion}{32}{section.2.7}%
 \contentsline {chapter}{\numberline {3}Sprint I}{34}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Introduction}{34}{section.3.1}%
@@ -64,131 +64,131 @@
 \contentsline {section}{\numberline {3.4}Deliverables of Sprint I}{37}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Database Infrastructure}{37}{subsection.3.4.1}%
 \contentsline {subsubsection}{\numberline {3.4.1.1}Database Schema Design}{37}{subsubsection.3.4.1.1}%
-\contentsline {subsection}{\numberline {3.4.2}Object Storage Service}{37}{subsection.3.4.2}%
-\contentsline {subsection}{\numberline {3.4.3}Diagram Generation Service}{38}{subsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.4.4}Web Application Container}{38}{subsection.3.4.4}%
-\contentsline {section}{\numberline {3.5}Environment Configuration}{39}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Retrospective of Sprint I}{39}{section.3.6}%
-\contentsline {subsection}{\numberline {3.6.1}Achievements}{39}{subsection.3.6.1}%
-\contentsline {subsection}{\numberline {3.6.2}Challenges and Lessons Learned}{40}{subsection.3.6.2}%
-\contentsline {subsection}{\numberline {3.6.3}Areas for Enhancement}{40}{subsection.3.6.3}%
-\contentsline {section}{\numberline {3.7}Conclusion}{40}{section.3.7}%
-\contentsline {chapter}{\numberline {4}Sprint II}{42}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Introduction}{42}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Sprint Planning}{43}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Objectives of Sprint II}{43}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Backlog of Sprint II}{43}{subsection.4.2.2}%
-\contentsline {section}{\numberline {4.3}Technologies and Tools Used}{43}{section.4.3}%
-\contentsline {subsection}{\numberline {4.3.1}NextAuth.js}{43}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}Prisma}{44}{subsection.4.3.2}%
-\contentsline {section}{\numberline {4.4}Analyse}{44}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Use case diagram for Sprint II}{44}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}Refined use case "Authentication"}{45}{subsection.4.4.2}%
-\contentsline {subsubsection}{\numberline {4.4.2.1}Use case}{45}{subsubsection.4.4.2.1}%
-\contentsline {subsubsection}{\numberline {4.4.2.2}Textual description of use case}{45}{subsubsection.4.4.2.2}%
-\contentsline {subsection}{\numberline {4.4.3}Refined use case "Explore Landing Page"}{47}{subsection.4.4.3}%
-\contentsline {subsubsection}{\numberline {4.4.3.1}Use case}{47}{subsubsection.4.4.3.1}%
-\contentsline {subsubsection}{\numberline {4.4.3.2}Textual description of use case}{48}{subsubsection.4.4.3.2}%
-\contentsline {section}{\numberline {4.5}Conception}{48}{section.4.5}%
-\contentsline {subsection}{\numberline {4.5.1}Sequence diagram of use case "Authentication"}{48}{subsection.4.5.1}%
-\contentsline {section}{\numberline {4.6}Deliverables of Sprint II}{54}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Retrospective of Sprint II}{56}{section.4.7}%
-\contentsline {section}{\numberline {4.8}Conclusion}{56}{section.4.8}%
-\contentsline {chapter}{\numberline {5}Sprint III}{57}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Introduction}{58}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Sprint Planning}{58}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Objectives of Sprint III}{58}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Backlog of Sprint III}{58}{subsection.5.2.2}%
-\contentsline {section}{\numberline {5.3}Analyse}{59}{section.5.3}%
-\contentsline {subsection}{\numberline {5.3.1}Use case diagram for sprint III}{59}{subsection.5.3.1}%
-\contentsline {subsection}{\numberline {5.3.2}Refined use case "Manage projects"}{60}{subsection.5.3.2}%
-\contentsline {subsubsection}{\numberline {5.3.2.1}Use case}{60}{subsubsection.5.3.2.1}%
-\contentsline {subsubsection}{\numberline {5.3.2.2}Textual description of use case "Create new project"}{61}{subsubsection.5.3.2.2}%
-\contentsline {subsubsection}{\numberline {5.3.2.3}Textual description of use case "View project"}{62}{subsubsection.5.3.2.3}%
-\contentsline {subsubsection}{\numberline {5.3.2.4}Textual description of use case "Update project details"}{63}{subsubsection.5.3.2.4}%
-\contentsline {subsubsection}{\numberline {5.3.2.5}Textual description of use case "Delete project"}{64}{subsubsection.5.3.2.5}%
-\contentsline {subsubsection}{\numberline {5.3.2.6}Textual description of use case "Download project diagrams compressed"}{65}{subsubsection.5.3.2.6}%
-\contentsline {section}{\numberline {5.4}Conception}{65}{section.5.4}%
-\contentsline {subsection}{\numberline {5.4.1}Sequence diagram of use case}{66}{subsection.5.4.1}%
-\contentsline {section}{\numberline {5.5}Deliverables of Sprint III}{71}{section.5.5}%
-\contentsline {section}{\numberline {5.6}Retrospective of Sprint III}{74}{section.5.6}%
-\contentsline {section}{\numberline {5.7}Conclusion}{75}{section.5.7}%
-\contentsline {chapter}{\numberline {6}Sprint IV}{76}{chapter.6}%
-\contentsline {section}{\numberline {6.1}Introduction}{77}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Sprint Planning}{77}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Objectives of Sprint IV}{77}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Backlog of Sprint IV}{77}{subsection.6.2.2}%
-\contentsline {section}{\numberline {6.3}Analyse}{78}{section.6.3}%
-\contentsline {subsection}{\numberline {6.3.1}Use case diagram for sprint IV}{78}{subsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.3.2}Refined use case "Manage Diagrams"}{78}{subsection.6.3.2}%
-\contentsline {subsubsection}{\numberline {6.3.2.1}Use case}{78}{subsubsection.6.3.2.1}%
-\contentsline {subsubsection}{\numberline {6.3.2.2}Textual description of use case "Create new diagram"}{79}{subsubsection.6.3.2.2}%
-\contentsline {subsubsection}{\numberline {6.3.2.3}Textual description of use case "View diagram"}{79}{subsubsection.6.3.2.3}%
-\contentsline {subsubsection}{\numberline {6.3.2.4}Textual description of use case "Delete diagram"}{80}{subsubsection.6.3.2.4}%
-\contentsline {subsection}{\numberline {6.3.3}Refined use case "Manage Workspace"}{80}{subsection.6.3.3}%
-\contentsline {subsubsection}{\numberline {6.3.3.1}Textual description of use case "load workspace"}{81}{subsubsection.6.3.3.1}%
-\contentsline {subsubsection}{\numberline {6.3.3.2}Textual description of use case "chat with AI"}{81}{subsubsection.6.3.3.2}%
-\contentsline {subsubsection}{\numberline {6.3.3.3}Textual description of use case "clear chat"}{82}{subsubsection.6.3.3.3}%
-\contentsline {subsubsection}{\numberline {6.3.3.4}Textual description of use case "edit diagram"}{82}{subsubsection.6.3.3.4}%
-\contentsline {subsubsection}{\numberline {6.3.3.5}Textual description of use case "save changes"}{83}{subsubsection.6.3.3.5}%
-\contentsline {subsubsection}{\numberline {6.3.3.6}Textual description of use case "Download Diagram Image"}{84}{subsubsection.6.3.3.6}%
-\contentsline {section}{\numberline {6.4}Conception}{84}{section.6.4}%
-\contentsline {subsection}{\numberline {6.4.1}Activity Diagrams}{85}{subsection.6.4.1}%
-\contentsline {subsection}{\numberline {6.4.2}Sequence Diagrams}{86}{subsection.6.4.2}%
-\contentsline {section}{\numberline {6.5}Deliverables of Sprint IV}{90}{section.6.5}%
-\contentsline {section}{\numberline {6.6}Retrospective of Sprint IV}{93}{section.6.6}%
-\contentsline {section}{\numberline {6.7}Conclusion}{94}{section.6.7}%
-\contentsline {chapter}{\numberline {7}Sprint V}{95}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Introduction}{95}{section.7.1}%
-\contentsline {section}{\numberline {7.2}Sprint Planning}{96}{section.7.2}%
-\contentsline {subsection}{\numberline {7.2.1}Objectives of Sprint V}{96}{subsection.7.2.1}%
-\contentsline {subsection}{\numberline {7.2.2}Backlog of Sprint V}{97}{subsection.7.2.2}%
-\contentsline {section}{\numberline {7.3}Analyse}{98}{section.7.3}%
-\contentsline {subsection}{\numberline {7.3.1}Use case diagram for sprint V}{98}{subsection.7.3.1}%
-\contentsline {subsection}{\numberline {7.3.2}Refined use case "Community Interaction"}{98}{subsection.7.3.2}%
-\contentsline {subsubsection}{\numberline {7.3.2.1}Use case}{98}{subsubsection.7.3.2.1}%
-\contentsline {subsubsection}{\numberline {7.3.2.2}Textual description of use case "Explore community"}{99}{subsubsection.7.3.2.2}%
-\contentsline {subsubsection}{\numberline {7.3.2.3}Textual description of use case "Comment on projects"}{100}{subsubsection.7.3.2.3}%
-\contentsline {subsubsection}{\numberline {7.3.2.4}Textual description of use case "Like/Unlike projects"}{101}{subsubsection.7.3.2.4}%
-\contentsline {subsubsection}{\numberline {7.3.2.5}Textual description of use case "Update comments"}{102}{subsubsection.7.3.2.5}%
-\contentsline {subsubsection}{\numberline {7.3.2.6}Textual description of use case "Delete comments"}{103}{subsubsection.7.3.2.6}%
-\contentsline {subsubsection}{\numberline {7.3.2.7}Textual description of use case "Like/Unlike comments"}{104}{subsubsection.7.3.2.7}%
-\contentsline {subsubsection}{\numberline {7.3.2.8}Textual description of use case "Copy projects to workspace"}{105}{subsubsection.7.3.2.8}%
-\contentsline {subsection}{\numberline {7.3.3}Refined use case "Profile Management"}{105}{subsection.7.3.3}%
-\contentsline {subsubsection}{\numberline {7.3.3.1}Textual description of use case "Edit profile"}{106}{subsubsection.7.3.3.1}%
-\contentsline {subsubsection}{\numberline {7.3.3.2}Textual description of use case "View Public Projects on Profile"}{107}{subsubsection.7.3.3.2}%
-\contentsline {section}{\numberline {7.4}Conception}{107}{section.7.4}%
-\contentsline {subsection}{\numberline {7.4.1}Community Interaction Sequence Diagrams}{108}{subsection.7.4.1}%
-\contentsline {subsection}{\numberline {7.4.2}Profile Management Sequence Diagrams}{116}{subsection.7.4.2}%
-\contentsline {section}{\numberline {7.5}Deliverables of Sprint V}{117}{section.7.5}%
-\contentsline {section}{\numberline {7.6}Retrospective of Sprint V}{119}{section.7.6}%
-\contentsline {section}{\numberline {7.7}Conclusion}{120}{section.7.7}%
-\contentsline {chapter}{\numberline {8}Sprint VI}{121}{chapter.8}%
-\contentsline {section}{\numberline {8.1}Introduction}{123}{section.8.1}%
-\contentsline {section}{\numberline {8.2}Sprint Planning}{123}{section.8.2}%
-\contentsline {subsection}{\numberline {8.2.1}Objectives of Sprint VI}{123}{subsection.8.2.1}%
-\contentsline {subsection}{\numberline {8.2.2}Backlog of Sprint VI}{123}{subsection.8.2.2}%
-\contentsline {section}{\numberline {8.3}Technologies and Tools Used}{123}{section.8.3}%
-\contentsline {subsection}{\numberline {8.3.1}Tool 1}{123}{subsection.8.3.1}%
-\contentsline {subsection}{\numberline {8.3.2}Tool 2}{123}{subsection.8.3.2}%
-\contentsline {section}{\numberline {8.4}Analyse}{123}{section.8.4}%
-\contentsline {subsection}{\numberline {8.4.1}Use case diagram for sprint I}{123}{subsection.8.4.1}%
-\contentsline {subsection}{\numberline {8.4.2}Refined use case "u1"}{123}{subsection.8.4.2}%
-\contentsline {subsubsection}{\numberline {8.4.2.1}Use case}{123}{subsubsection.8.4.2.1}%
-\contentsline {subsubsection}{\numberline {8.4.2.2}textual description of use case}{123}{subsubsection.8.4.2.2}%
-\contentsline {subsection}{\numberline {8.4.3}Refined use case "u2"}{123}{subsection.8.4.3}%
-\contentsline {subsubsection}{\numberline {8.4.3.1}Use case}{123}{subsubsection.8.4.3.1}%
-\contentsline {subsubsection}{\numberline {8.4.3.2}textual description of use case}{123}{subsubsection.8.4.3.2}%
-\contentsline {section}{\numberline {8.5}Conception}{123}{section.8.5}%
-\contentsline {subsection}{\numberline {8.5.1}Sequence diagram of use case "u1"}{123}{subsection.8.5.1}%
-\contentsline {subsection}{\numberline {8.5.2}Sequence diagram of use case "u2"}{123}{subsection.8.5.2}%
-\contentsline {section}{\numberline {8.6}Deliverables of Sprint VI}{123}{section.8.6}%
-\contentsline {subsection}{\numberline {8.6.1}Milestone 1}{123}{subsection.8.6.1}%
-\contentsline {subsection}{\numberline {8.6.2}Milestone 2}{123}{subsection.8.6.2}%
-\contentsline {subsection}{\numberline {8.6.3}Milestone 3}{123}{subsection.8.6.3}%
-\contentsline {section}{\numberline {8.7}Retrospective of Sprint VI}{123}{section.8.7}%
-\contentsline {section}{\numberline {8.8}Conclusion}{123}{section.8.8}%
-\contentsline {chapter}{\numberline {9}General Conclusion}{124}{chapter.9}%
-\contentsline {section}{\numberline {9.1}Summary of Achievements}{124}{section.9.1}%
-\contentsline {section}{\numberline {9.2}Challenges Faced}{124}{section.9.2}%
-\contentsline {section}{\numberline {9.3}Future Perspectives}{124}{section.9.3}%
+\contentsline {subsection}{\numberline {3.4.2}Object Storage Service}{38}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Diagram Generation Service}{39}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Web Application Container}{39}{subsection.3.4.4}%
+\contentsline {section}{\numberline {3.5}Environment Configuration}{40}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Retrospective of Sprint I}{40}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Achievements}{40}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Challenges and Lessons Learned}{41}{subsection.3.6.2}%
+\contentsline {subsection}{\numberline {3.6.3}Areas for Enhancement}{41}{subsection.3.6.3}%
+\contentsline {section}{\numberline {3.7}Conclusion}{41}{section.3.7}%
+\contentsline {chapter}{\numberline {4}Sprint II}{43}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{43}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Sprint Planning}{44}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Objectives of Sprint II}{44}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Backlog of Sprint II}{44}{subsection.4.2.2}%
+\contentsline {section}{\numberline {4.3}Technologies and Tools Used}{44}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}NextAuth.js}{44}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Prisma}{45}{subsection.4.3.2}%
+\contentsline {section}{\numberline {4.4}Analyse}{45}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Use case diagram for Sprint II}{45}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Refined use case "Authentication"}{46}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}Use case}{46}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}Textual description of use case}{46}{subsubsection.4.4.2.2}%
+\contentsline {subsection}{\numberline {4.4.3}Refined use case "Explore Landing Page"}{48}{subsection.4.4.3}%
+\contentsline {subsubsection}{\numberline {4.4.3.1}Use case}{48}{subsubsection.4.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.4.3.2}Textual description of use case}{49}{subsubsection.4.4.3.2}%
+\contentsline {section}{\numberline {4.5}Conception}{49}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}Sequence diagram of use case "Authentication"}{49}{subsection.4.5.1}%
+\contentsline {section}{\numberline {4.6}Deliverables of Sprint II}{55}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Retrospective of Sprint II}{57}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Conclusion}{57}{section.4.8}%
+\contentsline {chapter}{\numberline {5}Sprint III}{58}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{59}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Sprint Planning}{59}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Objectives of Sprint III}{59}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Backlog of Sprint III}{59}{subsection.5.2.2}%
+\contentsline {section}{\numberline {5.3}Analyse}{60}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Use case diagram for sprint III}{60}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Refined use case "Manage projects"}{61}{subsection.5.3.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.1}Use case}{61}{subsubsection.5.3.2.1}%
+\contentsline {subsubsection}{\numberline {5.3.2.2}Textual description of use case "Create new project"}{62}{subsubsection.5.3.2.2}%
+\contentsline {subsubsection}{\numberline {5.3.2.3}Textual description of use case "View project"}{63}{subsubsection.5.3.2.3}%
+\contentsline {subsubsection}{\numberline {5.3.2.4}Textual description of use case "Update project details"}{64}{subsubsection.5.3.2.4}%
+\contentsline {subsubsection}{\numberline {5.3.2.5}Textual description of use case "Delete project"}{65}{subsubsection.5.3.2.5}%
+\contentsline {subsubsection}{\numberline {5.3.2.6}Textual description of use case "Download project diagrams compressed"}{66}{subsubsection.5.3.2.6}%
+\contentsline {section}{\numberline {5.4}Conception}{66}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Sequence diagram of use case}{67}{subsection.5.4.1}%
+\contentsline {section}{\numberline {5.5}Deliverables of Sprint III}{72}{section.5.5}%
+\contentsline {section}{\numberline {5.6}Retrospective of Sprint III}{75}{section.5.6}%
+\contentsline {section}{\numberline {5.7}Conclusion}{76}{section.5.7}%
+\contentsline {chapter}{\numberline {6}Sprint IV}{77}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Introduction}{78}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Sprint Planning}{78}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Objectives of Sprint IV}{78}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Backlog of Sprint IV}{78}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}Analyse}{79}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Use case diagram for sprint IV}{79}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Refined use case "Manage Diagrams"}{79}{subsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.1}Use case}{79}{subsubsection.6.3.2.1}%
+\contentsline {subsubsection}{\numberline {6.3.2.2}Textual description of use case "Create new diagram"}{80}{subsubsection.6.3.2.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.3}Textual description of use case "View diagram"}{80}{subsubsection.6.3.2.3}%
+\contentsline {subsubsection}{\numberline {6.3.2.4}Textual description of use case "Delete diagram"}{81}{subsubsection.6.3.2.4}%
+\contentsline {subsection}{\numberline {6.3.3}Refined use case "Manage Workspace"}{81}{subsection.6.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.3.1}Textual description of use case "load workspace"}{82}{subsubsection.6.3.3.1}%
+\contentsline {subsubsection}{\numberline {6.3.3.2}Textual description of use case "chat with AI"}{82}{subsubsection.6.3.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.3.3}Textual description of use case "clear chat"}{83}{subsubsection.6.3.3.3}%
+\contentsline {subsubsection}{\numberline {6.3.3.4}Textual description of use case "edit diagram"}{83}{subsubsection.6.3.3.4}%
+\contentsline {subsubsection}{\numberline {6.3.3.5}Textual description of use case "save changes"}{84}{subsubsection.6.3.3.5}%
+\contentsline {subsubsection}{\numberline {6.3.3.6}Textual description of use case "Download Diagram Image"}{85}{subsubsection.6.3.3.6}%
+\contentsline {section}{\numberline {6.4}Conception}{85}{section.6.4}%
+\contentsline {subsection}{\numberline {6.4.1}Activity Diagrams}{86}{subsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.4.2}Sequence Diagrams}{87}{subsection.6.4.2}%
+\contentsline {section}{\numberline {6.5}Deliverables of Sprint IV}{91}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Retrospective of Sprint IV}{94}{section.6.6}%
+\contentsline {section}{\numberline {6.7}Conclusion}{95}{section.6.7}%
+\contentsline {chapter}{\numberline {7}Sprint V}{96}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Introduction}{96}{section.7.1}%
+\contentsline {section}{\numberline {7.2}Sprint Planning}{97}{section.7.2}%
+\contentsline {subsection}{\numberline {7.2.1}Objectives of Sprint V}{97}{subsection.7.2.1}%
+\contentsline {subsection}{\numberline {7.2.2}Backlog of Sprint V}{98}{subsection.7.2.2}%
+\contentsline {section}{\numberline {7.3}Analyse}{99}{section.7.3}%
+\contentsline {subsection}{\numberline {7.3.1}Use case diagram for sprint V}{99}{subsection.7.3.1}%
+\contentsline {subsection}{\numberline {7.3.2}Refined use case "Community Interaction"}{99}{subsection.7.3.2}%
+\contentsline {subsubsection}{\numberline {7.3.2.1}Use case}{99}{subsubsection.7.3.2.1}%
+\contentsline {subsubsection}{\numberline {7.3.2.2}Textual description of use case "Explore community"}{100}{subsubsection.7.3.2.2}%
+\contentsline {subsubsection}{\numberline {7.3.2.3}Textual description of use case "Comment on projects"}{101}{subsubsection.7.3.2.3}%
+\contentsline {subsubsection}{\numberline {7.3.2.4}Textual description of use case "Like/Unlike projects"}{102}{subsubsection.7.3.2.4}%
+\contentsline {subsubsection}{\numberline {7.3.2.5}Textual description of use case "Update comments"}{103}{subsubsection.7.3.2.5}%
+\contentsline {subsubsection}{\numberline {7.3.2.6}Textual description of use case "Delete comments"}{104}{subsubsection.7.3.2.6}%
+\contentsline {subsubsection}{\numberline {7.3.2.7}Textual description of use case "Like/Unlike comments"}{105}{subsubsection.7.3.2.7}%
+\contentsline {subsubsection}{\numberline {7.3.2.8}Textual description of use case "Copy projects to workspace"}{106}{subsubsection.7.3.2.8}%
+\contentsline {subsection}{\numberline {7.3.3}Refined use case "Profile Management"}{106}{subsection.7.3.3}%
+\contentsline {subsubsection}{\numberline {7.3.3.1}Textual description of use case "Edit profile"}{107}{subsubsection.7.3.3.1}%
+\contentsline {subsubsection}{\numberline {7.3.3.2}Textual description of use case "View Public Projects on Profile"}{108}{subsubsection.7.3.3.2}%
+\contentsline {section}{\numberline {7.4}Conception}{108}{section.7.4}%
+\contentsline {subsection}{\numberline {7.4.1}Community Interaction Sequence Diagrams}{109}{subsection.7.4.1}%
+\contentsline {subsection}{\numberline {7.4.2}Profile Management Sequence Diagrams}{117}{subsection.7.4.2}%
+\contentsline {section}{\numberline {7.5}Deliverables of Sprint V}{118}{section.7.5}%
+\contentsline {section}{\numberline {7.6}Retrospective of Sprint V}{120}{section.7.6}%
+\contentsline {section}{\numberline {7.7}Conclusion}{121}{section.7.7}%
+\contentsline {chapter}{\numberline {8}Sprint VI}{122}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Introduction}{124}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Sprint Planning}{124}{section.8.2}%
+\contentsline {subsection}{\numberline {8.2.1}Objectives of Sprint VI}{124}{subsection.8.2.1}%
+\contentsline {subsection}{\numberline {8.2.2}Backlog of Sprint VI}{124}{subsection.8.2.2}%
+\contentsline {section}{\numberline {8.3}Technologies and Tools Used}{124}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Tool 1}{124}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Tool 2}{124}{subsection.8.3.2}%
+\contentsline {section}{\numberline {8.4}Analyse}{124}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}Use case diagram for sprint I}{124}{subsection.8.4.1}%
+\contentsline {subsection}{\numberline {8.4.2}Refined use case "u1"}{124}{subsection.8.4.2}%
+\contentsline {subsubsection}{\numberline {8.4.2.1}Use case}{124}{subsubsection.8.4.2.1}%
+\contentsline {subsubsection}{\numberline {8.4.2.2}textual description of use case}{124}{subsubsection.8.4.2.2}%
+\contentsline {subsection}{\numberline {8.4.3}Refined use case "u2"}{124}{subsection.8.4.3}%
+\contentsline {subsubsection}{\numberline {8.4.3.1}Use case}{124}{subsubsection.8.4.3.1}%
+\contentsline {subsubsection}{\numberline {8.4.3.2}textual description of use case}{124}{subsubsection.8.4.3.2}%
+\contentsline {section}{\numberline {8.5}Conception}{124}{section.8.5}%
+\contentsline {subsection}{\numberline {8.5.1}Sequence diagram of use case "u1"}{124}{subsection.8.5.1}%
+\contentsline {subsection}{\numberline {8.5.2}Sequence diagram of use case "u2"}{124}{subsection.8.5.2}%
+\contentsline {section}{\numberline {8.6}Deliverables of Sprint VI}{124}{section.8.6}%
+\contentsline {subsection}{\numberline {8.6.1}Milestone 1}{124}{subsection.8.6.1}%
+\contentsline {subsection}{\numberline {8.6.2}Milestone 2}{124}{subsection.8.6.2}%
+\contentsline {subsection}{\numberline {8.6.3}Milestone 3}{124}{subsection.8.6.3}%
+\contentsline {section}{\numberline {8.7}Retrospective of Sprint VI}{124}{section.8.7}%
+\contentsline {section}{\numberline {8.8}Conclusion}{124}{section.8.8}%
+\contentsline {chapter}{\numberline {9}General Conclusion}{125}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Summary of Achievements}{125}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Challenges Faced}{125}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Future Perspectives}{125}{section.9.3}%
