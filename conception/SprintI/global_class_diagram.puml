@@ -108,13 +108,13 @@ User "1" *-- "0..*" Project
 User "1" *-- "0..*" ProjectComment
 User "1" *-- "0..*" ProjectLike
 User "1" *-- "0..*" CommentLike
-User "1" *-- "0..*" DiagramConversation
+' User "1" *-- "0..*" DiagramConversation
 
 Project "1" *-- "0..*" Diagram
 Project "1" *-- "0..*" ProjectComment
 Project "1" *-- "0..*" ProjectLike
 
-Diagram "1" ||--|| "0..1" DiagramConversation
+Diagram "1" *-- "0..*" DiagramConversation
 
 DiagramConversation "1" *-- "0..*" ConversationMessage
 

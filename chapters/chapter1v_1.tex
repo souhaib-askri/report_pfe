@@ -12,7 +12,6 @@ This project addresses the need for an intelligent platform combining textual di
 
 \section{Overview of the Host Organization}
 % This section will be completed later as requested
-\paragraph{Goodwill focuses on the software development aspect by creating tailored solutions to support its clients in the finance and insurance sectors. The company designs and implements intelligent systems based on Business Intelligence and Big Data technologies. It also offers services in system integration, ERP solution development, payroll management tools, and analytical accounting, all aimed at enhancing performance and decision-making. As an official partner of SAGE, Goodwill further strengthens its technical capabilities in delivering and marketing software solutions.}
 
 \section{Presentation of the Project Context}
 
@@ -115,36 +114,6 @@ Agile methodology represents a fundamental shift from traditional waterfall deve
 
 Agile methodologies are particularly suited for projects with evolving requirements, where frequent stakeholder feedback and rapid adaptation to changing needs are essential. The iterative nature allows for continuous improvement and risk mitigation throughout the development lifecycle \cite{agile_benefits}.
 
-\subsection{Comparison of Agile Methods}
-
-\begin{table}[htbp]
-\centering
-\caption{Comparison of Agile Methodologies}
-\label{tab:agile_comparison}
-\begin{tabular}{|p{2cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|}
-\hline
-\textbf{Criteria} & \textbf{Scrum} & \textbf{Kanban} & \textbf{XP} & \textbf{Lean} \\
-\hline
-\textbf{Structure} & High & Low & Medium & Medium \\
-\hline
-\textbf{Roles Definition} & Clear & Flexible & Defined & Minimal \\
-\hline
-\textbf{Sprint Planning} & Fixed & Continuous & Fixed & Continuous \\
-\hline
-\textbf{Documentation} & Minimal & Minimal & Low & Minimal \\
-\hline
-\textbf{Team Size} & 5-9 members & Flexible & Small & Flexible \\
-\hline
-\textbf{Learning Curve} & Moderate & Low & High & Low \\
-\hline
-\textbf{Feedback Frequency} & Regular & Continuous & High & Continuous \\
-\hline
-\textbf{Change Adaptation} & High & Very High & High & Very High \\
-\hline
-\end{tabular}
-\end{table}
-
-Based on the comparative analysis, Scrum emerges as the optimal choice for our diagram generation platform project. Scrum provides the necessary structure and clear role definitions essential for coordinating AI development and user interface design components. The fixed sprint planning aligns well with iterative development of complex features, while regular feedback cycles ensure continuous validation of AI-generated diagram quality and user experience \cite{scrum_advantages}.
 
 \subsection{Scrum Framework}
 
@@ -179,10 +148,7 @@ Scrum artifacts provide transparency and opportunities for inspection and adapta
 These artifacts ensure stakeholder visibility into project progress and facilitate informed decision-making throughout the development process.
 
 \section{Modeling Language}
-
-\subsection{Definition}
-
-Modeling languages provide standardized notations for representing system structures, behaviors, and requirements \cite{modeling_languages}. Unlike programming languages that instruct computers, modeling languages communicate design concepts among stakeholders and document system architecture.
+Modeling languages offer standardized notations for system representation, encompassing structure, behavior, and requirements \cite{modeling_languages}. These languages facilitate stakeholder communication and architectural documentation, distinguishing them from programming languages that provide computational instructions.
 
 \begin{figure}[htbp]
 \centering
@@ -191,23 +157,7 @@ Modeling languages provide standardized notations for representing system struct
 \label{fig:uml_logo}
 \end{figure}
 
-UML distinguishes itself from other modeling languages through comprehensive standardization, widespread industry adoption, and extensive tool support. While domain-specific languages like BPMN focus on business processes and SysML targets systems engineering, UML provides broad coverage suitable for software-intensive systems \cite{uml_comparison}.
-
-\subsection{UML Overview}
-
-UML (Unified Modeling Language) serves as the industry standard for software system modeling, offering a comprehensive set of diagram types that address various aspects of system design and analysis \cite{uml_specification}. UML's value proposition lies in its ability to bridge communication gaps between technical and non-technical stakeholders while providing sufficient precision for implementation guidance.
-
-\begin{figure}[htbp]
-\centering
-\includegraphics[width=0.8\textwidth]{pictures/web/uml-25-diagrams.png}
-\caption{UML 2.5 Diagram Types Classification}
-\label{fig:uml_diagrams}
-\end{figure}
-
-UML 2.5 encompasses fourteen diagram types organized into two primary categories \cite{uml25_diagrams}. Structure diagrams capture static aspects of systems, including Class Diagrams for object-oriented design, Component Diagrams for system architecture, and Deployment Diagrams for physical system configuration. Behavior diagrams represent dynamic aspects, featuring Use Case Diagrams for functional requirements, Sequence Diagrams for interaction modeling, and Activity Diagrams for process flows.
-
-This comprehensive coverage makes UML particularly suitable for AI-driven diagram generation, as the standardized notation enables consistent interpretation and generation algorithms while supporting diverse modeling needs across software development lifecycles.
-
+UML's key differentiators include comprehensive standardization, broad industry acceptance, and robust tooling ecosystem. While specialized languages such as BPMN address business process modeling and SysML serves systems engineering, UML delivers extensive coverage for software-intensive system development \cite{uml_comparison}.
 \section{Conclusion}
 
 This chapter established the foundation for developing an intelligent UML diagram generation platform by addressing critical challenges in current diagramming approaches. The analysis revealed significant limitations in both traditional GUI-based tools and textual specification methods, highlighting the need for innovative solutions that combine precision with accessibility.
