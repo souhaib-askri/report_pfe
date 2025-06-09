@@ -30,5 +30,3 @@
 ,,6.9,As a user; I want to copy community projects to my workspace so that I can learn from and build upon others' work.,S
 7,Profile Management,7.1,As a user; I want to edit my profile so that I can keep my information current.,S
 ,,7.2,As a user; I want to view public projects on profiles so that I can see others' work.,S
-8,Administration,8.1,As an admin; I want to authenticate with elevated privileges so that I can manage the platform.,M
-,,8.2,As an admin; I want to manage all platform data so that I can maintain system integrity and user safety.,M

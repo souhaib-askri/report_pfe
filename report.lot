@@ -1,54 +1,52 @@
 \addvspace {10\p@ }
-\contentsline {xchapter}{Overview}{14}{chapter.1}%
-\contentsline {table}{\numberline {1.1}{\ignorespaces Comparison of Textual Diagramming Tools}}{16}{table.1.1}%
+\contentsline {xchapter}{Overview}{13}{chapter.1}%
+\contentsline {table}{\numberline {1.1}{\ignorespaces Comparison of Textual Diagramming Tools}}{15}{table.1.1}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Project Initiation}{20}{chapter.2}%
-\contentsline {table}{\numberline {2.1}{\ignorespaces Scrum roles and their respective members}}{24}{table.2.1}%
-\contentsline {table}{\numberline {2.2}{Product Backlog with User Stories and Priorities (Imported from backlog.csv)}}{24}{table.2.2}%
-\contentsline {table}{\numberline {2.3}{\ignorespaces Scrum Sprint Planning with Estimated Durations}}{27}{table.2.3}%
-\contentsline {table}{\numberline {2.4}{Tools and Environment Used in the Project (Ordered by Usage)}}{28}{table.2.4}%
+\contentsline {xchapter}{Project Initiation}{19}{chapter.2}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Scrum roles and their respective members}}{23}{table.2.1}%
+\contentsline {table}{\numberline {2.2}{Product Backlog with User Stories and Priorities (Imported from backlog.csv)}}{23}{table.2.2}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Scrum Sprint Planning with Estimated Durations}}{26}{table.2.3}%
+\contentsline {table}{\numberline {2.4}{Tools and Environment Used in the Project (Ordered by Usage)}}{27}{table.2.4}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Sprint I}{32}{chapter.3}%
+\contentsline {xchapter}{Sprint I}{31}{chapter.3}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Sprint II}{41}{chapter.4}%
-\contentsline {table}{\numberline {4.1}{\ignorespaces Sprint II Backlog Items}}{42}{table.4.1}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Textual Description - Sign in with Google Account}}{45}{table.4.2}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Textual Description - Sign in with GitHub Account}}{45}{table.4.3}%
-\contentsline {table}{\numberline {4.4}{\ignorespaces Textual Description - Cross-Device Authentication}}{46}{table.4.4}%
-\contentsline {table}{\numberline {4.5}{\ignorespaces Textual Description - Sign Out}}{46}{table.4.5}%
-\contentsline {table}{\numberline {4.6}{\ignorespaces Textual Description - Explore Landing Page}}{47}{table.4.6}%
+\contentsline {xchapter}{Sprint II}{39}{chapter.4}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Sprint II Backlog Items}}{40}{table.4.1}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Textual Description - Sign in with Google Account}}{43}{table.4.2}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Textual Description - Sign in with GitHub Account}}{43}{table.4.3}%
+\contentsline {table}{\numberline {4.4}{\ignorespaces Textual Description - Cross-Device Authentication}}{44}{table.4.4}%
+\contentsline {table}{\numberline {4.5}{\ignorespaces Textual Description - Sign Out}}{44}{table.4.5}%
+\contentsline {table}{\numberline {4.6}{\ignorespaces Textual Description - Explore Landing Page}}{45}{table.4.6}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Sprint III}{56}{chapter.5}%
-\contentsline {table}{\numberline {5.1}{\ignorespaces Textual description of "Create new project" use case}}{60}{table.5.1}%
-\contentsline {table}{\numberline {5.2}{\ignorespaces Textual description of "View project" use case}}{61}{table.5.2}%
-\contentsline {table}{\numberline {5.3}{\ignorespaces Textual description of "Update project details" use case}}{62}{table.5.3}%
-\contentsline {table}{\numberline {5.4}{\ignorespaces Textual description of "Delete project" use case}}{63}{table.5.4}%
-\contentsline {table}{\numberline {5.5}{\ignorespaces Textual description of "Download project diagrams compressed" use case}}{64}{table.5.5}%
+\contentsline {xchapter}{Sprint III}{54}{chapter.5}%
+\contentsline {table}{\numberline {5.1}{\ignorespaces Textual description of "Create new project" use case}}{57}{table.5.1}%
+\contentsline {table}{\numberline {5.2}{\ignorespaces Textual description of "View project" use case}}{58}{table.5.2}%
+\contentsline {table}{\numberline {5.3}{\ignorespaces Textual description of "Update project details" use case}}{59}{table.5.3}%
+\contentsline {table}{\numberline {5.4}{\ignorespaces Textual description of "Delete project" use case}}{60}{table.5.4}%
+\contentsline {table}{\numberline {5.5}{\ignorespaces Textual description of "Download project diagrams compressed" use case}}{61}{table.5.5}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Sprint IV}{75}{chapter.6}%
-\contentsline {table}{\numberline {6.1}{\ignorespaces Sprint IV Backlog}}{76}{table.6.1}%
-\contentsline {table}{\numberline {6.2}{\ignorespaces Use Case Description - Create New Diagram}}{78}{table.6.2}%
-\contentsline {table}{\numberline {6.3}{\ignorespaces Use Case Description - View Diagram}}{78}{table.6.3}%
-\contentsline {table}{\numberline {6.4}{\ignorespaces Use Case Description - Delete Diagram}}{79}{table.6.4}%
-\contentsline {table}{\numberline {6.5}{\ignorespaces Use Case Description - Load Workspace}}{80}{table.6.5}%
-\contentsline {table}{\numberline {6.6}{\ignorespaces Use Case Description - Chat with AI}}{80}{table.6.6}%
-\contentsline {table}{\numberline {6.7}{\ignorespaces Use Case Description - Clear Chat}}{81}{table.6.7}%
-\contentsline {table}{\numberline {6.8}{\ignorespaces Use Case Description - Edit Diagram}}{81}{table.6.8}%
-\contentsline {table}{\numberline {6.9}{\ignorespaces Use Case Description - Save Changes}}{82}{table.6.9}%
-\contentsline {table}{\numberline {6.10}{\ignorespaces Use Case Description - Download Diagram Image}}{83}{table.6.10}%
+\contentsline {xchapter}{Sprint IV}{72}{chapter.6}%
+\contentsline {table}{\numberline {6.1}{\ignorespaces Sprint IV Backlog}}{73}{table.6.1}%
+\contentsline {table}{\numberline {6.2}{\ignorespaces Use Case Description - Create New Diagram}}{75}{table.6.2}%
+\contentsline {table}{\numberline {6.3}{\ignorespaces Use Case Description - View Diagram}}{76}{table.6.3}%
+\contentsline {table}{\numberline {6.4}{\ignorespaces Use Case Description - Delete Diagram}}{76}{table.6.4}%
+\contentsline {table}{\numberline {6.5}{\ignorespaces Use Case Description - Load Workspace}}{77}{table.6.5}%
+\contentsline {table}{\numberline {6.6}{\ignorespaces Use Case Description - Chat with AI}}{78}{table.6.6}%
+\contentsline {table}{\numberline {6.7}{\ignorespaces Use Case Description - Clear Chat}}{78}{table.6.7}%
+\contentsline {table}{\numberline {6.8}{\ignorespaces Use Case Description - Edit Diagram}}{79}{table.6.8}%
+\contentsline {table}{\numberline {6.9}{\ignorespaces Use Case Description - Save Changes}}{79}{table.6.9}%
+\contentsline {table}{\numberline {6.10}{\ignorespaces Use Case Description - Download Diagram Image}}{80}{table.6.10}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Sprint V}{94}{chapter.7}%
-\contentsline {table}{\numberline {7.1}{\ignorespaces Sprint V Product Backlog}}{96}{table.7.1}%
-\contentsline {table}{\numberline {7.2}{\ignorespaces Use Case: Explore Community}}{98}{table.7.2}%
-\contentsline {table}{\numberline {7.3}{\ignorespaces Use Case: Comment on Projects}}{99}{table.7.3}%
-\contentsline {table}{\numberline {7.4}{\ignorespaces Use Case: Like/Unlike Projects}}{100}{table.7.4}%
-\contentsline {table}{\numberline {7.5}{\ignorespaces Use Case: Update Comments}}{101}{table.7.5}%
-\contentsline {table}{\numberline {7.6}{\ignorespaces Use Case: Delete Comments}}{102}{table.7.6}%
-\contentsline {table}{\numberline {7.7}{\ignorespaces Use Case: Like/Unlike Comments}}{103}{table.7.7}%
-\contentsline {table}{\numberline {7.8}{\ignorespaces Use Case: Copy Projects to Workspace}}{104}{table.7.8}%
-\contentsline {table}{\numberline {7.9}{\ignorespaces Use Case: Edit Profile}}{105}{table.7.9}%
-\contentsline {table}{\numberline {7.10}{\ignorespaces Use Case: View Public Projects on Profile}}{106}{table.7.10}%
+\contentsline {xchapter}{Sprint V}{91}{chapter.7}%
+\contentsline {table}{\numberline {7.1}{\ignorespaces Sprint V Product Backlog}}{93}{table.7.1}%
+\contentsline {table}{\numberline {7.2}{\ignorespaces Use Case: Explore Community}}{95}{table.7.2}%
+\contentsline {table}{\numberline {7.3}{\ignorespaces Use Case: Comment on Projects}}{96}{table.7.3}%
+\contentsline {table}{\numberline {7.4}{\ignorespaces Use Case: Like/Unlike Projects}}{97}{table.7.4}%
+\contentsline {table}{\numberline {7.5}{\ignorespaces Use Case: Update Comments}}{98}{table.7.5}%
+\contentsline {table}{\numberline {7.6}{\ignorespaces Use Case: Delete Comments}}{99}{table.7.6}%
+\contentsline {table}{\numberline {7.7}{\ignorespaces Use Case: Like/Unlike Comments}}{100}{table.7.7}%
+\contentsline {table}{\numberline {7.8}{\ignorespaces Use Case: Copy Projects to Workspace}}{101}{table.7.8}%
+\contentsline {table}{\numberline {7.9}{\ignorespaces Use Case: Edit Profile}}{102}{table.7.9}%
+\contentsline {table}{\numberline {7.10}{\ignorespaces Use Case: View Public Projects on Profile}}{103}{table.7.10}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Sprint VI}{120}{chapter.8}%
-\addvspace {10\p@ }
-\contentsline {xchapter}{General Conclusion}{123}{chapter.9}%
+\contentsline {xchapter}{General Conclusion}{117}{chapter.8}%

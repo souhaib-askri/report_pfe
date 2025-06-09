@@ -1,24 +1,24 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.1}Introduction}{\reset@font\mtcSfont 76}{section.6.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.2}Sprint Planning}{\reset@font\mtcSfont 76}{section.6.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.2.1}Objectives of Sprint IV}{\reset@font\mtcSSfont 76}{subsection.6.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.2.2}Backlog of Sprint IV}{\reset@font\mtcSSfont 76}{subsection.6.2.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.3}Analyse}{\reset@font\mtcSfont 77}{section.6.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.3.1}Use case diagram for sprint IV}{\reset@font\mtcSSfont 77}{subsection.6.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.3.2}Refined use case "Manage Diagrams"}{\reset@font\mtcSSfont 77}{subsection.6.3.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.2.1}Use case}{\reset@font\mtcSSSfont 77}{subsubsection.6.3.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.2.2}Textual description of use case "Create new diagram"}{\reset@font\mtcSSSfont 78}{subsubsection.6.3.2.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.2.3}Textual description of use case "View diagram"}{\reset@font\mtcSSSfont 78}{subsubsection.6.3.2.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.2.4}Textual description of use case "Delete diagram"}{\reset@font\mtcSSSfont 79}{subsubsection.6.3.2.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.3.3}Refined use case "Manage Workspace"}{\reset@font\mtcSSfont 79}{subsection.6.3.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.3.1}Textual description of use case "load workspace"}{\reset@font\mtcSSSfont 80}{subsubsection.6.3.3.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.3.2}Textual description of use case "chat with AI"}{\reset@font\mtcSSSfont 80}{subsubsection.6.3.3.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.3.3}Textual description of use case "clear chat"}{\reset@font\mtcSSSfont 81}{subsubsection.6.3.3.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.3.4}Textual description of use case "edit diagram"}{\reset@font\mtcSSSfont 81}{subsubsection.6.3.3.4}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.3.5}Textual description of use case "save changes"}{\reset@font\mtcSSSfont 82}{subsubsection.6.3.3.5}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.3.6}Textual description of use case "Download Diagram Image"}{\reset@font\mtcSSSfont 83}{subsubsection.6.3.3.6}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.4}Conception}{\reset@font\mtcSfont 83}{section.6.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.4.1}Activity Diagrams}{\reset@font\mtcSSfont 84}{subsection.6.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.4.2}Sequence Diagrams}{\reset@font\mtcSSfont 85}{subsection.6.4.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.5}Deliverables of Sprint IV}{\reset@font\mtcSfont 89}{section.6.5}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.6}Retrospective of Sprint IV}{\reset@font\mtcSfont 92}{section.6.6}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.7}Conclusion}{\reset@font\mtcSfont 93}{section.6.7}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.1}Introduction}{\reset@font\mtcSfont 72}{section.6.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.2}Sprint Planning}{\reset@font\mtcSfont 72}{section.6.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.2.1}Objectives of Sprint IV}{\reset@font\mtcSSfont 72}{subsection.6.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.2.2}Backlog of Sprint IV}{\reset@font\mtcSSfont 73}{subsection.6.2.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.3}Analyse}{\reset@font\mtcSfont 73}{section.6.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.3.1}Use case diagram for sprint IV}{\reset@font\mtcSSfont 73}{subsection.6.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.3.2}Refined use case "Manage Diagrams"}{\reset@font\mtcSSfont 74}{subsection.6.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.2.1}Use case}{\reset@font\mtcSSSfont 75}{subsubsection.6.3.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.2.2}Textual description of use case "Create new diagram"}{\reset@font\mtcSSSfont 75}{subsubsection.6.3.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.2.3}Textual description of use case "View diagram"}{\reset@font\mtcSSSfont 76}{subsubsection.6.3.2.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.2.4}Textual description of use case "Delete diagram"}{\reset@font\mtcSSSfont 76}{subsubsection.6.3.2.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.3.3}Refined use case "Manage Workspace"}{\reset@font\mtcSSfont 77}{subsection.6.3.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.3.1}Textual description of use case "load workspace"}{\reset@font\mtcSSSfont 77}{subsubsection.6.3.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.3.2}Textual description of use case "chat with AI"}{\reset@font\mtcSSSfont 78}{subsubsection.6.3.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.3.3}Textual description of use case "clear chat"}{\reset@font\mtcSSSfont 78}{subsubsection.6.3.3.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.3.4}Textual description of use case "edit diagram"}{\reset@font\mtcSSSfont 79}{subsubsection.6.3.3.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.3.5}Textual description of use case "save changes"}{\reset@font\mtcSSSfont 79}{subsubsection.6.3.3.5}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {6.3.3.6}Textual description of use case "Download Diagram Image"}{\reset@font\mtcSSSfont 80}{subsubsection.6.3.3.6}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.4}Conception}{\reset@font\mtcSfont 80}{section.6.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.4.1}Activity Diagrams}{\reset@font\mtcSSfont 81}{subsection.6.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {6.4.2}Sequence Diagrams}{\reset@font\mtcSSfont 82}{subsection.6.4.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.5}Deliverables of Sprint IV}{\reset@font\mtcSfont 86}{section.6.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.6}Retrospective of Sprint IV}{\reset@font\mtcSfont 89}{section.6.6}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {6.7}Conclusion}{\reset@font\mtcSfont 90}{section.6.7}}

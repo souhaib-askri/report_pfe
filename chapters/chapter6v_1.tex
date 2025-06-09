@@ -1,6 +1,5 @@
 \chapter[Sprint IV]{Study and Implementation of Sprint IV: Diagram \& Workspace Management}
 
-\minitoc
 
 \section{Introduction}
 Sprint IV focuses on the core functionality of diagram and workspace management within our application. This sprint represents a significant milestone in developing a comprehensive diagramming tool that enables users to create, manage, and interact with diagrams efficiently. The implementation includes both diagram lifecycle management and advanced workspace features such as AI-assisted editing and interactive code editing capabilities.
@@ -12,35 +11,35 @@ The primary objectives of Sprint IV are to implement comprehensive diagram manag
 
 \subsection{Backlog of Sprint IV}
 \begin{table}[H]
-\centering
-\caption{Sprint IV Backlog}
-\begin{tabular}{|c|l|c|l|c|}
-\hline
-\textbf{Epic} & \textbf{Feature} & \textbf{ID} & \textbf{User Story} & \textbf{Priority} \\
-\hline
-\multirow{5}{*}{4} & \multirow{5}{*}{Manage Diagrams} & 4.1 & As a user; I want to create a new diagram so that I can visualize my ideas. & M \\
-\cline{3-5}
-& & 4.2 & As a user; I want to view my diagram so that I can review my work. & M \\
-\cline{3-5}
-& & 4.3 & As a user; I want to update diagram details so that I can improve my designs. & M \\
-\cline{3-5}
-& & 4.4 & As a user; I want to delete a diagram so that I can remove unwanted content. & M \\
-\cline{3-5}
-& & 4.5 & As a user; I want to download diagram images in appropriate formats so that I can use them in other applications. & S \\
-\hline
-\multirow{5}{*}{5} & \multirow{5}{*}{Manage Workspace} & 5.1 & As a user; I want to control and split views in my workspace so that I can work efficiently. & S \\
-\cline{3-5}
-& & 5.2 & As a user; I want to edit diagram code in an interactive editor so that I can create diagrams efficiently. & M \\
-\cline{3-5}
-& & 5.3 & As a user; I want to chat with an AI model to edit diagram code so that I can get assistance with complex diagrams. & C \\
-\cline{3-5}
-& & 5.4 & As an AI system; I need to respond to user requests and help edit diagram code so that users can create better diagrams. & C \\
-\cline{3-5}
-& & 5.5 & As a PlantUML Server; I need to render diagram code into diagram images so that users can visualize their work. & M \\
-\hline
-\end{tabular}
-\end{table}
-
+    \centering
+    \caption{Sprint IV Backlog}
+    \begin{tabularx}{\textwidth}{|c|c|c|X|c|}
+    \hline
+    \textbf{Epic} & \textbf{Feature} & \textbf{ID} & \textbf{User Story} & \textbf{Priority} \\
+    \hline
+    \multirow{5}{*}{4} & \multirow{5}{*}{Manage Diagrams} & 4.1 & As a user; I want to create a new diagram so that I can visualize my ideas. & M \\
+    \cline{3-5}
+    & & 4.2 & As a user; I want to view my diagram so that I can review my work. & M \\
+    \cline{3-5}
+    & & 4.3 & As a user; I want to update diagram details so that I can improve my designs. & M \\
+    \cline{3-5}
+    & & 4.4 & As a user; I want to delete a diagram so that I can remove unwanted content. & M \\
+    \cline{3-5}
+    & & 4.5 & As a user; I want to download diagram images in appropriate formats so that I can use them in other applications. & S \\
+    \hline
+    \multirow{5}{*}{5} & \multirow{5}{*}{Manage Workspace} & 5.1 & As a user; I want to control and split views in my workspace so that I can work efficiently. & S \\
+    \cline{3-5}
+    & & 5.2 & As a user; I want to edit diagram code in an interactive editor so that I can create diagrams efficiently. & M \\
+    \cline{3-5}
+    & & 5.3 & As a user; I want to chat with an AI model to edit diagram code so that I can get assistance with complex diagrams. & C \\
+    \cline{3-5}
+    & & 5.4 & As an AI system; I need to respond to user requests and help edit diagram code so that users can create better diagrams. & C \\
+    \cline{3-5}
+    & & 5.5 & As a PlantUML Server; I need to render diagram code into diagram images so that users can visualize their work. & M \\
+    \hline
+    \end{tabularx}
+    \end{table}
+    
 \section{Analyse}
 
 \subsection{Use case diagram for sprint IV}
@@ -61,11 +60,6 @@ The use case diagram for Sprint IV illustrates the interaction between different
 \end{figure}
 
 \subsubsection{Use case}
-\begin{verbatim}
-usecase "Create Diagram" as CreateDiagram
-usecase "View Diagram" as ViewDiagram  
-usecase "Delete Diagram" as DeleteDiagram
-\end{verbatim}
 
 \subsubsection{Textual description of use case "Create new diagram"}
 \begin{table}[H]
