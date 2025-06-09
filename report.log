@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.6.8)  9 JUN 2025 16:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.6.8)  9 JUN 2025 17:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -848,9 +848,13 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
  (./chapters/chapter1v_1.tex
 Chapter 1.
-Package minitoc Info: I0006
-(minitoc)             report.mtc1 is empty on input line 4.
-[14
+\openout3 = `report.mtc'.
+
+\openout3 = `report.mtc'.
+
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 4.
+(./report.mtc1) [14
 
 
 ] [15]
@@ -898,7 +902,7 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 13
  (/usr/share/texlive/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [17{/usr/share/texlive/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
-<pictures/web/UML_logo.svg.png, id=1230, 401.5pt x 292.09125pt>
+<pictures/web/UML_logo.svg.png, id=1235, 401.5pt x 292.09125pt>
 File: pictures/web/UML_logo.svg.png Graphic file (type png)
 <use pictures/web/UML_logo.svg.png>
 Package pdftex.def Info: pictures/web/UML_logo.svg.png  used on input line 155.
@@ -907,15 +911,17 @@ Package pdftex.def Info: pictures/web/UML_logo.svg.png  used on input line 155.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.164 
-       <./pictures/web/UML_logo.svg.png>]) [19]
+l.161 \section
+              {Conclusion} <./pictures/web/UML_logo.svg.png>]) [19]
 \openout2 = `chapters/chapter2v_1.aux'.
 
  (./chapters/chapter2v_1.tex
 Chapter 2.
-Package minitoc Info: I0006
-(minitoc)             report.mtc2 is empty on input line 10.
-[20
+\openout3 = `report.mtc'.
+
+\openout3 = `report.mtc'.
+
+(./report.mtc2) [20
 
 
 
@@ -980,7 +986,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.2.1}) ha
                                                   \__shipout_drop_firstpage_...
 l.186 \end{longtable}
                      ] [25]
-<./conception/global_use_case_diagram.png, id=1285, 605.26125pt x 501.875pt>
+<./conception/global_use_case_diagram.png, id=1290, 605.26125pt x 501.875pt>
 File: ./conception/global_use_case_diagram.png Graphic file (type png)
 <use ./conception/global_use_case_diagram.png>
 Package pdftex.def Info: ./conception/global_use_case_diagram.png  used on input line 194.
@@ -996,112 +1002,112 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.2.3}) ha
                                                   \__shipout_drop_firstpage_...
 l.228 
        <./conception/global_use_case_diagram.png (PNG copy)>]
-<./conception/deployement_diagram.png, id=1294, 800.9925pt x 485.815pt>
+<./conception/deployement_diagram.png, id=1300, 800.9925pt x 485.815pt>
 File: ./conception/deployement_diagram.png Graphic file (type png)
 <use ./conception/deployement_diagram.png>
 Package pdftex.def Info: ./conception/deployement_diagram.png  used on input line 231.
 (pdftex.def)             Requested size: 455.24411pt x 276.11682pt.
-<pictures/web/logo/linux.png, id=1295, 933.4875pt x 933.4875pt>
+<pictures/web/logo/linux.png, id=1301, 933.4875pt x 933.4875pt>
 File: pictures/web/logo/linux.png Graphic file (type png)
 <use pictures/web/logo/linux.png>
 Package pdftex.def Info: pictures/web/logo/linux.png  used on input line 258.
 (pdftex.def)             Requested size: 42.67912pt x 42.67458pt.
-<pictures/web/logo/git.png, id=1296, 200.75pt x 200.75pt>
+<pictures/web/logo/git.png, id=1302, 200.75pt x 200.75pt>
 File: pictures/web/logo/git.png Graphic file (type png)
 <use pictures/web/logo/git.png>
 Package pdftex.def Info: pictures/web/logo/git.png  used on input line 260.
 (pdftex.def)             Requested size: 42.67912pt x 42.67947pt.
-<pictures/web/logo/github-mark.png, id=1297, 48.18pt x 48.18pt>
+<pictures/web/logo/github-mark.png, id=1303, 48.18pt x 48.18pt>
 File: pictures/web/logo/github-mark.png Graphic file (type png)
 <use pictures/web/logo/github-mark.png>
 Package pdftex.def Info: pictures/web/logo/github-mark.png  used on input line 262.
 (pdftex.def)             Requested size: 42.67912pt x 42.6786pt.
-<pictures/web/logo/vscodium-icon.png, id=1298, 1228.59pt x 1228.59pt>
+<pictures/web/logo/vscodium-icon.png, id=1304, 1228.59pt x 1228.59pt>
 File: pictures/web/logo/vscodium-icon.png Graphic file (type png)
 <use pictures/web/logo/vscodium-icon.png>
 Package pdftex.def Info: pictures/web/logo/vscodium-icon.png  used on input line 264.
 (pdftex.def)             Requested size: 42.67912pt x 42.6676pt.
-<pictures/web/logo/latex.png, id=1299, 2509.375pt x 2509.375pt>
+<pictures/web/logo/latex.png, id=1305, 2509.375pt x 2509.375pt>
 File: pictures/web/logo/latex.png Graphic file (type png)
 <use pictures/web/logo/latex.png>
 Package pdftex.def Info: pictures/web/logo/latex.png  used on input line 266.
 (pdftex.def)             Requested size: 42.67912pt x 42.65497pt.
-<pictures/web/logo/node-svgrepo-com.png, id=1300, 602.25pt x 602.25pt>
+<pictures/web/logo/node-svgrepo-com.png, id=1306, 602.25pt x 602.25pt>
 File: pictures/web/logo/node-svgrepo-com.png Graphic file (type png)
 <use pictures/web/logo/node-svgrepo-com.png>
 Package pdftex.def Info: pictures/web/logo/node-svgrepo-com.png  used on input line 268.
 (pdftex.def)             Requested size: 42.67912pt x 42.67642pt.
-<pictures/web/logo/next-js.png, id=1301, 2055.68pt x 2055.68pt>
+<pictures/web/logo/next-js.png, id=1307, 2055.68pt x 2055.68pt>
 File: pictures/web/logo/next-js.png Graphic file (type png)
 <use pictures/web/logo/next-js.png>
 Package pdftex.def Info: pictures/web/logo/next-js.png  used on input line 270.
 (pdftex.def)             Requested size: 42.67912pt x 42.65927pt.
-<pictures/web/logo/reactts-svgrepo-com.png, id=1302, 602.25pt x 602.25pt>
+<pictures/web/logo/reactts-svgrepo-com.png, id=1308, 602.25pt x 602.25pt>
 File: pictures/web/logo/reactts-svgrepo-com.png Graphic file (type png)
 <use pictures/web/logo/reactts-svgrepo-com.png>
 Package pdftex.def Info: pictures/web/logo/reactts-svgrepo-com.png  used on input line 272.
 (pdftex.def)             Requested size: 42.67912pt x 42.67642pt.
-<pictures/web/logo/typescript-official-svgrepo-com.png, id=1303, 602.25pt x 602.25pt>
+<pictures/web/logo/typescript-official-svgrepo-com.png, id=1309, 602.25pt x 602.25pt>
 File: pictures/web/logo/typescript-official-svgrepo-com.png Graphic file (type png)
 <use pictures/web/logo/typescript-official-svgrepo-com.png>
 Package pdftex.def Info: pictures/web/logo/typescript-official-svgrepo-com.png  used on input line 274.
 (pdftex.def)             Requested size: 42.67912pt x 42.67642pt.
-<pictures/web/logo/next-authe.png, id=1304, 461.725pt x 461.725pt>
+<pictures/web/logo/next-authe.png, id=1310, 461.725pt x 461.725pt>
 File: pictures/web/logo/next-authe.png Graphic file (type png)
 <use pictures/web/logo/next-authe.png>
 Package pdftex.def Info: pictures/web/logo/next-authe.png  used on input line 276.
 (pdftex.def)             Requested size: 42.67912pt x 42.67366pt.
-<pictures/web/logo/tailwind-svgrepo-com.png, id=1305, 602.25pt x 602.25pt>
+<pictures/web/logo/tailwind-svgrepo-com.png, id=1311, 602.25pt x 602.25pt>
 File: pictures/web/logo/tailwind-svgrepo-com.png Graphic file (type png)
 <use pictures/web/logo/tailwind-svgrepo-com.png>
 Package pdftex.def Info: pictures/web/logo/tailwind-svgrepo-com.png  used on input line 278.
 (pdftex.def)             Requested size: 42.67912pt x 42.67642pt.
-<pictures/web/logo/shad-cn-ui.png, id=1306, 301.125pt x 301.125pt>
+<pictures/web/logo/shad-cn-ui.png, id=1312, 301.125pt x 301.125pt>
 File: pictures/web/logo/shad-cn-ui.png Graphic file (type png)
 <use pictures/web/logo/shad-cn-ui.png>
 Package pdftex.def Info: pictures/web/logo/shad-cn-ui.png  used on input line 280.
 (pdftex.def)             Requested size: 42.67912pt x 42.67642pt.
-<pictures/web/logo/prisma.png, id=1307, 803.0pt x 803.0pt>
+<pictures/web/logo/prisma.png, id=1313, 803.0pt x 803.0pt>
 File: pictures/web/logo/prisma.png Graphic file (type png)
 <use pictures/web/logo/prisma.png>
 Package pdftex.def Info: pictures/web/logo/prisma.png  used on input line 282.
 (pdftex.def)             Requested size: 42.67912pt x 42.67642pt.
-<pictures/web/logo/pgsql-svgrepo-com.png, id=1308, 602.25pt x 602.25pt>
+<pictures/web/logo/pgsql-svgrepo-com.png, id=1314, 602.25pt x 602.25pt>
 File: pictures/web/logo/pgsql-svgrepo-com.png Graphic file (type png)
 <use pictures/web/logo/pgsql-svgrepo-com.png>
 Package pdftex.def Info: pictures/web/logo/pgsql-svgrepo-com.png  used on input line 284.
 (pdftex.def)             Requested size: 42.67912pt x 42.67642pt.
-<pictures/web/logo/express-js.png, id=1309, 803.0pt x 803.0pt>
+<pictures/web/logo/express-js.png, id=1315, 803.0pt x 803.0pt>
 File: pictures/web/logo/express-js.png Graphic file (type png)
 <use pictures/web/logo/express-js.png>
 Package pdftex.def Info: pictures/web/logo/express-js.png  used on input line 286.
 (pdftex.def)             Requested size: 42.67912pt x 42.67642pt.
-<pictures/web/logo/langchain-icon-seeklogo.png, id=1310, 225.84375pt x 225.84375pt>
+<pictures/web/logo/langchain-icon-seeklogo.png, id=1316, 225.84375pt x 225.84375pt>
 File: pictures/web/logo/langchain-icon-seeklogo.png Graphic file (type png)
 <use pictures/web/logo/langchain-icon-seeklogo.png>
 Package pdftex.def Info: pictures/web/logo/langchain-icon-seeklogo.png  used on input line 288.
 (pdftex.def)             Requested size: 42.67912pt x 42.67642pt.
-<pictures/web/logo/plantuml-svgrepo-com.png, id=1311, 602.25pt x 602.25pt>
+<pictures/web/logo/plantuml-svgrepo-com.png, id=1317, 602.25pt x 602.25pt>
 File: pictures/web/logo/plantuml-svgrepo-com.png Graphic file (type png)
 <use pictures/web/logo/plantuml-svgrepo-com.png>
 Package pdftex.def Info: pictures/web/logo/plantuml-svgrepo-com.png  used on input line 290.
 (pdftex.def)             Requested size: 42.67912pt x 42.67642pt.
-<pictures/web/logo/admin-js.png, id=1312, 113.42375pt x 113.42375pt>
+<pictures/web/logo/admin-js.png, id=1318, 113.42375pt x 113.42375pt>
 File: pictures/web/logo/admin-js.png Graphic file (type png)
 <use pictures/web/logo/admin-js.png>
 Package pdftex.def Info: pictures/web/logo/admin-js.png  used on input line 292.
 (pdftex.def)             Requested size: 42.67912pt x 42.67917pt.
-<pictures/web/logo/docker.png, id=1313, 759.3168pt x 599.3592pt>
+<pictures/web/logo/docker.png, id=1319, 759.3168pt x 599.3592pt>
 File: pictures/web/logo/docker.png Graphic file (type png)
 <use pictures/web/logo/docker.png>
 Package pdftex.def Info: pictures/web/logo/docker.png  used on input line 294.
 (pdftex.def)             Requested size: 42.67912pt x 33.68277pt.
-<pictures/web/logo/minio.png, id=1314, 513.92pt x 513.92pt>
+<pictures/web/logo/minio.png, id=1320, 513.92pt x 513.92pt>
 File: pictures/web/logo/minio.png Graphic file (type png)
 <use pictures/web/logo/minio.png>
 Package pdftex.def Info: pictures/web/logo/minio.png  used on input line 296.
 (pdftex.def)             Requested size: 42.67912pt x 42.67494pt.
-<pictures/web/logo/firefox.png, id=1315, 1204.5pt x 1204.5pt>
+<pictures/web/logo/firefox.png, id=1321, 1204.5pt x 1204.5pt>
 File: pictures/web/logo/firefox.png Graphic file (type png)
 <use pictures/web/logo/firefox.png>
 Package pdftex.def Info: pictures/web/logo/firefox.png  used on input line 298.
@@ -1120,8 +1126,6 @@ Chapter 3.
 
 \openout3 = `report.mtc'.
 
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 4.
 (./report.mtc3) [32
 
 
@@ -1136,7 +1140,7 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<conception/SprintI/global_class_diagram.png, id=1386, 1008.76875pt x 1259.70625pt>
+<conception/SprintI/global_class_diagram.png, id=1391, 1008.76875pt x 1259.70625pt>
 File: conception/SprintI/global_class_diagram.png Graphic file (type png)
 <use conception/SprintI/global_class_diagram.png>
 Package pdftex.def Info: conception/SprintI/global_class_diagram.png  used on input line 93.
@@ -1168,7 +1172,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.4.1}) ha
                                                   \__shipout_drop_firstpage_...
 l.50 
      ]
-<conception/SprintII/use_case_diagrams/use_case_diagram_of_SprintII.png, id=1444, 605.26125pt x 500.87125pt>
+<conception/SprintII/use_case_diagrams/use_case_diagram_of_SprintII.png, id=1449, 605.26125pt x 500.87125pt>
 File: conception/SprintII/use_case_diagrams/use_case_diagram_of_SprintII.png Graphic file (type png)
 <use conception/SprintII/use_case_diagrams/use_case_diagram_of_SprintII.png>
 Package pdftex.def Info: conception/SprintII/use_case_diagrams/use_case_diagram_of_SprintII.png  used on input line 59.
@@ -1179,7 +1183,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) h
                                                   \__shipout_drop_firstpage_...
 l.66 \subsection
                 {Refined use case "Authentication"} <./conception/SprintII/use_case_diagrams/use_case_diagram_of_SprintII.png (PNG copy)>]
-<conception/SprintII/use_case_diagrams/refined_use_case_feature_auth.png, id=1450, 480.79625pt x 278.03876pt>
+<conception/SprintII/use_case_diagrams/refined_use_case_feature_auth.png, id=1455, 480.79625pt x 278.03876pt>
 File: conception/SprintII/use_case_diagrams/refined_use_case_feature_auth.png Graphic file (type png)
 <use conception/SprintII/use_case_diagrams/refined_use_case_feature_auth.png>
 Package pdftex.def Info: conception/SprintII/use_case_diagrams/refined_use_case_feature_auth.png  used on input line 69.
@@ -1260,7 +1264,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.4.5}) ha
                                                   \__shipout_drop_firstpage_...
 l.239 
       ]
-<conception/SprintII/sequence_diagrams/sequence_authentication_1_1_AuthenticateUsingGoogleAccount.png, id=1463, 1249.66875pt x 1952.29375pt>
+<conception/SprintII/sequence_diagrams/sequence_authentication_1_1_AuthenticateUsingGoogleAccount.png, id=1468, 1249.66875pt x 1952.29375pt>
 File: conception/SprintII/sequence_diagrams/sequence_authentication_1_1_AuthenticateUsingGoogleAccount.png Graphic file (type png)
 <use conception/SprintII/sequence_diagrams/sequence_authentication_1_1_AuthenticateUsingGoogleAccount.png>
 Package pdftex.def Info: conception/SprintII/sequence_diagrams/sequence_authentication_1_1_AuthenticateUsingGoogleAccount.png  used on input line 247.
@@ -1279,7 +1283,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) h
                                                   \__shipout_drop_firstpage_...
 l.251 
        <./conception/SprintII/sequence_diagrams/sequence_authentication_1_1_AuthenticateUsingGoogleAccount.png (PNG copy)>]
-<conception/SprintII/sequence_diagrams/sequence_authentication_1_3_StayAuthenticatedAcrossDevices.png, id=1472, 735.74875pt x 1042.89626pt>
+<conception/SprintII/sequence_diagrams/sequence_authentication_1_3_StayAuthenticatedAcrossDevices.png, id=1477, 735.74875pt x 1042.89626pt>
 File: conception/SprintII/sequence_diagrams/sequence_authentication_1_3_StayAuthenticatedAcrossDevices.png Graphic file (type png)
 <use conception/SprintII/sequence_diagrams/sequence_authentication_1_3_StayAuthenticatedAcrossDevices.png>
 Package pdftex.def Info: conception/SprintII/sequence_diagrams/sequence_authentication_1_3_StayAuthenticatedAcrossDevices.png  used on input line 257.
@@ -1290,7 +1294,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.4}) h
                                                   \__shipout_drop_firstpage_...
 l.263 
        <./conception/SprintII/sequence_diagrams/sequence_authentication_1_3_StayAuthenticatedAcrossDevices.png (PNG copy)>]
-<conception/SprintII/sequence_diagrams/sequence_authentication_1_4_SignoutFromAccount.png, id=1482, 922.44624pt x 1312.905pt>
+<conception/SprintII/sequence_diagrams/sequence_authentication_1_4_SignoutFromAccount.png, id=1487, 922.44624pt x 1312.905pt>
 File: conception/SprintII/sequence_diagrams/sequence_authentication_1_4_SignoutFromAccount.png Graphic file (type png)
 <use conception/SprintII/sequence_diagrams/sequence_authentication_1_4_SignoutFromAccount.png>
 Package pdftex.def Info: conception/SprintII/sequence_diagrams/sequence_authentication_1_4_SignoutFromAccount.png  used on input line 267.
@@ -1301,12 +1305,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.5}) h
                                                   \__shipout_drop_firstpage_...
 l.273 
        <./conception/SprintII/sequence_diagrams/sequence_authentication_1_4_SignoutFromAccount.png (PNG copy)>]
-<screenshots/landing.png, id=1491, 1606.0pt x 793.96625pt>
+<screenshots/landing.png, id=1496, 1606.0pt x 793.96625pt>
 File: screenshots/landing.png Graphic file (type png)
 <use screenshots/landing.png>
 Package pdftex.def Info: screenshots/landing.png  used on input line 281.
 (pdftex.def)             Requested size: 455.24411pt x 225.05911pt.
-<screenshots/signin.png, id=1492, 1606.0pt x 793.96625pt>
+<screenshots/signin.png, id=1497, 1606.0pt x 793.96625pt>
 File: screenshots/signin.png Graphic file (type png)
 <use screenshots/signin.png>
 Package pdftex.def Info: screenshots/signin.png  used on input line 291.
@@ -1317,7 +1321,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.4.6}) h
                                                   \__shipout_drop_firstpage_...
 l.295 
        <./screenshots/landing.png>]
-<screenshots/sign-out.png, id=1498, 572.1375pt x 404.51125pt>
+<screenshots/sign-out.png, id=1503, 572.1375pt x 404.51125pt>
 File: screenshots/sign-out.png Graphic file (type png)
 <use screenshots/sign-out.png>
 Package pdftex.def Info: screenshots/sign-out.png  used on input line 301.
@@ -1347,12 +1351,12 @@ Chapter 5.
 
 
 ] [57]
-<conception/SprintIII/use_case_diagrams/use_case_diagram_of_SprintIII.png, id=1540, 544.0325pt x 142.5325pt>
+<conception/SprintIII/use_case_diagrams/use_case_diagram_of_SprintIII.png, id=1545, 544.0325pt x 142.5325pt>
 File: conception/SprintIII/use_case_diagrams/use_case_diagram_of_SprintIII.png Graphic file (type png)
 <use conception/SprintIII/use_case_diagrams/use_case_diagram_of_SprintIII.png>
 Package pdftex.def Info: conception/SprintIII/use_case_diagrams/use_case_diagram_of_SprintIII.png  used on input line 37.
 (pdftex.def)             Requested size: 364.19667pt x 95.42014pt.
-<conception/SprintIII/use_case_diagrams/refined_use_case_feature_project_management.png, id=1541, 840.13875pt x 439.6425pt>
+<conception/SprintIII/use_case_diagrams/refined_use_case_feature_project_management.png, id=1546, 840.13875pt x 439.6425pt>
 File: conception/SprintIII/use_case_diagrams/refined_use_case_feature_project_management.png Graphic file (type png)
 <use conception/SprintIII/use_case_diagrams/refined_use_case_feature_project_management.png>
 Package pdftex.def Info: conception/SprintIII/use_case_diagrams/refined_use_case_feature_project_management.png  used on input line 48.
@@ -1413,7 +1417,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.5.4}) ha
                                                   \__shipout_drop_firstpage_...
 l.211 
       ]
-<conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_1_CreateNewProject.png, id=1567, 739.76375pt x 645.41125pt>
+<conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_1_CreateNewProject.png, id=1572, 739.76375pt x 645.41125pt>
 File: conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_1_CreateNewProject.png Graphic file (type png)
 <use conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_1_CreateNewProject.png>
 Package pdftex.def Info: conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_1_CreateNewProject.png  used on input line 222.
@@ -1424,7 +1428,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.5.5}) ha
                                                   \__shipout_drop_firstpage_...
 l.225 \end{figure}
                   ]
-<conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_2_ViewProjectDetails.png, id=1572, 824.07875pt x 684.5575pt>
+<conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_2_ViewProjectDetails.png, id=1577, 824.07875pt x 684.5575pt>
 File: conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_2_ViewProjectDetails.png Graphic file (type png)
 <use conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_2_ViewProjectDetails.png>
 Package pdftex.def Info: conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_2_ViewProjectDetails.png  used on input line 229.
@@ -1435,7 +1439,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3}) h
                                                   \__shipout_drop_firstpage_...
 l.233 
        <./conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_1_CreateNewProject.png (PNG copy)>]
-<conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_3_UpdateProjectDetails.png, id=1577, 752.8125pt x 625.33624pt>
+<conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_3_UpdateProjectDetails.png, id=1582, 752.8125pt x 625.33624pt>
 File: conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_3_UpdateProjectDetails.png Graphic file (type png)
 <use conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_3_UpdateProjectDetails.png>
 Package pdftex.def Info: conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_3_UpdateProjectDetails.png  used on input line 236.
@@ -1446,7 +1450,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.4}) h
                                                   \__shipout_drop_firstpage_...
 l.240 
        <./conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_2_ViewProjectDetails.png (PNG copy)>]
-<conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_4_DeleteProject.png, id=1582, 792.9625pt x 749.80125pt>
+<conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_4_DeleteProject.png, id=1587, 792.9625pt x 749.80125pt>
 File: conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_4_DeleteProject.png Graphic file (type png)
 <use conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_4_DeleteProject.png>
 Package pdftex.def Info: conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_4_DeleteProject.png  used on input line 243.
@@ -1457,7 +1461,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.5}) h
                                                   \__shipout_drop_firstpage_...
 l.247 
        <./conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_3_UpdateProjectDetails.png (PNG copy)>]
-<conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_5_DownloadProjectDiagramsAsZip.png, id=1588, 963.6pt x 786.94pt>
+<conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_5_DownloadProjectDiagramsAsZip.png, id=1593, 963.6pt x 786.94pt>
 File: conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_5_DownloadProjectDiagramsAsZip.png Graphic file (type png)
 <use conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_5_DownloadProjectDiagramsAsZip.png>
 Package pdftex.def Info: conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_5_DownloadProjectDiagramsAsZip.png  used on input line 250.
@@ -1468,7 +1472,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.6}) h
                                                   \__shipout_drop_firstpage_...
 l.254 
        <./conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_4_DeleteProject.png (PNG copy)>]
-<conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_6_ShareProject.png, id=1593, 841.1425pt x 702.625pt>
+<conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_6_ShareProject.png, id=1598, 841.1425pt x 702.625pt>
 File: conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_6_ShareProject.png Graphic file (type png)
 <use conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_6_ShareProject.png>
 Package pdftex.def Info: conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_6_ShareProject.png  used on input line 257.
@@ -1479,7 +1483,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.7}) h
                                                   \__shipout_drop_firstpage_...
 l.261 
        <./conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_5_DownloadProjectDiagramsAsZip.png (PNG copy)>]
-<screenshots/home.png, id=1598, 1606.0pt x 1314.9125pt>
+<screenshots/home.png, id=1603, 1606.0pt x 1314.9125pt>
 File: screenshots/home.png Graphic file (type png)
 <use screenshots/home.png>
 Package pdftex.def Info: screenshots/home.png  used on input line 268.
@@ -1490,12 +1494,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.8}) h
                                                   \__shipout_drop_firstpage_...
 l.272 
        <./conception/SprintIII/sequence_diagrams/sequence_projectManagement_3_6_ShareProject.png (PNG copy)>]
-<screenshots/add-project.png, id=1603, 1606.0pt x 793.96625pt>
+<screenshots/add-project.png, id=1608, 1606.0pt x 793.96625pt>
 File: screenshots/add-project.png Graphic file (type png)
 <use screenshots/add-project.png>
 Package pdftex.def Info: screenshots/add-project.png  used on input line 275.
 (pdftex.def)             Requested size: 364.19667pt x 180.05214pt.
-<screenshots/project-page.png, id=1604, 1606.0pt x 973.6375pt>
+<screenshots/project-page.png, id=1609, 1606.0pt x 973.6375pt>
 File: screenshots/project-page.png Graphic file (type png)
 <use screenshots/project-page.png>
 Package pdftex.def Info: screenshots/project-page.png  used on input line 282.
@@ -1511,12 +1515,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.10}) 
                                                   \__shipout_drop_firstpage_...
 l.286 
        <./screenshots/home.png> <./screenshots/add-project.png>]
-<screenshots/project-page2.png, id=1611, 1606.0pt x 793.96625pt>
+<screenshots/project-page2.png, id=1616, 1606.0pt x 793.96625pt>
 File: screenshots/project-page2.png Graphic file (type png)
 <use screenshots/project-page2.png>
 Package pdftex.def Info: screenshots/project-page2.png  used on input line 289.
 (pdftex.def)             Requested size: 364.19667pt x 180.05214pt.
-<screenshots/delate.png, id=1612, 1606.0pt x 793.96625pt>
+<screenshots/delate.png, id=1617, 1606.0pt x 793.96625pt>
 File: screenshots/delate.png Graphic file (type png)
 <use screenshots/delate.png>
 Package pdftex.def Info: screenshots/delate.png  used on input line 296.
@@ -1532,7 +1536,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.12}) 
                                                   \__shipout_drop_firstpage_...
 l.300 
        <./screenshots/project-page.png> <./screenshots/project-page2.png>]
-<screenshots/me.png, id=1619, 1268.74pt x 726.715pt>
+<screenshots/me.png, id=1624, 1268.74pt x 726.715pt>
 File: screenshots/me.png Graphic file (type png)
 <use screenshots/me.png>
 Package pdftex.def Info: screenshots/me.png  used on input line 303.
@@ -1541,12 +1545,12 @@ Package pdftex.def Info: screenshots/me.png  used on input line 303.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.13}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.139 \include{chapters/chapter5v_1}
+l.149 \include{chapters/chapter5v_1}
                                     
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.14}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.139 \include{chapters/chapter5v_1}
+l.149 \include{chapters/chapter5v_1}
                                      <./screenshots/delate.png> <./screenshots/me.png>] [74]
 \openout2 = `chapters/chapter6v_1.aux'.
 
@@ -1572,12 +1576,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.6.1}) ha
                                                   \__shipout_drop_firstpage_...
 l.48 
      ]
-<conception/SprintIV/use_case_diagrams/use_case_diagram_of_SprintIV.png, id=1656, 542.025pt x 201.75375pt>
+<conception/SprintIV/use_case_diagrams/use_case_diagram_of_SprintIV.png, id=1661, 542.025pt x 201.75375pt>
 File: conception/SprintIV/use_case_diagrams/use_case_diagram_of_SprintIV.png Graphic file (type png)
 <use conception/SprintIV/use_case_diagrams/use_case_diagram_of_SprintIV.png>
 Package pdftex.def Info: conception/SprintIV/use_case_diagrams/use_case_diagram_of_SprintIV.png  used on input line 51.
 (pdftex.def)             Requested size: 364.19667pt x 135.56528pt.
-<conception/SprintIV/use_case_diagrams/refined_use_case_feature_diagram_management.png, id=1657, 495.8525pt x 261.97874pt>
+<conception/SprintIV/use_case_diagrams/refined_use_case_feature_diagram_management.png, id=1662, 495.8525pt x 261.97874pt>
 File: conception/SprintIV/use_case_diagrams/refined_use_case_feature_diagram_management.png Graphic file (type png)
 <use conception/SprintIV/use_case_diagrams/refined_use_case_feature_diagram_management.png>
 Package pdftex.def Info: conception/SprintIV/use_case_diagrams/refined_use_case_feature_diagram_management.png  used on input line 59.
@@ -1603,7 +1607,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.6.3}) ha
                                                   \__shipout_drop_firstpage_...
 l.163 
       ]
-<conception/SprintIV/use_case_diagrams/refined_use_case_feature_workspace_management.png, id=1666, 1027.84pt x 427.5975pt>
+<conception/SprintIV/use_case_diagrams/refined_use_case_feature_workspace_management.png, id=1671, 1027.84pt x 427.5975pt>
 File: conception/SprintIV/use_case_diagrams/refined_use_case_feature_workspace_management.png Graphic file (type png)
 <use conception/SprintIV/use_case_diagrams/refined_use_case_feature_workspace_management.png>
 Package pdftex.def Info: conception/SprintIV/use_case_diagrams/refined_use_case_feature_workspace_management.png  used on input line 168.
@@ -1644,7 +1648,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.6.9}) ha
                                                   \__shipout_drop_firstpage_...
 l.357 
       ]
-<conception/SprintIV/Activity_diagrams/edit_diagams.png, id=1684, 905.3825pt x 1189.44376pt>
+<conception/SprintIV/Activity_diagrams/edit_diagams.png, id=1689, 905.3825pt x 1189.44376pt>
 File: conception/SprintIV/Activity_diagrams/edit_diagams.png Graphic file (type png)
 <use conception/SprintIV/Activity_diagrams/edit_diagams.png>
 Package pdftex.def Info: conception/SprintIV/Activity_diagrams/edit_diagams.png  used on input line 366.
@@ -1655,7 +1659,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.6.10}) h
                                                   \__shipout_drop_firstpage_...
 l.369 
       ]
-<conception/SprintIV/sequence_diagrams/sequence_diagramManagement_4_1_CreateNewDiagram.png, id=1689, 776.9025pt x 633.36626pt>
+<conception/SprintIV/sequence_diagrams/sequence_diagramManagement_4_1_CreateNewDiagram.png, id=1694, 776.9025pt x 633.36626pt>
 File: conception/SprintIV/sequence_diagrams/sequence_diagramManagement_4_1_CreateNewDiagram.png Graphic file (type png)
 <use conception/SprintIV/sequence_diagrams/sequence_diagramManagement_4_1_CreateNewDiagram.png>
 Package pdftex.def Info: conception/SprintIV/sequence_diagrams/sequence_diagramManagement_4_1_CreateNewDiagram.png  used on input line 374.
@@ -1666,7 +1670,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.6.4}) h
                                                   \__shipout_drop_firstpage_...
 l.377 
        <./conception/SprintIV/Activity_diagrams/edit_diagams.png (PNG copy)>]
-<conception/SprintIV/sequence_diagrams/sequence_diagramManagement_4_4_DeleteDiagram.png, id=1694, 747.79375pt x 701.62125pt>
+<conception/SprintIV/sequence_diagrams/sequence_diagramManagement_4_4_DeleteDiagram.png, id=1699, 747.79375pt x 701.62125pt>
 File: conception/SprintIV/sequence_diagrams/sequence_diagramManagement_4_4_DeleteDiagram.png Graphic file (type png)
 <use conception/SprintIV/sequence_diagrams/sequence_diagramManagement_4_4_DeleteDiagram.png>
 Package pdftex.def Info: conception/SprintIV/sequence_diagrams/sequence_diagramManagement_4_4_DeleteDiagram.png  used on input line 380.
@@ -1677,12 +1681,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.6.5}) h
                                                   \__shipout_drop_firstpage_...
 l.383 
        <./conception/SprintIV/sequence_diagrams/sequence_diagramManagement_4_1_CreateNewDiagram.png (PNG copy)>]
-<conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_4_5_DownloadDiagramImages.png, id=1700, 952.55875pt x 695.59875pt>
+<conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_4_5_DownloadDiagramImages.png, id=1705, 952.55875pt x 695.59875pt>
 File: conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_4_5_DownloadDiagramImages.png Graphic file (type png)
 <use conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_4_5_DownloadDiagramImages.png>
 Package pdftex.def Info: conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_4_5_DownloadDiagramImages.png  used on input line 386.
 (pdftex.def)             Requested size: 364.19667pt x 265.95421pt.
-<conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_5_2_EditDiagramCode.png, id=1701, 867.24pt x 773.89125pt>
+<conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_5_2_EditDiagramCode.png, id=1706, 867.24pt x 773.89125pt>
 File: conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_5_2_EditDiagramCode.png Graphic file (type png)
 <use conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_5_2_EditDiagramCode.png>
 Package pdftex.def Info: conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_5_2_EditDiagramCode.png  used on input line 392.
@@ -1698,7 +1702,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.6.7}) h
                                                   \__shipout_drop_firstpage_...
 l.395 
        <./conception/SprintIV/sequence_diagrams/sequence_diagramManagement_4_4_DeleteDiagram.png (PNG copy)> <./conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_4_5_DownloadDiagramImages.png (PNG copy)>]
-<conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_5_3_ChatWithAIMode.png, id=1706, 1283.79625pt x 1113.15875pt>
+<conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_5_3_ChatWithAIMode.png, id=1712, 1283.79625pt x 1113.15875pt>
 File: conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_5_3_ChatWithAIMode.png Graphic file (type png)
 <use conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_5_3_ChatWithAIMode.png>
 Package pdftex.def Info: conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_5_3_ChatWithAIMode.png  used on input line 398.
@@ -1709,7 +1713,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.6.8}) h
                                                   \__shipout_drop_firstpage_...
 l.401 
        <./conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_5_2_EditDiagramCode.png (PNG copy)>]
-<conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_save_changes.png, id=1711, 663.47874pt x 548.0475pt>
+<conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_save_changes.png, id=1717, 663.47874pt x 548.0475pt>
 File: conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_save_changes.png Graphic file (type png)
 <use conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_save_changes.png>
 Package pdftex.def Info: conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_save_changes.png  used on input line 404.
@@ -1725,12 +1729,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.6.10}) 
                                                   \__shipout_drop_firstpage_...
 l.411 
        <./conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_5_3_ChatWithAIMode.png (PNG copy)> <./conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_save_changes.png (PNG copy)>]
-<screenshots/add-diagram.png, id=1717, 419.5675pt x 271.0125pt>
+<screenshots/add-diagram.png, id=1722, 419.5675pt x 271.0125pt>
 File: screenshots/add-diagram.png Graphic file (type png)
 <use screenshots/add-diagram.png>
 Package pdftex.def Info: screenshots/add-diagram.png  used on input line 414.
 (pdftex.def)             Requested size: 364.19667pt x 235.2455pt.
-<screenshots/code-editor.png, id=1718, 778.91pt x 610.28pt>
+<screenshots/code-editor.png, id=1723, 778.91pt x 610.28pt>
 File: screenshots/code-editor.png Graphic file (type png)
 <use screenshots/code-editor.png>
 Package pdftex.def Info: screenshots/code-editor.png  used on input line 422.
@@ -1741,7 +1745,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.6.11}) 
                                                   \__shipout_drop_firstpage_...
 l.425 
        <./screenshots/add-diagram.png>]
-<screenshots/AI-assistant.png, id=1724, 794.97pt x 628.3475pt>
+<screenshots/AI-assistant.png, id=1729, 794.97pt x 628.3475pt>
 File: screenshots/AI-assistant.png Graphic file (type png)
 <use screenshots/AI-assistant.png>
 Package pdftex.def Info: screenshots/AI-assistant.png  used on input line 430.
@@ -1752,12 +1756,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.6.12}) 
                                                   \__shipout_drop_firstpage_...
 l.433 
        <./screenshots/code-editor.png>]
-<screenshots/edit-diagram-project.png, id=1730, 1606.0pt x 793.96625pt>
+<screenshots/edit-diagram-project.png, id=1735, 1606.0pt x 793.96625pt>
 File: screenshots/edit-diagram-project.png Graphic file (type png)
 <use screenshots/edit-diagram-project.png>
 Package pdftex.def Info: screenshots/edit-diagram-project.png  used on input line 438.
 (pdftex.def)             Requested size: 364.19667pt x 180.05214pt.
-<screenshots/edit-diagram-project-2.png, id=1731, 1606.0pt x 793.96625pt>
+<screenshots/edit-diagram-project-2.png, id=1736, 1606.0pt x 793.96625pt>
 File: screenshots/edit-diagram-project-2.png Graphic file (type png)
 <use screenshots/edit-diagram-project-2.png>
 Package pdftex.def Info: screenshots/edit-diagram-project-2.png  used on input line 444.
@@ -1776,7 +1780,7 @@ l.447
 pdfTeX warning (ext4): destination with the same identifier (name{figure.6.15}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.142 \include{chapters/chapter6v_1}
+l.152 \include{chapters/chapter6v_1}
                                      <./screenshots/edit-diagram-project-2.png>] [93]
 \openout2 = `chapters/chapter7v_1.aux'.
 
@@ -1907,7 +1911,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 55--55
  []
 
 [95]
-<conception/SprintV/use_case_diagrams/use_case_diagram_of_SprintV.png, id=1768, 573.14125pt x 231.86626pt>
+<conception/SprintV/use_case_diagrams/use_case_diagram_of_SprintV.png, id=1773, 573.14125pt x 231.86626pt>
 File: conception/SprintV/use_case_diagrams/use_case_diagram_of_SprintV.png Graphic file (type png)
 <use conception/SprintV/use_case_diagrams/use_case_diagram_of_SprintV.png>
 Package pdftex.def Info: conception/SprintV/use_case_diagrams/use_case_diagram_of_SprintV.png  used on input line 66.
@@ -1918,7 +1922,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.7.1}) ha
                                                   \__shipout_drop_firstpage_...
 l.70 
      ]
-<conception/SprintV/use_case_diagrams/refined_use_case_feature_community_interaction.png, id=1773, 913.4125pt x 455.7025pt>
+<conception/SprintV/use_case_diagrams/refined_use_case_feature_community_interaction.png, id=1778, 913.4125pt x 455.7025pt>
 File: conception/SprintV/use_case_diagrams/refined_use_case_feature_community_interaction.png Graphic file (type png)
 <use conception/SprintV/use_case_diagrams/refined_use_case_feature_community_interaction.png>
 Package pdftex.def Info: conception/SprintV/use_case_diagrams/refined_use_case_feature_community_interaction.png  used on input line 77.
@@ -2034,7 +2038,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.7.7}) ha
                                                   \__shipout_drop_firstpage_...
 l.318 
       ]
-<conception/SprintV/use_case_diagrams/refined_use_case_feature_profiles .png, id=1804, 565.11125pt x 231.86626pt>
+<conception/SprintV/use_case_diagrams/refined_use_case_feature_profiles .png, id=1809, 565.11125pt x 231.86626pt>
 File: conception/SprintV/use_case_diagrams/refined_use_case_feature_profiles .png Graphic file (type png)
 <use conception/SprintV/use_case_diagrams/refined_use_case_feature_profiles .png>
 Package pdftex.def Info: conception/SprintV/use_case_diagrams/refined_use_case_feature_profiles .png  used on input line 323.
@@ -2075,7 +2079,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.7.9}) ha
                                                   \__shipout_drop_firstpage_...
 l.398 
       ]
-<conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_1_ExploreCommunityAsUser.png, id=1814, 577.15625pt x 472.76625pt>
+<conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_1_ExploreCommunityAsUser.png, id=1819, 577.15625pt x 472.76625pt>
 File: conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_1_ExploreCommunityAsUser.png Graphic file (type png)
 <use conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_1_ExploreCommunityAsUser.png>
 Package pdftex.def Info: conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_1_ExploreCommunityAsUser.png  used on input line 407.
@@ -2086,7 +2090,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{table.7.10}) h
                                                   \__shipout_drop_firstpage_...
 l.411 
       ]
-<conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_3_CommentOnProjects.png, id=1819, 620.3175pt x 606.265pt>
+<conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_3_CommentOnProjects.png, id=1824, 620.3175pt x 606.265pt>
 File: conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_3_CommentOnProjects.png Graphic file (type png)
 <use conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_3_CommentOnProjects.png>
 Package pdftex.def Info: conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_3_CommentOnProjects.png  used on input line 414.
@@ -2097,7 +2101,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.7.4}) h
                                                   \__shipout_drop_firstpage_...
 l.418 
        <./conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_1_ExploreCommunityAsUser.png (PNG copy)>]
-<conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_4_LikeUnlikeProjects.png, id=1824, 647.41875pt x 619.31375pt>
+<conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_4_LikeUnlikeProjects.png, id=1829, 647.41875pt x 619.31375pt>
 File: conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_4_LikeUnlikeProjects.png Graphic file (type png)
 <use conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_4_LikeUnlikeProjects.png>
 Package pdftex.def Info: conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_4_LikeUnlikeProjects.png  used on input line 421.
@@ -2108,7 +2112,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.7.5}) h
                                                   \__shipout_drop_firstpage_...
 l.425 
        <./conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_3_CommentOnProjects.png (PNG copy)>]
-<conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_5_ShareProjects.png, id=1829, 659.46375pt x 650.43pt>
+<conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_5_ShareProjects.png, id=1834, 659.46375pt x 650.43pt>
 File: conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_5_ShareProjects.png Graphic file (type png)
 <use conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_5_ShareProjects.png>
 Package pdftex.def Info: conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_5_ShareProjects.png  used on input line 428.
@@ -2119,7 +2123,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.7.6}) h
                                                   \__shipout_drop_firstpage_...
 l.432 
        <./conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_4_LikeUnlikeProjects.png (PNG copy)>]
-<conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_6_UpdateComments.png, id=1835, 718.685pt x 682.55pt>
+<conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_6_UpdateComments.png, id=1840, 718.685pt x 682.55pt>
 File: conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_6_UpdateComments.png Graphic file (type png)
 <use conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_6_UpdateComments.png>
 Package pdftex.def Info: conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_6_UpdateComments.png  used on input line 435.
@@ -2130,7 +2134,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.7.7}) h
                                                   \__shipout_drop_firstpage_...
 l.439 
        <./conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_5_ShareProjects.png (PNG copy)>]
-<conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_7_DeleteComments.png, id=1840, 695.59875pt x 650.43pt>
+<conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_7_DeleteComments.png, id=1845, 695.59875pt x 650.43pt>
 File: conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_7_DeleteComments.png Graphic file (type png)
 <use conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_7_DeleteComments.png>
 Package pdftex.def Info: conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_7_DeleteComments.png  used on input line 442.
@@ -2141,7 +2145,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.7.8}) h
                                                   \__shipout_drop_firstpage_...
 l.446 
        <./conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_6_UpdateComments.png (PNG copy)>]
-<conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_8_LikeUnlikeComments.png, id=1845, 695.59875pt x 619.31375pt>
+<conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_8_LikeUnlikeComments.png, id=1850, 695.59875pt x 619.31375pt>
 File: conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_8_LikeUnlikeComments.png Graphic file (type png)
 <use conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_8_LikeUnlikeComments.png>
 Package pdftex.def Info: conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_8_LikeUnlikeComments.png  used on input line 449.
@@ -2152,7 +2156,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.7.9}) h
                                                   \__shipout_drop_firstpage_...
 l.453 
        <./conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_7_DeleteComments.png (PNG copy)>]
-<conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_9_CopyCommunityProjectsToWorkspace.png, id=1850, 706.64pt x 669.50125pt>
+<conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_9_CopyCommunityProjectsToWorkspace.png, id=1855, 706.64pt x 669.50125pt>
 File: conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_9_CopyCommunityProjectsToWorkspace.png Graphic file (type png)
 <use conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_9_CopyCommunityProjectsToWorkspace.png>
 Package pdftex.def Info: conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_9_CopyCommunityProjectsToWorkspace.png  used on input line 456.
@@ -2163,7 +2167,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.7.10}) 
                                                   \__shipout_drop_firstpage_...
 l.460 
        <./conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_8_LikeUnlikeComments.png (PNG copy)>]
-<conception/SprintV/sequence_diagrams/sequence_profileManagement_7_1_EditUserProfile.png, id=1855, 676.5275pt x 804.00375pt>
+<conception/SprintV/sequence_diagrams/sequence_profileManagement_7_1_EditUserProfile.png, id=1860, 676.5275pt x 804.00375pt>
 File: conception/SprintV/sequence_diagrams/sequence_profileManagement_7_1_EditUserProfile.png Graphic file (type png)
 <use conception/SprintV/sequence_diagrams/sequence_profileManagement_7_1_EditUserProfile.png>
 Package pdftex.def Info: conception/SprintV/sequence_diagrams/sequence_profileManagement_7_1_EditUserProfile.png  used on input line 465.
@@ -2174,7 +2178,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.7.11}) 
                                                   \__shipout_drop_firstpage_...
 l.469 
        <./conception/SprintV/sequence_diagrams/sequence_communityInteraction_6_9_CopyCommunityProjectsToWorkspace.png (PNG copy)>]
-<conception/SprintV/sequence_diagrams/sequence_profileManagement_7_2_ViewPublicProjectsOnProfiles.png, id=1860, 717.68124pt x 714.67pt>
+<conception/SprintV/sequence_diagrams/sequence_profileManagement_7_2_ViewPublicProjectsOnProfiles.png, id=1865, 717.68124pt x 714.67pt>
 File: conception/SprintV/sequence_diagrams/sequence_profileManagement_7_2_ViewPublicProjectsOnProfiles.png Graphic file (type png)
 <use conception/SprintV/sequence_diagrams/sequence_profileManagement_7_2_ViewPublicProjectsOnProfiles.png>
 Package pdftex.def Info: conception/SprintV/sequence_diagrams/sequence_profileManagement_7_2_ViewPublicProjectsOnProfiles.png  used on input line 472.
@@ -2185,7 +2189,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.7.12}) 
                                                   \__shipout_drop_firstpage_...
 l.476 
        <./conception/SprintV/sequence_diagrams/sequence_profileManagement_7_1_EditUserProfile.png (PNG copy)>]
-<screenshots/community1.png, id=1866, 1606.0pt x 793.96625pt>
+<screenshots/community1.png, id=1871, 1606.0pt x 793.96625pt>
 File: screenshots/community1.png Graphic file (type png)
 <use screenshots/community1.png>
 Package pdftex.def Info: screenshots/community1.png  used on input line 483.
@@ -2196,12 +2200,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.7.13}) 
                                                   \__shipout_drop_firstpage_...
 l.487 
        <./conception/SprintV/sequence_diagrams/sequence_profileManagement_7_2_ViewPublicProjectsOnProfiles.png (PNG copy)>]
-<screenshots/community2.png, id=1871, 1606.0pt x 793.96625pt>
+<screenshots/community2.png, id=1876, 1606.0pt x 793.96625pt>
 File: screenshots/community2.png Graphic file (type png)
 <use screenshots/community2.png>
 Package pdftex.def Info: screenshots/community2.png  used on input line 492.
 (pdftex.def)             Requested size: 409.71692pt x 202.54958pt.
-<screenshots/comment-section.png, id=1872, 895.345pt x 341.275pt>
+<screenshots/comment-section.png, id=1877, 895.345pt x 341.275pt>
 File: screenshots/comment-section.png Graphic file (type png)
 <use screenshots/comment-section.png>
 Package pdftex.def Info: screenshots/comment-section.png  used on input line 501.
@@ -2217,7 +2221,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.7.15}) 
                                                   \__shipout_drop_firstpage_...
 l.505 
        <./screenshots/community1.png> <./screenshots/community2.png>]
-<screenshots/edit-profile.png, id=1879, 1606.0pt x 793.96625pt>
+<screenshots/edit-profile.png, id=1884, 1606.0pt x 793.96625pt>
 File: screenshots/edit-profile.png Graphic file (type png)
 <use screenshots/edit-profile.png>
 Package pdftex.def Info: screenshots/edit-profile.png  used on input line 510.
@@ -2299,21 +2303,21 @@ Package minitoc(hints) Warning: W0024
 
 ] (./report.aux (./chapters/chapter1v_1.aux) (./chapters/chapter2v_1.aux) (./chapters/chapter3v_1.aux) (./chapters/chapter4v_1.aux) (./chapters/chapter5v_1.aux) (./chapters/chapter6v_1.aux) (./chapters/chapter7v_1.aux) (./chapters/chapter8v_1.aux) (./chapters/chapter9v_1.aux) (./chapters/webography_v_1.aux))
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 27374DC54F96BCC2937DA3802D75A8C2;32757.
+(rerunfilecheck)             Checksum: A840D220F912FF789ECE13E9B9C7B2D5;32757.
  ) 
 Here is how much of TeX's memory you used:
- 21757 strings out of 476041
- 380342 string characters out of 5793175
+ 21774 strings out of 476041
+ 380537 string characters out of 5793175
  1897388 words of memory out of 6000000
  40849 multiletter control sequences out of 15000+600000
- 572942 words of font info for 154 fonts, out of 8000000 for 9000
+ 573330 words of font info for 158 fonts, out of 8000000 for 9000
  1137 hyphenation exceptions out of 8191
  75i,17n,77p,1043b,1110s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on report.pdf (126 pages, 5214192 bytes).
+Output written on report.pdf (126 pages, 5215426 bytes).
 PDF statistics:
- 2076 PDF objects out of 2487 (max. 8388607)
- 1785 compressed objects within 18 object streams
- 454 named destinations out of 1000 (max. 500000)
+ 2082 PDF objects out of 2487 (max. 8388607)
+ 1791 compressed objects within 18 object streams
+ 459 named destinations out of 1000 (max. 500000)
  35624 words of extra memory for PDF output out of 35830 (max. 10000000)
 
