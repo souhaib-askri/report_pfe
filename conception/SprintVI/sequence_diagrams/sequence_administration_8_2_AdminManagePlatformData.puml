@@ -1,0 +1,72 @@
+@startuml
+!theme plain
+title AdminJS: Generic CRUD Operations for Any Resource
+
+actor Administrator
+participant "AdminJS" as Admin
+database "Database" as DB
+
+note over Administrator, DB: Generic pattern applies to Users, Products, Orders, Sessions, etc.
+
+== CREATE Operation ==
+Administrator -> Admin: POST /admin/resources/{resourceType}/actions/new
+note right: resourceType = users|products|orders|sessions|etc.
+activate Admin
+Admin -> Admin: Validate input data
+Admin -> DB: INSERT INTO {table} (data)
+activate DB
+DB --> Admin: Created record with ID
+deactivate DB
+Admin --> Administrator: Success + redirect to record list
+deactivate Admin
+
+== READ Operations ==
+Administrator -> Admin: GET /admin/resources/{resourceType}
+activate Admin
+Admin -> DB: SELECT * FROM {table} WHERE conditions
+activate DB
+DB --> Admin: List of records
+deactivate DB
+Admin --> Administrator: Display records table
+deactivate Admin
+
+Administrator -> Admin: GET /admin/resources/{resourceType}/{id}
+activate Admin
+Admin -> DB: SELECT * FROM {table} WHERE id = {id}
+activate DB
+DB --> Admin: Single record
+deactivate DB
+Admin --> Administrator: Display record details
+deactivate Admin
+
+== UPDATE Operation ==
+Administrator -> Admin: PUT /admin/resources/{resourceType}/{id}
+activate Admin
+Admin -> Admin: Validate input data
+Admin -> DB: UPDATE {table} SET data WHERE id = {id}
+activate DB
+DB --> Admin: Updated record
+deactivate DB
+Admin --> Administrator: Success + updated record view
+deactivate Admin
+
+== DELETE Operation ==
+Administrator -> Admin: DELETE /admin/resources/{resourceType}/{id}
+activate Admin
+Admin -> DB: DELETE FROM {table} WHERE id = {id}
+activate DB
+DB --> Admin: Deletion confirmed
+deactivate DB
+Admin --> Administrator: Success + redirect to list
+deactivate Admin
+
+note over Administrator, DB
+**Same pattern for all resources:**
+- Users: /admin/resources/users
+- Products: /admin/resources/products  
+- Orders: /admin/resources/orders
+- Sessions: /admin/resources/sessions
+- Any other entity...
+end note
+
+@enduml
