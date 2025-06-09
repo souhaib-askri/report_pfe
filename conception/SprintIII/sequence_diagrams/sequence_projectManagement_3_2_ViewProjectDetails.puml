@@ -17,15 +17,21 @@ activate Backend
 
 Backend -> Database: Get project info & diagram list
 activate Database
-Database --> Backend: Return project data & diagram metadata
+Database --> Backend: Return project data 
 deactivate Database
 
-Backend -> MinIO: Request diagram images using links
+
+Backend --> Frontend: Send project data 
+Frontend --> Backend: Request diagram images by links
+
+
+Backend -> MinIO: Request diagram images 
 activate MinIO
 MinIO --> Backend: Return diagram images
 deactivate MinIO
 
-Backend --> Frontend: Send project data & diagram images
+Backend --> Frontend: Return diagram images
+
 deactivate Backend
 
 Frontend -> Frontend: Display project information

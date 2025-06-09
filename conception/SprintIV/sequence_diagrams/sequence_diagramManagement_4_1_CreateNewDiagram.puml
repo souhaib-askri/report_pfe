@@ -14,7 +14,7 @@ User -> Frontend: Click "Create New Diagram"
 Frontend -> Frontend: Show diagram creation form
 
 User -> Frontend: Enter diagram details (name, description)
-Frontend -> Backend: Send diagram metadata
+Frontend -> Backend: Send diagram data
 activate Backend
 
 Backend -> Database: Create new diagram record

@@ -19,7 +19,7 @@ activate Backend
 
 Backend -> MinIO: Store diagram image
 activate MinIO
-MinIO --> Backend: Return image link
+MinIO --> Backend: Confirm save image
 deactivate MinIO
 
 Backend -> Database: Save PlantUML code & image link
