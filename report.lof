@@ -1,60 +1,77 @@
 \addvspace {10\p@ }
-\contentsline {xchapter}{Overview}{12}{chapter.1}%
-\contentsline {figure}{\numberline {1.1}{\ignorespaces UML Official Logo}}{17}{figure.1.1}%
-\contentsline {figure}{\numberline {1.2}{\ignorespaces UML 2.5 Diagram Types Classification}}{18}{figure.1.2}%
+\contentsline {xchapter}{Overview}{14}{chapter.1}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces UML Official Logo}}{19}{figure.1.1}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces UML 2.5 Diagram Types Classification}}{20}{figure.1.2}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Project Initiation}{20}{chapter.2}%
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Global Use Case Diagram}}{27}{figure.2.1}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Deployment diagram}}{28}{figure.2.2}%
+\contentsline {xchapter}{Project Initiation}{22}{chapter.2}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Global Use Case Diagram}}{29}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Deployment diagram}}{30}{figure.2.2}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Sprint I}{32}{chapter.3}%
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Database Entity Relationship Diagram}}{35}{figure.3.1}%
+\contentsline {xchapter}{Sprint I}{34}{chapter.3}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Database Entity Relationship Diagram}}{37}{figure.3.1}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Sprint II}{40}{chapter.4}%
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Use Case Diagram for Sprint II}}{42}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Refined Use Case Diagram for Authentication Feature}}{43}{figure.4.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Sequence Diagram - Google Authentication}}{47}{figure.4.3}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Sequence Diagram - Cross-Device Authentication}}{49}{figure.4.4}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Sequence Diagram - Sign Out Process}}{51}{figure.4.5}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Landing Page Implementation}}{52}{figure.4.6}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Sign-In Page with OAuth Options}}{53}{figure.4.7}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Sign-Out Confirmation Interface}}{53}{figure.4.8}%
+\contentsline {xchapter}{Sprint II}{42}{chapter.4}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Use Case Diagram for Sprint II}}{44}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Refined Use Case Diagram for Authentication Feature}}{45}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Sequence Diagram - Google Authentication}}{49}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Sequence Diagram - Cross-Device Authentication}}{51}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Sequence Diagram - Sign Out Process}}{53}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Landing Page Implementation}}{54}{figure.4.6}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Sign-In Page with OAuth Options}}{55}{figure.4.7}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Sign-Out Confirmation Interface}}{55}{figure.4.8}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Sprint III}{55}{chapter.5}%
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Use case diagram for Sprint III - Project Management}}{57}{figure.5.1}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Refined use case diagram for project management feature}}{58}{figure.5.2}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Sequence diagram for Create New Project use case}}{64}{figure.5.3}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Sequence diagram for View Project Details use case}}{65}{figure.5.4}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Sequence diagram for Update Project Details use case}}{66}{figure.5.5}%
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Sequence diagram for Delete Project use case}}{67}{figure.5.6}%
-\contentsline {figure}{\numberline {5.7}{\ignorespaces Sequence diagram for Download Project Diagrams as Zip use case}}{68}{figure.5.7}%
-\contentsline {figure}{\numberline {5.8}{\ignorespaces Sequence diagram for Share Project use case}}{69}{figure.5.8}%
-\contentsline {figure}{\numberline {5.9}{\ignorespaces Home page showing project overview and navigation}}{70}{figure.5.9}%
-\contentsline {figure}{\numberline {5.10}{\ignorespaces Add project interface with form validation and user guidance}}{70}{figure.5.10}%
-\contentsline {figure}{\numberline {5.11}{\ignorespaces Project details page displaying comprehensive project information}}{71}{figure.5.11}%
-\contentsline {figure}{\numberline {5.12}{\ignorespaces Extended project view with diagram management capabilities}}{71}{figure.5.12}%
-\contentsline {figure}{\numberline {5.13}{\ignorespaces Project deletion confirmation dialog with safety measures}}{72}{figure.5.13}%
-\contentsline {figure}{\numberline {5.14}{\ignorespaces User profile and project management dashboard}}{72}{figure.5.14}%
+\contentsline {xchapter}{Sprint III}{57}{chapter.5}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Use case diagram for Sprint III - Project Management}}{59}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Refined use case diagram for project management feature}}{60}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Sequence diagram for Create New Project use case}}{66}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Sequence diagram for View Project Details use case}}{67}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Sequence diagram for Update Project Details use case}}{68}{figure.5.5}%
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Sequence diagram for Delete Project use case}}{69}{figure.5.6}%
+\contentsline {figure}{\numberline {5.7}{\ignorespaces Sequence diagram for Download Project Diagrams as Zip use case}}{70}{figure.5.7}%
+\contentsline {figure}{\numberline {5.8}{\ignorespaces Sequence diagram for Share Project use case}}{71}{figure.5.8}%
+\contentsline {figure}{\numberline {5.9}{\ignorespaces Home page showing project overview and navigation}}{72}{figure.5.9}%
+\contentsline {figure}{\numberline {5.10}{\ignorespaces Add project interface with form validation and user guidance}}{72}{figure.5.10}%
+\contentsline {figure}{\numberline {5.11}{\ignorespaces Project details page displaying comprehensive project information}}{73}{figure.5.11}%
+\contentsline {figure}{\numberline {5.12}{\ignorespaces Extended project view with diagram management capabilities}}{73}{figure.5.12}%
+\contentsline {figure}{\numberline {5.13}{\ignorespaces Project deletion confirmation dialog with safety measures}}{74}{figure.5.13}%
+\contentsline {figure}{\numberline {5.14}{\ignorespaces User profile and project management dashboard}}{74}{figure.5.14}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Sprint IV}{74}{chapter.6}%
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Use Case Diagram of Sprint IV}}{76}{figure.6.1}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Refined Use Case - Manage Diagrams}}{76}{figure.6.2}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Refined Use Case - Manage Workspace}}{78}{figure.6.3}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Activity Diagram - Edit Diagrams}}{83}{figure.6.4}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Sequence Diagram - Create New Diagram}}{84}{figure.6.5}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Sequence Diagram - Delete Diagram}}{85}{figure.6.6}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Sequence Diagram - Download Diagram Images}}{86}{figure.6.7}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Sequence Diagram - Edit Diagram Code}}{86}{figure.6.8}%
-\contentsline {figure}{\numberline {6.9}{\ignorespaces Sequence Diagram - Chat with AI Mode}}{87}{figure.6.9}%
-\contentsline {figure}{\numberline {6.10}{\ignorespaces Sequence Diagram - Save Changes}}{88}{figure.6.10}%
-\contentsline {figure}{\numberline {6.11}{\ignorespaces Add Diagram Interface}}{89}{figure.6.11}%
-\contentsline {figure}{\numberline {6.12}{\ignorespaces Interactive Code Editor}}{89}{figure.6.12}%
-\contentsline {figure}{\numberline {6.13}{\ignorespaces AI Assistant Integration}}{90}{figure.6.13}%
-\contentsline {figure}{\numberline {6.14}{\ignorespaces Diagram Project Editor - View 1}}{90}{figure.6.14}%
-\contentsline {figure}{\numberline {6.15}{\ignorespaces Diagram Project Editor - View 2}}{91}{figure.6.15}%
+\contentsline {xchapter}{Sprint IV}{76}{chapter.6}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Use Case Diagram of Sprint IV}}{78}{figure.6.1}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Refined Use Case - Manage Diagrams}}{78}{figure.6.2}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Refined Use Case - Manage Workspace}}{80}{figure.6.3}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Activity Diagram - Edit Diagrams}}{85}{figure.6.4}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Sequence Diagram - Create New Diagram}}{86}{figure.6.5}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Sequence Diagram - Delete Diagram}}{87}{figure.6.6}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Sequence Diagram - Download Diagram Images}}{87}{figure.6.7}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Sequence Diagram - Edit Diagram Code}}{88}{figure.6.8}%
+\contentsline {figure}{\numberline {6.9}{\ignorespaces Sequence Diagram - Chat with AI Mode}}{89}{figure.6.9}%
+\contentsline {figure}{\numberline {6.10}{\ignorespaces Sequence Diagram - Save Changes}}{89}{figure.6.10}%
+\contentsline {figure}{\numberline {6.11}{\ignorespaces Add Diagram Interface}}{90}{figure.6.11}%
+\contentsline {figure}{\numberline {6.12}{\ignorespaces Interactive Code Editor}}{91}{figure.6.12}%
+\contentsline {figure}{\numberline {6.13}{\ignorespaces AI Assistant Integration}}{92}{figure.6.13}%
+\contentsline {figure}{\numberline {6.14}{\ignorespaces Diagram Project Editor - View 1}}{92}{figure.6.14}%
+\contentsline {figure}{\numberline {6.15}{\ignorespaces Diagram Project Editor - View 2}}{93}{figure.6.15}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Sprint V}{93}{chapter.7}%
+\contentsline {xchapter}{Sprint V}{95}{chapter.7}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Use Case Diagram for Sprint V}}{98}{figure.7.1}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Refined Use Case Diagram for Community Interaction Feature}}{98}{figure.7.2}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Refined Use Case Diagram for Profile Management Feature}}{105}{figure.7.3}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Sequence Diagram: Explore Community as User}}{108}{figure.7.4}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Sequence Diagram: Comment on Projects}}{109}{figure.7.5}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Sequence Diagram: Like/Unlike Projects}}{110}{figure.7.6}%
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Sequence Diagram: Share Projects}}{111}{figure.7.7}%
+\contentsline {figure}{\numberline {7.8}{\ignorespaces Sequence Diagram: Update Comments}}{112}{figure.7.8}%
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Sequence Diagram: Delete Comments}}{113}{figure.7.9}%
+\contentsline {figure}{\numberline {7.10}{\ignorespaces Sequence Diagram: Like/Unlike Comments}}{114}{figure.7.10}%
+\contentsline {figure}{\numberline {7.11}{\ignorespaces Sequence Diagram: Copy Community Projects to Workspace}}{115}{figure.7.11}%
+\contentsline {figure}{\numberline {7.12}{\ignorespaces Sequence Diagram: Edit User Profile}}{116}{figure.7.12}%
+\contentsline {figure}{\numberline {7.13}{\ignorespaces Sequence Diagram: View Public Projects on Profiles}}{117}{figure.7.13}%
+\contentsline {figure}{\numberline {7.14}{\ignorespaces Community Exploration Interface - Main View}}{118}{figure.7.14}%
+\contentsline {figure}{\numberline {7.15}{\ignorespaces Community Exploration Interface - Project Details View}}{118}{figure.7.15}%
+\contentsline {figure}{\numberline {7.16}{\ignorespaces Comment Section Implementation}}{119}{figure.7.16}%
+\contentsline {figure}{\numberline {7.17}{\ignorespaces Profile Editing Interface}}{119}{figure.7.17}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Sprint VI}{96}{chapter.8}%
+\contentsline {xchapter}{Sprint VI}{121}{chapter.8}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{General Conclusion}{99}{chapter.9}%
+\contentsline {xchapter}{General Conclusion}{124}{chapter.9}%

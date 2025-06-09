@@ -1,28 +1,28 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}Introduction}{\reset@font\mtcSfont 20}{section.2.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Analysis and Specification of Requirements}{\reset@font\mtcSfont 21}{section.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.1}Identification of Actors}{\reset@font\mtcSSfont 21}{subsection.2.2.1}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Primary Actors (Human Users):}{\reset@font\mtcPfont 21}{section*.3}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Secondary Actors (System Components):}{\reset@font\mtcPfont 21}{section*.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.2}Identification of Requirements}{\reset@font\mtcSSfont 21}{subsection.2.2.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.2.2.1}Functional Requirements}{\reset@font\mtcSSSfont 21}{subsubsection.2.2.2.1}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Authentication and Security:}{\reset@font\mtcPfont 21}{section*.5}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Project and Diagram Management:}{\reset@font\mtcPfont 22}{section*.6}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Workspace and Editing:}{\reset@font\mtcPfont 22}{section*.7}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Community Features:}{\reset@font\mtcPfont 22}{section*.8}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Profile and Administration:}{\reset@font\mtcPfont 22}{section*.9}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.2.2.2}Non-Functional Requirements}{\reset@font\mtcSSSfont 23}{subsubsection.2.2.2.2}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Performance Requirements:}{\reset@font\mtcPfont 23}{section*.10}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Security Requirements:}{\reset@font\mtcPfont 23}{section*.11}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Usability Requirements:}{\reset@font\mtcPfont 23}{section*.12}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Reliability and Availability:}{\reset@font\mtcPfont 23}{section*.13}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Scalability Requirements:}{\reset@font\mtcPfont 23}{section*.14}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Project Management with Scrum}{\reset@font\mtcSfont 24}{section.2.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.1}Scrum Roles}{\reset@font\mtcSSfont 24}{subsection.2.3.1}}
-{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Roles in the Scrum Team:}{\reset@font\mtcPfont 24}{table.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.2}Product Backlog}{\reset@font\mtcSSfont 24}{subsection.2.3.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.3}Global Use Case Diagram}{\reset@font\mtcSSfont 26}{subsection.2.3.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.4}Sprint Planning}{\reset@font\mtcSSfont 28}{subsection.2.3.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Deployment diagram}{\reset@font\mtcSfont 28}{section.2.4}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}Technological Architecture of the Project}{\reset@font\mtcSfont 29}{section.2.5}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.6}Tools and Environment}{\reset@font\mtcSfont 29}{section.2.6}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.7}Conclusion}{\reset@font\mtcSfont 30}{section.2.7}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.1}Introduction}{\reset@font\mtcSfont 22}{section.2.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.2}Analysis and Specification of Requirements}{\reset@font\mtcSfont 23}{section.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.1}Identification of Actors}{\reset@font\mtcSSfont 23}{subsection.2.2.1}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Primary Actors (Human Users):}{\reset@font\mtcPfont 23}{section*.3}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Secondary Actors (System Components):}{\reset@font\mtcPfont 23}{section*.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.2.2}Identification of Requirements}{\reset@font\mtcSSfont 23}{subsection.2.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.2.2.1}Functional Requirements}{\reset@font\mtcSSSfont 23}{subsubsection.2.2.2.1}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Authentication and Security:}{\reset@font\mtcPfont 23}{section*.5}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Project and Diagram Management:}{\reset@font\mtcPfont 24}{section*.6}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Workspace and Editing:}{\reset@font\mtcPfont 24}{section*.7}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Community Features:}{\reset@font\mtcPfont 24}{section*.8}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Profile and Administration:}{\reset@font\mtcPfont 24}{section*.9}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {2.2.2.2}Non-Functional Requirements}{\reset@font\mtcSSSfont 25}{subsubsection.2.2.2.2}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Performance Requirements:}{\reset@font\mtcPfont 25}{section*.10}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Security Requirements:}{\reset@font\mtcPfont 25}{section*.11}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Usability Requirements:}{\reset@font\mtcPfont 25}{section*.12}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Reliability and Availability:}{\reset@font\mtcPfont 25}{section*.13}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Scalability Requirements:}{\reset@font\mtcPfont 25}{section*.14}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.3}Project Management with Scrum}{\reset@font\mtcSfont 26}{section.2.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.1}Scrum Roles}{\reset@font\mtcSSfont 26}{subsection.2.3.1}}
+{\reset@font\mtcPfont\mtc@string\contentsline{paragraph}{\noexpand \leavevmode Roles in the Scrum Team:}{\reset@font\mtcPfont 26}{table.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.2}Product Backlog}{\reset@font\mtcSSfont 26}{subsection.2.3.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.3}Global Use Case Diagram}{\reset@font\mtcSSfont 28}{subsection.2.3.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {2.3.4}Sprint Planning}{\reset@font\mtcSSfont 30}{subsection.2.3.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.4}Deployment diagram}{\reset@font\mtcSfont 30}{section.2.4}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.5}Technological Architecture of the Project}{\reset@font\mtcSfont 31}{section.2.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.6}Tools and Environment}{\reset@font\mtcSfont 31}{section.2.6}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {2.7}Conclusion}{\reset@font\mtcSfont 32}{section.2.7}}

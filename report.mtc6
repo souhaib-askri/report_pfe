@@ -1,20 +1,20 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.1}Introduction}{\reset@font\mtcSfont 40}{section.4.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.2}Sprint Planning}{\reset@font\mtcSfont 41}{section.4.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.1}Objectives of Sprint II}{\reset@font\mtcSSfont 41}{subsection.4.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.2}Backlog of Sprint II}{\reset@font\mtcSSfont 41}{subsection.4.2.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.3}Technologies and Tools Used}{\reset@font\mtcSfont 41}{section.4.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.1}NextAuth.js}{\reset@font\mtcSSfont 41}{subsection.4.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.2}Prisma}{\reset@font\mtcSSfont 42}{subsection.4.3.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.4}Analyse}{\reset@font\mtcSfont 42}{section.4.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.1}Use case diagram for Sprint II}{\reset@font\mtcSSfont 42}{subsection.4.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.2}Refined use case "Authentication"}{\reset@font\mtcSSfont 43}{subsection.4.4.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.4.2.1}Use case}{\reset@font\mtcSSSfont 43}{subsubsection.4.4.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.4.2.2}Textual description of use case}{\reset@font\mtcSSSfont 43}{subsubsection.4.4.2.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.3}Refined use case "Explore Landing Page"}{\reset@font\mtcSSfont 45}{subsection.4.4.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.4.3.1}Use case}{\reset@font\mtcSSSfont 45}{subsubsection.4.4.3.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.4.3.2}Textual description of use case}{\reset@font\mtcSSSfont 46}{subsubsection.4.4.3.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.5}Conception}{\reset@font\mtcSfont 46}{section.4.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.5.1}Sequence diagram of use case "Authentication"}{\reset@font\mtcSSfont 46}{subsection.4.5.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.6}Deliverables of Sprint II}{\reset@font\mtcSfont 52}{section.4.6}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.7}Retrospective of Sprint II}{\reset@font\mtcSfont 54}{section.4.7}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.8}Conclusion}{\reset@font\mtcSfont 54}{section.4.8}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.1}Introduction}{\reset@font\mtcSfont 42}{section.4.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.2}Sprint Planning}{\reset@font\mtcSfont 43}{section.4.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.1}Objectives of Sprint II}{\reset@font\mtcSSfont 43}{subsection.4.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.2.2}Backlog of Sprint II}{\reset@font\mtcSSfont 43}{subsection.4.2.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.3}Technologies and Tools Used}{\reset@font\mtcSfont 43}{section.4.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.1}NextAuth.js}{\reset@font\mtcSSfont 43}{subsection.4.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.3.2}Prisma}{\reset@font\mtcSSfont 44}{subsection.4.3.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.4}Analyse}{\reset@font\mtcSfont 44}{section.4.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.1}Use case diagram for Sprint II}{\reset@font\mtcSSfont 44}{subsection.4.4.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.2}Refined use case "Authentication"}{\reset@font\mtcSSfont 45}{subsection.4.4.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.4.2.1}Use case}{\reset@font\mtcSSSfont 45}{subsubsection.4.4.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.4.2.2}Textual description of use case}{\reset@font\mtcSSSfont 45}{subsubsection.4.4.2.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.4.3}Refined use case "Explore Landing Page"}{\reset@font\mtcSSfont 47}{subsection.4.4.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.4.3.1}Use case}{\reset@font\mtcSSSfont 47}{subsubsection.4.4.3.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {4.4.3.2}Textual description of use case}{\reset@font\mtcSSSfont 48}{subsubsection.4.4.3.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.5}Conception}{\reset@font\mtcSfont 48}{section.4.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {4.5.1}Sequence diagram of use case "Authentication"}{\reset@font\mtcSSfont 48}{subsection.4.5.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.6}Deliverables of Sprint II}{\reset@font\mtcSfont 54}{section.4.6}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.7}Retrospective of Sprint II}{\reset@font\mtcSfont 56}{section.4.7}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {4.8}Conclusion}{\reset@font\mtcSfont 56}{section.4.8}}

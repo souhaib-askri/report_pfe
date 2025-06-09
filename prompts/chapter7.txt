@@ -1,0 +1,109 @@
+\chapter[Sprint V]{Study and Implementation of Sprint IV: Diagram \& Workspace Management}
+
+%make short paragraph for each section
+\minitoc
+\section{Introduction}
+\section{Sprint Planning}
+%use these data for sprint planning
+6,Community Interaction,6.1,As a user; I want to explore the community so that I can discover interesting projects.,S
+,,6.2,As a visitor; I want to explore the community so that I can see what the platform offers.,S
+,,6.3,As a user; I want to comment on projects so that I can provide feedback to other users.,C
+,,6.4,As a user; I want to like/unlike projects so that I can show appreciation for good work.,C
+,,6.5,As a user; I want to share projects so that I can promote interesting content.,C
+,,6.6,As a user; I want to update my comments so that I can correct or improve my feedback.,C
+,,6.7,As a user; I want to delete my comments so that I can remove inappropriate or outdated feedback.,C
+,,6.8,As a user; I want to like/unlike comments so that I can engage in community discussions.,C
+,,6.9,As a user; I want to copy community projects to my workspace so that I can learn from and build upon others' work.,S
+7,Profile Management,7.1,As a user; I want to edit my profile so that I can keep my information current.,S
+,,7.2,As a user; I want to view public projects on profiles so that I can see others' work.,S
+
+\subsection{Objectives of Sprint V}
+\subsection{Backlog of Sprint V}%use the data above and make as a table
+
+\section{Analyse}
+%here use these diagrams .png
+conception/SprintV/use_case_diagrams
+├── refined_use_case_feature_community_interaction.png
+├── refined_use_case_feature_community_interaction.puml
+├── refined_use_case_feature_profiles .png
+├── refined_use_case_feature_profiles .puml
+├── use_case_diagram_of_SprintV.png
+└── use_case_diagram_of_SprintV.puml
+
+\subsection{Use case diagram for sprint V}
+\subsection{Refined use case "Manage Diagrams"}
+\subsubsection{Use case}
+ usecase "Explore Community" as Explore
+  usecase "Comment on Projects" as Comment
+  usecase "Like/Unlike Projects" as LikeProject
+  usecase "Update Comments" as UpdateComment
+  usecase "Delete Comments" as DeleteComment
+  usecase "Like/Unlike Comments" as LikeComment
+  usecase "Copy Projects to Workspace" as CopyProject
+\subsubsection{textual description of use case "Explore community"}%make it table 
+
+\subsubsection{textual description of use case "Comment on projects"}%make it table 
+
+\subsubsection{textual description of use case "Like/Unlike projects"}%make it table 
+
+\subsubsection{textual description of use case "Update comments"}%make it table 
+
+\subsubsection{textual description of use case "Delete comments"}%make it table 
+
+\subsubsection{textual description of use case "Like/Unlike comments"}%make it table 
+
+\subsubsection{textual description of use case "Copy projects to workspace"}%make it table 
+
+
+
+\subsection{Refined use case "Manage profiles"}
+
+
+
+
+
+    usecase "Edit Profile" as EditProfile
+    usecase "View Public Projects on Profile" as ViewProjects
+
+
+\subsubsection{textual description of use case "Edit profile"}%make it table 
+
+\subsubsection{textual description of use case "View Public Projects on Profile"}%make it table 
+
+
+\section{Conception}
+%use these diagrams .png
+conception/SprintV/sequence_diagrams
+├── sequence_communityInteraction_6_1_ExploreCommunityAsUser.png
+├── sequence_communityInteraction_6_1_ExploreCommunityAsUser.puml
+├── sequence_communityInteraction_6_3_CommentOnProjects.png
+├── sequence_communityInteraction_6_3_CommentOnProjects.puml
+├── sequence_communityInteraction_6_4_LikeUnlikeProjects.png
+├── sequence_communityInteraction_6_4_LikeUnlikeProjects.puml
+├── sequence_communityInteraction_6_5_ShareProjects.png
+├── sequence_communityInteraction_6_5_ShareProjects.puml
+├── sequence_communityInteraction_6_6_UpdateComments.png
+├── sequence_communityInteraction_6_6_UpdateComments.puml
+├── sequence_communityInteraction_6_7_DeleteComments.png
+├── sequence_communityInteraction_6_7_DeleteComments.puml
+├── sequence_communityInteraction_6_8_LikeUnlikeComments.png
+├── sequence_communityInteraction_6_8_LikeUnlikeComments.puml
+├── sequence_communityInteraction_6_9_CopyCommunityProjectsToWorkspace.png
+├── sequence_communityInteraction_6_9_CopyCommunityProjectsToWorkspace.puml
+├── sequence_profileManagement_7_1_EditUserProfile.png
+├── sequence_profileManagement_7_1_EditUserProfile.puml
+├── sequence_profileManagement_7_2_ViewPublicProjectsOnProfiles.png
+└── sequence_profileManagement_7_2_ViewPublicProjectsOnProfiles.puml
+
+
+
+
+\section{Deliverables of Sprint V}
+%use thes images .png
+%screenshots/comment-section.png
+%screenshots/community1.png
+%screenshots/community2.png
+%screenshots/edit-profile.png
+
+\section{Retrospective of Sprint V}%short list of items
+\section{Conclusion}%short paragraph
