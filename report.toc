@@ -4,41 +4,42 @@
 \contentsline {section}{\numberline {1.1}Introduction}{14}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Overview of the Host Organization}{14}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Presentation of the Project Context}{14}{section.1.3}%
-\contentsline {subsection}{\numberline {1.3.1}Problem Statement}{14}{subsection.1.3.1}%
+\contentsline {paragraph}{Goodwill focuses on the software development aspect by creating tailored solutions to support its clients in the finance and insurance sectors. The company designs and implements intelligent systems based on Business Intelligence and Big Data technologies. It also offers services in system integration, ERP solution development, payroll management tools, and analytical accounting, all aimed at enhancing performance and decision-making. As an official partner of SAGE, Goodwill further strengthens its technical capabilities in delivering and marketing software solutions.}{14}{section*.3}%
+\contentsline {subsection}{\numberline {1.3.1}Problem Statement}{15}{subsection.1.3.1}%
 \contentsline {subsection}{\numberline {1.3.2}Existing Solutions}{15}{subsection.1.3.2}%
 \contentsline {subsection}{\numberline {1.3.3}Proposed Solution}{15}{subsection.1.3.3}%
 \contentsline {subsubsection}{\numberline {1.3.3.1}Use of PlantUML}{16}{subsubsection.1.3.3.1}%
-\contentsline {section}{\numberline {1.4}Methodology}{16}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Agile Approach}{16}{subsection.1.4.1}%
+\contentsline {section}{\numberline {1.4}Methodology}{17}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Agile Approach}{17}{subsection.1.4.1}%
 \contentsline {subsection}{\numberline {1.4.2}Comparison of Agile Methods}{17}{subsection.1.4.2}%
-\contentsline {subsection}{\numberline {1.4.3}Scrum Framework}{17}{subsection.1.4.3}%
-\contentsline {subsubsection}{\numberline {1.4.3.1}Key Principles of Scrum}{17}{subsubsection.1.4.3.1}%
+\contentsline {subsection}{\numberline {1.4.3}Scrum Framework}{18}{subsection.1.4.3}%
+\contentsline {subsubsection}{\numberline {1.4.3.1}Key Principles of Scrum}{18}{subsubsection.1.4.3.1}%
 \contentsline {subsubsection}{\numberline {1.4.3.2}Roles}{18}{subsubsection.1.4.3.2}%
 \contentsline {subsubsection}{\numberline {1.4.3.3}Events}{18}{subsubsection.1.4.3.3}%
-\contentsline {subsubsection}{\numberline {1.4.3.4}Artifacts}{18}{subsubsection.1.4.3.4}%
+\contentsline {subsubsection}{\numberline {1.4.3.4}Artifacts}{19}{subsubsection.1.4.3.4}%
 \contentsline {section}{\numberline {1.5}Modeling Language}{19}{section.1.5}%
 \contentsline {subsection}{\numberline {1.5.1}Definition}{19}{subsection.1.5.1}%
 \contentsline {subsection}{\numberline {1.5.2}UML Overview}{19}{subsection.1.5.2}%
-\contentsline {section}{\numberline {1.6}Conclusion}{21}{section.1.6}%
+\contentsline {section}{\numberline {1.6}Conclusion}{20}{section.1.6}%
 \contentsline {chapter}{\numberline {2}Project Initiation}{22}{chapter.2}%
 \contentsline {section}{\numberline {2.1}Introduction}{22}{section.2.1}%
 \contentsline {section}{\numberline {2.2}Analysis and Specification of Requirements}{23}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}Identification of Actors}{23}{subsection.2.2.1}%
-\contentsline {paragraph}{Primary Actors (Human Users):}{23}{section*.3}%
-\contentsline {paragraph}{Secondary Actors (System Components):}{23}{section*.4}%
+\contentsline {paragraph}{Primary Actors (Human Users):}{23}{section*.4}%
+\contentsline {paragraph}{Secondary Actors (System Components):}{23}{section*.5}%
 \contentsline {subsection}{\numberline {2.2.2}Identification of Requirements}{23}{subsection.2.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.2.1}Functional Requirements}{23}{subsubsection.2.2.2.1}%
-\contentsline {paragraph}{Authentication and Security:}{23}{section*.5}%
-\contentsline {paragraph}{Project and Diagram Management:}{24}{section*.6}%
-\contentsline {paragraph}{Workspace and Editing:}{24}{section*.7}%
-\contentsline {paragraph}{Community Features:}{24}{section*.8}%
-\contentsline {paragraph}{Profile and Administration:}{24}{section*.9}%
+\contentsline {paragraph}{Authentication and Security:}{23}{section*.6}%
+\contentsline {paragraph}{Project and Diagram Management:}{24}{section*.7}%
+\contentsline {paragraph}{Workspace and Editing:}{24}{section*.8}%
+\contentsline {paragraph}{Community Features:}{24}{section*.9}%
+\contentsline {paragraph}{Profile and Administration:}{24}{section*.10}%
 \contentsline {subsubsection}{\numberline {2.2.2.2}Non-Functional Requirements}{25}{subsubsection.2.2.2.2}%
-\contentsline {paragraph}{Performance Requirements:}{25}{section*.10}%
-\contentsline {paragraph}{Security Requirements:}{25}{section*.11}%
-\contentsline {paragraph}{Usability Requirements:}{25}{section*.12}%
-\contentsline {paragraph}{Reliability and Availability:}{25}{section*.13}%
-\contentsline {paragraph}{Scalability Requirements:}{25}{section*.14}%
+\contentsline {paragraph}{Performance Requirements:}{25}{section*.11}%
+\contentsline {paragraph}{Security Requirements:}{25}{section*.12}%
+\contentsline {paragraph}{Usability Requirements:}{25}{section*.13}%
+\contentsline {paragraph}{Reliability and Availability:}{25}{section*.14}%
+\contentsline {paragraph}{Scalability Requirements:}{25}{section*.15}%
 \contentsline {section}{\numberline {2.3}Project Management with Scrum}{26}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Scrum Roles}{26}{subsection.2.3.1}%
 \contentsline {paragraph}{Roles in the Scrum Team:}{26}{table.2.1}%
