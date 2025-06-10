@@ -26,6 +26,25 @@
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{pdfpages}
+
+\usepackage{graphicx}
+\usepackage{etoolbox}
+\usepackage{calc} % ضروري للحسابات مثل >6cm
+
+% حفظ النسخة الأصلية من \includegraphics
+\let\oldincludegraphics\includegraphics
+
+% إعادة تعريف \includegraphics مع فحص العرض
+\renewcommand{\includegraphics}[2][]{%
+  \begingroup
+    \setlength{\dimen0}{\widthof{\oldincludegraphics[#1]{#2}}}%
+    \ifdim\dimen0>6cm
+      \fbox{\oldincludegraphics[#1]{#2}}%
+    \else
+      \oldincludegraphics[#1]{#2}%
+    \fi
+  \endgroup
+}
 % Configure listings if you want to use them elsewhere
 \lstset{
     basicstyle=\ttfamily\footnotesize,

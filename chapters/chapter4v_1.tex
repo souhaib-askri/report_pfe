@@ -1,313 +1,140 @@
 \chapter[Sprint II]{Study and Implementation of Sprint II: Authentication \& Landing Page}
 
-
 \section{Introduction}
-This chapter presents the study and implementation of Sprint II, which focuses on developing the authentication system and landing page for our application. The sprint encompasses the integration of modern authentication mechanisms using NextAuth.js and database management with Prisma, along with the creation of an intuitive landing page that serves as the entry point for users. This sprint builds upon the foundation established in previous iterations and introduces essential user management capabilities that form the backbone of the application's security architecture.
+Sprint II focuses on developing the authentication system and landing page using NextAuth.js and Prisma ORM. This sprint establishes essential user management capabilities and creates an intuitive entry point for the application, building upon the foundation from previous iterations.
 
 \section{Sprint Planning}
 
-\subsection{Objectives of Sprint II}
-The primary objectives of Sprint II include:
+\subsection{Objectives}
 \begin{itemize}
-    \item Implement secure user authentication using OAuth providers (Google, GitHub)
-    \item Develop session management for cross-device authentication persistence
-    \item Create an engaging and responsive landing page
-    \item Establish database schema and ORM integration using Prisma
-    \item Ensure seamless user sign-in and sign-out functionality
-    \item Implement user session persistence across multiple devices
+    \item Implement secure OAuth authentication (Google, GitHub)
+    \item Develop cross-device session management
+    \item Create responsive landing page
+    \item Establish database schema with Prisma ORM
+    \item Ensure seamless sign-in/sign-out functionality
 \end{itemize}
 
-\subsection{Backlog of Sprint II}
-% Note: Import backlog1.csv and filter for third column value < 2
+\subsection{Backlog Items}
 \begin{table}[H]
 \centering
-\caption{Sprint II Backlog Items}
+\caption{Sprint II Backlog}
 \label{tab:sprint2_backlog}
-\begin{tabular}{|p{1cm}|p{6cm}|p{2cm}|p{2cm}|p{2cm}|}
+\begin{tabular}{|p{1cm}|p{7cm}|p{2cm}|p{2cm}|}
 \hline
-\textbf{ID} & \textbf{User Story} & \textbf{Priority} & \textbf{Effort} & \textbf{Status} \\
+\textbf{ID} & \textbf{User Story} & \textbf{Priority} & \textbf{Status} \\
 \hline
-% TODO: Insert filtered CSV data where third column < 2
-% Example rows:
-1 & As a user, I want to sign in with Google account & 1 & 5 & Completed \\
+1 & As a user, I want to sign in with Google account & High & Completed \\
 \hline
-2 & As a user, I want to sign in with GitHub account & 1 & 3 & Completed \\
+2 & As a user, I want to sign in with GitHub account & High & Completed \\
 \hline
-3 & As a user, I want to stay authenticated across devices & 1 & 8 & Completed \\
+3 & As a user, I want to stay authenticated across devices & High & Completed \\
 \hline
-4 & As a user, I want to sign out from my account & 1 & 2 & Completed \\
+4 & As a user, I want to sign out from my account & Medium & Completed \\
 \hline
-5 & As a visitor, I want to explore the landing page & 1 & 5 & Completed \\
+5 & As a visitor, I want to explore the landing page & High & Completed \\
 \hline
 \end{tabular}
 \end{table}
 
-\section{Technologies and Tools Used}
+\section{Technology Stack}
 
-\subsection{NextAuth.js}
-NextAuth.js is a comprehensive authentication library designed specifically for Next.js applications. It provides a complete authentication solution with support for multiple OAuth providers, database adapters, and session management strategies. The library offers built-in security features including CSRF protection, JWT tokens, and secure cookie handling. NextAuth.js simplifies the implementation of authentication flows while maintaining high security standards and providing flexibility for customization.
+\textbf{NextAuth.js}: Comprehensive authentication library for Next.js providing OAuth support, session management, and built-in security features including CSRF protection and secure cookie handling.
 
-\subsection{Prisma}
-Prisma is a next-generation Object-Relational Mapping (ORM) tool that provides type-safe database access for Node.js applications. It offers a declarative schema definition language, automatic migration generation, and a powerful query engine. Prisma's integration with TypeScript ensures compile-time type safety and excellent developer experience through auto-completion and IntelliSense. The tool supports multiple database providers and simplifies complex database operations while maintaining optimal performance.
+\textbf{Prisma}: Type-safe ORM offering declarative schema definition, automatic migrations, and powerful query engine with TypeScript integration for optimal developer experience.
 
-\section{Analyse}
+\section{System Analysis}
 
-\subsection{Use case diagram for Sprint II}
+\subsection{Use Case Overview}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{conception/SprintII/use_case_diagrams/use_case_diagram_of_SprintII.png}
-    \caption{Use Case Diagram for Sprint II}
+    \includegraphics[width=1.0\textwidth]{conception/SprintII/use_case_diagrams/use_case_diagram_of_SprintII.png}
+    \caption{Sprint II Use Case Diagram}
     \label{fig:usecase_sprint2}
 \end{figure}
-
-The use case diagram for Sprint II illustrates the main interactions between users and the authentication system, highlighting the key functionalities implemented during this sprint.
-
-\subsection{Refined use case "Authentication"}
+\newpage
+\subsection{Authentication Use Cases}
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{conception/SprintII/use_case_diagrams/refined_use_case_feature_auth.png}
-    \caption{Refined Use Case Diagram for Authentication Feature}
+    \caption{Refined Authentication Use Case}
     \label{fig:refined_auth_usecase}
 \end{figure}
 
-\subsubsection{Use case}
-The authentication use case encompasses all user authentication-related activities including sign-in through OAuth providers, session management, and sign-out functionality.
+\subsubsection{Core Authentication Scenarios}
 
-\subsubsection{Textual description of use case}
+\textbf{OAuth Sign-In Process:}
+\begin{enumerate}
+    \item User clicks OAuth provider button (Google/GitHub)
+    \item System redirects to provider's authorization page
+    \item User authorizes application access
+    \item Provider returns authorization code
+    \item System validates and creates user session
+    \item User is redirected to dashboard
+\end{enumerate}
 
-\textbf{Use Case: Sign in with Google Account}
-\begin{table}[H]
-\centering
-\caption{Textual Description - Sign in with Google Account}
-\label{tab:google_signin_description}
-\begin{tabular}{|p{3cm}|p{10cm}|}
-\hline
-\textbf{Use Case Name} & Sign in with Google Account \\
-\hline
-\textbf{Primary Actor} & User \\
-\hline
-\textbf{Goal} & Authenticate user using Google OAuth \\
-\hline
-\textbf{Preconditions} & User has a valid Google account \\
-\hline
-\textbf{Main Flow} & 
-1. User clicks "Sign in with Google" button \\
-& 2. System redirects to Google OAuth page \\
-& 3. User enters Google credentials \\
-& 4. Google validates credentials \\
-& 5. System receives authorization code \\
-& 6. System creates user session \\
-& 7. User is redirected to dashboard \\
-\hline
-\textbf{Alternative Flow} & 
-A1. Invalid credentials: Display error message \\
-& A2. OAuth cancelled: Return to sign-in page \\
-\hline
-\textbf{Postconditions} & User is authenticated and session is created \\
-\hline
-\end{tabular}
-\end{table}
+\textbf{Cross-Device Authentication:}
+Session persistence is maintained through secure tokens allowing users to access the application across multiple devices without re-authentication, with automatic session validation and expiration handling.
 
-\textbf{Use Case: Sign in with GitHub Account}
-\begin{table}[H]
-\centering
-\caption{Textual Description - Sign in with GitHub Account}
-\label{tab:github_signin_description}
-\begin{tabular}{|p{3cm}|p{10cm}|}
-\hline
-\textbf{Use Case Name} & Sign in with GitHub Account \\
-\hline
-\textbf{Primary Actor} & User \\
-\hline
-\textbf{Goal} & Authenticate user using GitHub OAuth \\
-\hline
-\textbf{Preconditions} & User has a valid GitHub account \\
-\hline
-\textbf{Main Flow} & 
-1. User clicks "Sign in with GitHub" button \\
-& 2. System redirects to GitHub OAuth page \\
-& 3. User authorizes application access \\
-& 4. GitHub returns authorization code \\
-& 5. System validates and creates session \\
-& 6. User is redirected to dashboard \\
-\hline
-\textbf{Alternative Flow} & 
-A1. Authorization denied: Return to sign-in page \\
-& A2. Network error: Display retry option \\
-\hline
-\textbf{Postconditions} & User is authenticated with GitHub identity \\
-\hline
-\end{tabular}
-\end{table}
+\textbf{Secure Sign-Out:}
+Session termination involves token invalidation, cookie clearing, and secure redirection to the landing page.
 
-\textbf{Use Case: Stay Authenticated Across Multiple Devices}
-\begin{table}[H]
-\centering
-\caption{Textual Description - Cross-Device Authentication}
-\label{tab:cross_device_auth_description}
-\begin{tabular}{|p{3cm}|p{10cm}|}
-\hline
-\textbf{Use Case Name} & Stay Authenticated Across Multiple Devices \\
-\hline
-\textbf{Primary Actor} & Authenticated User \\
-\hline
-\textbf{Goal} & Maintain authentication state across devices \\
-\hline
-\textbf{Preconditions} & User is authenticated on one device \\
-\hline
-\textbf{Main Flow} & 
-1. User signs in on Device A \\
-& 2. System creates persistent session \\
-& 3. User accesses application on Device B \\
-& 4. System validates session token \\
-& 5. User gains access without re-authentication \\
-\hline
-\textbf{Alternative Flow} & 
-A1. Session expired: Redirect to sign-in \\
-& A2. Security breach detected: Force re-authentication \\
-\hline
-\textbf{Postconditions} & User maintains access across devices \\
-\hline
-\end{tabular}
-\end{table}
+\section{System Design}
 
-\textbf{Use Case: Sign Out}
-\begin{table}[H]
-\centering
-\caption{Textual Description - Sign Out}
-\label{tab:signout_description}
-\begin{tabular}{|p{3cm}|p{10cm}|}
-\hline
-\textbf{Use Case Name} & Sign Out From Account \\
-\hline
-\textbf{Primary Actor} & Authenticated User \\
-\hline
-\textbf{Goal} & Terminate user session securely \\
-\hline
-\textbf{Preconditions} & User is currently authenticated \\
-\hline
-\textbf{Main Flow} & 
-1. User clicks sign-out button \\
-& 2. System invalidates current session \\
-& 3. System clears authentication tokens \\
-& 4. User is redirected to landing page \\
-\hline
-\textbf{Alternative Flow} & 
-A1. Network error: Local session cleared \\
-\hline
-\textbf{Postconditions} & User session is terminated \\
-\hline
-\end{tabular}
-\end{table}
-
-\subsection{Refined use case "Explore Landing Page"}
-\subsubsection{Use case}
-The landing page exploration use case covers the visitor's interaction with the application's entry point, including navigation, information consumption, and call-to-action engagement.
-
-\subsubsection{Textual description of use case}
-\begin{table}[H]
-\centering
-\caption{Textual Description - Explore Landing Page}
-\label{tab:landing_page_description}
-\begin{tabular}{|p{3cm}|p{10cm}|}
-\hline
-\textbf{Use Case Name} & Explore Landing Page \\
-\hline
-\textbf{Primary Actor} & Visitor \\
-\hline
-\textbf{Goal} & Learn about the application and its features \\
-\hline
-\textbf{Preconditions} & None \\
-\hline
-\textbf{Main Flow} & 
-1. Visitor accesses landing page URL \\
-& 2. System displays hero section with value proposition \\
-& 3. Visitor scrolls through feature sections \\
-& 4. Visitor reviews testimonials and pricing \\
-& 5. Visitor clicks call-to-action button \\
-& 6. System redirects to sign-in page \\
-\hline
-\textbf{Alternative Flow} & 
-A1. Mobile device: Display responsive layout \\
-& A2. Slow connection: Show progressive loading \\
-\hline
-\textbf{Postconditions} & Visitor understands application value \\
-\hline
-\end{tabular}
-\end{table}
-
-\section{Conception}
-
-\subsection{Sequence diagram of use case "Authentication"}
-
-\textbf{Authenticate Using Google Account}
+\subsection{Authentication Flow}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1.0\textwidth]{conception/SprintII/sequence_diagrams/sequence_authentication_1_1_AuthenticateUsingGoogleAccount.png}
-    \caption{Sequence Diagram - Google Authentication}
+    \includegraphics[width=0.8\textwidth]{conception/SprintII/sequence_diagrams/sequence_authentication_1_1_AuthenticateUsingGoogleAccount.png}
+    \caption{OAuth Authentication Sequence}
     \label{fig:seq_google_auth}
 \end{figure}
 
-The sequence diagram illustrates the OAuth 2.0 flow for Google authentication, showing the interaction between the user, client application, authorization server, and resource server.
-
-\textbf{Stay Authenticated Across Devices}
+\subsection{Cross-Device Session Management}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1.0\textwidth]{conception/SprintII/sequence_diagrams/sequence_authentication_1_3_StayAuthenticatedAcrossDevices.png}
-    \caption{Sequence Diagram - Cross-Device Authentication}
+    \includegraphics[width=0.8\textwidth]{conception/SprintII/sequence_diagrams/sequence_authentication_1_3_StayAuthenticatedAcrossDevices.png}
+    \caption{Cross-Device Authentication Flow}
     \label{fig:seq_cross_device}
 \end{figure}
 
-This sequence diagram demonstrates how the application maintains user sessions across multiple devices using persistent tokens and session validation mechanisms.
+\section{Implementation Results}
 
-\textbf{Sign Out From Account}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=1.0\textwidth]{conception/SprintII/sequence_diagrams/sequence_authentication_1_4_SignoutFromAccount.png}
-    \caption{Sequence Diagram - Sign Out Process}
-    \label{fig:seq_signout}
-\end{figure}
-
-The sign-out sequence diagram shows the secure termination of user sessions, including token invalidation and cleanup processes.
-
-\section{Deliverables of Sprint II}
-
-The following screenshots demonstrate the key deliverables implemented during Sprint II:
-
-\textbf{Landing Page}
+\subsection{Landing Page}
 \begin{figure}[H]
     \centering
     \includegraphics[width=1.0\textwidth]{screenshots/landing.png}
-    \caption{Landing Page Implementation}
+    \caption{Responsive Landing Page}
     \label{fig:landing_page}
 \end{figure}
 
-The landing page serves as the application's entry point, featuring a modern design with clear value proposition, feature highlights, and prominent call-to-action elements.
+Modern design featuring clear value proposition, feature highlights, and prominent call-to-action elements optimized for user engagement and conversion.
 
-\textbf{Sign-In Interface}
+\subsection{Authentication Interface}
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.8\textwidth]{screenshots/signin.png}
-    \caption{Sign-In Page with OAuth Options}
+    \caption{OAuth Sign-In Interface}
     \label{fig:signin_page}
 \end{figure}
 
-The sign-in interface provides users with multiple authentication options, including Google and GitHub OAuth integration, presented in a clean and user-friendly design.
+Clean, user-friendly authentication interface supporting multiple OAuth providers with consistent branding and accessibility standards.
 
-\textbf{Sign-Out Confirmation}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{screenshots/sign-out.png}
-    \caption{Sign-Out Confirmation Interface}
-    \label{fig:signout_page}
-\end{figure}
+\section{Sprint Retrospective}
 
-The sign-out interface ensures users can securely terminate their sessions with appropriate confirmation mechanisms.
+\textbf{Achievements:}
+\begin{itemize}
+    \item Successful OAuth integration with Google and GitHub
+    \item Robust cross-device session management
+    \item Responsive landing page with high conversion potential
+    \item Secure authentication flow with proper error handling
+\end{itemize}
 
-\section{Retrospective of Sprint II}
-
-Sprint II successfully delivered all planned authentication features and the landing page implementation. The team effectively integrated NextAuth.js with OAuth providers, establishing a robust authentication foundation. Key achievements include seamless Google and GitHub authentication, persistent cross-device sessions, and an engaging landing page. Challenges encountered included OAuth configuration complexities and session management across different environments, which were resolved through thorough testing and documentation review. The sprint demonstrated strong collaboration between frontend and backend development, resulting in a cohesive user experience.
+\textbf{Challenges Resolved:}
+\begin{itemize}
+    \item OAuth configuration complexities across environments
+    \item Session persistence optimization
+    \item Cross-browser compatibility testing
+\end{itemize}
 
 \section{Conclusion}
 
-Sprint II established the essential authentication infrastructure and user entry point for the application. The successful implementation of OAuth-based authentication using NextAuth.js, combined with Prisma's database management capabilities, provides a secure and scalable foundation for user management. The responsive landing page effectively communicates the application's value proposition while guiding users toward engagement. These achievements position the project well for subsequent sprints, with a solid authentication system that supports the application's security requirements and user experience goals.
+Sprint II successfully established the authentication infrastructure and user entry point. The implementation of NextAuth.js with OAuth providers and Prisma database management provides a secure, scalable foundation for user management. The responsive landing page effectively communicates value while guiding user engagement. These achievements create a solid foundation for subsequent development phases, with robust security and optimal user experience.

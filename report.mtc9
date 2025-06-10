@@ -1,24 +1,18 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.1}Introduction}{\reset@font\mtcSfont 91}{section.7.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.2}Sprint Planning}{\reset@font\mtcSfont 91}{section.7.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.2.1}Objectives of Sprint V}{\reset@font\mtcSSfont 91}{subsection.7.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.2.2}Backlog of Sprint V}{\reset@font\mtcSSfont 93}{subsection.7.2.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.3}Analyse}{\reset@font\mtcSfont 94}{section.7.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.3.1}Use case diagram for sprint V}{\reset@font\mtcSSfont 94}{subsection.7.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.3.2}Refined use case "Community Interaction"}{\reset@font\mtcSSfont 94}{subsection.7.3.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {7.3.2.1}Use case}{\reset@font\mtcSSSfont 94}{subsubsection.7.3.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {7.3.2.2}Textual description of use case "Explore community"}{\reset@font\mtcSSSfont 95}{subsubsection.7.3.2.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {7.3.2.3}Textual description of use case "Comment on projects"}{\reset@font\mtcSSSfont 96}{subsubsection.7.3.2.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {7.3.2.4}Textual description of use case "Like/Unlike projects"}{\reset@font\mtcSSSfont 97}{subsubsection.7.3.2.4}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {7.3.2.5}Textual description of use case "Update comments"}{\reset@font\mtcSSSfont 98}{subsubsection.7.3.2.5}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {7.3.2.6}Textual description of use case "Delete comments"}{\reset@font\mtcSSSfont 99}{subsubsection.7.3.2.6}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {7.3.2.7}Textual description of use case "Like/Unlike comments"}{\reset@font\mtcSSSfont 100}{subsubsection.7.3.2.7}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {7.3.2.8}Textual description of use case "Copy projects to workspace"}{\reset@font\mtcSSSfont 101}{subsubsection.7.3.2.8}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.3.3}Refined use case "Profile Management"}{\reset@font\mtcSSfont 101}{subsection.7.3.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {7.3.3.1}Textual description of use case "Edit profile"}{\reset@font\mtcSSSfont 102}{subsubsection.7.3.3.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {7.3.3.2}Textual description of use case "View Public Projects on Profile"}{\reset@font\mtcSSSfont 103}{subsubsection.7.3.3.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.4}Conception}{\reset@font\mtcSfont 103}{section.7.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.4.1}Community Interaction Sequence Diagrams}{\reset@font\mtcSSfont 104}{subsection.7.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.4.2}Profile Management Sequence Diagrams}{\reset@font\mtcSSfont 112}{subsection.7.4.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.5}Deliverables of Sprint V}{\reset@font\mtcSfont 113}{section.7.5}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.6}Retrospective of Sprint V}{\reset@font\mtcSfont 115}{section.7.6}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.7}Conclusion}{\reset@font\mtcSfont 116}{section.7.7}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.1}Introduction}{\reset@font\mtcSfont 51}{section.7.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.2}Sprint Planning}{\reset@font\mtcSfont 51}{section.7.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.2.1}Objectives and Backlog}{\reset@font\mtcSSfont 51}{subsection.7.2.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.3}System Analysis}{\reset@font\mtcSfont 52}{section.7.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.3.1}Use Case Overview}{\reset@font\mtcSSfont 52}{subsection.7.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.3.2}Community Interaction Features}{\reset@font\mtcSSfont 53}{subsection.7.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {7.3.2.1}Key Use Cases Description}{\reset@font\mtcSSSfont 53}{subsubsection.7.3.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.3.3}Profile Management Features}{\reset@font\mtcSSfont 53}{subsection.7.3.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.4}System Design}{\reset@font\mtcSfont 54}{section.7.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.4.1}Key Sequence Diagrams}{\reset@font\mtcSSfont 54}{subsection.7.4.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.5}Implementation Results}{\reset@font\mtcSfont 57}{section.7.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.5.1}Community Features}{\reset@font\mtcSSfont 57}{subsection.7.5.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.5.2}Profile Management}{\reset@font\mtcSSfont 58}{subsection.7.5.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.6}Sprint Retrospective}{\reset@font\mtcSfont 58}{section.7.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.6.1}Achievements}{\reset@font\mtcSSfont 58}{subsection.7.6.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.6.2}Areas for Improvement}{\reset@font\mtcSSfont 58}{subsection.7.6.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.6.3}Future Actions}{\reset@font\mtcSSfont 59}{subsection.7.6.3}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.7}Conclusion}{\reset@font\mtcSfont 59}{section.7.7}}

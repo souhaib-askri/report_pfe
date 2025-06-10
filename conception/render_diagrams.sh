@@ -12,8 +12,8 @@ find "$base_dir" -type f -name "*.puml" | while read -r puml_file; do
     # Generate PNG, SVG, and PDF from the .puml file
     echo "Processing: $puml_file"
     plantuml -tpng "$puml_file"
-    plantuml -tsvg "$puml_file"
-    plantuml -tpdf "$puml_file"
+    # plantuml -tsvg "$puml_file"
+    # plantuml -tpdf "$puml_file"
 done
 
 echo "Rendering complete."

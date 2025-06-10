@@ -1,0 +1,45 @@
+@startuml
+title Diagram Editing - Sequence Diagram
+
+' actor User
+participant Frontend
+participant Backend
+participant "PlantUML Server" as PlantUML
+
+' ref over User, Database: Authenticate
+
+' ref over User, Database: Load Workspace
+
+' User -> Frontend: Open/Create diagram
+' activate Frontend
+
+' loop Editing Loop
+' User -> Frontend: Type PlantUML code in editor
+activate Frontend
+
+Frontend -> Frontend: Detect chage in code editor 
+
+Frontend -> Backend: Send PlantUML code
+deactivate Frontend
+activate Backend
+
+Backend -> PlantUML: Forward PlantUML code
+activate PlantUML
+
+PlantUML -> PlantUML: Process & render diagram
+PlantUML --> Backend: Return diagram image
+deactivate PlantUML
+activate Frontend
+
+Backend --> Frontend: Send diagram image
+deactivate Backend
+
+Frontend -> Frontend: Update diagram display
+' Frontend --> User: Show updated diagram
+
+' User -> User: Review diagram
+' end
+
+' deactivate Frontend
+
+@enduml
