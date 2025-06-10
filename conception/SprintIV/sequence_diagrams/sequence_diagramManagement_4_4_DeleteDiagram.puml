@@ -9,7 +9,7 @@ database Database
 
 ref over User, Database: Authenticate
 
-ref over User, Database: Load Workspace
+
 
 activate Frontend
 

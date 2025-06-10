@@ -9,7 +9,6 @@ node "PlantUML Server" as PlantUMLServer
 
 rectangle "Web Application" {
     usecase "Manage Workspace" as ManageWorkspace#Yellow
-    usecase "load workspace" as LoadWorkspace
     usecase "chat with AI" as ChatWithAI
     usecase "clear chat" as ClearChat
     usecase "edit diagram" as EditDiagram
@@ -21,8 +20,8 @@ rectangle "Web Application" {
 
 User -- ManageWorkspace
 ChatWithAI --- AIModel
+ 
 
-ManageWorkspace <|-- LoadWorkspace
 ManageWorkspace <|-- ChatWithAI
 EditDiagram <.. SaveChanges : <<extend>>
 ManageWorkspace <|-- EditDiagram
@@ -34,7 +33,7 @@ SaveChanges -- MinIo
 
 
 DownloadDiagramImage --- PlantUMLServer
-LoadWorkspace --- PlantUMLServer
+
 EditDiagram --- PlantUMLServer
 
 

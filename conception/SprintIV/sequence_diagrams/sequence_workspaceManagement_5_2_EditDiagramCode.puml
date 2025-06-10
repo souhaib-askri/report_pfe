@@ -8,7 +8,7 @@ participant "PlantUML Server" as PlantUML
 
 ref over User, Database: Authenticate
 
-ref over User, Database: Load Workspace
+
 
 User -> Frontend: Open/Create diagram
 activate Frontend

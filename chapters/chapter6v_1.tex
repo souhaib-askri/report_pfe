@@ -9,24 +9,36 @@ Sprint IV focuses on implementing core diagram and workspace management function
 Primary objectives include implementing comprehensive diagram CRUD operations, establishing robust workspace environment with split-view functionality, integrating AI assistance for diagram editing, and ensuring seamless PlantUML server integration for rendering.
 
 \subsection{Sprint Backlog}
+
+
 \begin{table}[H]
-    \centering
-    \caption{Sprint IV Backlog}
-    \begin{tabularx}{\textwidth}{|c|c|X|c|}
-    \hline
-    \textbf{Feature} & \textbf{ID} & \textbf{User Story} & \textbf{Priority} \\
-    \hline
-    \multirow{3}{*}{Diagram Management} & 4.1 & Create, view, update, and delete diagrams & M \\
-    \cline{2-4}
-    & 4.2 & Download diagram images in multiple formats & S \\
-    \hline
-    \multirow{3}{*}{Workspace Management} & 5.1 & Control split views and interactive editing & M \\
-    \cline{2-4}
-    & 5.2 & Chat with AI for diagram assistance & C \\
-    \cline{2-4}
-    & 5.3 & Real-time PlantUML rendering & M \\
-    \hline
-    \end{tabularx}
+\centering
+\caption{Sprint IV Backlog}
+\begin{tabularx}{\textwidth}{|c|c|X|c|}
+\hline
+\textbf{Feature} & \textbf{ID} & \textbf{User Story} & \textbf{Priority} \\
+\hline
+\multirow{5}{*}{Manage Diagrams} & 4.1 & As a user, I want to create a new diagram so that I can visualize my ideas. & M \\
+\cline{2-4}
+& 4.2 & As a user, I want to view my diagram so that I can review my work. & M \\
+\cline{2-4}
+& 4.3 & As a user, I want to update diagram details so that I can improve my designs. & M \\
+\cline{2-4}
+& 4.4 & As a user, I want to delete a diagram so that I can remove unwanted content. & M \\
+\cline{2-4}
+& 4.5 & As a user, I want to download diagram images in appropriate formats so that I can use them in other applications. & S \\
+\hline
+\multirow{5}{*}{Manage Workspace} & 5.1 & As a user, I want to control and split views in my workspace so that I can work efficiently. & S \\
+\cline{2-4}
+& 5.2 & As a user, I want to edit diagram code in an interactive editor so that I can create diagrams efficiently. & M \\
+\cline{2-4}
+& 5.3 & As a user, I want to chat with an AI model to edit diagram code so that I can get assistance with complex diagrams. & C \\
+\cline{2-4}
+& 5.4 & As an AI system, I need to respond to user requests and help edit diagram code so that users can create better diagrams. & C \\
+\cline{2-4}
+& 5.5 & As a PlantUML Server, I need to render diagram code into diagram images so that users can visualize their work. & M \\
+\hline
+\end{tabularx}
 \end{table}
 
 \section{System Analysis}
@@ -59,7 +71,7 @@ Key operations include:
 \subsubsection{Workspace Management}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.7\textwidth]{conception/SprintIV/use_case_diagrams/refined_use_case_feature_workspace_management.png}
+\includegraphics[width=1\textwidth]{conception/SprintIV/use_case_diagrams/refined_use_case_feature_workspace_management.png}
 \caption{Workspace Management Use Cases}
 \end{figure}
 
@@ -85,22 +97,15 @@ Core workspace features:
 \subsubsection{Diagram Creation Process}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{conception/SprintIV/sequence_diagrams/sequence_diagramManagement_4_1_CreateNewDiagram.png}
+\includegraphics[width=0.7\textwidth]{conception/SprintIV/sequence_diagrams/sequence_diagramManagement_4_1_CreateNewDiagram.png}
 \caption{Create New Diagram Sequence}
 \end{figure}
 
 \subsubsection{AI-Assisted Editing}
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.8\textwidth]{conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_5_3_ChatWithAIMode.png}
+\includegraphics[width=0.7\textwidth]{conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_5_3_ChatWithAIMode.png}
 \caption{AI Chat Integration Sequence}
-\end{figure}
-
-\subsubsection{Code Editing Workflow}
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.7\textwidth]{conception/SprintIV/sequence_diagrams/sequence_workspaceManagement_5_2_EditDiagramCode.png}
-\caption{Interactive Code Editing Sequence}
 \end{figure}
 
 \section{Implementation Results}
@@ -109,7 +114,7 @@ Core workspace features:
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.75\textwidth]{screenshots/add-diagram.png}
+\includegraphics[width=0.6\textwidth]{screenshots/add-diagram.png}
 \caption{Diagram Creation Interface}
 \end{figure}
 
@@ -133,11 +138,6 @@ AI assistant provides intelligent support through natural language interaction f
 
 \subsection{Workspace Environment}
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.8\textwidth]{screenshots/edit-diagram-project.png}
-\caption{Split-View Workspace - Primary View}
-\end{figure}
 
 \begin{figure}[H]
 \centering
@@ -154,7 +154,6 @@ The dual-pane workspace enables simultaneous code editing and diagram preview, p
     \item Successfully implemented complete diagram CRUD operations
     \item Effective AI assistant integration with natural language processing
     \item Smooth PlantUML server integration for high-quality rendering
-    \item Positive user feedback on split-view workspace functionality
     \item Real-time editing with immediate visual feedback
 \end{itemize}
 
@@ -168,14 +167,7 @@ The dual-pane workspace enables simultaneous code editing and diagram preview, p
     \item \textbf{Solution}: Implemented cross-browser compatibility layer
 \end{itemize}
 
-\subsection{Next Sprint Priorities}
-\begin{itemize}
-    \item Enhanced workspace customization features
-    \item Advanced AI assistant capabilities
-    \item Performance optimization for large-scale diagrams
-    \item Improved error handling for network failures
-    \item Extended browser compatibility testing
-\end{itemize}
+
 
 \section{Conclusion}
 

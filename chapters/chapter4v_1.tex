@@ -13,41 +13,37 @@ Sprint II focuses on developing the authentication system and landing page using
     \item Establish database schema with Prisma ORM
     \item Ensure seamless sign-in/sign-out functionality
 \end{itemize}
-
 \subsection{Backlog Items}
+
+The MoSCoW prioritization method categorizes requirements into four levels: \textbf{Must have} (critical features essential for project success), \textbf{Should have} (important features that add significant value but aren't critical), \textbf{Could have} (nice-to-have features that can be included if time and resources allow), and \textbf{Won't have} (features explicitly excluded from current scope).
+
+This method helps teams focus on delivering the most valuable features first while maintaining clear expectations about what will and won't be included in each release.
+
 \begin{table}[H]
 \centering
 \caption{Sprint II Backlog}
-\label{tab:sprint2_backlog}
 \begin{tabular}{|p{1cm}|p{7cm}|p{2cm}|p{2cm}|}
 \hline
 \textbf{ID} & \textbf{User Story} & \textbf{Priority} & \textbf{Status} \\
 \hline
-1 & As a user, I want to sign in with Google account & High & Completed \\
+1 & As a user, I want to sign in with Google account & M & Completed \\
 \hline
-2 & As a user, I want to sign in with GitHub account & High & Completed \\
+2 & As a user, I want to sign in with GitHub account & M & Completed \\
 \hline
-3 & As a user, I want to stay authenticated across devices & High & Completed \\
+3 & As a user, I want to stay authenticated across devices & M & Completed \\
 \hline
-4 & As a user, I want to sign out from my account & Medium & Completed \\
+4 & As a user, I want to sign out from my account & S & Completed \\
 \hline
-5 & As a visitor, I want to explore the landing page & High & Completed \\
+5 & As a visitor, I want to explore the landing page & M & Completed \\
 \hline
 \end{tabular}
 \end{table}
-
-\section{Technology Stack}
-
-\textbf{NextAuth.js}: Comprehensive authentication library for Next.js providing OAuth support, session management, and built-in security features including CSRF protection and secure cookie handling.
-
-\textbf{Prisma}: Type-safe ORM offering declarative schema definition, automatic migrations, and powerful query engine with TypeScript integration for optimal developer experience.
-
 \section{System Analysis}
 
 \subsection{Use Case Overview}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=1.0\textwidth]{conception/SprintII/use_case_diagrams/use_case_diagram_of_SprintII.png}
+    \includegraphics[width=0.8\textwidth]{conception/SprintII/use_case_diagrams/use_case_diagram_of_SprintII.png}
     \caption{Sprint II Use Case Diagram}
     \label{fig:usecase_sprint2}
 \end{figure}
@@ -88,13 +84,6 @@ Session termination involves token invalidation, cookie clearing, and secure red
     \label{fig:seq_google_auth}
 \end{figure}
 
-\subsection{Cross-Device Session Management}
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.8\textwidth]{conception/SprintII/sequence_diagrams/sequence_authentication_1_3_StayAuthenticatedAcrossDevices.png}
-    \caption{Cross-Device Authentication Flow}
-    \label{fig:seq_cross_device}
-\end{figure}
 
 \section{Implementation Results}
 

@@ -4,7 +4,7 @@
 
 The evolution of software development has increased the demand for efficient design tools. UML diagrams play a vital role by bridging conceptual design and implementation, improving stakeholder communication and offering standardized documentation.
 
-Traditional approaches to diagramming face challenges due to manual effort and technical complexity. With the rise of AI and NLP technologies, automating diagram generation is now feasible.
+Traditional approaches to diagramming face challenges due to manual effort and technical complexity. With the rise of AI and LLM technologies, automating diagram generation is now feasible.
 
 This project proposes a platform combining natural language accessibility with the precision of textual UML generation, democratizing the process while maintaining professional standards.
 
@@ -22,7 +22,7 @@ UML creation using GUI and textual tools presents several challenges:
 
 \subsection{Existing Solutions}
 
-\textbf{AI-Based Tools:} Use NLP to generate diagrams from user input, but often lack accuracy.
+\textbf{AI-Based Tools:} Use LLM to generate diagrams from user input, but often lack accuracy.
 
 \textbf{Conversational Tools:} Tools like ChatUML provide fast feedback but lack support for complex cases.
 
@@ -30,39 +30,16 @@ UML creation using GUI and textual tools presents several challenges:
 
 \subsection{Proposed Solution}
 
-\textbf{Core Idea:} The platform combines NLP with PlantUML to interpret natural language and generate accurate diagrams.
+\textbf{Core Idea:} The platform combines LLM with PlantUML to interpret natural language and generate accurate diagrams.
 
 \textbf{Key Features:} Real-time validation, collaborative editing, version control support, and a marketplace for sharing templates.
 
-\textbf{Architecture:} Microservices separate NLP, generation, and UI layers for scalability.
+\textbf{Architecture:} Microservices separate LLM, generation, and UI layers for scalability.
 
 \textbf{Advantages:} Professional-quality output, community-oriented design, and user-friendly interfaces.
 
-\subsubsection{Use of PlantUML}
 
-PlantUML was selected for its rich UML support, strong API, and broad adoption.
-
-\begin{table}[htbp]
-\centering
-\caption{Comparison of Textual Diagramming Tools}
-\label{tab:diagramming_tools}
-\begin{tabular}{|p{2.5cm}|p{2.5cm}|p{2.5cm}|p{2.5cm}|}
-\hline
-\textbf{Criteria} & \textbf{PlantUML} & \textbf{Mermaid} & \textbf{Graphviz} \\
-\hline
-UML Support & High & Moderate & Low \\
-Syntax Complexity & Moderate & Low & High \\
-Output Quality & High & Medium & High \\
-Community Size & Large & Growing & Established \\
-API Integration & Strong & Good & Limited \\
-Enterprise Ready & Yes & Partial & Yes \\
-\hline
-\end{tabular}
-\end{table}
-
-\section{Methodology}
-
-\subsection{Agile and Scrum Framework}
+\section{Methodology Agile and Scrum Framework}
 
 Agile promotes iterative development and adaptability, ideal for evolving AI projects. Scrum enhances Agile through defined roles (Product Owner, Scrum Master, Development Team), events (Planning, Daily, Review, Retrospective), and artifacts (Product Backlog, Sprint Backlog, Increment).
 
@@ -74,7 +51,7 @@ Modeling languages like UML provide standard notations for representing system s
 
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=0.3\textwidth]{pictures/web/UML_logo.svg.png}
+\includegraphics[width=0.1\textwidth]{pictures/web/UML_logo.svg.png}
 \caption{UML Official Logo}
 \label{fig:uml_logo}
 \end{figure}
@@ -82,5 +59,6 @@ Modeling languages like UML provide standard notations for representing system s
 UML is widely adopted due to its standardization, tooling support, and flexibility across domains, unlike domain-specific languages like BPMN or SysML.
 
 \section{Conclusion}
-
-This chapter outlined key challenges in diagramming tools and proposed an AI-driven platform leveraging LLM and PlantUML for accessible and precise UML generation. The use of Scrum ensures an adaptive, structured methodology, while UML provides a solid modeling foundation. Together, they form a solution that empowers developers through automation, collaboration, and professional-grade output.
+This project addresses key limitations in UML generation by integrating LLM with PlantUML.
+The proposed platform enhances usability, collaboration, and automation through a scalable architecture.
+By leveraging AI, it democratizes diagramming while maintaining professional quality and precision.
