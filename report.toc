@@ -27,7 +27,7 @@
 \contentsline {subsubsection}{\numberline {2.2.2.2}Non-Functional Requirements}{15}{subsubsection.2.2.2.2}%
 \contentsline {section}{\numberline {2.3}Project Management}{15}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Scrum Organization}{15}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Sprint Planning}{16}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.2}Sprint Planning}{15}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Global Use Case Diagram}{16}{subsection.2.3.3}%
 \contentsline {section}{\numberline {2.4}System Architecture}{17}{section.2.4}%
 \contentsline {subsection}{\numberline {2.4.1}Deployment Overview}{17}{subsection.2.4.1}%

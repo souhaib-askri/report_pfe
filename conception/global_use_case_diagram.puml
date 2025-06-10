@@ -4,7 +4,6 @@ left to right direction
 
 actor "User" as User
 
-actor "Visitor" as Visitor
 
 rectangle "Web Application" {
     usecase "Explore Landing Page" as ExploreLandingPage
@@ -22,7 +21,7 @@ rectangle "Web Application" {
 
 
 
-Visitor -- ExploreLandingPage
+User -- ExploreLandingPage
 User -- InteractWithCommunity
 User -- ManageProjects
 User -- ManageDiagrams

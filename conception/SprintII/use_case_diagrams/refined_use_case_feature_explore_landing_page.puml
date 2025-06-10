@@ -1,6 +1,12 @@
 @startuml
+left to right direction
+actor User
+rectangle "Web Application" {
+    usecase "Explore landing page" as ExploreLandingPage
 
-usecase "Explore landing page" as ExploreLandingPage
 
+
+}
+User -- ExploreLandingPage
 
 @enduml

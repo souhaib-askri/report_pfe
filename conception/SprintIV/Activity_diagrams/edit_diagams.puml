@@ -3,7 +3,6 @@ title Diagram Generation Flow
 
 |Frontend|
 start
-:Create/open diagram;
 
 repeat
   :Editing diagram;

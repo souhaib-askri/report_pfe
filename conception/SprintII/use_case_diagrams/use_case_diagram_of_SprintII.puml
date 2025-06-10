@@ -3,7 +3,7 @@
 left to right direction
 
 actor "User" as User
-actor "Visitor" as Visitor
+
 
 rectangle "Web Application" {
     usecase "Explore Landing Page" as ExploreLandingPage #Yellow
@@ -13,14 +13,14 @@ rectangle "Web Application" {
     usecase "Manage projects" as ManageProjects
     usecase "Manage diagrams" as ManageDiagrams
     usecase "Manage workspace" as ManageWorkspace
-    usecase "Edit profile" as EditProfile
+    usecase "Manage profile" as EditProfile
 
     
 
 }
 
 
-Visitor -- ExploreLandingPage
+User -- ExploreLandingPage
 User -- InteractWithCommunity
 User -- ManageProjects
 User -- ManageDiagrams

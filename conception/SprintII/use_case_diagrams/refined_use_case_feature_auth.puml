@@ -6,12 +6,12 @@ usecase "Authentication" as user_auth
 
 usecase "Sing in with google" as signInWithGoogle
 usecase "Sing in with github" as signInWithGithub
-usecase "sign in with multi devices" as signInWithMultiDevices
+usecase "Stay sign in cross devices" as signInWithMultiDevices
 usecase "sign out" as signOut
 
 user_auth <|-- signInWithGoogle 
 user_auth <|-- signInWithGithub
 user_auth <|-- signInWithMultiDevices
-user_auth ..> signOut : <<extend>>
+user_auth <.. signOut : <<extend>>
 
 @enduml
