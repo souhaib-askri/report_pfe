@@ -50,7 +50,33 @@ The project follows agile development using Scrum framework for iterative develo
     \item \textbf{Usability}: Responsive design, WCAG 2.1 Level AA compliance
     \item \textbf{Reliability}: 99.5% uptime, automated backups, graceful error handling
 \end{itemize}
+\subsection{Product Backlog}
 
+The product backlog represents a prioritized list of features and requirements derived from stakeholder needs and market analysis. Each backlog item follows the user story format and includes priority classification using MoSCoW method (Must have, Should have, Could have, Won't have this time).
+
+\begin{longtable}{|p{0.7cm}|p{3.6cm}|p{0.7cm}|p{9cm}|p{1.5cm}|}
+    \caption{Product Backlog with User Stories } \label{tab:product_backlog} \\
+    \hline
+    \textbf{ID} & \textbf{Feature} & \textbf{Sub-ID} & \textbf{User Story} & \textbf{Priority} \\
+    \hline
+    \endfirsthead
+    
+    \multicolumn{5}{c}%
+    {{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+    \hline
+    \textbf{ID} & \textbf{Feature} & \textbf{Sub-ID} & \textbf{User Story} & \textbf{Priority} \\
+    \hline
+    \endhead
+    
+    \hline \multicolumn{5}{|r|}{{Continued on next page}} \\ \hline
+    \endfoot
+    
+    \hline
+    \endlastfoot
+    
+    \csvreader[no head, late after line=\\]{./backlog1.csv}{}%
+    {\csvcoli & \csvcolii & \csvcoliii & \csvcoliv & \csvcolv}
+    \end{longtable}
 \section{Project Management}
 
 \subsection{Scrum Organization}
@@ -89,7 +115,7 @@ The project spans 14 weeks across 5 focused sprints:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.85\textwidth]{./conception/global_use_case_diagram.png}
+    \includegraphics[width=0.7\textwidth]{./conception/global_use_case_diagram.png}
     \caption{Global Use Case Diagram}
     \label{fig:global_use_case}
 \end{figure}
