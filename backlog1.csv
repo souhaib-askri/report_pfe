@@ -13,20 +13,17 @@
 ,,4.2,As a user; I want to view my diagram so that I can review my work.,M
 ,,4.3,As a user; I want to update diagram details so that I can improve my designs.,M
 ,,4.4,As a user; I want to delete a diagram so that I can remove unwanted content.,M
-,,4.5,As a user; I want to download diagram images in appropriate formats so that I can use them in other applications.,S
-5,Manage Workspace,5.1,As a user; I want to control and split views in my workspace so that I can work efficiently.,S
-,,5.2,As a user; I want to edit diagram code in an interactive editor so that I can create diagrams efficiently.,M
-,,5.3,As a user; I want to chat with an AI model to edit diagram code so that I can get assistance with complex diagrams.,C
-,,5.4,As an AI system; I need to respond to user requests and help edit diagram code so that users can create better diagrams.,C
-,,5.5,As a PlantUML Server; I need to render diagram code into diagram images so that users can visualize their work.,M
+5,Manage Workspace,5.1,As a user; I want to edit diagram code in an interactive editor so that I can create diagrams efficiently.,M
+,,5.2,As a user; I want to chat with an AI model to edit diagram code so that I can get assistance with complex diagrams.,C
+,,5.3,As an AI system; I need to respond to user requests and help edit diagram code so that users can create better diagrams.,C
+,,5.4,As a PlantUML Server; I need to render diagram code into diagram images so that users can visualize their work.,M
 6,Community Interaction,6.1,As a user; I want to explore the community so that I can discover interesting projects.,S
-,,6.2,As a visitor; I want to explore the community so that I can see what the platform offers.,S
-,,6.3,As a user; I want to comment on projects so that I can provide feedback to other users.,C
-,,6.4,As a user; I want to like/unlike projects so that I can show appreciation for good work.,C
-,,6.5,As a user; I want to share projects so that I can promote interesting content.,C
-,,6.6,As a user; I want to update my comments so that I can correct or improve my feedback.,C
-,,6.7,As a user; I want to delete my comments so that I can remove inappropriate or outdated feedback.,C
-,,6.8,As a user; I want to like/unlike comments so that I can engage in community discussions.,C
-,,6.9,As a user; I want to copy community projects to my workspace so that I can learn from and build upon others' work.,S
+,,6.2,As a user; I want to comment on projects so that I can provide feedback to other users.,C
+,,6.3,As a user; I want to like/unlike projects so that I can show appreciation for good work.,C
+,,6.4,As a user; I want to share projects so that I can promote interesting content.,C
+,,6.5,As a user; I want to update my comments so that I can correct or improve my feedback.,C
+,,6.6,As a user; I want to delete my comments so that I can remove inappropriate or outdated feedback.,C
+,,6.7,As a user; I want to like/unlike comments so that I can engage in community discussions.,C
+,,6.8,As a user; I want to copy community projects to my workspace so that I can learn from and build upon others' work.,S
 7,Profile Management,7.1,As a user; I want to edit my profile so that I can keep my information current.,S
 ,,7.2,As a user; I want to view public projects on profiles so that I can see others' work.,S

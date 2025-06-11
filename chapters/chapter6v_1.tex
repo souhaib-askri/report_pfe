@@ -10,37 +10,32 @@ Primary objectives include implementing comprehensive diagram CRUD operations, e
 
 \subsection{Sprint Backlog}
 
-
-\begin{table}[H]
-\centering
-\caption{Sprint IV Backlog}
-\begin{tabularx}{\textwidth}{|c|c|X|c|}
-\hline
-\textbf{Feature} & \textbf{ID} & \textbf{User Story} & \textbf{Priority} \\
-\hline
-\multirow{5}{*}{Manage Diagrams} & 4.1 & As a user, I want to create a new diagram so that I can visualize my ideas. & M \\
-\cline{2-4}
-& 4.2 & As a user, I want to view my diagram so that I can review my work. & M \\
-\cline{2-4}
-& 4.3 & As a user, I want to update diagram details so that I can improve my designs. & M \\
-\cline{2-4}
-& 4.4 & As a user, I want to delete a diagram so that I can remove unwanted content. & M \\
-\cline{2-4}
-& 4.5 & As a user, I want to download diagram images in appropriate formats so that I can use them in other applications. & S \\
-\hline
-\multirow{5}{*}{Manage Workspace} & 5.1 & As a user, I want to control and split views in my workspace so that I can work efficiently. & S \\
-\cline{2-4}
-& 5.2 & As a user, I want to edit diagram code in an interactive editor so that I can create diagrams efficiently. & M \\
-\cline{2-4}
-& 5.3 & As a user, I want to chat with an AI model to edit diagram code so that I can get assistance with complex diagrams. & C \\
-\cline{2-4}
-& 5.4 & As an AI system, I need to respond to user requests and help edit diagram code so that users can create better diagrams. & C \\
-\cline{2-4}
-& 5.5 & As a PlantUML Server, I need to render diagram code into diagram images so that users can visualize their work. & M \\
-\hline
-\end{tabularx}
-\end{table}
-
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|l|c|p{8cm}|c|}
+    \hline
+    \textbf{ID} & \textbf{Feature} & \textbf{Sub-ID} & \textbf{User Story} & \textbf{Priority} \\
+    \hline
+    4 & Manage Diagrams & 4.1 & As a user; I want to create a new diagram so that I can visualize my ideas. & M \\
+    \hline
+      &  & 4.2 & As a user; I want to view my diagram so that I can review my work. & M \\
+    \hline
+      &  & 4.3 & As a user; I want to update diagram details so that I can improve my designs. & M \\
+    \hline
+      &  & 4.4 & As a user; I want to delete a diagram so that I can remove unwanted content. & M \\
+    \hline
+    5 & Manage Workspace & 5.1 & As a user; I want to edit diagram code in an interactive editor so that I can create diagrams efficiently. & M \\
+    \hline
+      &  & 5.2 & As a user; I want to chat with an AI model to edit diagram code so that I can get assistance with complex diagrams. & C \\
+    \hline
+      &  & 5.3 & As an AI system; I need to respond to user requests and help edit diagram code so that users can create better diagrams. & C \\
+    \hline
+      &  & 5.4 & As a PlantUML Server; I need to render diagram code into diagram images so that users can visualize their work. & M \\
+    \hline
+    \end{tabular}
+    \caption{Manage Diagrams and Workspace User Stories Requirements Table}
+    \label{tab:diagrams_workspace}
+    \end{table}
 \section{System Analysis}
 
 \subsection{Use Case Overview}
@@ -63,9 +58,8 @@ Primary objectives include implementing comprehensive diagram CRUD operations, e
 Key operations include:
 \begin{itemize}
     \item \textbf{Create Diagram}: User initiates new diagram creation with name and type selection
-    \item \textbf{View/Edit Diagram}: Interactive editor with real-time preview and validation
+    \item \textbf{View Diagram}: Interactive editor with real-time preview and validation
     \item \textbf{Delete Diagram}: Secure deletion with confirmation dialog
-    \item \textbf{Download Diagram}: Export in multiple formats (PNG, SVG)
 \end{itemize}
 
 \subsubsection{Workspace Management}
@@ -77,7 +71,6 @@ Key operations include:
 
 Core workspace features:
 \begin{itemize}
-    \item \textbf{Load Workspace}: Initialize user environment with diagrams and preferences
     \item \textbf{Edit Diagram}: Interactive code editor with syntax highlighting
     \item \textbf{AI Chat}: Natural language assistance for diagram creation and troubleshooting
     \item \textbf{Save Changes}: Persistent storage with validation and error handling

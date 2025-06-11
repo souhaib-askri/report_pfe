@@ -6,15 +6,6 @@ This project develops a comprehensive PlantUML-based diagramming platform combin
 
 The platform targets developers, software architects, system designers, and educational institutions requiring efficient technical diagram creation and visual documentation tools.
 
-Key objectives include:
-\begin{itemize}
-    \item Developing user-friendly web interface for PlantUML diagram creation
-    \item Implementing robust project and diagram management
-    \item Creating collaborative workspace with AI-powered assistance
-    \item Building community platform for sharing and discovering diagrams
-    \item Ensuring scalable architecture with authentication and administration
-\end{itemize}
-
 The project follows agile development using Scrum framework for iterative development and continuous feedback integration.
 
 \section{Requirements Analysis}
@@ -45,11 +36,28 @@ The project follows agile development using Scrum framework for iterative develo
 
 \subsubsection{Non-Functional Requirements}
 \begin{itemize}
-    \item \textbf{Performance}: Page loads <3s, diagram rendering <5s, 1000 concurrent users
-    \item \textbf{Security}: HTTPS/TLS encryption, OAuth 2.0, input validation, vulnerability protection
-    \item \textbf{Usability}: Responsive design, WCAG 2.1 Level AA compliance
-    \item \textbf{Reliability}: 99.5% uptime, automated backups, graceful error handling
+    \item \textbf{Performance}: Page loads <3s, diagram rendering <5s, real-time syntax highlighting, autocomplete response <200ms, support for 1000 concurrent users
+    \item \textbf{Security}: HTTPS/TLS encryption, OAuth 2.0 authentication, input validation, XSS/CSRF protection, secure code execution sandboxing
+    \item \textbf{Usability}: Responsive design across devices, WCAG 2.1 Level AA accessibility compliance, intuitive visual interface design
+    \item \textbf{Editor Experience}: Syntax highlighting for multiple languages, intelligent autocomplete with context awareness, real-time error detection, code folding, and multi-cursor editing support
+    \item \textbf{SEO \& Discoverability}: Server-side rendering (SSR) for search engine optimization, semantic HTML structure
 \end{itemize}
+
+\section{Project Management}
+
+\subsection{Scrum Rol}
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|}
+        \hline
+        \textbf{Role}          & \textbf{Member(s)}             \\ \hline
+        Product Owner          & Issam Mekni                   \\ \hline
+        Scrum Master           & Issam Mekni                   \\ \hline
+        Development Team       & Issam Mekni, Souhaieb Askri   \\ \hline
+    \end{tabular}
+    \caption{Scrum team roles}
+\end{table}
 \subsection{Product Backlog}
 
 The product backlog represents a prioritized list of features and requirements derived from stakeholder needs and market analysis. Each backlog item follows the user story format and includes priority classification using MoSCoW method (Must have, Should have, Could have, Won't have this time).
@@ -77,48 +85,33 @@ The product backlog represents a prioritized list of features and requirements d
     \csvreader[no head, late after line=\\]{./backlog1.csv}{}%
     {\csvcoli & \csvcolii & \csvcoliii & \csvcoliv & \csvcolv}
     \end{longtable}
-\section{Project Management}
-
-\subsection{Scrum Organization}
-
-\begin{table}[h!]
-    \centering
-    \begin{tabular}{|l|l|}
-        \hline
-        \textbf{Role}          & \textbf{Member(s)}             \\ \hline
-        Product Owner          & Issam Mekni                   \\ \hline
-        Scrum Master           & Issam Mekni                   \\ \hline
-        Development Team       & Issam Mekni, Souhaieb Askri   \\ \hline
-    \end{tabular}
-    \caption{Scrum team roles}
-\end{table}
-
-
 \subsection{Global Use Case Diagram}
-\subsection{Sprint Planning}
-
-The project spans 14 weeks across 5 focused sprints:
-
-\begin{table}[h!]
-    \centering
-    \begin{tabular}{|c|l|c|}
-        \hline
-        \textbf{Sprint} & \textbf{Focus Area} & \textbf{Duration} \\ \hline
-        I & Infrastructure Setup & 2 weeks \\ \hline
-        II & Authentication \& Landing Page & 3 weeks \\ \hline
-        III & Project Management & 3 weeks \\ \hline
-        IV & Diagram \& Project Management & 3 weeks \\ \hline
-        V & Community \& Profiles & 3 weeks \\ \hline
-    \end{tabular}
-    \caption{Sprint planning overview}
-\end{table}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{./conception/global_use_case_diagram.png}
+    \includegraphics[width=0.85\textwidth]{./conception/global_use_case_diagram.png}
     \caption{Global Use Case Diagram}
     \label{fig:global_use_case}
 \end{figure}
+
+\subsection{Sprint Planning}
+
+The project is organized into six strategic sprints, each focusing on specific functional areas and building upon previous deliverables. The total project duration is designed to fit within 3.5 months (14 weeks) with efficient resource allocation and parallel development activities.
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|l|l|c|}
+        \hline
+        \textbf{Sprint} & \textbf{Focus Area}                                & \textbf{Backlog Features}                                   & \textbf{Weeks} \\ \hline
+        I              & Infrastructure Setup                               & N/A                                                     & 2                                   \\ \hline
+        II             & Authentication and Landing Page                    & 1,2                              & 3                                 \\ \hline
+        III            & Project Management                                 & 3                            & 3                                   \\ \hline
+        IV             & Diagram and Project Management                     & 4,5                            & 3                                   \\ \hline
+        V              & Community Interaction and Profiles                 & 6 ,7                          & 3                                   \\ \hline
+    \end{tabular}
+    \caption{Scrum Sprint Planning with Estimated Durations}
+\end{table}
+
 
 \section{System Architecture}
 
@@ -133,7 +126,7 @@ The project spans 14 weeks across 5 focused sprints:
 
 \subsection{Technology Stack}
 
-\begin{table}[h!]
+\begin{table}[H]
     \centering
     \begin{tabular}{|p{3cm}|p{8cm}|}
         \hline

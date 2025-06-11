@@ -12,34 +12,36 @@ The community features transform the platform from a diagramming tool into a col
 
 Sprint V objectives include developing community exploration, project interaction features, comment management, project copying functionality, and comprehensive profile management.
 
-\begin{table}[H]
-\centering
-\caption{Sprint V Product Backlog}
-\begin{tabular}{|p{0.8cm}|p{7cm}|p{2cm}|p{0.8cm}|}
-\hline
-\textbf{ID} & \textbf{User Story} & \textbf{Feature} & \textbf{Size} \\
-\hline
-6.1 & Explore community to discover interesting projects & Community & S \\
-\hline
-6.2 & Visitor community exploration to see platform offerings & Community & S \\
-\hline
-6.3 & Comment on projects to provide feedback & Community & C \\
-\hline
-6.4 & Like/unlike projects to show appreciation & Community & C \\
-\hline
-6.5 & Share projects to promote content & Community & C \\
-\hline
-6.6-6.8 & Update, delete, and like/unlike comments & Community & C \\
-\hline
-6.9 & Copy community projects to workspace & Community & S \\
-\hline
-7.1 & Edit profile to keep information current & Profile & S \\
-\hline
-7.2 & View public projects on profiles & Profile & S \\
-\hline
-\end{tabular}
-\end{table}
-
+\begin{table}[h]
+    \centering
+    \begin{tabular}{|c|l|c|p{8cm}|c|}
+    \hline
+    \textbf{ID} & \textbf{Feature} & \textbf{Sub-ID} & \textbf{User Story} & \textbf{Priority} \\
+    \hline
+    6 & Community Interaction & 6.1 & As a user; I want to explore the community so that I can discover interesting projects. & S \\
+    \hline
+      &  & 6.2 & As a user; I want to comment on projects so that I can provide feedback to other users. & C \\
+    \hline
+      &  & 6.3 & As a user; I want to like/unlike projects so that I can show appreciation for good work. & C \\
+    \hline
+      &  & 6.4 & As a user; I want to share projects so that I can promote interesting content. & C \\
+    \hline
+      &  & 6.5 & As a user; I want to update my comments so that I can correct or improve my feedback. & C \\
+    \hline
+      &  & 6.6 & As a user; I want to delete my comments so that I can remove inappropriate or outdated feedback. & C \\
+    \hline
+      &  & 6.7 & As a user; I want to like/unlike comments so that I can engage in community discussions. & C \\
+    \hline
+      &  & 6.8 & As a user; I want to copy community projects to my workspace so that I can learn from and build upon others' work. & S \\
+    \hline
+    7 & Profile Management & 7.1 & As a user; I want to edit my profile so that I can keep my information current. & S \\
+    \hline
+      &  & 7.2 & As a user; I want to view public projects on profiles so that I can see others' work. & S \\
+    \hline
+    \end{tabular}
+    \caption{Community Interaction and Profile Management User Stories Requirements Table}
+    \label{tab:community_profile}
+    \end{table}
 \section{System Analysis}
 
 \subsection{Use Case Overview}
@@ -109,16 +111,14 @@ Sprint V objectives include developing community exploration, project interactio
 \end{figure}
 
 \section{Implementation Results}
-\subsection{Profile Management}
-
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.4\textwidth]{screenshots/edit-profile2.png}
-\caption{Profile Management Interface}
-\label{fig:edit_profile}
-\end{figure}
 
 \subsection{Community Features}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.85\textwidth]{screenshots/comment-section.png}
+    \caption{Comment System Implementation}
+    \label{fig:comment_section}
+    \end{figure}
 
 \begin{figure}[H]
 \centering
@@ -127,14 +127,8 @@ Sprint V objectives include developing community exploration, project interactio
 \label{fig:community_main}
 \end{figure}
 
-The community interface provides intuitive project discovery with filtering, search capabilities, and clear project previews with essential metadata and engagement metrics.
 
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.85\textwidth]{screenshots/comment-section.png}
-\caption{Comment System Implementation}
-\label{fig:comment_section}
-\end{figure}
+
 
 The comment system demonstrates comprehensive management including creation, editing, deletion, and interaction features for meaningful project discussions.
 
@@ -147,29 +141,16 @@ The profile interface enables users to maintain account information, update pers
 \subsection{Achievements}
 \begin{itemize}
 \item Successfully implemented comprehensive community interaction features
-\item Effective team collaboration and timeline adherence
-\item Positive user feedback on comment management functionality
 \item Smooth integration of profile management features
 \end{itemize}
 
-\subsection{Areas for Improvement}
-\begin{itemize}
-\item Enhanced real-time notification system needed
-\item Performance optimization for large-scale community loading
-\item Mobile responsiveness improvements required
-\item User interface refinements based on usability testing
-\end{itemize}
 
 \subsection{Future Actions}
 \begin{itemize}
 \item Implement real-time notifications for community engagement
-\item Optimize database queries for improved performance
-\item Conduct comprehensive usability testing sessions
 \item Enhance mobile user experience across all features
 \end{itemize}
 
 \section{Conclusion}
 
 Sprint V successfully transformed the platform into a collaborative community-driven ecosystem through comprehensive interaction features and robust profile management. The implementation of community exploration, project commenting, liking mechanisms, and profile editing establishes a solid foundation for user engagement and knowledge sharing.
-
-The delivery demonstrates commitment to building a collaborative platform where users learn from each other, share knowledge, and build upon collective expertise, setting the stage for continued platform evolution.

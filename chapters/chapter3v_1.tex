@@ -2,26 +2,15 @@
 
 \section{Introduction}
 
-Sprint I establishes a robust, scalable infrastructure foundation using modern DevOps practices and Docker containerization. This sprint creates the development environment and core services supporting the entire application ecosystem, ensuring consistency across environments and facilitating deployment.
+Sprint I establishes a robust, scalable infrastructure foundation using  Docker containerization. This sprint creates the development environment and core services supporting the entire application ecosystem, ensuring consistency across environments and facilitating deployment.
 
 \section{Sprint Planning and Objectives}
-
-\subsection{Primary Objectives}
-\begin{itemize}
-    \item Establish containerized development environment using Docker Compose
-    \item Set up PostgreSQL database with data persistence
-    \item Configure MinIO object storage for file management
-    \item Deploy PlantUML server for automated diagram generation
-    \item Create Next.js application with Prisma ORM integration
-    \item Implement NextAuth.js authentication with Google OAuth
-    \item Configure secure environment variables and service networking
-\end{itemize}
 
 \subsection{Sprint Backlog}
 \begin{enumerate}
     \item Database Setup (PostgreSQL with persistent storage)
     \item Object Storage (MinIO S3-compatible service)
-    \item Diagram Service (PlantUML server deployment)
+    \item Diagram Service (PlantUML server)
     \item Web Application (Next.js with TypeScript/Tailwind CSS)
     \item ORM Configuration (Prisma with PostgreSQL)
 
@@ -32,7 +21,7 @@ Sprint I establishes a robust, scalable infrastructure foundation using modern D
 
 \subsection{Core Services Overview}
 
-\begin{table}[h!]
+\begin{table}[H]
     \centering
     \begin{tabular}{|p{3cm}|p{4cm}|p{6cm}|}
         \hline
@@ -44,7 +33,7 @@ Sprint I establishes a robust, scalable infrastructure foundation using modern D
         
         Diagram Service & \includegraphics[width=0.6cm]{pictures/web/logo/plantuml-svgrepo-com.png}  PlantUML Server & Automated diagram generation from markup \\ \hline
         
-        Web Framework & \includegraphics[width=0.6cm]{pictures/web/logo/next-js.png}  Next.js 14 & Full-stack React framework with TypeScript support \\ \hline
+        Web Framework & \includegraphics[width=0.6cm]{pictures/web/logo/next-js.png}  Next.js 15 & Full-stack React framework with TypeScript support \\ \hline
         
         ORM &\includegraphics[width=0.6cm]{pictures/web/logo/prisma.png}  Prisma & Type-safe database access layer \\ \hline
         
@@ -54,17 +43,6 @@ Sprint I establishes a robust, scalable infrastructure foundation using modern D
 \end{table}
 
 \section{Infrastructure Deliverables}
-
-\subsection{Database Schema Design}
-
-The database implements a normalized schema supporting core application functionality:
-
-\begin{figure}[H]
-  \centering
-  \includegraphics[width=0.85\textwidth]{conception/SprintI/global_class_diagram.png}
-  \caption{Database Entity Relationship Diagram}
-  \label{fig:database_schema}
-\end{figure}
 
 \subsection{Docker Compose Configuration}
 
@@ -137,6 +115,16 @@ EXPOSE 3000
 
 CMD ["npm", "run", "dev"]
 \end{lstlisting}
+\subsection{Database Schema Design}
+
+The database implements a normalized schema supporting core application functionality:
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\textwidth]{conception/SprintI/global_class_diagram.png}
+  \caption{Database Entity Relationship Diagram}
+  \label{fig:database_schema}
+\end{figure}
 
 \subsection{Environment Configuration}
 
@@ -157,16 +145,12 @@ GEMINI_API_KEY=**********************
 \subsection{Key Achievements}
 \begin{itemize}
     \item  Complete containerized infrastructure with service integration
-    \item  Working authentication system with Google OAuth
     \item  Database schema design and Prisma ORM integration
     \item  Secure environment configuration and networking
-    \item  Comprehensive documentation and testing
 \end{itemize}
 
 \subsection{Challenges Resolved}
 \begin{itemize}
-    \item \textbf{Port Conflicts}: Resolved through careful port mapping documentation
-    \item \textbf{Container Networking}: Fixed connection strings and service naming
     \item \textbf{Security Management}: Implemented secure environment variable handling
     \item \textbf{Schema Synchronization}: Coordinated Prisma migrations in containers
 \end{itemize}
@@ -176,12 +160,9 @@ GEMINI_API_KEY=**********************
     \item Health checks implementation for all services
     \item Logging and monitoring solutions integration
     \item Automated backup systems for database
-    \item SSL/TLS configuration for production readiness
     \item CI/CD pipeline preparation
 \end{itemize}
 
 \section{Conclusion}
 
 Sprint I successfully established a comprehensive, production-ready development infrastructure using containerization best practices. The integration of PostgreSQL, MinIO, PlantUML, and Next.js creates a robust foundation supporting all planned application features.
-
-The infrastructure demonstrates modern DevOps practices with proper security, scalability, and documentation. This solid foundation enables the development team to focus on business logic and user features in subsequent sprints, ensuring both current development needs and future scaling requirements are met.
