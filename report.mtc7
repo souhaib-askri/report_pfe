@@ -1,20 +1,20 @@
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.1}Introduction}{\reset@font\mtcSfont 31}{section.5.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}Sprint Planning}{\reset@font\mtcSfont 31}{section.5.2}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.1}Objectives}{\reset@font\mtcSSfont 31}{subsection.5.2.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.2}Sprint Backlog}{\reset@font\mtcSSfont 31}{subsection.5.2.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Analysis and Design}{\reset@font\mtcSfont 32}{section.5.3}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.1}Use Case Analysis}{\reset@font\mtcSSfont 32}{subsection.5.3.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.2}Key Use Case Specifications}{\reset@font\mtcSSfont 33}{subsection.5.3.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.2.1}Create New Project (UC-3.1)}{\reset@font\mtcSSSfont 33}{subsubsection.5.3.2.1}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.2.2}View Project (UC-3.2)}{\reset@font\mtcSSSfont 33}{subsubsection.5.3.2.2}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.2.3}Update Project (UC-3.3)}{\reset@font\mtcSSSfont 33}{subsubsection.5.3.2.3}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.2.4}Delete Project (UC-3.4)}{\reset@font\mtcSSSfont 33}{subsubsection.5.3.2.4}}
-{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.2.5}Download Compressed (UC-3.5)}{\reset@font\mtcSSSfont 34}{subsubsection.5.3.2.5}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.4}System Design}{\reset@font\mtcSfont 34}{section.5.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.1}Sequence Diagrams}{\reset@font\mtcSSfont 34}{subsection.5.4.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.5}Implementation Results}{\reset@font\mtcSfont 36}{section.5.5}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.1}User Interface Screenshots}{\reset@font\mtcSSfont 36}{subsection.5.5.1}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.6}Sprint Retrospective}{\reset@font\mtcSfont 37}{section.5.6}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.6.1}Achievements}{\reset@font\mtcSSfont 37}{subsection.5.6.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.6.2}Areas for Improvement}{\reset@font\mtcSSfont 37}{subsection.5.6.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.7}Conclusion}{\reset@font\mtcSfont 37}{section.5.7}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.1}Introduction}{\reset@font\mtcSfont 30}{section.5.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.2}Sprint Planning}{\reset@font\mtcSfont 30}{section.5.2}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.1}Objectives}{\reset@font\mtcSSfont 30}{subsection.5.2.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.2.2}Sprint Backlog}{\reset@font\mtcSSfont 30}{subsection.5.2.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.3}Analysis and Design}{\reset@font\mtcSfont 31}{section.5.3}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.1}Use Case Analysis}{\reset@font\mtcSSfont 31}{subsection.5.3.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.3.2}Key Use Case Specifications}{\reset@font\mtcSSfont 32}{subsection.5.3.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.2.1}Create New Project (UC-3.1)}{\reset@font\mtcSSSfont 32}{subsubsection.5.3.2.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.2.2}View Project (UC-3.2)}{\reset@font\mtcSSSfont 32}{subsubsection.5.3.2.2}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.2.3}Update Project (UC-3.3)}{\reset@font\mtcSSSfont 32}{subsubsection.5.3.2.3}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.2.4}Delete Project (UC-3.4)}{\reset@font\mtcSSSfont 32}{subsubsection.5.3.2.4}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {5.3.2.5}Download Compressed (UC-3.5)}{\reset@font\mtcSSSfont 32}{subsubsection.5.3.2.5}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.4}System Design}{\reset@font\mtcSfont 32}{section.5.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.4.1}Sequence Diagrams}{\reset@font\mtcSSfont 32}{subsection.5.4.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.5}Implementation Results}{\reset@font\mtcSfont 34}{section.5.5}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.5.1}User Interface Screenshots}{\reset@font\mtcSSfont 34}{subsection.5.5.1}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.6}Sprint Retrospective}{\reset@font\mtcSfont 35}{section.5.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.6.1}Achievements}{\reset@font\mtcSSfont 35}{subsection.5.6.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {5.6.2}Areas for Improvement}{\reset@font\mtcSSfont 35}{subsection.5.6.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {5.7}Conclusion}{\reset@font\mtcSfont 36}{section.5.7}}
