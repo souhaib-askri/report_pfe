@@ -5,7 +5,7 @@ left to right direction
 actor "User" as User
 
 
-rectangle "Web Application" {
+rectangle "Web Applicate" {
     usecase "Explore Landing Page" as ExploreLandingPage #Yellow
     usecase "Authentication" as user_auth #Yellow
 

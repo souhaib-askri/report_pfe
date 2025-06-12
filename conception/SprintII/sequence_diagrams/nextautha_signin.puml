@@ -7,7 +7,7 @@ database "Database" as DB
 
 == Initiate Sign-In ==
 User -> Browser : Clicks "Sign In"
-Browser -> AppServer : GET /api/auth/signin
+Browser -> AppServer : GET /api/signin
 AppServer -> AppServer : Determine available providers
 AppServer -> Browser : Render sign-in page
 

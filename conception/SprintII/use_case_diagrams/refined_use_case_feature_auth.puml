@@ -2,7 +2,7 @@
 
 left to right direction
 
-usecase "Authentication" as user_auth
+usecase "Authenticate" as user_auth
 
 usecase "Sing in with google" as signInWithGoogle
 usecase "Sing in with github" as signInWithGithub

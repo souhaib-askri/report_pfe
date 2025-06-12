@@ -1,0 +1,1664 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   contentStyleType="text/css"
+   data-diagram-type="CLASS"
+   height="1256px"
+   preserveAspectRatio="none"
+   style="width:745px;height:1256px;background:#FFFFFF;"
+   version="1.1"
+   viewBox="0 0 745 1256"
+   width="745px"
+   zoomAndPan="magnify"
+   id="svg102"
+   sodipodi:docname="global_class_diagram.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview102"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="0.25"
+     inkscape:cx="546"
+     inkscape:cy="680"
+     inkscape:window-width="1600"
+     inkscape:window-height="839"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g102" />
+  <defs
+     id="defs1" />
+  <g
+     id="g102">
+    <!--class DiagramConversation-->
+    <g
+       class="entity"
+       data-entity="DiagramConversation"
+       data-source-line="8"
+       data-uid="ent0002"
+       id="entity_DiagramConversation">
+      <rect
+         fill="#ADD8E6"
+         height="162.4075"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#000080;stroke-width:0.5;"
+         width="176.1295"
+         x="13.55"
+         y="845.84"
+         id="rect1" />
+      <ellipse
+         cx="28.55"
+         cy="861.84"
+         fill="#ADD1B2"
+         style="stroke:#181818;stroke-width:1;"
+         id="ellipse1"
+         ry="11"
+         rx="11" />
+      <path
+         d="M28.6594,857.3713 Q27.7375,857.3713 27.0031,857.6838 Q26.2844,857.9963 25.7844,858.59 Q25.2844,859.1681 25.0031,860.0431 Q24.7375,860.9181 24.7375,862.0119 Q24.7375,863.4494 25.175,864.4963 Q25.6281,865.5431 26.4719,866.09 Q27.3313,866.6369 28.6438,866.6369 Q29.425,866.6369 30.1125,866.5119 Q30.8156,866.3713 31.8156,866.0588 L31.8156,867.9338 Q30.9563,868.2619 30.1906,868.3869 Q29.4406,868.5119 28.425,868.5119 Q26.5031,868.5119 25.1906,867.715 Q23.8938,866.9025 23.2375,865.4338 Q22.5813,863.9494 22.5813,861.9806 Q22.5813,860.5588 22.9719,859.3869 Q23.3781,858.1994 24.1594,857.3244 Q24.9406,856.4494 26.0813,855.9806 Q27.2219,855.4963 28.6906,855.4963 Q29.6438,855.4963 30.5344,855.6994 Q31.4406,855.8869 32.3781,856.3556 L31.55,858.1369 Q30.7688,857.7619 30.1125,857.5744 Q29.4563,857.3713 28.6594,857.3713 Z "
+         fill="#000000"
+         id="path1" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="144.1295"
+         x="42.55"
+         y="867.272"
+         id="text1">DiagramConversation</text>
+      <line
+         style="stroke:#000080;stroke-width:0.5;"
+         x1="14.55"
+         x2="188.6795"
+         y1="877.84"
+         y2="877.84"
+         id="line1" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="67.0177"
+         x="19.55"
+         y="896.8059"
+         id="text2">+id: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="123.5636"
+         x="19.55"
+         y="915.8739"
+         id="text3">+diagramId: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="97.1876"
+         x="19.55"
+         y="934.9418"
+         id="text4">+userId: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="116.8996"
+         x="19.55"
+         y="954.0097"
+         id="text5">+sessionId: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="142.6174"
+         x="19.55"
+         y="973.0776"
+         id="text6">+createdAt: DateTime</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="148.0914"
+         x="19.55"
+         y="992.1455"
+         id="text7">+updatedAt: DateTime</text>
+      <line
+         style="stroke:#000080;stroke-width:0.5;"
+         x1="14.55"
+         x2="188.6795"
+         y1="1000.2475"
+         y2="1000.2475"
+         id="line7" />
+    </g>
+    <!--class ConversationMessage-->
+    <g
+       class="entity"
+       data-entity="ConversationMessage"
+       data-source-line="17"
+       data-uid="ent0003"
+       id="entity_ConversationMessage">
+      <rect
+         fill="#ADD8E6"
+         height="181.4754"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#000080;stroke-width:0.5;"
+         width="189.2393"
+         x="7"
+         y="1068.24"
+         id="rect7" />
+      <ellipse
+         cx="27.2946"
+         cy="1084.24"
+         fill="#ADD1B2"
+         style="stroke:#181818;stroke-width:1;"
+         id="ellipse7"
+         ry="11"
+         rx="11" />
+      <path
+         d="M27.404,1079.7713 Q26.4821,1079.7713 25.7478,1080.0838 Q25.029,1080.3963 24.529,1080.99 Q24.029,1081.5681 23.7478,1082.4431 Q23.4821,1083.3181 23.4821,1084.4119 Q23.4821,1085.8494 23.9196,1086.8963 Q24.3728,1087.9431 25.2165,1088.49 Q26.0759,1089.0369 27.3884,1089.0369 Q28.1696,1089.0369 28.8571,1088.9119 Q29.5603,1088.7713 30.5603,1088.4588 L30.5603,1090.3338 Q29.7009,1090.6619 28.9353,1090.7869 Q28.1853,1090.9119 27.1696,1090.9119 Q25.2478,1090.9119 23.9353,1090.115 Q22.6384,1089.3025 21.9821,1087.8338 Q21.3259,1086.3494 21.3259,1084.3806 Q21.3259,1082.9588 21.7165,1081.7869 Q22.1228,1080.5994 22.904,1079.7244 Q23.6853,1078.8494 24.8259,1078.3806 Q25.9665,1077.8963 27.4353,1077.8963 Q28.3884,1077.8963 29.279,1078.0994 Q30.1853,1078.2869 31.1228,1078.7556 L30.2946,1080.5369 Q29.5134,1080.1619 28.8571,1079.9744 Q28.2009,1079.7713 27.404,1079.7713 Z "
+         fill="#000000"
+         id="path7" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="145.4734"
+         x="42.4712"
+         y="1089.672"
+         id="text8">ConversationMessage</text>
+      <line
+         style="stroke:#000080;stroke-width:0.5;"
+         x1="8"
+         x2="195.2393"
+         y1="1100.24"
+         y2="1100.24"
+         id="line8" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="67.0177"
+         x="13"
+         y="1119.2059"
+         id="text9">+id: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="153.1314"
+         x="13"
+         y="1138.2739"
+         id="text10">+conversationId: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="80.5557"
+         x="13"
+         y="1157.3418"
+         id="text11">+role: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="105.2936"
+         x="13"
+         y="1176.4097"
+         id="text12">+content: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="177.2393"
+         x="13"
+         y="1195.4776"
+         id="text13">+isCodeResponse: Boolean</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="126.1395"
+         x="13"
+         y="1214.5455"
+         id="text14">+timestamp: BigInt</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="142.6174"
+         x="13"
+         y="1233.6134"
+         id="text15">+createdAt: DateTime</text>
+      <line
+         style="stroke:#000080;stroke-width:0.5;"
+         x1="8"
+         x2="195.2393"
+         y1="1241.7154"
+         y2="1241.7154"
+         id="line15" />
+    </g>
+    <!--class Account-->
+    <g
+       class="entity"
+       data-entity="Account"
+       data-source-line="27"
+       data-uid="ent0004"
+       id="entity_Account">
+      <rect
+         fill="#ADD8E6"
+         height="276.815"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#000080;stroke-width:0.5;"
+         width="189.2393"
+         x="74"
+         y="267.55"
+         id="rect15" />
+      <ellipse
+         cx="137.7628"
+         cy="283.55"
+         fill="#ADD1B2"
+         style="stroke:#181818;stroke-width:1;"
+         id="ellipse15"
+         ry="11"
+         rx="11" />
+      <path
+         d="M137.8721,279.0813 Q136.9503,279.0813 136.2159,279.3938 Q135.4971,279.7063 134.9971,280.3 Q134.4971,280.8781 134.2159,281.7531 Q133.9503,282.6281 133.9503,283.7219 Q133.9503,285.1594 134.3878,286.2063 Q134.8409,287.2531 135.6846,287.8 Q136.544,288.3469 137.8565,288.3469 Q138.6378,288.3469 139.3253,288.2219 Q140.0284,288.0813 141.0284,287.7688 L141.0284,289.6438 Q140.169,289.9719 139.4034,290.0969 Q138.6534,290.2219 137.6378,290.2219 Q135.7159,290.2219 134.4034,289.425 Q133.1065,288.6125 132.4503,287.1438 Q131.794,285.6594 131.794,283.6906 Q131.794,282.2688 132.1846,281.0969 Q132.5909,279.9094 133.3721,279.0344 Q134.1534,278.1594 135.294,277.6906 Q136.4346,277.2063 137.9034,277.2063 Q138.8565,277.2063 139.7471,277.4094 Q140.6534,277.5969 141.5909,278.0656 L140.7628,279.8469 Q139.9815,279.4719 139.3253,279.2844 Q138.669,279.0813 137.8721,279.0813 Z "
+         fill="#000000"
+         id="path15" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="53.2138"
+         x="158.2628"
+         y="288.982"
+         id="text16">Account</text>
+      <line
+         style="stroke:#000080;stroke-width:0.5;"
+         x1="75"
+         x2="262.2393"
+         y1="299.55"
+         y2="299.55"
+         id="line16" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="67.0177"
+         x="80"
+         y="318.5159"
+         id="text17">+id: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="97.1876"
+         x="80"
+         y="337.5839"
+         id="text18">+userId: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="83.4957"
+         x="80"
+         y="356.6518"
+         id="text19">+type: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="110.6696"
+         x="80"
+         y="375.7197"
+         id="text20">+provider: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="177.2393"
+         x="80"
+         y="394.7876"
+         id="text21">+providerAccountId: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="152.1654"
+         x="80"
+         y="413.8555"
+         id="text22">+refresh_token: String?</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="147.2374"
+         x="80"
+         y="432.9234"
+         id="text23">+access_token: String?</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="106.9596"
+         x="80"
+         y="451.9914"
+         id="text24">+expires_at: Int?</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="133.3355"
+         x="80"
+         y="471.0593"
+         id="text25">+token_type: String?</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="99.2736"
+         x="80"
+         y="490.1272"
+         id="text26">+scope: String?</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="116.8575"
+         x="80"
+         y="509.1951"
+         id="text27">+id_token: String?</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="148.3994"
+         x="80"
+         y="528.263"
+         id="text28">+session_state: String?</text>
+      <line
+         style="stroke:#000080;stroke-width:0.5;"
+         x1="75"
+         x2="262.2393"
+         y1="536.365"
+         y2="536.365"
+         id="line28" />
+    </g>
+    <!--class Session-->
+    <g
+       class="entity"
+       data-entity="Session"
+       data-source-line="42"
+       data-uid="ent0005"
+       id="entity_Session">
+      <rect
+         fill="#ADD8E6"
+         height="124.2717"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#000080;stroke-width:0.5;"
+         width="155.8214"
+         x="298.71"
+         y="343.82"
+         id="rect28" />
+      <ellipse
+         cx="347.5068"
+         cy="359.82"
+         fill="#ADD1B2"
+         style="stroke:#181818;stroke-width:1;"
+         id="ellipse28"
+         ry="11"
+         rx="11" />
+      <path
+         d="M347.6162,355.3513 Q346.6943,355.3513 345.9599,355.6638 Q345.2412,355.9763 344.7412,356.57 Q344.2412,357.1481 343.9599,358.0231 Q343.6943,358.8981 343.6943,359.9919 Q343.6943,361.4294 344.1318,362.4763 Q344.5849,363.5231 345.4287,364.07 Q346.2881,364.6169 347.6006,364.6169 Q348.3818,364.6169 349.0693,364.4919 Q349.7724,364.3513 350.7724,364.0388 L350.7724,365.9138 Q349.9131,366.2419 349.1474,366.3669 Q348.3974,366.4919 347.3818,366.4919 Q345.4599,366.4919 344.1474,365.695 Q342.8506,364.8825 342.1943,363.4138 Q341.5381,361.9294 341.5381,359.9606 Q341.5381,358.5388 341.9287,357.3669 Q342.3349,356.1794 343.1162,355.3044 Q343.8974,354.4294 345.0381,353.9606 Q346.1787,353.4763 347.6474,353.4763 Q348.6006,353.4763 349.4912,353.6794 Q350.3974,353.8669 351.3349,354.3356 L350.5068,356.1169 Q349.7256,355.7419 349.0693,355.5544 Q348.4131,355.3513 347.6162,355.3513 Z "
+         fill="#000000"
+         id="path28" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="49.7278"
+         x="368.0068"
+         y="365.252"
+         id="text29">Session</text>
+      <line
+         style="stroke:#000080;stroke-width:0.5;"
+         x1="299.71"
+         x2="453.5314"
+         y1="375.82"
+         y2="375.82"
+         id="line29" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="67.0177"
+         x="304.71"
+         y="394.7859"
+         id="text30">+id: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="143.8214"
+         x="304.71"
+         y="413.8539"
+         id="text31">+sessionToken: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="97.1876"
+         x="304.71"
+         y="432.9218"
+         id="text32">+userId: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="126.7135"
+         x="304.71"
+         y="451.9897"
+         id="text33">+expires: DateTime</text>
+      <line
+         style="stroke:#000080;stroke-width:0.5;"
+         x1="299.71"
+         x2="453.5314"
+         y1="460.0917"
+         y2="460.0917"
+         id="line33" />
+    </g>
+    <!--class User-->
+    <g
+       class="entity"
+       data-entity="User"
+       data-source-line="49"
+       data-uid="ent0006"
+       id="entity_User">
+      <rect
+         fill="#ADD8E6"
+         height="200.5433"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#000080;stroke-width:0.5;"
+         width="183.5693"
+         x="284.84"
+         y="7"
+         id="rect33" />
+      <ellipse
+         cx="357.0657"
+         cy="23"
+         fill="#ADD1B2"
+         style="stroke:#181818;stroke-width:1;"
+         id="ellipse33"
+         ry="11"
+         rx="11" />
+      <path
+         d="M357.1751,18.5313 Q356.2532,18.5313 355.5188,18.8438 Q354.8001,19.1563 354.3001,19.75 Q353.8001,20.3281 353.5188,21.2031 Q353.2532,22.0781 353.2532,23.1719 Q353.2532,24.6094 353.6907,25.6563 Q354.1438,26.7031 354.9876,27.25 Q355.847,27.7969 357.1595,27.7969 Q357.9407,27.7969 358.6282,27.6719 Q359.3313,27.5313 360.3313,27.2188 L360.3313,29.0938 Q359.472,29.4219 358.7063,29.5469 Q357.9563,29.6719 356.9407,29.6719 Q355.0188,29.6719 353.7063,28.875 Q352.4095,28.0625 351.7532,26.5938 Q351.097,25.1094 351.097,23.1406 Q351.097,21.7188 351.4876,20.5469 Q351.8938,19.3594 352.6751,18.4844 Q353.4563,17.6094 354.597,17.1406 Q355.7376,16.6563 357.2063,16.6563 Q358.1595,16.6563 359.0501,16.8594 Q359.9563,17.0469 360.8938,17.5156 L360.0657,19.2969 Q359.2845,18.9219 358.6282,18.7344 Q357.972,18.5313 357.1751,18.5313 Z "
+         fill="#000000"
+         id="path33" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="30.6179"
+         x="377.5657"
+         y="28.432"
+         id="text34">User</text>
+      <line
+         style="stroke:#000080;stroke-width:0.5;"
+         x1="285.84"
+         x2="467.4093"
+         y1="39"
+         y2="39"
+         id="line34" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="67.0177"
+         x="290.84"
+         y="57.9659"
+         id="text35">+id: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="98.3636"
+         x="290.84"
+         y="77.0339"
+         id="text36">+name: String?</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="96.9356"
+         x="290.84"
+         y="96.1018"
+         id="text37">+email: String?</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="171.5693"
+         x="290.84"
+         y="115.1697"
+         id="text38">+emailVerified: DateTime?</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="101.9336"
+         x="290.84"
+         y="134.2376"
+         id="text39">+image: String?</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="134.5955"
+         x="290.84"
+         y="153.3055"
+         id="text40">+description: String?</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="142.6174"
+         x="290.84"
+         y="172.3734"
+         id="text41">+createdAt: DateTime</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="148.0914"
+         x="290.84"
+         y="191.4414"
+         id="text42">+updatedAt: DateTime</text>
+      <line
+         style="stroke:#000080;stroke-width:0.5;"
+         x1="285.84"
+         x2="467.4093"
+         y1="199.5433"
+         y2="199.5433"
+         id="line42" />
+    </g>
+    <!--class Project-->
+    <g
+       class="entity"
+       data-entity="Project"
+       data-source-line="60"
+       data-uid="ent0007"
+       id="entity_Project">
+      <rect
+         fill="#ADD8E6"
+         height="200.5433"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#000080;stroke-width:0.5;"
+         width="160.0914"
+         x="489.57"
+         y="305.68"
+         id="rect42" />
+      <ellipse
+         cx="542.3638"
+         cy="321.68"
+         fill="#ADD1B2"
+         style="stroke:#181818;stroke-width:1;"
+         id="ellipse42"
+         ry="11"
+         rx="11" />
+      <path
+         d="M542.4732,317.2113 Q541.5513,317.2113 540.8169,317.5238 Q540.0982,317.8363 539.5982,318.43 Q539.0982,319.0081 538.8169,319.8831 Q538.5513,320.7581 538.5513,321.8519 Q538.5513,323.2894 538.9888,324.3363 Q539.4419,325.3831 540.2857,325.93 Q541.1451,326.4769 542.4576,326.4769 Q543.2388,326.4769 543.9263,326.3519 Q544.6294,326.2113 545.6294,325.8988 L545.6294,327.7738 Q544.7701,328.1019 544.0044,328.2269 Q543.2544,328.3519 542.2388,328.3519 Q540.3169,328.3519 539.0044,327.555 Q537.7076,326.7425 537.0513,325.2738 Q536.3951,323.7894 536.3951,321.8206 Q536.3951,320.3988 536.7857,319.2269 Q537.1919,318.0394 537.9732,317.1644 Q538.7544,316.2894 539.8951,315.8206 Q541.0357,315.3363 542.5044,315.3363 Q543.4576,315.3363 544.3482,315.5394 Q545.2544,315.7269 546.1919,316.1956 L545.3638,317.9769 Q544.5826,317.6019 543.9263,317.4144 Q543.2701,317.2113 542.4732,317.2113 Z "
+         fill="#000000"
+         id="path42" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="46.0038"
+         x="562.8638"
+         y="327.112"
+         id="text43">Project</text>
+      <line
+         style="stroke:#000080;stroke-width:0.5;"
+         x1="490.57"
+         x2="648.6614"
+         y1="337.68"
+         y2="337.68"
+         id="line43" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="67.0177"
+         x="495.57"
+         y="356.6459"
+         id="text44">+id: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="92.2876"
+         x="495.57"
+         y="375.7139"
+         id="text45">+name: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="134.5955"
+         x="495.57"
+         y="394.7818"
+         id="text46">+description: String?</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="115.4856"
+         x="495.57"
+         y="413.8497"
+         id="text47">+imageUrl: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="119.4475"
+         x="495.57"
+         y="432.9176"
+         id="text48">+isPublic: Boolean</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="97.1876"
+         x="495.57"
+         y="451.9855"
+         id="text49">+userId: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="142.6174"
+         x="495.57"
+         y="471.0534"
+         id="text50">+createdAt: DateTime</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="148.0914"
+         x="495.57"
+         y="490.1214"
+         id="text51">+updatedAt: DateTime</text>
+      <line
+         style="stroke:#000080;stroke-width:0.5;"
+         x1="490.57"
+         x2="648.6614"
+         y1="498.2233"
+         y2="498.2233"
+         id="line51" />
+    </g>
+    <!--class Diagram-->
+    <g
+       class="entity"
+       data-entity="Diagram"
+       data-source-line="71"
+       data-uid="ent0008"
+       id="entity_Diagram">
+      <rect
+         fill="#ADD8E6"
+         height="181.4754"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#000080;stroke-width:0.5;"
+         width="160.0914"
+         x="371.57"
+         y="604.36"
+         id="rect51" />
+      <ellipse
+         cx="418.8548"
+         cy="620.36"
+         fill="#ADD1B2"
+         style="stroke:#181818;stroke-width:1;"
+         id="ellipse51"
+         ry="11"
+         rx="11" />
+      <path
+         d="M418.9642,615.8913 Q418.0423,615.8913 417.3079,616.2038 Q416.5892,616.5163 416.0892,617.11 Q415.5892,617.6881 415.3079,618.5631 Q415.0423,619.4381 415.0423,620.5319 Q415.0423,621.9694 415.4798,623.0163 Q415.9329,624.0631 416.7767,624.61 Q417.6361,625.1569 418.9486,625.1569 Q419.7298,625.1569 420.4173,625.0319 Q421.1204,624.8913 422.1204,624.5788 L422.1204,626.4538 Q421.2611,626.7819 420.4954,626.9069 Q419.7454,627.0319 418.7298,627.0319 Q416.8079,627.0319 415.4954,626.235 Q414.1986,625.4225 413.5423,623.9538 Q412.8861,622.4694 412.8861,620.5006 Q412.8861,619.0788 413.2767,617.9069 Q413.6829,616.7194 414.4642,615.8444 Q415.2454,614.9694 416.3861,614.5006 Q417.5267,614.0163 418.9954,614.0163 Q419.9486,614.0163 420.8392,614.2194 Q421.7454,614.4069 422.6829,614.8756 L421.8548,616.6569 Q421.0736,616.2819 420.4173,616.0944 Q419.7611,615.8913 418.9642,615.8913 Z "
+         fill="#000000"
+         id="path51" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="57.0218"
+         x="439.3548"
+         y="625.792"
+         id="text52">Diagram</text>
+      <line
+         style="stroke:#000080;stroke-width:0.5;"
+         x1="372.57"
+         x2="530.6614"
+         y1="636.36"
+         y2="636.36"
+         id="line52" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="67.0177"
+         x="377.57"
+         y="655.3259"
+         id="text53">+id: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="92.2876"
+         x="377.57"
+         y="674.3939"
+         id="text54">+name: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="86.4917"
+         x="377.57"
+         y="693.4618"
+         id="text55">+code: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="114.2956"
+         x="377.57"
+         y="712.5297"
+         id="text56">+projectId: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="142.6174"
+         x="377.57"
+         y="731.5976"
+         id="text57">+createdAt: DateTime</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="148.0914"
+         x="377.57"
+         y="750.6655"
+         id="text58">+updatedAt: DateTime</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="115.4856"
+         x="377.57"
+         y="769.7334"
+         id="text59">+imageUrl: String</text>
+      <line
+         style="stroke:#000080;stroke-width:0.5;"
+         x1="372.57"
+         x2="530.6614"
+         y1="777.8354"
+         y2="777.8354"
+         id="line59" />
+    </g>
+    <!--class ProjectComment-->
+    <g
+       class="entity"
+       data-entity="ProjectComment"
+       data-source-line="81"
+       data-uid="ent0009"
+       id="entity_ProjectComment">
+      <rect
+         fill="#ADD8E6"
+         height="162.4075"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#000080;stroke-width:0.5;"
+         width="160.0914"
+         x="176.57"
+         y="613.9"
+         id="rect59" />
+      <ellipse
+         cx="199.2145"
+         cy="629.9"
+         fill="#ADD1B2"
+         style="stroke:#181818;stroke-width:1;"
+         id="ellipse59"
+         ry="11"
+         rx="11" />
+      <path
+         d="M199.3239,625.4313 Q198.402,625.4313 197.6677,625.7438 Q196.9489,626.0563 196.4489,626.65 Q195.9489,627.2281 195.6677,628.1031 Q195.402,628.9781 195.402,630.0719 Q195.402,631.5094 195.8395,632.5563 Q196.2927,633.6031 197.1364,634.15 Q197.9958,634.6969 199.3083,634.6969 Q200.0895,634.6969 200.777,634.5719 Q201.4802,634.4313 202.4802,634.1188 L202.4802,635.9938 Q201.6208,636.3219 200.8552,636.4469 Q200.1052,636.5719 199.0895,636.5719 Q197.1677,636.5719 195.8552,635.775 Q194.5583,634.9625 193.902,633.4938 Q193.2458,632.0094 193.2458,630.0406 Q193.2458,628.6188 193.6364,627.4469 Q194.0427,626.2594 194.8239,625.3844 Q195.6052,624.5094 196.7458,624.0406 Q197.8864,623.5563 199.3552,623.5563 Q200.3083,623.5563 201.1989,623.7594 Q202.1052,623.9469 203.0427,624.4156 L202.2145,626.1969 Q201.4333,625.8219 200.777,625.6344 Q200.1208,625.4313 199.3239,625.4313 Z "
+         fill="#000000"
+         id="path59" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="111.1036"
+         x="214.9133"
+         y="635.332"
+         id="text60">ProjectComment</text>
+      <line
+         style="stroke:#000080;stroke-width:0.5;"
+         x1="177.57"
+         x2="335.6614"
+         y1="645.9"
+         y2="645.9"
+         id="line60" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="67.0177"
+         x="182.57"
+         y="664.8659"
+         id="text61">+id: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="105.2936"
+         x="182.57"
+         y="683.9339"
+         id="text62">+content: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="114.2956"
+         x="182.57"
+         y="703.0018"
+         id="text63">+projectId: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="97.1876"
+         x="182.57"
+         y="722.0697"
+         id="text64">+userId: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="142.6174"
+         x="182.57"
+         y="741.1376"
+         id="text65">+createdAt: DateTime</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="148.0914"
+         x="182.57"
+         y="760.2055"
+         id="text66">+updatedAt: DateTime</text>
+      <line
+         style="stroke:#000080;stroke-width:0.5;"
+         x1="177.57"
+         x2="335.6614"
+         y1="768.3075"
+         y2="768.3075"
+         id="line66" />
+    </g>
+    <!--class ProjectLike-->
+    <g
+       class="entity"
+       data-entity="ProjectLike"
+       data-source-line="90"
+       data-uid="ent0010"
+       id="entity_ProjectLike">
+      <rect
+         fill="#ADD8E6"
+         height="124.2717"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#000080;stroke-width:0.5;"
+         width="154.6174"
+         x="566.31"
+         y="632.96"
+         id="rect66" />
+      <ellipse
+         cx="603.9422"
+         cy="648.96"
+         fill="#ADD1B2"
+         style="stroke:#181818;stroke-width:1;"
+         id="ellipse66"
+         ry="11"
+         rx="11" />
+      <path
+         d="M604.0516,644.4913 Q603.1297,644.4913 602.3953,644.8038 Q601.6766,645.1163 601.1766,645.71 Q600.6766,646.2881 600.3953,647.1631 Q600.1297,648.0381 600.1297,649.1319 Q600.1297,650.5694 600.5672,651.6163 Q601.0203,652.6631 601.8641,653.21 Q602.7234,653.7569 604.0359,653.7569 Q604.8172,653.7569 605.5047,653.6319 Q606.2078,653.4913 607.2078,653.1788 L607.2078,655.0538 Q606.3484,655.3819 605.5828,655.5069 Q604.8328,655.6319 603.8172,655.6319 Q601.8953,655.6319 600.5828,654.835 Q599.2859,654.0225 598.6297,652.5538 Q597.9734,651.0694 597.9734,649.1006 Q597.9734,647.6788 598.3641,646.5069 Q598.7703,645.3194 599.5516,644.4444 Q600.3328,643.5694 601.4734,643.1006 Q602.6141,642.6163 604.0828,642.6163 Q605.0359,642.6163 605.9266,642.8194 Q606.8328,643.0069 607.7703,643.4756 L606.9422,645.2569 Q606.1609,644.8819 605.5047,644.6944 Q604.8484,644.4913 604.0516,644.4913 Z "
+         fill="#000000"
+         id="path66" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="72.3237"
+         x="622.9716"
+         y="654.392"
+         id="text67">ProjectLike</text>
+      <line
+         style="stroke:#000080;stroke-width:0.5;"
+         x1="567.31"
+         x2="719.9274"
+         y1="664.96"
+         y2="664.96"
+         id="line67" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="67.0177"
+         x="572.31"
+         y="683.9259"
+         id="text68">+id: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="114.2956"
+         x="572.31"
+         y="702.9939"
+         id="text69">+projectId: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="97.1876"
+         x="572.31"
+         y="722.0618"
+         id="text70">+userId: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="142.6174"
+         x="572.31"
+         y="741.1297"
+         id="text71">+createdAt: DateTime</text>
+      <line
+         style="stroke:#000080;stroke-width:0.5;"
+         x1="567.31"
+         x2="719.9274"
+         y1="749.2317"
+         y2="749.2317"
+         id="line71" />
+    </g>
+    <!--class CommentLike-->
+    <g
+       class="entity"
+       data-entity="CommentLike"
+       data-source-line="97"
+       data-uid="ent0011"
+       id="entity_CommentLike">
+      <rect
+         fill="#ADD8E6"
+         height="124.2717"
+         rx="2.5"
+         ry="2.5"
+         style="stroke:#000080;stroke-width:0.5;"
+         width="154.6174"
+         x="376.31"
+         y="864.9"
+         id="rect71" />
+      <ellipse
+         cx="405.349"
+         cy="880.9"
+         fill="#ADD1B2"
+         style="stroke:#181818;stroke-width:1;"
+         id="ellipse71"
+         ry="11"
+         rx="11" />
+      <path
+         d="M405.4584,876.4313 Q404.5365,876.4313 403.8021,876.7438 Q403.0834,877.0563 402.5834,877.65 Q402.0834,878.2281 401.8021,879.1031 Q401.5365,879.9781 401.5365,881.0719 Q401.5365,882.5094 401.974,883.5563 Q402.4271,884.6031 403.2709,885.15 Q404.1303,885.6969 405.4428,885.6969 Q406.224,885.6969 406.9115,885.5719 Q407.6146,885.4313 408.6146,885.1188 L408.6146,886.9938 Q407.7553,887.3219 406.9896,887.4469 Q406.2396,887.5719 405.224,887.5719 Q403.3021,887.5719 401.9896,886.775 Q400.6928,885.9625 400.0365,884.4938 Q399.3803,883.0094 399.3803,881.0406 Q399.3803,879.6188 399.7709,878.4469 Q400.1771,877.2594 400.9584,876.3844 Q401.7396,875.5094 402.8803,875.0406 Q404.0209,874.5563 405.4896,874.5563 Q406.4428,874.5563 407.3334,874.7594 Q408.2396,874.9469 409.1771,875.4156 L408.349,877.1969 Q407.5678,876.8219 406.9115,876.6344 Q406.2553,876.4313 405.4584,876.4313 Z "
+         fill="#000000"
+         id="path71" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="91.4196"
+         x="422.4688"
+         y="886.332"
+         id="text72">CommentLike</text>
+      <line
+         style="stroke:#000080;stroke-width:0.5;"
+         x1="377.31"
+         x2="529.9274"
+         y1="896.9"
+         y2="896.9"
+         id="line72" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="67.0177"
+         x="382.31"
+         y="915.8659"
+         id="text73">+id: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="131.1235"
+         x="382.31"
+         y="934.9339"
+         id="text74">+commentId: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="97.1876"
+         x="382.31"
+         y="954.0018"
+         id="text75">+userId: String</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="14"
+         lengthAdjust="spacing"
+         textLength="142.6174"
+         x="382.31"
+         y="973.0697"
+         id="text76">+createdAt: DateTime</text>
+      <line
+         style="stroke:#000080;stroke-width:0.5;"
+         x1="377.31"
+         x2="529.9274"
+         y1="981.1717"
+         y2="981.1717"
+         id="line76" />
+    </g>
+    <!--reverse link User to Account-->
+    <g
+       class="link"
+       data-entity-1="User"
+       data-entity-2="Account"
+       data-source-line="105"
+       data-uid="lnk12"
+       id="link_User_Account">
+      <path
+         codeLine="105"
+         d="M289.46,220.01 C289.46,260.92 289.46,286.72 289.46,286.72 C289.46,286.72 278.67,286.72 263.54,286.72"
+         fill="none"
+         id="User-backto-Account"
+         style="stroke:#181818;stroke-width:1;" />
+      <polygon
+         fill="#181818"
+         points="289.46,208.01,285.46,214.01,289.46,220.01,293.46,214.01,289.46,208.01"
+         style="stroke:#181818;stroke-width:1;"
+         id="polygon76" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="7.436"
+         x="276.3831"
+         y="229.2702"
+         id="text77">1</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="21.567"
+         x="271.3026"
+         y="274.2622"
+         id="text78">0..*</text>
+    </g>
+    <!--reverse link User to Session-->
+    <g
+       class="link"
+       data-entity-1="User"
+       data-entity-2="Session"
+       data-source-line="106"
+       data-uid="lnk13"
+       id="link_User_Session">
+      <path
+         codeLine="106"
+         d="M376.62,219.98 C376.62,264.86 376.62,304.31 376.62,343.52"
+         fill="none"
+         id="User-backto-Session"
+         style="stroke:#181818;stroke-width:1;" />
+      <polygon
+         fill="#181818"
+         points="376.62,207.98,372.62,213.98,376.62,219.98,380.62,213.98,376.62,207.98"
+         style="stroke:#181818;stroke-width:1;"
+         id="polygon78" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="7.436"
+         x="369.3889"
+         y="229.5805"
+         id="text79">1</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="21.567"
+         x="354.3748"
+         y="331.8147"
+         id="text80">0..*</text>
+    </g>
+    <!--reverse link User to Project-->
+    <g
+       class="link"
+       data-entity-1="User"
+       data-entity-2="Project"
+       data-source-line="107"
+       data-uid="lnk14"
+       id="link_User_Project">
+      <path
+         codeLine="107"
+         d="M461.47,220.04 C461.47,276.92 461.47,324.72 461.47,324.72 C461.47,324.72 473.39,324.72 489.32,324.72"
+         fill="none"
+         id="User-backto-Project"
+         style="stroke:#181818;stroke-width:1;" />
+      <polygon
+         fill="#181818"
+         points="461.47,208.04,457.47,214.04,461.47,220.04,465.47,214.04,461.47,208.04"
+         style="stroke:#181818;stroke-width:1;"
+         id="polygon80" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="7.436"
+         x="459.95"
+         y="229.3022"
+         id="text81">1</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="21.567"
+         x="459.9759"
+         y="313.3774"
+         id="text82">0..*</text>
+    </g>
+    <!--reverse link User to ProjectComment-->
+    <g
+       class="link"
+       data-entity-1="User"
+       data-entity-2="ProjectComment"
+       data-source-line="108"
+       data-uid="lnk15"
+       id="link_User_ProjectComment">
+      <path
+         codeLine="108"
+         d="M294.08,219.99 C294.08,334.66 294.08,507.75 294.08,613.7"
+         fill="none"
+         id="User-backto-ProjectComment"
+         style="stroke:#181818;stroke-width:1;" />
+      <polygon
+         fill="#181818"
+         points="294.08,207.99,290.08,213.99,294.08,219.99,298.08,213.99,294.08,207.99"
+         style="stroke:#181818;stroke-width:1;"
+         id="polygon82" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="7.436"
+         x="288.5375"
+         y="229.5912"
+         id="text83">1</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="21.567"
+         x="275.6771"
+         y="602.0617"
+         id="text84">0..*</text>
+    </g>
+    <!--reverse link User to ProjectLike-->
+    <g
+       class="link"
+       data-entity-1="User"
+       data-entity-2="ProjectLike"
+       data-source-line="109"
+       data-uid="lnk16"
+       id="link_User_ProjectLike">
+      <path
+         codeLine="109"
+         d="M480.81,140.72 C571.77,140.72 685.3,140.72 685.3,140.72 C685.3,140.72 685.3,487.6 685.3,632.58"
+         fill="none"
+         id="User-backto-ProjectLike"
+         style="stroke:#181818;stroke-width:1;" />
+      <polygon
+         fill="#181818"
+         points="468.81,140.72,474.81,144.72,480.81,140.72,474.81,136.72,468.81,140.72"
+         style="stroke:#181818;stroke-width:1;"
+         id="polygon84" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="7.436"
+         x="476.4523"
+         y="139.6332"
+         id="text85">1</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="21.567"
+         x="667.9381"
+         y="621.3066"
+         id="text86">0..*</text>
+    </g>
+    <!--reverse link User to CommentLike-->
+    <g
+       class="link"
+       data-entity-1="User"
+       data-entity-2="CommentLike"
+       data-source-line="110"
+       data-uid="lnk17"
+       id="link_User_CommentLike">
+      <path
+         codeLine="110"
+         d="M480.51,73.72 C587.85,73.72 738.93,73.72 738.93,73.72 C738.93,73.72 738.93,926.72 738.93,926.72 C738.93,926.72 615.69,926.72 531.2,926.72"
+         fill="none"
+         id="User-backto-CommentLike"
+         style="stroke:#181818;stroke-width:1;" />
+      <polygon
+         fill="#181818"
+         points="468.51,73.72,474.51,77.72,480.51,73.72,474.51,69.72,468.51,73.72"
+         style="stroke:#181818;stroke-width:1;"
+         id="polygon86" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="7.436"
+         x="476.4272"
+         y="67.1638"
+         id="text87">1</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="21.567"
+         x="538.7938"
+         y="922.8897"
+         id="text88">0..*</text>
+    </g>
+    <!--reverse link User to DiagramConversation-->
+    <g
+       class="link"
+       data-entity-1="User"
+       data-entity-2="DiagramConversation"
+       data-source-line="111"
+       data-uid="lnk18"
+       id="link_User_DiagramConversation">
+      <path
+         codeLine="111"
+         d="M272.35,107.72 C173.84,107.72 43.78,107.72 43.78,107.72 C43.78,107.72 43.78,638.25 43.78,845.49"
+         fill="none"
+         id="User-backto-DiagramConversation"
+         style="stroke:#181818;stroke-width:1;" />
+      <polygon
+         fill="#181818"
+         points="284.35,107.72,278.35,103.72,272.35,107.72,278.35,111.72,284.35,107.72"
+         style="stroke:#181818;stroke-width:1;"
+         id="polygon88" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="7.436"
+         x="269.4367"
+         y="103.9795"
+         id="text89">1</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="21.567"
+         x="16.5065"
+         y="834.1177"
+         id="text90">0..*</text>
+    </g>
+    <!--reverse link Project to Diagram-->
+    <g
+       class="link"
+       data-entity-1="Project"
+       data-entity-2="Diagram"
+       data-source-line="113"
+       data-uid="lnk19"
+       id="link_Project_Diagram">
+      <path
+         codeLine="113"
+         d="M510.62,518.68 C510.62,550.3 510.62,573.01 510.62,603.92"
+         fill="none"
+         id="Project-backto-Diagram"
+         style="stroke:#181818;stroke-width:1;" />
+      <polygon
+         fill="#181818"
+         points="510.62,506.68,506.62,512.68,510.62,518.68,514.62,512.68,510.62,506.68"
+         style="stroke:#181818;stroke-width:1;"
+         id="polygon90" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="7.436"
+         x="499.2411"
+         y="528.282"
+         id="text91">1</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="21.567"
+         x="493.6602"
+         y="592.5917"
+         id="text92">0..*</text>
+    </g>
+    <!--reverse link Project to ProjectComment-->
+    <g
+       class="link"
+       data-entity-1="Project"
+       data-entity-2="ProjectComment"
+       data-source-line="114"
+       data-uid="lnk20"
+       id="link_Project_ProjectComment">
+      <path
+         codeLine="114"
+         d="M477.21,486.72 C403.48,486.72 317.69,486.72 317.69,486.72 C317.69,486.72 317.69,555.19 317.69,613.64"
+         fill="none"
+         id="Project-backto-ProjectComment"
+         style="stroke:#181818;stroke-width:1;" />
+      <polygon
+         fill="#181818"
+         points="489.21,486.72,483.21,482.72,477.21,486.72,483.21,490.72,489.21,486.72"
+         style="stroke:#181818;stroke-width:1;"
+         id="polygon92" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="7.436"
+         x="474.2335"
+         y="490.5387"
+         id="text93">1</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="21.567"
+         x="301.5374"
+         y="601.996"
+         id="text94">0..*</text>
+    </g>
+    <!--reverse link Project to ProjectLike-->
+    <g
+       class="link"
+       data-entity-1="Project"
+       data-entity-2="ProjectLike"
+       data-source-line="115"
+       data-uid="lnk21"
+       id="link_Project_ProjectLike">
+      <path
+         codeLine="115"
+         d="M607.99,518.68 C607.99,560.56 607.99,595.87 607.99,632.61"
+         fill="none"
+         id="Project-backto-ProjectLike"
+         style="stroke:#181818;stroke-width:1;" />
+      <polygon
+         fill="#181818"
+         points="607.99,506.68,603.99,512.68,607.99,518.68,611.99,512.68,607.99,506.68"
+         style="stroke:#181818;stroke-width:1;"
+         id="polygon94" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="7.436"
+         x="603.4574"
+         y="528.282"
+         id="text95">1</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="21.567"
+         x="581.6891"
+         y="621.3401"
+         id="text96">0..*</text>
+    </g>
+    <!--reverse link DiagramConversation to ConversationMessage-->
+    <g
+       class="link"
+       data-entity-1="DiagramConversation"
+       data-entity-2="ConversationMessage"
+       data-source-line="117"
+       data-uid="lnk22"
+       id="link_DiagramConversation_ConversationMessage">
+      <path
+         codeLine="117"
+         d="M101.62,1020.49 C101.62,1039.68 101.62,1048.25 101.62,1067.84"
+         fill="none"
+         id="DiagramConversation-backto-ConversationMessage"
+         style="stroke:#181818;stroke-width:1;" />
+      <polygon
+         fill="#181818"
+         points="101.62,1008.49,97.62,1014.49,101.62,1020.49,105.62,1014.49,101.62,1008.49"
+         style="stroke:#181818;stroke-width:1;"
+         id="polygon96" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="7.436"
+         x="94.3384"
+         y="1030.1471"
+         id="text97">1</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="21.567"
+         x="79.774"
+         y="1056.515"
+         id="text98">0..*</text>
+    </g>
+    <!--reverse link Diagram to DiagramConversation-->
+    <g
+       class="link"
+       data-entity-1="Diagram"
+       data-entity-2="DiagramConversation"
+       data-source-line="118"
+       data-uid="lnk23"
+       id="link_Diagram_DiagramConversation">
+      <path
+         codeLine="118"
+         d="m 397.41513,797.80625 -0.0581,57.73069 -207.67753,0.83517"
+         fill="none"
+         id="Diagram-backto-DiagramConversation"
+         style="stroke:#181818;stroke-width:1.10544"
+         sodipodi:nodetypes="ccc" />
+      <polygon
+         fill="#181818"
+         points="262.45,782.76 266.45,788.76 270.45,782.76 266.45,776.76 "
+         style="stroke:#181818;stroke-width:1"
+         id="polygon100-6"
+         transform="translate(130.99149,9.0753882)" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13px"
+         lengthAdjust="spacing"
+         textLength="7.4359999"
+         x="356.21359"
+         y="785.24353"
+         id="text99"
+         transform="translate(32.011972,22.775246)">1</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="21.84"
+         x="168.9387"
+         y="834.1222"
+         id="text100">0..1</text>
+    </g>
+    <!--reverse link ProjectComment to CommentLike-->
+    <g
+       class="link"
+       data-entity-1="ProjectComment"
+       data-entity-2="CommentLike"
+       data-source-line="120"
+       data-uid="lnk24"
+       id="link_ProjectComment_CommentLike">
+      <path
+         codeLine="120"
+         d="M266.45,788.76 C266.45,855.45 266.45,926.72 266.45,926.72 C266.45,926.72 324.45,926.72 375.87,926.72"
+         fill="none"
+         id="ProjectComment-backto-CommentLike"
+         style="stroke:#181818;stroke-width:1;" />
+      <polygon
+         fill="#181818"
+         points="266.45,776.76,262.45,782.76,266.45,788.76,270.45,782.76,266.45,776.76"
+         style="stroke:#181818;stroke-width:1;"
+         id="polygon100" />
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="7.436"
+         x="259.9926"
+         y="798.1523"
+         id="text101">1</text>
+      <text
+         fill="#000000"
+         font-family="sans-serif"
+         font-size="13"
+         lengthAdjust="spacing"
+         textLength="21.567"
+         x="346.7607"
+         y="922.8368"
+         id="text102">0..*</text>
+    </g>
+    <!--SRC=[hLNHQjim57ttLuYy33fQ6jXJNqQICWXq8pJjNeCYtTftiIKZoM7TsB_lsh5RAL8yC7kpppcwElTOLxO7L3Ktl6AYvDOkd3EuRnoiXLPR_0NiDhEXPCd58JUwKNAbIstO0-Q5MvODH49j99YJw1i_lfxpNxHo9tPPKiqKtJcOV_Ae4XMurngODgxGMTP9sJtodDYLLaSmbZlKYltEFZAKTsnB7QcSNkH9jFQnne8900lMqke04mQu0xbmT-oU7fwmWdPfBIFqps38T_ALIl8SOaF24mKR6br2g7EWd8UWNMa9Zs1hhIn9bvfMS4MC8nlMyQec4FErSXVylpbT247VqiNkecZQsBtNskWZqWTEG7tDi2TuCM2BdTC7K0F-cGWk10KKu_2pHbgnusIR-cYXJhFpVRIe5Je4KCRL-k-wesoS9twBONlYunZwXKz-mLGwlTrKnC-aZGihNWMkeU9OHi1tCFY28D_hTXrMTA1yhGGh3DRjIVBX2ITtO_GF46xSx-KTEsVFfWmEwwRPboZyOnh5Dy5fF_J_T2feLC93sZOuSVT4X-VHhNHLGMgYuZbEUVaVqVHE7l2Gk7OcR-hTRbs7wVBYH4ug_u4zGjdTXxR0sh8zjo0PZUN6eAquZNf1Kv5r0pMRpzZLzJMRtTxSNCs6Uop9zSETvFgenhY-tJ596qMIzw9Ayea_LvODCvZMNgBFt8whEaDPwhyPDH3zoOPbWNG-tiim52Fn_0K0]-->
+  </g>
+</svg>

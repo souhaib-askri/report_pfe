@@ -2,9 +2,9 @@
 title Download Project - Sequence Diagram
 
 actor User
-participant Frontend
-participant Backend
-participant "PlantUML Server" as PlantUML
+boundary Frontend
+control Backend
+boundary "PlantUML Server" as PlantUML
 database Database
 
 ref over User, Database: Authenticate

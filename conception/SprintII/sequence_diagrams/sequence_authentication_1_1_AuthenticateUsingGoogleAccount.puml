@@ -2,9 +2,9 @@
 title NextAuth.js OAuth Sign In Flow (Simplified)
 
 actor User
-participant Browser
-participant "App Server" as AppServer
-participant "OAuth Provider\n(Google/GitHub)" as Provider
+boundary FrontEnd
+control "App Server" as AppServer
+boundary "OAuth Provider\n(Google/GitHub)" as Provider
 database "PostgreSQL Database" as PostgresDB
 
 == Step 1: User Initiates Login ==

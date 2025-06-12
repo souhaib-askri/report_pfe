@@ -2,9 +2,9 @@
 title View Project - Sequence Diagram
 
 actor User
-participant Frontend
-participant Backend
-participant MinIO
+boundary Frontend
+control Backend
+boundary MinIO
 database Database
 
 ref over User, Database: Authenticate

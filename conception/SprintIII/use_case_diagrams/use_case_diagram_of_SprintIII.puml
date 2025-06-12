@@ -5,7 +5,7 @@ left to right direction
 actor "User" as User
 
 rectangle "Web Application" {
-    usecase "Authentication" as user_auth
+    usecase "Authenticate" as user_auth
     usecase "Manage projects" as ManageProjects#Yellow
 }
 

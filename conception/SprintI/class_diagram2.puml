@@ -1,0 +1,220 @@
+@startuml
+skinparam classAttributeIconSize 0
+skinparam classBackgroundColor LightBlue
+skinparam classBorderColor Navy
+skinparam classFontColor Black
+skinparam classFontSize 14
+skinparam linetype ortho
+
+class DiagramConversation {
++ id: String
++ diagramId: String
++ userId: String
++ sessionId: String
++ createdAt: DateTime
++ updatedAt: DateTime
+--
++ create(): DiagramConversation
++ findById(id: String): DiagramConversation?
++ findByDiagramId(diagramId: String): DiagramConversation?
++ findBySessionId(sessionId: String): DiagramConversation?
++ update(data: Object): DiagramConversation
++ delete(): Boolean
++ getMessages(): ConversationMessage[]
+}
+
+class ConversationMessage {
++ id: String
++ conversationId: String
++ role: String
++ content: String
++ isCodeResponse: Boolean
++ timestamp: BigInt
++ createdAt: DateTime
+--
++ create(): ConversationMessage
++ findById(id: String): ConversationMessage?
++ findByConversationId(conversationId: String): ConversationMessage[]
++ findByRole(role: String): ConversationMessage[]
++ update(data: Object): ConversationMessage
++ delete(): Boolean
++ getConversation(): DiagramConversation
++ markAsCodeResponse(): ConversationMessage
+}
+
+class Account {
++ id: String
++ userId: String
++ type: String
++ provider: String
++ providerAccountId: String
++ refresh_token: String?
++ access_token: String?
++ expires_at: Int?
++ token_type: String?
++ scope: String?
++ id_token: String?
++ session_state: String?
+--
++ create(): Account
++ findById(id: String): Account?
++ findByProvider(provider: String): Account[]
++ findByUserId(userId: String): Account[]
++ update(data: Object): Account
++ delete(): Boolean
++ refreshToken(): Account
++ isExpired(): Boolean
+}
+
+class Session {
++ id: String
++ sessionToken: String
++ userId: String
++ expires: DateTime
+--
++ create(): Session
++ findById(id: String): Session?
++ findByToken(sessionToken: String): Session?
++ findByUserId(userId: String): Session[]
++ update(data: Object): Session
++ delete(): Boolean
++ isValid(): Boolean
++ extend(duration: Int): Session
+}
+
+class User {
++ id: String
++ name: String?
++ email: String?
++ emailVerified: DateTime?
++ image: String?
++ description: String?
++ createdAt: DateTime
++ updatedAt: DateTime
+--
++ create(): User
++ findById(id: String): User?
++ findByEmail(email: String): User?
++ findAll(): User[]
++ update(data: Object): User
++ delete(): Boolean
++ getProjects(): Project[]
++ getPublicProjects(): Project[]
++ verifyEmail(): User
++ updateProfile(data: Object): User
++ getTotalLikes(): Int
+}
+
+class Project {
++ id: String
++ name: String
++ description: String?
++ imageUrl: String
++ isPublic: Boolean
++ userId: String
++ createdAt: DateTime
++ updatedAt: DateTime
+--
++ create(): Project
++ findById(id: String): Project?
++ findByUserId(userId: String): Project[]
++ findPublic(): Project[]
++ findAll(): Project[]
++ update(data: Object): Project
++ delete(): Boolean
++ getDiagrams(): Diagram[]
++ getComments(): ProjectComment[]
++ getLikes(): ProjectLike[]
++ toggleVisibility(): Project
++ getLikeCount(): Int
+}
+
+class Diagram {
++ id: String
++ name: String
++ code: String
++ projectId: String
++ createdAt: DateTime
++ updatedAt: DateTime
++ imageUrl: String
+--
++ create(): Diagram
++ findById(id: String): Diagram?
++ findByProjectId(projectId: String): Diagram[]
++ findAll(): Diagram[]
++ update(data: Object): Diagram
++ delete(): Boolean
++ updateCode(code: String): Diagram
++ generateImage(): String
++ getConversation(): DiagramConversation?
++ createConversation(): DiagramConversation
+}
+
+class ProjectComment {
++ id: String
++ content: String
++ projectId: String
++ userId: String
++ createdAt: DateTime
++ updatedAt: DateTime
+--
++ create(): ProjectComment
++ findById(id: String): ProjectComment?
++ findByProjectId(projectId: String): ProjectComment[]
++ findByUserId(userId: String): ProjectComment[]
++ update(data: Object): ProjectComment
++ delete(): Boolean
++ getLikes(): CommentLike[]
++ getLikeCount(): Int
++ isLikedBy(userId: String): Boolean
+}
+
+class ProjectLike {
++ id: String
++ projectId: String
++ userId: String
++ createdAt: DateTime
+--
++ create(): ProjectLike
++ findById(id: String): ProjectLike?
++ findByProjectId(projectId: String): ProjectLike[]
++ findByUserId(userId: String): ProjectLike[]
++ findByProjectAndUser(projectId: String, userId: String): ProjectLike?
++ delete(): Boolean
++ toggle(projectId: String, userId: String): Boolean
+}
+
+class CommentLike {
++ id: String
++ commentId: String
++ userId: String
++ createdAt: DateTime
+--
++ create(): CommentLike
++ findById(id: String): CommentLike?
++ findByCommentId(commentId: String): CommentLike[]
++ findByUserId(userId: String): CommentLike[]
++ findByCommentAndUser(commentId: String, userId: String): CommentLike?
++ delete(): Boolean
++ toggle(commentId: String, userId: String): Boolean
+}
+
+' Relationships based on Prisma schema
+User "1" *-- "0..*" Account
+User "1" *-- "0..*" Session
+User "1" *-- "0..*" Project
+User "1" *-- "0..*" ProjectComment
+User "1" *-- "0..*" ProjectLike
+User "1" *-- "0..*" CommentLike
+User "1" *-- "0..*" DiagramConversation
+
+Project "1" *-- "0..*" Diagram
+Project "1" *-- "0..*" ProjectComment
+Project "1" *-- "0..*" ProjectLike
+
+Diagram "1" *-- "0..1" DiagramConversation
+DiagramConversation "1" *-- "0..*" ConversationMessage
+
+ProjectComment "1" *-- "0..*" CommentLike
+
+@enduml

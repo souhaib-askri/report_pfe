@@ -4,9 +4,10 @@ skinparam classBackgroundColor LightBlue
 skinparam classBorderColor Navy
 skinparam classFontColor Black
 skinparam classFontSize 14
+skinparam linetype ortho
 
 class DiagramConversation {
-+ diagramConversationId: String
++ id: String
 + diagramId: String
 + userId: String
 + sessionId: String
@@ -15,7 +16,7 @@ class DiagramConversation {
 }
 
 class ConversationMessage {
-+ conversationMessageId: String
++ id: String
 + conversationId: String
 + role: String
 + content: String
@@ -25,7 +26,7 @@ class ConversationMessage {
 }
 
 class Account {
-+ accountId: String
++ id: String
 + userId: String
 + type: String
 + provider: String
@@ -40,14 +41,14 @@ class Account {
 }
 
 class Session {
-+ sessionId: String
++ id: String
 + sessionToken: String
 + userId: String
 + expires: DateTime
 }
 
 class User {
-+ userId: String
++ id: String
 + name: String?
 + email: String?
 + emailVerified: DateTime?
@@ -58,7 +59,7 @@ class User {
 }
 
 class Project {
-+ projectId: String
++ id: String
 + name: String
 + description: String?
 + imageUrl: String
@@ -69,7 +70,7 @@ class Project {
 }
 
 class Diagram {
-+ diagramId: String
++ id: String
 + name: String
 + code: String
 + projectId: String
@@ -79,7 +80,7 @@ class Diagram {
 }
 
 class ProjectComment {
-+ projectCommentId: String
++ id: String
 + content: String
 + projectId: String
 + userId: String
@@ -88,14 +89,14 @@ class ProjectComment {
 }
 
 class ProjectLike {
-+ projectLikeId: String
++ id: String
 + projectId: String
 + userId: String
 + createdAt: DateTime
 }
 
 class CommentLike {
-+ commentLikeId: String
++ id: String
 + commentId: String
 + userId: String
 + createdAt: DateTime
@@ -108,15 +109,14 @@ User "1" *-- "0..*" Project
 User "1" *-- "0..*" ProjectComment
 User "1" *-- "0..*" ProjectLike
 User "1" *-- "0..*" CommentLike
-' User "1" *-- "0..*" DiagramConversation
+User "1" *-- "0..*" DiagramConversation
 
 Project "1" *-- "0..*" Diagram
 Project "1" *-- "0..*" ProjectComment
 Project "1" *-- "0..*" ProjectLike
 
-Diagram "1" *-- "0..*" DiagramConversation
-
 DiagramConversation "1" *-- "0..*" ConversationMessage
+Diagram "1" *-- "0..1" DiagramConversation
 
 ProjectComment "1" *-- "0..*" CommentLike
 

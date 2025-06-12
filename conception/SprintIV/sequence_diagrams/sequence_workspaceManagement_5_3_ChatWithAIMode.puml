@@ -2,10 +2,10 @@
 title AI Chat and Diagram Editing - Sequence Diagram
 
 actor User
-participant Frontend
-participant Backend
-participant "AI Model" as AI
-participant "PlantUML Server" as PlantUML
+boundary Frontend
+control Backend
+boundary "AI Model" as AI
+boundary "PlantUML Server" as PlantUML
 database Database
 
 ref over User, Database: Authenticate

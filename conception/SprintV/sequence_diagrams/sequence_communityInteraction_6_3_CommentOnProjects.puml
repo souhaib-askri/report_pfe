@@ -2,8 +2,8 @@
 title Comment on Projects - Sequence Diagram
 
 actor User
-participant Frontend
-participant Backend
+boundary Frontend
+control Backend
 database Database
 
 ref over User, Database: Authenticate

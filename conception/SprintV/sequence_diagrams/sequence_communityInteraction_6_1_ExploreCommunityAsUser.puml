@@ -2,8 +2,8 @@
 title Explore Community - Sequence Diagram
 
 actor User
-participant Frontend
-participant Backend
+boundary Frontend
+control Backend
 database Database
 
 User -> Frontend: Access community page
