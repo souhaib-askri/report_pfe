@@ -1,0 +1,88 @@
+@startuml
+' ======== ENTITY LAYER (كما في المخطط السابق) ========
+class User
+class Account
+class Session
+class Project
+class Diagram
+class DiagramConversation
+class ConversationMessage
+class ProjectComment
+class ProjectLike
+class CommentLike
+
+User "1" -- "*" Account
+User "1" -- "*" Session
+User "1" -- "*" Project
+User "1" -- "*" ProjectComment
+User "1" -- "*" ProjectLike
+User "1" -- "*" CommentLike
+User "1" -- "*" DiagramConversation
+
+Project "1" -- "*" Diagram
+Project "1" -- "*" ProjectComment
+Project "1" -- "*" ProjectLike
+Diagram "0..1" -- "1" DiagramConversation
+DiagramConversation "1" -- "*" ConversationMessage
+ProjectComment "1" -- "*" CommentLike
+ProjectLike "*" --> "1" Project
+CommentLike "*" --> "1" ProjectComment
+
+' ======== CONTROLLER / API LAYER ========
+package "API Controllers" {
+
+  class AiController {
+    +GET()
+    +POST()
+    +DELETE()
+  }
+
+  class AuthController {
+    +GET()
+    +POST()
+  }
+
+  class UserController {
+    +GET()
+  }
+
+  class CommentsController {
+    +GET(id)
+    +DELETE(id)
+    +POST(id/like)
+    +DELETE(id/like)
+  }
+
+  class ProjectsController {
+    +GET(slug)
+    +PATCH(slug)
+    +DELETE(slug)
+    +GET(slug/checkLike)
+    +POST(slug/like)
+    +GET(slug/comments)
+    +POST(slug/comments)
+    +POST(slug/copy)
+    +GET(slug/diagrams)
+    +POST(slug/diagrams)
+    +GET(slug/diagrams/[id])
+    +PATCH(slug/diagrams/[id])
+    +DELETE(slug/diagrams/[id])
+    +GET(slug/diagrams/[id]/image)
+    +POST(slug/diagrams/[id]/image)
+    +GET(slug/download-images)
+  }
+
+  class DiagramsController {
+    +POST(image)     ' /api/diagrams/image
+  }
+}
+
+' ======== OPTIONAL ASSOCIATIONS ========
+AiController ..> Diagram            : operates on
+ProjectsController ..> Project      : CRUD
+ProjectsController ..> Diagram      : manage diagrams
+CommentsController ..> ProjectComment
+UserController ..> User
+AuthController ..> User
+
+@enduml

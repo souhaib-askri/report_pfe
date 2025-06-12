@@ -1,0 +1,110 @@
+@startuml
+' ========= CLASSES =========
+class User {
+  +id : String
+  +name : String
+  +email : String
+  +description : String
+  +createdAt : DateTime
+  +updatedAt : DateTime
+}
+
+class Account {
+  +id : String
+  +provider : String
+  +providerAccountId : String
+  +userId : String
+}
+
+class Session {
+  +id : String
+  +sessionToken : String
+  +expires : DateTime
+  +userId : String
+}
+
+class Project {
+  +id : String
+  +name : String
+  +description : String
+  +imageUrl : String
+  +isPublic : Boolean
+  +userId : String
+  +createdAt : DateTime
+  +updatedAt : DateTime
+}
+
+class Diagram {
+  +id : String
+  +name : String
+  +code : Text
+  +imageUrl : String
+  +projectId : String
+  +createdAt : DateTime
+  +updatedAt : DateTime
+}
+
+class DiagramConversation {
+  +id : String
+  +diagramId : String
+  +userId : String
+  +sessionId : String
+  +createdAt : DateTime
+  +updatedAt : DateTime
+}
+
+class ConversationMessage {
+  +id : String
+  +conversationId : String
+  +role : String
+  +content : Text
+  +isCodeResponse : Boolean
+  +timestamp : BigInt
+  +createdAt : DateTime
+}
+
+class ProjectComment {
+  +id : String
+  +content : Text
+  +projectId : String
+  +userId : String
+  +createdAt : DateTime
+  +updatedAt : DateTime
+}
+
+class ProjectLike {
+  +id : String
+  +projectId : String
+  +userId : String
+  +createdAt : DateTime
+}
+
+class CommentLike {
+  +id : String
+  +commentId : String
+  +userId : String
+  +createdAt : DateTime
+}
+
+' ========= RELATIONSHIPS =========
+User "1" -- "*" Account
+User "1" -- "*" Session
+User "1" -- "*" Project
+User "1" -- "*" ProjectComment
+User "1" -- "*" ProjectLike
+User "1" -- "*" CommentLike
+User "1" -- "*" DiagramConversation
+
+Project "1" -- "*" Diagram
+Project "1" -- "*" ProjectComment
+Project "1" -- "*" ProjectLike
+Diagram "0..1" -- "1" DiagramConversation
+DiagramConversation "1" -- "*" ConversationMessage
+
+ProjectComment "1" -- "*" CommentLike
+
+' Likes/Comments reference back
+ProjectLike "*" --> "1" Project
+CommentLike "*" --> "1" ProjectComment
+
+@enduml
