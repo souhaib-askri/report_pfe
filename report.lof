@@ -8,44 +8,44 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Deployment Architecture}}{18}{figure.3.2}%
 \addvspace {10\p@ }
 \contentsline {xchapter}{Sprint I}{20}{chapter.4}%
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Database Entity Relationship Diagram}}{23}{figure.4.1}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Database Entity Relationship Diagram}}{24}{figure.4.1}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Sprint II}{25}{chapter.5}%
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Sprint II Use Case Diagram}}{26}{figure.5.1}%
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Refined Authentication Use Case}}{27}{figure.5.2}%
-\contentsline {figure}{\numberline {5.3}{\ignorespaces OAuth Authentication Sequence}}{28}{figure.5.3}%
-\contentsline {figure}{\numberline {5.4}{\ignorespaces Responsive Landing Page}}{29}{figure.5.4}%
-\contentsline {figure}{\numberline {5.5}{\ignorespaces OAuth Sign-In Interface}}{29}{figure.5.5}%
+\contentsline {xchapter}{Sprint II}{26}{chapter.5}%
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Sprint II Use Case Diagram}}{27}{figure.5.1}%
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Refined Authentication Use Case}}{28}{figure.5.2}%
+\contentsline {figure}{\numberline {5.3}{\ignorespaces OAuth Authentication Sequence}}{29}{figure.5.3}%
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Responsive Landing Page}}{30}{figure.5.4}%
+\contentsline {figure}{\numberline {5.5}{\ignorespaces OAuth Sign-In Interface}}{30}{figure.5.5}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Sprint III}{31}{chapter.6}%
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Sprint III Use Case Diagram}}{32}{figure.6.1}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Refined Project Management Use Cases}}{32}{figure.6.2}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Create Project Sequence}}{34}{figure.6.3}%
-\contentsline {figure}{\numberline {6.4}{\ignorespaces View Project Sequence}}{34}{figure.6.4}%
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Download Project Diagrams Sequence}}{35}{figure.6.5}%
-\contentsline {figure}{\numberline {6.6}{\ignorespaces Home page with project overview}}{35}{figure.6.6}%
-\contentsline {figure}{\numberline {6.7}{\ignorespaces Project creation interface}}{36}{figure.6.7}%
-\contentsline {figure}{\numberline {6.8}{\ignorespaces Project details and management}}{36}{figure.6.8}%
+\contentsline {xchapter}{Sprint III}{32}{chapter.6}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Sprint III Use Case Diagram}}{33}{figure.6.1}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Refined Project Management Use Cases}}{33}{figure.6.2}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Create Project Sequence}}{35}{figure.6.3}%
+\contentsline {figure}{\numberline {6.4}{\ignorespaces View Project Sequence}}{35}{figure.6.4}%
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Download Project Diagrams Sequence}}{36}{figure.6.5}%
+\contentsline {figure}{\numberline {6.6}{\ignorespaces Home page with project overview}}{36}{figure.6.6}%
+\contentsline {figure}{\numberline {6.7}{\ignorespaces Project creation interface}}{37}{figure.6.7}%
+\contentsline {figure}{\numberline {6.8}{\ignorespaces Project details and management}}{37}{figure.6.8}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Sprint IV}{38}{chapter.7}%
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Sprint IV Use Case Diagram}}{39}{figure.7.1}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Diagram Management Use Cases}}{40}{figure.7.2}%
-\contentsline {figure}{\numberline {7.3}{\ignorespaces Workspace Management Use Cases}}{40}{figure.7.3}%
-\contentsline {figure}{\numberline {7.4}{\ignorespaces Create New Diagram Sequence}}{41}{figure.7.4}%
-\contentsline {figure}{\numberline {7.5}{\ignorespaces AI Chat Integration Sequence}}{42}{figure.7.5}%
-\contentsline {figure}{\numberline {7.6}{\ignorespaces Diagram Creation Interface}}{42}{figure.7.6}%
-\contentsline {figure}{\numberline {7.7}{\ignorespaces Interactive Code Editor with Real-time Preview}}{43}{figure.7.7}%
-\contentsline {figure}{\numberline {7.8}{\ignorespaces AI Assistant Integration}}{43}{figure.7.8}%
-\contentsline {figure}{\numberline {7.9}{\ignorespaces Split-View Workspace - Secondary View}}{44}{figure.7.9}%
+\contentsline {xchapter}{Sprint IV}{39}{chapter.7}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Sprint IV Use Case Diagram}}{40}{figure.7.1}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Diagram Management Use Cases}}{41}{figure.7.2}%
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Workspace Management Use Cases}}{41}{figure.7.3}%
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Create New Diagram Sequence}}{42}{figure.7.4}%
+\contentsline {figure}{\numberline {7.5}{\ignorespaces AI Chat Integration Sequence}}{43}{figure.7.5}%
+\contentsline {figure}{\numberline {7.6}{\ignorespaces Diagram Creation Interface}}{43}{figure.7.6}%
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Interactive Code Editor with Real-time Preview}}{44}{figure.7.7}%
+\contentsline {figure}{\numberline {7.8}{\ignorespaces AI Assistant Integration}}{44}{figure.7.8}%
+\contentsline {figure}{\numberline {7.9}{\ignorespaces Split-View Workspace - Secondary View}}{45}{figure.7.9}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{Sprint V}{46}{chapter.8}%
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Use Case Diagram for Sprint V}}{47}{figure.8.1}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Community Interaction Use Cases}}{48}{figure.8.2}%
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Profile Management Use Cases}}{48}{figure.8.3}%
-\contentsline {figure}{\numberline {8.4}{\ignorespaces Community Exploration Flow}}{49}{figure.8.4}%
-\contentsline {figure}{\numberline {8.5}{\ignorespaces Project Commenting Flow}}{50}{figure.8.5}%
-\contentsline {figure}{\numberline {8.6}{\ignorespaces Profile Editing Flow}}{51}{figure.8.6}%
-\contentsline {figure}{\numberline {8.7}{\ignorespaces Comment System Implementation}}{51}{figure.8.7}%
-\contentsline {figure}{\numberline {8.8}{\ignorespaces Community Exploration Interface}}{52}{figure.8.8}%
+\contentsline {xchapter}{Sprint V}{47}{chapter.8}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Use Case Diagram for Sprint V}}{48}{figure.8.1}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Community Interaction Use Cases}}{49}{figure.8.2}%
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Profile Management Use Cases}}{49}{figure.8.3}%
+\contentsline {figure}{\numberline {8.4}{\ignorespaces Community Exploration Flow}}{50}{figure.8.4}%
+\contentsline {figure}{\numberline {8.5}{\ignorespaces Project Commenting Flow}}{51}{figure.8.5}%
+\contentsline {figure}{\numberline {8.6}{\ignorespaces Profile Editing Flow}}{52}{figure.8.6}%
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Comment System Implementation}}{52}{figure.8.7}%
+\contentsline {figure}{\numberline {8.8}{\ignorespaces Community Exploration Interface}}{53}{figure.8.8}%
 \addvspace {10\p@ }
-\contentsline {xchapter}{General Conclusion}{53}{chapter.9}%
+\contentsline {xchapter}{General Conclusion}{54}{chapter.9}%

@@ -3,30 +3,30 @@ title NextAuth.js OAuth Sign In Flow (Simplified)
 
 actor User
 boundary FrontEnd
-control "App Server" as AppServer
+control "Backend" as AppServer
 boundary "OAuth Provider\n(Google/GitHub)" as Provider
-database "PostgreSQL Database" as PostgresDB
+database "PostgreSQL" as PostgresDB
 
 == Step 1: User Initiates Login ==
-User -> Browser: Click "Sign in"
-activate Browser
-Browser -> AppServer: Request OAuth login
+User -> FrontEnd: Click "Sign in"
+activate FrontEnd
+FrontEnd -> AppServer: Request OAuth login
 activate AppServer
-AppServer --> Browser: Redirect to OAuth Provider
+AppServer --> FrontEnd: Redirect to OAuth Provider
 deactivate AppServer
-note right: User starts \ndauthentication process
+
 
 == Step 2: OAuth Authentication ==
-Browser -> Provider: User login request
+FrontEnd -> Provider: User login request
 activate Provider
 Provider --> User: Show login & consent form
 User -> Provider: Provide credentials\n & approve
-Provider --> Browser: Return with authorization code
+Provider --> FrontEnd: Return with authorization code
 deactivate Provider
-note right: User authenticates\n with OAuth provider
+
 
 == Step 3: Token Exchange & User Management ==
-Browser -> AppServer: Send authorization code
+FrontEnd -> AppServer: Send authorization code
 activate AppServer
 AppServer -> Provider: Exchange code for user tokens
 activate Provider
@@ -37,13 +37,13 @@ AppServer -> PostgresDB: Store/update user & create session
 activate PostgresDB
 PostgresDB --> AppServer: User & session ready
 deactivate PostgresDB
-note right: User data processed\n and session created
+
 
 == Step 4: Login Complete ==
-AppServer --> Browser: Set session & redirect to app
+AppServer --> FrontEnd: Set session & redirect to app
 deactivate AppServer
-Browser --> User: User successfully logged in
-deactivate Browser
+FrontEnd --> User: User successfully logged in
+deactivate FrontEnd
 
 
 @enduml

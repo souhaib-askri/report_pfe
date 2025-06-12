@@ -7,9 +7,9 @@ actor "User" as User
 
 rectangle "Web Applicate" {
     usecase "Explore Landing Page" as ExploreLandingPage #Yellow
-    usecase "Authentication" as user_auth #Yellow
+    usecase "Authenticate" as user_auth #Yellow
 
-    usecase "interact in the community" as InteractWithCommunity
+    usecase "Interact in the community" as InteractWithCommunity
     usecase "Manage projects" as ManageProjects
     usecase "Manage diagrams" as ManageDiagrams
     usecase "Manage workspace" as ManageWorkspace
