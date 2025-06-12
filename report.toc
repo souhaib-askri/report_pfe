@@ -25,7 +25,7 @@
 \contentsline {subsubsection}{\numberline {3.2.2.1}Functional Requirements}{14}{subsubsection.3.2.2.1}%
 \contentsline {subsubsection}{\numberline {3.2.2.2}Non-Functional Requirements}{15}{subsubsection.3.2.2.2}%
 \contentsline {section}{\numberline {3.3}Project Management}{15}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Scrum Rol}{15}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.1}Scrum Roles}{15}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Product Backlog}{15}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Global Use Case Diagram}{17}{subsection.3.3.3}%
 \contentsline {subsection}{\numberline {3.3.4}Sprint Planning}{18}{subsection.3.3.4}%
@@ -34,10 +34,9 @@
 \contentsline {subsection}{\numberline {3.4.1}Deployment Overview}{20}{subsection.3.4.1}%
 \contentsline {subsection}{\numberline {3.4.2}Technology Stack}{20}{subsection.3.4.2}%
 \contentsline {section}{\numberline {3.5}Conclusion}{21}{section.3.5}%
-\contentsline {chapter}{\numberline {4}Sprint I}{22}{chapter.4}%
+\contentsline {chapter}{\numberline {4}Sprint 0}{22}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Introduction}{22}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Sprint Planning and Objectives}{22}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Sprint Backlog}{22}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.2}Sprint Objectives}{22}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Technology Stack Implementation}{23}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Core Services Overview}{23}{subsection.4.3.1}%
 \contentsline {section}{\numberline {4.4}Infrastructure Deliverables}{23}{section.4.4}%
@@ -49,7 +48,7 @@
 \contentsline {subsection}{\numberline {4.5.2}Challenges Resolved}{25}{subsection.4.5.2}%
 \contentsline {subsection}{\numberline {4.5.3}Future Enhancements}{25}{subsection.4.5.3}%
 \contentsline {section}{\numberline {4.6}Conclusion}{26}{section.4.6}%
-\contentsline {chapter}{\numberline {5}Sprint II}{27}{chapter.5}%
+\contentsline {chapter}{\numberline {5}Sprint 1}{27}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Introduction}{27}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Sprint Planning}{27}{section.5.2}%
 \contentsline {subsection}{\numberline {5.2.1}Objectives}{27}{subsection.5.2.1}%
@@ -65,7 +64,7 @@
 \contentsline {subsection}{\numberline {5.5.2}Authentication Interface}{31}{subsection.5.5.2}%
 \contentsline {section}{\numberline {5.6}Sprint Retrospective}{32}{section.5.6}%
 \contentsline {section}{\numberline {5.7}Conclusion}{32}{section.5.7}%
-\contentsline {chapter}{\numberline {6}Sprint III}{33}{chapter.6}%
+\contentsline {chapter}{\numberline {6}Sprint 2}{33}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Introduction}{33}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Sprint Planning}{33}{section.6.2}%
 \contentsline {subsection}{\numberline {6.2.1}Objectives}{33}{subsection.6.2.1}%
@@ -86,7 +85,7 @@
 \contentsline {subsection}{\numberline {6.6.1}Achievements}{38}{subsection.6.6.1}%
 \contentsline {subsection}{\numberline {6.6.2}Areas for Improvement}{38}{subsection.6.6.2}%
 \contentsline {section}{\numberline {6.7}Conclusion}{39}{section.6.7}%
-\contentsline {chapter}{\numberline {7}Sprint IV}{40}{chapter.7}%
+\contentsline {chapter}{\numberline {7}Sprint 3}{40}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Introduction}{40}{section.7.1}%
 \contentsline {section}{\numberline {7.2}Sprint Planning}{40}{section.7.2}%
 \contentsline {subsection}{\numberline {7.2.1}Objectives}{40}{subsection.7.2.1}%
@@ -105,9 +104,9 @@
 \contentsline {subsection}{\numberline {7.5.2}Workspace Environment}{46}{subsection.7.5.2}%
 \contentsline {section}{\numberline {7.6}Sprint Retrospective}{46}{section.7.6}%
 \contentsline {subsection}{\numberline {7.6.1}Achievements}{46}{subsection.7.6.1}%
-\contentsline {subsection}{\numberline {7.6.2}Challenges \& Solutions}{46}{subsection.7.6.2}%
-\contentsline {section}{\numberline {7.7}Conclusion}{47}{section.7.7}%
-\contentsline {chapter}{\numberline {8}Sprint V}{48}{chapter.8}%
+\contentsline {subsection}{\numberline {7.6.2}Challenges}{46}{subsection.7.6.2}%
+\contentsline {section}{\numberline {7.7}Conclusion}{46}{section.7.7}%
+\contentsline {chapter}{\numberline {8}Sprint 4}{48}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Introduction}{48}{section.8.1}%
 \contentsline {section}{\numberline {8.2}Sprint Planning}{48}{section.8.2}%
 \contentsline {subsection}{\numberline {8.2.1}Objectives and Backlog}{48}{subsection.8.2.1}%
