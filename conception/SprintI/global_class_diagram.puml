@@ -7,99 +7,154 @@ skinparam classFontSize 14
 skinparam linetype ortho
 
 class DiagramConversation {
-+ id: String
-+ diagramId: String
-+ userId: String
-+ sessionId: String
-+ createdAt: DateTime
-+ updatedAt: DateTime
+    + id: String
+    + diagramId: String
+    + userId: String
+    + sessionId: String
+    + createdAt: DateTime
+    + updatedAt: DateTime
+    --
+    + getConversation(): DiagramConversation
+    + createConversation(): DiagramConversation
+    + updateConversation(): DiagramConversation
+    + deleteConversation(): void
 }
 
 class ConversationMessage {
-+ id: String
-+ conversationId: String
-+ role: String
-+ content: String
-+ isCodeResponse: Boolean
-+ timestamp: BigInt
-+ createdAt: DateTime
+    + id: String
+    + conversationId: String
+    + role: String
+    + content: String
+    + isCodeResponse: Boolean
+    + timestamp: BigInt
+    + createdAt: DateTime
+    --
+    + getMessages(): ConversationMessage[]
+    + addMessage(): ConversationMessage
+    + updateMessage(): ConversationMessage
+    + deleteMessage(): void
 }
 
 class Account {
-+ id: String
-+ userId: String
-+ type: String
-+ provider: String
-+ providerAccountId: String
-+ refresh_token: String?
-+ access_token: String?
-+ expires_at: Int?
-+ token_type: String?
-+ scope: String?
-+ id_token: String?
-+ session_state: String?
+    + id: String
+    + userId: String
+    + type: String
+    + provider: String
+    + providerAccountId: String
+    + refresh_token: String?
+    + access_token: String?
+    + expires_at: Int?
+    + token_type: String?
+    + scope: String?
+    + id_token: String?
+    + session_state: String?
+    --
+    + signin(): Account
+    + signout(): void
+    + getSession(): Session
 }
 
 class Session {
-+ id: String
-+ sessionToken: String
-+ userId: String
-+ expires: DateTime
+    + id: String
+    + sessionToken: String
+    + userId: String
+    + expires: DateTime
+    --
+    + validateSession(): Boolean
+    + createSession(): Session
+    + deleteSession(): void
 }
 
 class User {
-+ id: String
-+ name: String?
-+ email: String?
-+ emailVerified: DateTime?
-+ image: String?
-+ description: String?
-+ createdAt: DateTime
-+ updatedAt: DateTime
+    + id: String
+    + name: String?
+    + email: String?
+    + emailVerified: DateTime?
+    + image: String?
+    + description: String?
+    + createdAt: DateTime
+    + updatedAt: DateTime
+    --
+    + getUser(): User
+    + updateUser(): User
+    + deleteUser(): void
+    + authenticate(): Boolean
 }
 
 class Project {
-+ id: String
-+ name: String
-+ description: String?
-+ imageUrl: String
-+ isPublic: Boolean
-+ userId: String
-+ createdAt: DateTime
-+ updatedAt: DateTime
+    + id: String
+    + name: String
+    + description: String?
+    + imageUrl: String
+    + isPublic: Boolean
+    + userId: String
+    + createdAt: DateTime
+    + updatedAt: DateTime
+    --
+    + getProject(): Project
+    + updateProject(): Project
+    + deleteProject(): void
+    + copyProject(): Project
+    + likeProject(): ProjectLike
+    + unlikeProject(): void
+    + checkLike(): Boolean
+    + downloadImages(): File[]
 }
 
 class Diagram {
-+ id: String
-+ name: String
-+ code: String
-+ projectId: String
-+ createdAt: DateTime
-+ updatedAt: DateTime
-+ imageUrl: String
+    + id: String
+    + name: String
+    + code: String
+    + projectId: String
+    + createdAt: DateTime
+    + updatedAt: DateTime
+    + imageUrl: String
+    --
+    + getDiagrams(): Diagram[]
+    + createDiagram(): Diagram
+    + getDiagram(): Diagram
+    + updateDiagram(): Diagram
+    + deleteDiagram(): void
+    + generateImage(): String
+    + processAIRequest(): String
 }
 
 class ProjectComment {
-+ id: String
-+ content: String
-+ projectId: String
-+ userId: String
-+ createdAt: DateTime
-+ updatedAt: DateTime
+    + id: String
+    + content: String
+    + projectId: String
+    + userId: String
+    + createdAt: DateTime
+    + updatedAt: DateTime
+    --
+    + getComments(): ProjectComment[]
+    + addComment(): ProjectComment
+    + updateComment(): ProjectComment
+    + deleteComment(): void
+    + likeComment(): CommentLike
+    + unlikeComment(): void
 }
 
 class ProjectLike {
-+ id: String
-+ projectId: String
-+ userId: String
-+ createdAt: DateTime
+    + id: String
+    + projectId: String
+    + userId: String
+    + createdAt: DateTime
+    --
+    + createLike(): ProjectLike
+    + deleteLike(): void
+    + checkLike(): Boolean
 }
 
 class CommentLike {
-+ id: String
-+ commentId: String
-+ userId: String
-+ createdAt: DateTime
+    + id: String
+    + commentId: String
+    + userId: String
+    + createdAt: DateTime
+    --
+    + createLike(): CommentLike
+    + deleteLike(): void
+    + checkLike(): Boolean
 }
 
 ' Relationships based on Prisma schema
