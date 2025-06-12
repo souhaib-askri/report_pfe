@@ -1,0 +1,152 @@
+@startuml
+' Enable skinparam for better styling
+skinparam class {
+    BackgroundColor #F8F9FA
+    ArrowColor #2C3E50
+    BorderColor #2C3E50
+    FontName Arial
+    FontSize 12
+    FontStyle plain
+    BackgroundColor<<Entity>> #E8F4F8
+    BackgroundColor<<Controller>> #F5E8F8
+    BackgroundColor<<Enum>> #E8F8F0
+}
+
+' Define classes based on Prisma models
+class User << (E,#FF5722) Entity >> {
+  +id: String
+  +name: String?
+  +email: String?
+  +emailVerified: DateTime?
+  +image: String?
+  +description: String?
+  +createdAt: DateTime
+  +updatedAt: DateTime
+}
+
+class Project << (E,#FF5722) Entity >> {
+  +id: String
+  +name: String
+  +description: String?
+  +imageUrl: String
+  +isPublic: Boolean
+  +createdAt: DateTime
+  +updatedAt: DateTime
+}
+
+class Diagram << (E,#FF5722) Entity >> {
+  +id: String
+  +name: String
+  +code: String
+  +imageUrl: String
+  +createdAt: DateTime
+  +updatedAt: DateTime
+}
+
+class DiagramConversation << (E,#FF5722) Entity >> {
+  +id: String
+  +sessionId: String
+  +createdAt: DateTime
+  +updatedAt: DateTime
+}
+
+class ConversationMessage << (E,#FF5722) Entity >> {
+  +id: String
+  +role: String
+  +content: String
+  +isCodeResponse: Boolean
+  +timestamp: BigInt
+  +createdAt: DateTime
+}
+
+class ProjectComment << (E,#FF5722) Entity >> {
+  +id: String
+  +content: String
+  +createdAt: DateTime
+  +updatedAt: DateTime
+}
+
+' API Controllers
+class ProjectController << (C,#6A1B9A) Controller >> {
+  +GET /api/projects/[slug](): Project
+  +POST /api/projects/[slug]/comments(): Comment
+  +GET /api/projects/[slug]/comments(): Comment[]
+  +POST /api/projects/[slug]/like(): void
+  +GET /api/projects/[slug]/checkLike(): boolean
+  +POST /api/projects/[slug]/copy(): Project
+  +GET /api/projects/[slug]/download-images(): File
+}
+
+class DiagramController << (C,#6A1B9A) Controller >> {
+  +GET /api/diagrams/image(): Image
+  +GET /api/projects/[slug]/diagrams(): Diagram[]
+  +GET /api/projects/[slug]/diagrams/[id](): Diagram
+  +GET /api/projects/[slug]/diagrams/[id]/image(): Image
+}
+
+class CommentController << (C,#6A1B9A) Controller >> {
+  +DELETE /api/comments/[id](): void
+  +POST /api/comments/[id]/like(): void
+}
+
+class AIController << (C,#6A1B9A) Controller >> {
+  +POST /api/ai/chat(): Message
+}
+
+class AuthController << (C,#6A1B9A) Controller >> {
+  +GET /api/auth/session(): Session
+  +POST /api/auth/signin(): void
+  +POST /api/auth/signout(): void
+}
+
+' Relationships
+User "1" -- "*" Project : creates >
+User "1" -- "*" DiagramConversation : has >
+User "1" -- "*" ProjectComment : writes >
+User "1" -- "*" ProjectLike : gives >
+User "1" -- "*" CommentLike : gives >
+
+Project "1" -- "*" Diagram : contains >
+Project "1" -- "*" ProjectComment : has >
+Project "1" -- "*" ProjectLike : receives >
+
+Diagram "1" -- "0..1" DiagramConversation : has >
+
+DiagramConversation "1" -- "*" ConversationMessage : contains >
+
+ProjectComment "1" -- "*" CommentLike : receives >
+
+' Controller relationships
+ProjectController --> Project : manages
+DiagramController --> Diagram : manages
+CommentController --> ProjectComment : manages
+AIController --> DiagramConversation : manages
+AIController --> ConversationMessage : manages
+AuthController --> User : authenticates
+
+' Notes for clarification
+note right of User
+  - Authenticated users
+  - Can create projects and diagrams
+  - Can comment and like
+end note
+
+note right of Diagram
+  - Contains PlantUML code
+  - Has a preview image
+  - Can have AI conversation
+end note
+
+note right of ProjectController
+  - Handles project CRUD
+  - Manages comments and likes
+  - Handles project duplication
+end note
+
+note right of DiagramController
+  - Manages diagram CRUD
+  - Handles diagram image generation
+  - Manages diagram previews
+end note
+
+@enduml
