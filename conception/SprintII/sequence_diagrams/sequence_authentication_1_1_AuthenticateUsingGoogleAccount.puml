@@ -16,7 +16,6 @@ skinparam sequence {
     ControlBorderColor #5cb85c
     BoundaryBorderColor #f0ad4e
 }
-ref over User, DB: Authenticate
 User -> Client: Clicks "Sign in with Provider"
 activate Client
 Client -> Server: **GET** /api/auth/signin/google\n<font size=10>via `signIn('google')`</font>
