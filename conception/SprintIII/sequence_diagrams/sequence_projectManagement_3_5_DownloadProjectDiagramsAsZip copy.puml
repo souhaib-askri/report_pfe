@@ -1,0 +1,52 @@
+@startuml
+title Download Project Diagrams - Sequence Diagram
+
+actor User
+boundary "Next.js Client" as Client
+control "Next.js Server\n/api/projects/[slug]/download-images" as Server
+database "PostgreSQL DB" as DB
+boundary "PlantUML Server" as PlantUML
+
+skinparam sequence {
+    ArrowColor #555
+    ActorBorderColor #555
+    LifeLineBorderColor #555
+    ParticipantBorderColor #007bff
+    DatabaseBorderColor #d9534f
+    ControlBorderColor #5cb85c
+    BoundaryBorderColor #f0ad4e
+}
+
+== Pre-condition: User is authenticated ==
+
+== 1. User Initiates Download ==
+activate Client
+User -> Client: Clicks "Download Project (ZIP)"
+Client -> Server: **GET** /api/projects/[slug]/download-images?format=svg\n<font size=10>(Request initiated by setting `window.location.href` or an `<a>` tag)</font>
+deactivate Client
+activate Server
+
+== 2. Backend Prepares ZIP Archive ==
+Server -> DB: **SELECT** from `Project` & `Diagram` tables\n<font size=10>`prisma.project.findUnique({ where: {slug}, include: {diagrams: true} })`</font>
+activate DB
+DB --> Server: Returns project data with all associated diagrams' code
+deactivate DB
+
+Server -> Server: Initializes a new ZIP archive in memory\n<font size=10>(e.g., using a library like `jszip`)</font>
+
+loop for each diagram in project
+    Server -> PlantUML: **GET** /svg/{encoded_puml_code}\n<font size=10>Encodes diagram code for URL</font>
+    activate PlantUML
+    PlantUML --> Server: Returns rendered SVG/PNG data
+    deactivate PlantUML
+    Server -> Server: Adds the returned diagram data to the ZIP archive\n<font size=10>e.g., `zip.file("diagram-name.svg", svgData)`</font>
+end
+
+== 3. Server Sends ZIP File to User ==
+Server -> Server: Finalizes the ZIP archive
+Server --> User: **HTTP 200 OK** with ZIP file\n<font size=10>Headers:\nContent-Type: application/zip\nContent-Disposition: attachment; filename="project-name.zip"</font>
+deactivate Server
+
+note right of User: Browser prompts user to save the ZIP file.
+
+@enduml

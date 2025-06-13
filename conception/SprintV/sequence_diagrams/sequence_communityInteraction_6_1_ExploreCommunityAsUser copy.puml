@@ -1,0 +1,48 @@
+@startuml
+title Explore Community Projects - Sequence Diagram
+
+actor User
+boundary "Next.js Client" as Client
+control "Next.js Server\n/api/projects" as Server
+database "PostgreSQL DB" as DB
+
+skinparam sequence {
+    ArrowColor #555
+    ActorBorderColor #555
+    LifeLineBorderColor #555
+    ParticipantBorderColor #007bff
+    DatabaseBorderColor #d9534f
+    ControlBorderColor #5cb85c
+    BoundaryBorderColor #f0ad4e
+}
+
+== 1. User Navigates to Community Page ==
+activate Client
+User -> Client: Clicks on "Explore" link\n<font size=10>Navigates to `/explore`</font>
+
+Client -> Server: **GET** /api/projects?visibility=public&page=1&limit=20\n<font size=10>(Triggered by page load)</font>
+activate Server
+
+== 2. Backend Fetches Public Projects ==
+Server -> DB: **SELECT** from `Project` table with pagination\n<font size=10>`prisma.project.findMany({ where: { visibility: 'PUBLIC' }, include: { owner: true, _count: { select: { likes: true } } }, orderBy: { createdAt: 'desc' }, skip: 0, take: 20 })`</font>
+activate DB
+DB --> Server: Returns a list of public projects and total count
+deactivate DB
+
+Server --> Client: **HTTP 200 OK**\n<font size=10>Body: { projects: [...], totalPages: ..., currentPage: 1 }</font>
+deactivate Server
+
+== 3. Frontend Renders the Page ==
+Client -> Client: Renders a grid of project cards from the received data
+Client -> Client: Displays pagination controls (e.g., "Next", "Previous")
+Client --> User: Shows the first page of community projects
+deactivate Client
+
+== 4. User Interacts with Pagination (Optional) ==
+User -> Client: Clicks "Next Page"
+activate Client
+Client -> Server: **GET** /api/projects?visibility=public&page=2&limit=20
+deactivate Client
+note over Server, DB: The process repeats for the next page...
+
+@enduml

@@ -1,35 +1,40 @@
 @startuml
-title Download Diagram Image - Sequence Diagram
+title Download Single Diagram Image - Sequence Diagram
 
 actor User
-participant Frontend
-participant Backend
-participant "PlantUML Server" as PlantUML
+boundary "Next.js Client" as Client
+control "Next.js Server\n/api/diagrams/image" as Server
+boundary "PlantUML Server" as PlantUML
 
-ref over User, PlantUML: Authenticate
+skinparam sequence {
+    ArrowColor #555
+    ActorBorderColor #555
+    LifeLineBorderColor #555
+    ParticipantBorderColor #007bff
+    DatabaseBorderColor #d9534f
+    ControlBorderColor #5cb85c
+    BoundaryBorderColor #f0ad4e
+}
 
+== Pre-condition: User is viewing a diagram and is authenticated ==
 
+== 1. User Initiates Download ==
+activate Client
+User -> Client: Clicks "Download as PNG"
 
-activate Frontend
+Client -> Server: **POST** /api/diagrams/image\n<font size=10>Body: { code: "@startuml...", format: "png", name: "MyDiagram" }</font>
+deactivate Client
+activate Server
 
-User -> Frontend: Request download
-Frontend -> Frontend: Show format options (SVG/PNG)
-
-User -> Frontend: Select format (SVG or PNG)
-Frontend -> Backend: Send PlantUML code & format choice
-activate Backend
-
-Backend -> PlantUML: Request diagram in selected format
+== 2. Backend Renders and Serves Image ==
+Server -> PlantUML: **GET** /png/{encoded_puml_code}\n<font size=10>Encodes diagram code from request body for URL</font>
 activate PlantUML
-PlantUML -> PlantUML: Render diagram in requested format
-PlantUML --> Backend: Return diagram file
+PlantUML --> Server: Returns rendered PNG image data
 deactivate PlantUML
 
-Backend --> Frontend: Send diagram file
-deactivate Backend
+Server --> User: **HTTP 200 OK** with image file\n<font size=10>Headers:\nContent-Type: image/png\nContent-Disposition: attachment; filename="MyDiagram.png"</font>
+deactivate Server
 
-Frontend -> Frontend: Trigger file download
-Frontend --> User: Download diagram file
-deactivate Frontend
+note right of User: Browser prompts user to save the PNG file.
 
 @enduml

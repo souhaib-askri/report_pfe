@@ -1,0 +1,59 @@
+@startuml
+title AI Chat-Driven Diagram Editing - Sequence Diagram
+
+actor User
+boundary "Next.js Client" as Client
+control "Next.js Server\n/api/ai" as Server
+database "PostgreSQL DB" as DB
+boundary "AI Service\n(e.g., OpenAI)" as AIService
+boundary "PlantUML Server" as PlantUML
+
+skinparam sequence {
+    ArrowColor #555
+    ActorBorderColor #555
+    LifeLineBorderColor #555
+    ParticipantBorderColor #007bff
+    DatabaseBorderColor #d9534f
+    ControlBorderColor #5cb85c
+    BoundaryBorderColor #f0ad4e
+}
+
+== Pre-condition: User is on the diagram editor page and authenticated ==
+
+activate Client
+loop AI Interaction Cycle
+    User -> Client: Types a request in the chat\n<font size=10>"Add a database to the diagram"</font>
+    Client -> Server: **POST** /api/ai\n<font size=10>Body: { messages: [...], diagramId: ... }</font>
+    activate Server
+
+    == Backend Orchestration ==
+    Server -> Server: Prepares prompt with conversation history & RAG context
+    Server -> AIService: **POST** /v1/chat/completions\n<font size=10>(Streams response for better UX, but result is processed once complete)</font>
+    activate AIService
+    AIService --> Server: Returns response with text and updated PlantUML code
+    deactivate AIService
+
+    Server -> Server: Extracts new PlantUML code from AI response
+    Server -> PlantUML: **GET** /svg/{encoded_puml_code}
+    activate PlantUML
+    PlantUML --> Server: Returns rendered SVG data for the new diagram
+    deactivate PlantUML
+
+    Server -> DB: **UPDATE** `Diagram` with new code\n**INSERT** into `DiagramConversation`
+    activate DB
+    DB --> Server: Confirms data saved
+    deactivate DB
+
+    == Single Response to Client ==
+    Server --> Client: **HTTP 200 OK**\n<font size=10>Body: { aiMessage: "...", newCode: "...", newSvgData: "..." }</font>
+    deactivate Server
+
+    == Frontend Updates ==
+    Client -> Client: Updates chat window with AI message
+    Client -> Client: Updates editor with new PlantUML code
+    Client -> Client: Renders the new SVG diagram image
+    Client --> User: Displays all updates simultaneously
+end
+deactivate Client
+
+@enduml

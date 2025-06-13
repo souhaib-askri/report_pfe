@@ -1,0 +1,59 @@
+@startuml
+title Edit User Profile - Sequence Diagram
+
+actor User
+boundary "Next.js Client" as Client
+control "Next.js Server\n/api/user" as Server
+database "PostgreSQL DB" as DB
+
+skinparam sequence {
+    ArrowColor #555
+    ActorBorderColor #555
+    LifeLineBorderColor #555
+    ParticipantBorderColor #007bff
+    DatabaseBorderColor #d9534f
+    ControlBorderColor #5cb85c
+    BoundaryBorderColor #f0ad4e
+}
+
+== 1. User Navigates to Profile Page & Loads Data ==
+activate Client
+User -> Client: Clicks "Profile Settings"
+note right of Client: Data can be fetched on client-side via a hook like `useSession` or server-side on page load.
+Client -> Server: **GET** /api/user
+activate Server
+
+Server -> DB: **SELECT** from `User` table\n<font size=10>`prisma.user.findUnique({ where: { id: session.user.id } })`</font>
+activate DB
+DB --> Server: Returns current user data
+deactivate DB
+
+Server --> Client: **HTTP 200 OK**\n<font size=10>Body: { name, email, image, ... }</font>
+deactivate Server
+
+Client -> Client: Renders profile form with the fetched data
+Client --> User: Displays editable profile form
+deactivate Client
+
+== 2. User Submits Updates ==
+User -> Client: Changes their name and clicks "Save"
+activate Client
+Client -> Server: **PATCH** /api/user\n<font size=10>Body: { name: "New User Name" }</font>
+activate Server
+
+== 3. Backend Processes the Update ==
+Server -> Server: Validates session to get `userId` and validates input
+Server -> DB: **UPDATE** `User` table\n<font size=10>`prisma.user.update({ where: { id: userId }, data: { name: "..." } })`</font>
+activate DB
+DB --> Server: Confirms update was successful
+deactivate DB
+
+Server --> Client: **HTTP 200 OK**\n<font size=10>Body: { updatedUserData... }</font>
+deactivate Server
+
+== 4. Frontend Confirms the Update ==
+Client -> Client: Updates local state (e.g., `useSession` data)
+Client --> User: Shows a success notification\n<font size=10>"Profile updated successfully!"</font>
+deactivate Client
+
+@enduml

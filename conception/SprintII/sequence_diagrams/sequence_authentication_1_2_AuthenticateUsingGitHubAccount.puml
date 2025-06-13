@@ -1,0 +1,55 @@
+@startuml
+title NextAuth.js OAuth Sign-In Flow
+
+actor User
+boundary "Next.js Client" as Client
+control "Next.js Server\n/api/auth" as Server
+boundary "OAuth Provider\n(e.g., Google)" as Provider
+database "PostgreSQL DB" as DB
+
+skinparam sequence {
+    ArrowColor #555
+    ActorBorderColor #555
+    LifeLineBorderColor #555
+    ParticipantBorderColor #007bff
+    DatabaseBorderColor #d9534f
+    ControlBorderColor #5cb85c
+    BoundaryBorderColor #f0ad4e
+}
+
+== 1. User Initiates Sign-In ==
+User -> Client: Clicks "Sign in with Provider"
+activate Client
+Client -> Server: **GET** /api/auth/signin/google\n<font size=10>via `signIn('google')`</font>
+activate Server
+Server --> Client: **HTTP 302 Redirect**\n<font size=10>Location: provider.com/auth?{client_id, redirect_uri, scope, ...}</font>
+deactivate Server
+
+== 2. User Authenticates with Provider ==
+Client -> Provider: Follows redirect to Authorization URL
+activate Provider
+Provider --> User: Shows login & consent screen
+User -> Provider: Enters credentials & grants consent
+Provider --> Client: **HTTP 302 Redirect**\n<font size=10>Location: /api/auth/callback/google?code=AUTH_CODE</font>
+deactivate Provider
+
+== 3. Server Handles Callback & Token Exchange ==
+Client -> Server: Follows redirect to Callback URL with **Authorization Code**
+activate Server
+Server -> Provider: **POST** /oauth/token\n<font size=10>Body: {grant_type, code, client_id, client_secret}</font>
+activate Provider
+Provider --> Server: Returns **Access Token** & **User Profile**
+deactivate Provider
+
+Server -> DB: **UPSERT** User, Account, Session records\n<font size=10>Using Prisma Adapter</font>
+activate DB
+DB --> Server: User & Session records created/updated
+deactivate DB
+
+== 4. Session Established ==
+Server --> Client: **HTTP 302 Redirect** to /dashboard\n<font size=10>Sets `next-auth.session-token` cookie</font>
+deactivate Server
+Client -> User: Renders authenticated application page
+deactivate Client
+
+@enduml
