@@ -16,8 +16,7 @@ skinparam sequence {
     ControlBorderColor #5cb85c
     BoundaryBorderColor #f0ad4e
 }
-
-== 1. User Initiates Sign-In ==
+ref over User, DB: Authenticate
 User -> Client: Clicks "Sign in with Provider"
 activate Client
 Client -> Server: **GET** /api/auth/signin/google\n<font size=10>via `signIn('google')`</font>
@@ -25,7 +24,6 @@ activate Server
 Server --> Client: **HTTP 302 Redirect**\n<font size=10>Location: provider.com/auth?{client_id, redirect_uri, scope, ...}</font>
 deactivate Server
 
-== 2. User Authenticates with Provider ==
 Client -> Provider: Follows redirect to Authorization URL
 activate Provider
 Provider --> User: Shows login & consent screen
@@ -33,7 +31,6 @@ User -> Provider: Enters credentials & grants consent
 Provider --> Client: **HTTP 302 Redirect**\n<font size=10>Location: /api/auth/callback/google?code=AUTH_CODE</font>
 deactivate Provider
 
-== 3. Server Handles Callback & Token Exchange ==
 Client -> Server: Follows redirect to Callback URL with **Authorization Code**
 activate Server
 Server -> Provider: **POST** /oauth/token\n<font size=10>Body: {grant_type, code, client_id, client_secret}</font>
@@ -46,7 +43,6 @@ activate DB
 DB --> Server: User & Session records created/updated
 deactivate DB
 
-== 4. Session Established ==
 Server --> Client: **HTTP 302 Redirect** to /dashboard\n<font size=10>Sets `next-auth.session-token` cookie</font>
 deactivate Server
 Client -> User: Renders authenticated application page

@@ -15,6 +15,7 @@ skinparam sequence {
     ControlBorderColor #5cb85c
     BoundaryBorderColor #f0ad4e
 }
+ref over User, DB: Authenticate
 
 == 1. User Navigates to Profile Page & Loads Data ==
 activate Client

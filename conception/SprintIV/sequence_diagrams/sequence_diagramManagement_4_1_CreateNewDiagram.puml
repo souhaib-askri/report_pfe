@@ -16,9 +16,8 @@ skinparam sequence {
     BoundaryBorderColor #f0ad4e
 }
 
-== Pre-condition: User is on a project page and authenticated ==
+ref over User, DB: Authenticate
 
-== 1. User Initiates Diagram Creation ==
 activate Client
 User -> Client: Clicks "Create New Diagram"
 Client -> Client: Renders a form/modal for diagram details
@@ -27,7 +26,6 @@ User -> Client: Enters name, selects type, and submits\n<font size=10>Data: { na
 Client -> Server: **POST** /api/projects/[slug]/diagrams\n<font size=10>Body: { name, type, initialCode: "..." }</font>
 activate Server
 
-== 2. Backend Creates the Diagram ==
 Server -> Server: Validates session and input data
 Server -> DB: **INSERT** into `Diagram` table\n<font size=10>`prisma.diagram.create({ data: { name, type, code, projectId } })`</font>
 activate DB
@@ -37,7 +35,6 @@ deactivate DB
 Server --> Client: **HTTP 201 Created**\n<font size=10>Body: { id, name, type, code, ... }</font>
 deactivate Server
 
-== 3. Frontend Updates the UI ==
 Client -> Client: Adds the new diagram to the local state (diagram list)
 Client -> Client: Sets the new diagram as the active tab in the editor
 Client --> User: Displays the editor with the new diagram's initial code

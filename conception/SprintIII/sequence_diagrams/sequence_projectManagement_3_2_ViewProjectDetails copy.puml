@@ -16,17 +16,15 @@ boundary "MinIO Object Storage" as MinIO
 '     ControlBorderColor #5cb85c
 '     BoundaryBorderColor #f0ad4e
 ' }
+ref over User, Database: Authenticate
 
-== Pre-condition: User is authenticated ==
 
-== 1. User Navigates to Project Page ==
 activate Client
 User -> Client: Clicks on a project link\n<font size=10>e.g., navigating to `/project/my-project`</font>
 
 Client -> Server: **GET** /api/projects/my-project\n<font size=10>(Triggered by page load or client-side fetch)</font>
 activate Server
 
-== 2. Backend Gathers Project Data ==
 Server -> DB: **SELECT** from `Project` & `Diagram` tables\n<font size=10>`prisma.project.findUnique({ where: {slug}, include: {diagrams: true} })`</font>
 activate DB
 DB --> Server: Returns project metadata and list of associated diagrams
@@ -43,7 +41,6 @@ end
 Server --> Client: **HTTP 200 OK**\n<font size=10>Body: { projectData, diagrams: [{..., imageUrl}, ...] }</font>
 deactivate Server
 
-== 3. Frontend Renders Page and Images ==
 Client -> Client: Renders project info and diagram thumbnails\n<font size=10>using the `imageUrl` for each `<img>` src attribute</font>
 
 Client -> MinIO: **GET** image_url_1

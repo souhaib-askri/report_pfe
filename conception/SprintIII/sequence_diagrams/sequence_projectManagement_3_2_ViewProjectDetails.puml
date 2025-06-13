@@ -17,9 +17,8 @@ boundary "MinIO Object Storage" as MinIO
 '     BoundaryBorderColor #f0ad4e
 ' }
 
-== Pre-condition: User is authenticated ==
+ref over User, DB: Authenticate
 
-== 1. User Navigates to Project Page ==
 activate Client
 User -> Client: Clicks on a project link\n<font size=10>e.g., navigating to `/project/my-project`</font>
 
@@ -43,7 +42,6 @@ end
 Server --> Client: **HTTP 200 OK**\n<font size=10>Body: { projectData, diagrams: [{..., imageUrl}, ...] }</font>
 deactivate Server
 
-== 3. Frontend Renders Page and Images ==
 Client -> Client: Renders project info and diagram thumbnails\n<font size=10>using the `imageUrl` for each `<img>` src attribute</font>
 
 Client -> MinIO: **GET** image_url_1

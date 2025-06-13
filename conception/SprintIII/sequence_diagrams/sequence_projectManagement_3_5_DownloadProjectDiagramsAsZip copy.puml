@@ -17,16 +17,14 @@ skinparam sequence {
     BoundaryBorderColor #f0ad4e
 }
 
-== Pre-condition: User is authenticated ==
 
-== 1. User Initiates Download ==
 activate Client
+
 User -> Client: Clicks "Download Project (ZIP)"
 Client -> Server: **GET** /api/projects/[slug]/download-images?format=svg\n<font size=10>(Request initiated by setting `window.location.href` or an `<a>` tag)</font>
 deactivate Client
 activate Server
 
-== 2. Backend Prepares ZIP Archive ==
 Server -> DB: **SELECT** from `Project` & `Diagram` tables\n<font size=10>`prisma.project.findUnique({ where: {slug}, include: {diagrams: true} })`</font>
 activate DB
 DB --> Server: Returns project data with all associated diagrams' code
@@ -42,7 +40,6 @@ loop for each diagram in project
     Server -> Server: Adds the returned diagram data to the ZIP archive\n<font size=10>e.g., `zip.file("diagram-name.svg", svgData)`</font>
 end
 
-== 3. Server Sends ZIP File to User ==
 Server -> Server: Finalizes the ZIP archive
 Server --> User: **HTTP 200 OK** with ZIP file\n<font size=10>Headers:\nContent-Type: application/zip\nContent-Disposition: attachment; filename="project-name.zip"</font>
 deactivate Server

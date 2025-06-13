@@ -18,7 +18,7 @@ skinparam sequence {
     BoundaryBorderColor #f0ad4e
 }
 
-== Pre-condition: User is on the diagram editor page and authenticated ==
+ref over User, DB: Authenticate
 
 activate Client
 loop AI Interaction Cycle
@@ -26,7 +26,6 @@ loop AI Interaction Cycle
     Client -> Server: **POST** /api/ai\n<font size=10>Body: { messages: [...], diagramId: ... }</font>
     activate Server
 
-    == Backend Orchestration ==
     Server -> Server: Prepares prompt with conversation history & RAG context
     Server -> AIService: **POST** /v1/chat/completions\n<font size=10>(Streams response for better UX, but result is processed once complete)</font>
     activate AIService
@@ -44,11 +43,9 @@ loop AI Interaction Cycle
     DB --> Server: Confirms data saved
     deactivate DB
 
-    == Single Response to Client ==
     Server --> Client: **HTTP 200 OK**\n<font size=10>Body: { aiMessage: "...", newCode: "...", newSvgData: "..." }</font>
     deactivate Server
 
-    == Frontend Updates ==
     Client -> Client: Updates chat window with AI message
     Client -> Client: Updates editor with new PlantUML code
     Client -> Client: Renders the new SVG diagram image

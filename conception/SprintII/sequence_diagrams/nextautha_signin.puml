@@ -5,19 +5,16 @@ participant "Application Server (NextAuth.js)" as AppServer
 participant "Authentication Provider (Google/GitHub)" as AuthProvider
 database "Database" as DB
 
-== Initiate Sign-In ==
 User -> Browser : Clicks "Sign In"
 Browser -> AppServer : GET /api/signin
 AppServer -> AppServer : Determine available providers
 AppServer -> Browser : Render sign-in page
 
-== Select Provider ==
 User -> Browser : Chooses "Sign in with Google/GitHub"
 Browser -> AppServer : POST /api/auth/signin/[provider]
 AppServer -> AppServer : Prepare OAuth parameters
 AppServer -> Browser : Redirect to Authentication Provider
 
-== Authenticate on Provider ==
 Browser -> AuthProvider : GET /login/oauth/authorize
 activate AuthProvider
 AuthProvider -> User : Display provider login page
@@ -26,7 +23,6 @@ AuthProvider -> AuthProvider : Validate credentials
 AuthProvider --> Browser : Redirect to /api/auth/callback/[provider]?code=ABC123
 deactivate AuthProvider
 
-== Handle Callback ==
 Browser -> AppServer : GET /api/auth/callback/[provider]?code=ABC123
 AppServer -> AppServer : Extract authorization code
 AppServer -> AuthProvider : POST /login/oauth/access_token
@@ -34,7 +30,6 @@ activate AuthProvider
 AuthProvider -> AppServer : Return access_token and user info
 deactivate AuthProvider
 
-== Update Database ==
 AppServer -> DB : Check if user exists
 alt User exists
     AppServer -> DB : Update user information
@@ -42,15 +37,12 @@ else New user
     AppServer -> DB : Create new user record
 end
 
-== Create and Store Session ==
 AppServer -> AppServer : Create session with user and token info
 AppServer -> DB : Store session in database
 AppServer -> Browser : Set session cookie
 
-== Redirect User ==
 Browser -> User : Redirect to homepage
 
-== Handle Special Cases ==
 alt Authentication Failed
     AuthProvider -> Browser : Display error message
     Browser -> User : Inform login failure

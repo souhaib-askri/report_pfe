@@ -16,15 +16,13 @@ skinparam sequence {
     BoundaryBorderColor #f0ad4e
 }
 
-== Pre-condition: User is viewing a project and is authenticated ==
+ref over User, DB: Authenticate
 
-== 1. User Submits a Comment ==
 activate Client
 User -> Client: Types a comment and clicks "Submit"
 Client -> Server: **POST** /api/projects/[slug]/comments\n<font size=10>Body: { text: "This is a great diagram!" }</font>
 activate Server
 
-== 2. Backend Processes and Saves the Comment ==
 Server -> Server: Validates session to get `authorId`\nValidates request body
 Server -> DB: **INSERT** into `ProjectComment` table\n<font size=10>`prisma.projectComment.create({ data: { text, authorId, projectId } })`</font>
 activate DB
@@ -34,7 +32,6 @@ deactivate DB
 Server --> Client: **HTTP 201 Created**\n<font size=10>Body: { id, text, author: { name, image }, ... }</font>
 deactivate Server
 
-== 3. Frontend Updates the UI in Real-time ==
 Client -> Client: Receives the new comment data
 Client -> Client: Adds the new comment to the top of the comments list\n<font size=10>(Optimistic UI update is also possible here)</font>
 Client --> User: New comment appears instantly in the comment section

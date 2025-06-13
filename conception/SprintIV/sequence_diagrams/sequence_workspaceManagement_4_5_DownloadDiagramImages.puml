@@ -15,10 +15,9 @@ skinparam sequence {
     ControlBorderColor #5cb85c
     BoundaryBorderColor #f0ad4e
 }
+ref over User, Database: Authenticate
 
-== Pre-condition: User is viewing a diagram and is authenticated ==
 
-== 1. User Initiates Download ==
 activate Client
 User -> Client: Clicks "Download as PNG"
 

@@ -16,10 +16,8 @@ skinparam sequence {
     BoundaryBorderColor #f0ad4e
 }
 
-== Pre-condition: User is authenticated ==
-note over User, DB: Session token is stored in a cookie and validated\nby the server on each API request.
+ref over User, DB: Authenticate
 
-== 1. User Initiates Project Creation ==
 activate Client
 User -> Client: Clicks "Create New Project"
 Client -> Client: Renders a form/modal for project details
@@ -28,7 +26,6 @@ User -> Client: Fills form and submits\n<font size=10>Data: { name, description,
 Client -> Server: **POST** /api/projects\n<font size=10>Body: { name, description, ... }\n(Session token sent via cookie)</font>
 activate Server
 
-== 2. Backend Processes Request ==
 Server -> Server: Validates session and input data\n<font size=10>Retrieves `userId` from session</font>
 Server -> DB: **INSERT** into `Project` table\n<font size=10>`prisma.project.create({ data: {..., ownerId: userId} })`</font>
 activate DB
@@ -38,7 +35,6 @@ deactivate DB
 Server --> Client: **HTTP 201 Created**\n<font size=10>Body: { id, slug, name, ... }</font>
 deactivate Server
 
-== 3. Frontend Updates UI ==
 Client -> Client: Updates local state with the new project
 Client -> Client: **Navigates** to the new project's page\n<font size=10>`router.push('/project/' + project.slug)`</font>
 Client --> User: Displays the new, empty project workspace
