@@ -1,33 +1,43 @@
 @startuml
-title Comment on Projects - Sequence Diagram
+title Comment on a Project - Sequence Diagram
 
 actor User
-boundary Frontend
-control Backend
-database Database
+boundary "Next.js Client" as Client
+control "Next.js Server\n/api/projects/[slug]/comments" as Server
+database "PostgreSQL DB" as DB
 
-ref over User, Database: Authenticate
+skinparam sequence {
+    ArrowColor #555
+    ActorBorderColor #555
+    LifeLineBorderColor #555
+    ParticipantBorderColor #007bff
+    DatabaseBorderColor #d9534f
+    ControlBorderColor #5cb85c
+    BoundaryBorderColor #f0ad4e
+}
 
-ref over User, Database: View Project
+== Pre-condition: User is viewing a project and is authenticated ==
 
-activate Frontend
+== 1. User Submits a Comment ==
+activate Client
+User -> Client: Types a comment and clicks "Submit"
+Client -> Server: **POST** /api/projects/[slug]/comments\n<font size=10>Body: { text: "This is a great diagram!" }</font>
+activate Server
 
-User -> Frontend: Write comment
-User -> Frontend: Submit comment
+== 2. Backend Processes and Saves the Comment ==
+Server -> Server: Validates session to get `authorId`\nValidates request body
+Server -> DB: **INSERT** into `ProjectComment` table\n<font size=10>`prisma.projectComment.create({ data: { text, authorId, projectId } })`</font>
+activate DB
+DB --> Server: Returns new `Comment` object with `id` and relations
+deactivate DB
 
-Frontend -> Backend: Send comment data
-activate Backend
+Server --> Client: **HTTP 201 Created**\n<font size=10>Body: { id, text, author: { name, image }, ... }</font>
+deactivate Server
 
-Backend -> Database: Save comment
-activate Database
-Database --> Backend: Confirm comment saved
-deactivate Database
-
-Backend --> Frontend: Return comment confirmation
-deactivate Backend
-
-Frontend -> Frontend: Update comments section
-Frontend --> User: Show new comment
-deactivate Frontend
+== 3. Frontend Updates the UI in Real-time ==
+Client -> Client: Receives the new comment data
+Client -> Client: Adds the new comment to the top of the comments list\n<font size=10>(Optimistic UI update is also possible here)</font>
+Client --> User: New comment appears instantly in the comment section
+deactivate Client
 
 @enduml

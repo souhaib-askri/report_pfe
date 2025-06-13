@@ -1,42 +1,52 @@
 @startuml
-title Download Project - Sequence Diagram
+title Download Project Diagrams - Sequence Diagram
 
 actor User
-boundary Frontend
-control Backend
+boundary "Next.js Client" as Client
+control "Next.js Server\n/api/projects/[slug]/download-images" as Server
+database "PostgreSQL DB" as DB
 boundary "PlantUML Server" as PlantUML
-database Database
 
-ref over User, Database: Authenticate
+skinparam sequence {
+    ArrowColor #555
+    ActorBorderColor #555
+    LifeLineBorderColor #555
+    ParticipantBorderColor #007bff
+    DatabaseBorderColor #d9534f
+    ControlBorderColor #5cb85c
+    BoundaryBorderColor #f0ad4e
+}
 
-activate Frontend
+== Pre-condition: User is authenticated ==
 
-User -> Frontend: click on "Download"
-Frontend -> Frontend: Show format options (SVG/PNG)
+== 1. User Initiates Download ==
+activate Client
+User -> Client: Clicks "Download Project (ZIP)"
+Client -> Server: **GET** /api/projects/[slug]/download-images?format=svg\n<font size=10>(Request initiated by setting `window.location.href` or an `<a>` tag)</font>
+deactivate Client
+activate Server
 
-User -> Frontend: Select format (SVG or PNG)
-Frontend -> Backend: Send project ID & format choice
-activate Backend
+== 2. Backend Prepares ZIP Archive ==
+Server -> DB: **SELECT** from `Project` & `Diagram` tables\n<font size=10>`prisma.project.findUnique({ where: {slug}, include: {diagrams: true} })`</font>
+activate DB
+DB --> Server: Returns project data with all associated diagrams' code
+deactivate DB
 
-Backend -> Database: Get all diagram codes for project
-activate Database
-Database --> Backend: Return project diagrams & PlantUML codes
-deactivate Database
+Server -> Server: Initializes a new ZIP archive in memory\n<font size=10>(e.g., using a library like `jszip`)</font>
 
-loop For each diagram
-    Backend -> PlantUML: Request diagram in selected format
+loop for each diagram in project
+    Server -> PlantUML: **GET** /svg/{encoded_puml_code}\n<font size=10>Encodes diagram code for URL</font>
     activate PlantUML
-    PlantUML -> PlantUML: Render diagram in requested format
-    PlantUML --> Backend: Return diagram file
+    PlantUML --> Server: Returns rendered SVG/PNG data
     deactivate PlantUML
+    Server -> Server: Adds the returned diagram data to the ZIP archive\n<font size=10>e.g., `zip.file("diagram-name.svg", svgData)`</font>
 end
 
-Backend -> Backend: Compress all diagrams into ZIP file
-Backend --> Frontend: Send ZIP file
-deactivate Backend
+== 3. Server Sends ZIP File to User ==
+Server -> Server: Finalizes the ZIP archive
+Server --> User: **HTTP 200 OK** with ZIP file\n<font size=10>Headers:\nContent-Type: application/zip\nContent-Disposition: attachment; filename="project-name.zip"</font>
+deactivate Server
 
-Frontend -> Frontend: Trigger file download
-Frontend --> User: Download project ZIP file
-deactivate Frontend
+note right of User: Browser prompts user to save the ZIP file.
 
 @enduml

@@ -79,11 +79,11 @@
 \contentsline {subsubsection}{\numberline {6.3.2.5}Download Compressed (UC-3.5)}{35}{subsubsection.6.3.2.5}%
 \contentsline {section}{\numberline {6.4}System Design}{35}{section.6.4}%
 \contentsline {subsection}{\numberline {6.4.1}Sequence Diagrams}{35}{subsection.6.4.1}%
-\contentsline {section}{\numberline {6.5}Implementation Results}{37}{section.6.5}%
-\contentsline {subsection}{\numberline {6.5.1}User Interface Screenshots}{37}{subsection.6.5.1}%
-\contentsline {section}{\numberline {6.6}Sprint Retrospective}{38}{section.6.6}%
-\contentsline {subsection}{\numberline {6.6.1}Achievements}{38}{subsection.6.6.1}%
-\contentsline {subsection}{\numberline {6.6.2}Areas for Improvement}{38}{subsection.6.6.2}%
+\contentsline {section}{\numberline {6.5}Implementation Results}{38}{section.6.5}%
+\contentsline {subsection}{\numberline {6.5.1}User Interface Screenshots}{38}{subsection.6.5.1}%
+\contentsline {section}{\numberline {6.6}Sprint Retrospective}{39}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Achievements}{39}{subsection.6.6.1}%
+\contentsline {subsection}{\numberline {6.6.2}Areas for Improvement}{39}{subsection.6.6.2}%
 \contentsline {section}{\numberline {6.7}Conclusion}{39}{section.6.7}%
 \contentsline {chapter}{\numberline {7}Sprint 3}{40}{chapter.7}%
 \contentsline {section}{\numberline {7.1}Introduction}{40}{section.7.1}%
@@ -102,10 +102,10 @@
 \contentsline {section}{\numberline {7.5}Implementation Results}{44}{section.7.5}%
 \contentsline {subsection}{\numberline {7.5.1}Core Interfaces}{44}{subsection.7.5.1}%
 \contentsline {subsection}{\numberline {7.5.2}Workspace Environment}{46}{subsection.7.5.2}%
-\contentsline {section}{\numberline {7.6}Sprint Retrospective}{46}{section.7.6}%
-\contentsline {subsection}{\numberline {7.6.1}Achievements}{46}{subsection.7.6.1}%
-\contentsline {subsection}{\numberline {7.6.2}Challenges}{46}{subsection.7.6.2}%
-\contentsline {section}{\numberline {7.7}Conclusion}{46}{section.7.7}%
+\contentsline {section}{\numberline {7.6}Sprint Retrospective}{47}{section.7.6}%
+\contentsline {subsection}{\numberline {7.6.1}Achievements}{47}{subsection.7.6.1}%
+\contentsline {subsection}{\numberline {7.6.2}Challenges}{47}{subsection.7.6.2}%
+\contentsline {section}{\numberline {7.7}Conclusion}{47}{section.7.7}%
 \contentsline {chapter}{\numberline {8}Sprint 4}{48}{chapter.8}%
 \contentsline {section}{\numberline {8.1}Introduction}{48}{section.8.1}%
 \contentsline {section}{\numberline {8.2}Sprint Planning}{48}{section.8.2}%

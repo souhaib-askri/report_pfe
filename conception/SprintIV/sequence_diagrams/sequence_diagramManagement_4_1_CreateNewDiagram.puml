@@ -2,32 +2,45 @@
 title Create New Diagram - Sequence Diagram
 
 actor User
-boundary Frontend
-control Backend
-database Database
+boundary "Next.js Client" as Client
+control "Next.js Server\n/api/projects/[slug]/diagrams" as Server
+database "PostgreSQL DB" as DB
 
-ref over User, Database: Authenticate
+skinparam sequence {
+    ArrowColor #555
+    ActorBorderColor #555
+    LifeLineBorderColor #555
+    ParticipantBorderColor #007bff
+    DatabaseBorderColor #d9534f
+    ControlBorderColor #5cb85c
+    BoundaryBorderColor #f0ad4e
+}
 
-activate Frontend
+== Pre-condition: User is on a project page and authenticated ==
 
-User -> Frontend: Click "Create New Diagram"
-Frontend -> Frontend: Show diagram creation form
+== 1. User Initiates Diagram Creation ==
+activate Client
+User -> Client: Clicks "Create New Diagram"
+Client -> Client: Renders a form/modal for diagram details
 
-User -> Frontend: Enter diagram details (name, description)
-Frontend -> Backend: Send diagram data
-activate Backend
+User -> Client: Enters name, selects type, and submits\n<font size=10>Data: { name: "Auth Flow", type: "Sequence" }</font>
+Client -> Server: **POST** /api/projects/[slug]/diagrams\n<font size=10>Body: { name, type, initialCode: "..." }</font>
+activate Server
 
-Backend -> Database: Create new diagram record
-activate Database
-Database --> Backend: Return diagram ID
-deactivate Database
+== 2. Backend Creates the Diagram ==
+Server -> Server: Validates session and input data
+Server -> DB: **INSERT** into `Diagram` table\n<font size=10>`prisma.diagram.create({ data: { name, type, code, projectId } })`</font>
+activate DB
+DB --> Server: Returns new `Diagram` object with `id`
+deactivate DB
 
-Backend --> Frontend: Send diagram ID & confirmation
-deactivate Backend
+Server --> Client: **HTTP 201 Created**\n<font size=10>Body: { id, name, type, code, ... }</font>
+deactivate Server
 
-Frontend -> Frontend: Initialize empty editor
-Frontend -> Frontend: Set diagram as active
-Frontend --> User: Show empty diagram workspace
-deactivate Frontend
+== 3. Frontend Updates the UI ==
+Client -> Client: Adds the new diagram to the local state (diagram list)
+Client -> Client: Sets the new diagram as the active tab in the editor
+Client --> User: Displays the editor with the new diagram's initial code
+deactivate Client
 
 @enduml

@@ -2,32 +2,46 @@
 title Create New Project - Sequence Diagram
 
 actor User
-boundary Frontend
-control Backend
-database Database
+boundary "Next.js Client" as Client
+control "Next.js Server\n/api/projects" as Server
+database "PostgreSQL DB" as DB
 
-ref over User, Database: Authenticate
+skinparam sequence {
+    ArrowColor #555
+    ActorBorderColor #555
+    LifeLineBorderColor #555
+    ParticipantBorderColor #007bff
+    DatabaseBorderColor #d9534f
+    ControlBorderColor #5cb85c
+    BoundaryBorderColor #f0ad4e
+}
 
-activate Frontend
+== Pre-condition: User is authenticated ==
+note over User, DB: Session token is stored in a cookie and validated\nby the server on each API request.
 
-User -> Frontend: Click "Create New Project"
-Frontend -> Frontend: Show project creation form
+== 1. User Initiates Project Creation ==
+activate Client
+User -> Client: Clicks "Create New Project"
+Client -> Client: Renders a form/modal for project details
 
-User -> Frontend: Enter project details (name, description)
-Frontend -> Backend: Send project metadata
-activate Backend
+User -> Client: Fills form and submits\n<font size=10>Data: { name, description, visibility }</font>
+Client -> Server: **POST** /api/projects\n<font size=10>Body: { name, description, ... }\n(Session token sent via cookie)</font>
+activate Server
 
-Backend -> Database: Create new project record
-activate Database
-Database --> Backend: Return project ID
-deactivate Database
+== 2. Backend Processes Request ==
+Server -> Server: Validates session and input data\n<font size=10>Retrieves `userId` from session</font>
+Server -> DB: **INSERT** into `Project` table\n<font size=10>`prisma.project.create({ data: {..., ownerId: userId} })`</font>
+activate DB
+DB --> Server: Returns new `Project` object with `id` and `slug`
+deactivate DB
 
-Backend --> Frontend: Send project ID & confirmation
-deactivate Backend
+Server --> Client: **HTTP 201 Created**\n<font size=10>Body: { id, slug, name, ... }</font>
+deactivate Server
 
-Frontend -> Frontend: Add project to projects list
-Frontend -> Frontend: Navigate to project workspace
-Frontend --> User: Show empty project workspace
-deactivate Frontend
+== 3. Frontend Updates UI ==
+Client -> Client: Updates local state with the new project
+Client -> Client: **Navigates** to the new project's page\n<font size=10>`router.push('/project/' + project.slug)`</font>
+Client --> User: Displays the new, empty project workspace
+deactivate Client
 
 @enduml

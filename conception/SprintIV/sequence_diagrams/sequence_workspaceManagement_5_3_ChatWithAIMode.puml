@@ -1,59 +1,59 @@
 @startuml
-title AI Chat and Diagram Editing - Sequence Diagram
+title AI Chat-Driven Diagram Editing - Sequence Diagram
 
 actor User
-boundary Frontend
-control Backend
-boundary "AI Model" as AI
+boundary "Next.js Client" as Client
+control "Next.js Server\n/api/ai" as Server
+database "PostgreSQL DB" as DB
+boundary "AI Service\n(e.g., OpenAI)" as AIService
 boundary "PlantUML Server" as PlantUML
-database Database
 
-ref over User, Database: Authenticate
+skinparam sequence {
+    ArrowColor #555
+    ActorBorderColor #555
+    LifeLineBorderColor #555
+    ParticipantBorderColor #007bff
+    DatabaseBorderColor #d9534f
+    ControlBorderColor #5cb85c
+    BoundaryBorderColor #f0ad4e
+}
 
-activate Frontend
+== Pre-condition: User is on the diagram editor page and authenticated ==
 
-loop AI Chat & Editing Loop
-    User -> Frontend: Describe problem in chat
-    
-    Frontend -> Backend: Send user message
-    activate Backend
-    
-    Backend -> Backend: Prepare prompt with RAGs
-    Backend -> AI: Send enhanced prompt
-    activate AI
-    
-    AI -> AI: Process request & generate response
-    AI --> Backend: Return response with PlantUML code
-    deactivate AI
-    
-    Backend -> Database: Save conversation
-    activate Database
-    Database --> Backend: Confirm save
-    deactivate Database
-    
-    Backend -> Backend: Extract PlantUML code (regex)
-    
-    Backend --> Frontend: Send AI response & PlantUML code
-    Frontend -> Frontend: Populate chat with conversation
-    Frontend -> Frontend: Populate editor with code
-    
-    Frontend -> Backend: Send PlantUML code for rendering
-    Backend -> PlantUML: Forward PlantUML code
+activate Client
+loop AI Interaction Cycle
+    User -> Client: Types a request in the chat\n<font size=10>"Add a database to the diagram"</font>
+    Client -> Server: **POST** /api/ai\n<font size=10>Body: { messages: [...], diagramId: ... }</font>
+    activate Server
+
+    == Backend Orchestration ==
+    Server -> Server: Prepares prompt with conversation history & RAG context
+    Server -> AIService: **POST** /v1/chat/completions\n<font size=10>(Streams response for better UX, but result is processed once complete)</font>
+    activate AIService
+    AIService --> Server: Returns response with text and updated PlantUML code
+    deactivate AIService
+
+    Server -> Server: Extracts new PlantUML code from AI response
+    Server -> PlantUML: **GET** /svg/{encoded_puml_code}
     activate PlantUML
-    
-    PlantUML -> PlantUML: Process & render diagram
-    PlantUML --> Backend: Return diagram image
+    PlantUML --> Server: Returns rendered SVG data for the new diagram
     deactivate PlantUML
-    
-    Backend --> Frontend: Send diagram image
-    deactivate Backend
-    
-    Frontend -> Frontend: Update diagram display
-    Frontend --> User: Show AI response & updated diagram
-    
-    User -> User: Review diagram & response
-end
 
-deactivate Frontend
+    Server -> DB: **UPDATE** `Diagram` with new code\n**INSERT** into `DiagramConversation`
+    activate DB
+    DB --> Server: Confirms data saved
+    deactivate DB
+
+    == Single Response to Client ==
+    Server --> Client: **HTTP 200 OK**\n<font size=10>Body: { aiMessage: "...", newCode: "...", newSvgData: "..." }</font>
+    deactivate Server
+
+    == Frontend Updates ==
+    Client -> Client: Updates chat window with AI message
+    Client -> Client: Updates editor with new PlantUML code
+    Client -> Client: Renders the new SVG diagram image
+    Client --> User: Displays all updates simultaneously
+end
+deactivate Client
 
 @enduml
