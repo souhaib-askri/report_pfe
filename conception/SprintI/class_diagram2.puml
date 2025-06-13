@@ -4,7 +4,6 @@ skinparam classBackgroundColor LightBlue
 skinparam classBorderColor Navy
 skinparam classFontColor Black
 skinparam classFontSize 14
-skinparam linetype ortho
 
 class DiagramConversation {
     + id: String
@@ -116,7 +115,6 @@ class Diagram {
     + updateDiagram(): Diagram
     + deleteDiagram(): void
     + generateImage(): String
-    + processAIRequest(): String
 }
 
 class ProjectComment {
@@ -164,7 +162,6 @@ User "1" *-- "0..*" Project
 User "1" *-- "0..*" ProjectComment
 User "1" *-- "0..*" ProjectLike
 User "1" *-- "0..*" CommentLike
-User "1" *-- "0..*" DiagramConversation
 
 Project "1" *-- "0..*" Diagram
 Project "1" *-- "0..*" ProjectComment
