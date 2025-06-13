@@ -7,13 +7,14 @@
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.3.2}Core Features}{\reset@font\mtcSSfont 42}{subsection.7.3.2}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {7.3.2.1}Diagram Management}{\reset@font\mtcSSSfont 42}{subsubsection.7.3.2.1}}
 {\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {7.3.2.2}Workspace Management}{\reset@font\mtcSSSfont 42}{subsubsection.7.3.2.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.4}Sequence Diagrams}{\reset@font\mtcSfont 43}{section.7.4}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.4.1}Diagram Creation Process}{\reset@font\mtcSSfont 43}{subsection.7.4.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.4.2}AI-Assisted Editing}{\reset@font\mtcSSfont 44}{subsection.7.4.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.4}System Design}{\reset@font\mtcSfont 43}{section.7.4}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.4.1}Key Sequence Diagrams}{\reset@font\mtcSSfont 43}{subsection.7.4.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {7.4.1.1}Diagram Creation Process}{\reset@font\mtcSSSfont 43}{subsubsection.7.4.1.1}}
+{\reset@font\mtcSSSfont\mtc@string\contentsline{subsubsection}{\noexpand \leavevmode \numberline {7.4.1.2}AI-Assisted Editing}{\reset@font\mtcSSSfont 44}{subsubsection.7.4.1.2}}
 {\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.5}Implementation Results}{\reset@font\mtcSfont 44}{section.7.5}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.5.1}Core Interfaces}{\reset@font\mtcSSfont 44}{subsection.7.5.1}}
 {\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.5.2}Workspace Environment}{\reset@font\mtcSSfont 46}{subsection.7.5.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.6}Sprint Retrospective}{\reset@font\mtcSfont 47}{section.7.6}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.6.1}Achievements}{\reset@font\mtcSSfont 47}{subsection.7.6.1}}
-{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.6.2}Challenges}{\reset@font\mtcSSfont 47}{subsection.7.6.2}}
-{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.7}Conclusion}{\reset@font\mtcSfont 47}{section.7.7}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.6}Sprint Retrospective}{\reset@font\mtcSfont 46}{section.7.6}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.6.1}Achievements}{\reset@font\mtcSSfont 46}{subsection.7.6.1}}
+{\reset@font\mtcSSfont\mtc@string\contentsline{subsection}{\noexpand \leavevmode \numberline {7.6.2}Challenges}{\reset@font\mtcSSfont 46}{subsection.7.6.2}}
+{\reset@font\mtcSfont\mtc@string\contentsline{section}{\noexpand \leavevmode \numberline {7.7}Conclusion}{\reset@font\mtcSfont 46}{section.7.7}}
